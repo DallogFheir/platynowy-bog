@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+html {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+/* disables and darkens the rest of the site where popup is up */
+.popup-active {
   pointer-events: none;
+  filter: brightness(0.25);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* popup styling */
+.desc-popup {
+  position: fixed;
+  filter: none;
+  width: 75vw;
+  top: 10%;
+  left: 50%;
+  margin-left: -37.5vw;
+  padding: 20px;
+  background-color: #31373d;
+  border: 2px solid white;
+  border-radius: 20px;
+  z-index: 1;
+  max-height: 85vh;
+  overflow-y: scroll;
 }

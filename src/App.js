@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useRef } from "react";
+import Main from "./components/Main";
+import Navbar from "./components/Navbar";
+import Description from "./components/Description";
+import "./App.css";
 
 function App() {
+  // GLOBAL STATES
+  const [popup, setPopup] = useState(false);
+  const popupDiv = useRef(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={["wrapper", popup ? "popup-active" : ""].join(" ")}>
+        <Navbar />
+        <Main />
+      </div>
+      {popup && (
+        <div ref={popupDiv} className="desc-popup">
+          <Description />
+        </div>
+      )}
+    </>
   );
 }
 
