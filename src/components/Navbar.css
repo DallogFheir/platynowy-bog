@@ -1,0 +1,24 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 14px;
+  height: 60px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.searchbar {
+  width: 190px;
+}
+
+/* make links in navbar white/grey on hover instead of blue */
+.nav-link:any-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: rgb(153, 153, 153);
+}

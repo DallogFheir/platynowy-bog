@@ -1,5 +1,122 @@
-function Navbar() {
-  return <div></div>;
+// #TODO expanding navbar doesn't work
+
+import { useEffect, useRef } from "react";
+import "./Navbar.css";
+
+function Navbar({
+  typeOption,
+  setTypeOption,
+  sortOption,
+  setSortOption,
+  filterOption,
+  setFilterOption,
+  setNameFilter,
+}) {
+  // ADD EVENT LISTENER TO TYPE TO SEARCH BAR FROM WHEREVER
+  const searchBarInput = useRef(null);
+  useEffect(() => {
+    const focusSearchBar = () => {
+      searchBarInput.current.focus();
+    };
+
+    document.addEventListener("keydown", focusSearchBar);
+
+    return () => document.removeEventListener("keydown", focusSearchBar);
+  }, []);
+
+  // MENUS
+  const menus = [
+    {
+      name: "typ",
+      state: typeOption,
+      setState: setTypeOption,
+      options: ["przedmioty", "trinkety"],
+    },
+    {
+      name: "sortowanie",
+      state: sortOption,
+      setState: setSortOption,
+      options: ["wg ID", "wg koloru"],
+    },
+    {
+      name: "filtr",
+      state: filterOption,
+      setState: setFilterOption,
+      options: ["usuń", "przyciemń"],
+    },
+  ];
+
+  return (
+    <header>
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <div className="navbar-brand ms-2">
+          <img src="platinum-god.png" alt=""></img>
+          <span className="ms-2 title d-none d-md-inline">PLATYNOWY BÓG</span>
+        </div>
+        <button
+          className="navbar-toggler me-2"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggle"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarToggle" className="collapse navbar-collapse">
+          <ul className="nav nav-tabs ms-auto me-3 flex-column flex-sm-row">
+            {menus.map((menu, idx) => (
+              <li key={idx} className="nav-item dropdown">
+                {/* eslint-disable jsx-a11y/anchor-is-valid */}
+                <a
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  className="nav-link dropdown-toggle"
+                >
+                  {menu.name.toUpperCase()}
+                </a>
+                <ul className="dropdown-menu">
+                  {menu.options.map((option, idx) => (
+                    <li key={idx} className="dropdown-item">
+                      <div className="form-check">
+                        <input
+                          type="radio"
+                          name={menu.name}
+                          defaultChecked={option === menu.state}
+                          id={option}
+                          className="form-check-input"
+                          onChange={(e) => {
+                            menu.setState(e.target.id);
+                          }}
+                        />
+                        <label htmlFor={option} className="form-check-label">
+                          {option}
+                        </label>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+          <form
+            action=""
+            className="form-inline me-2"
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="Wyszukaj..."
+              title="Wyszukaj po nazwie lub opisie z gry."
+              ref={searchBarInput}
+              className="form-control searchbar"
+              onChange={(e) => setNameFilter(e.target.value || null)}
+            />
+          </form>
+        </div>
+      </nav>
+    </header>
+  );
 }
 
 export default Navbar;
