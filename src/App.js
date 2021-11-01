@@ -18,7 +18,7 @@ function App() {
     "usuń"
   );
   //   filters
-  const [nameFilter, setNameFilter] = useLocalStorage("nameFilter", null);
+  const [nameFilter, setNameFilter] = useState(null);
 
   const [popup, setPopup] = useState(false);
   const popupDiv = useRef(null);
