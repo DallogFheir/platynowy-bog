@@ -1,0 +1,18 @@
+main {
+  height: 100%;
+}
+
+main > .row {
+  min-height: 100%;
+}
+
+.desc {
+  position: sticky;
+  top: 60px;
+  background-color: #31373d;
+  font-size: 12px;
+}
+
+.items {
+  background-color: #4a535c;
+}
