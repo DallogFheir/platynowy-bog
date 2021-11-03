@@ -35,7 +35,7 @@ function App() {
           setFilterOption={setFilterOption}
           setNameFilter={setNameFilter}
         />
-        <Main typeOption={typeOption} popup={popup} />
+        <Main sortOption={sortOption} typeOption={typeOption} popup={popup} />
       </div>
       {popup && (
         <div ref={popupDiv} className="desc-popup">

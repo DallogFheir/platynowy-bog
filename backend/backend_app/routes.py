@@ -3,6 +3,9 @@ import json
 from pathlib import Path
 from . import app
 
+# TODO remove sleep
+from time import sleep
+
 
 def open_resource(resource_name):
     return open(Path(__file__).parent.parent / "resources" / (resource_name + ".json"))
