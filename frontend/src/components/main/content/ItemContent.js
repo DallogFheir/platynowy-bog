@@ -1,11 +1,16 @@
 import "./Content.css";
-import { itemImageData, itemColorData } from "../../../data/itemData";
+import {
+  itemImageData,
+  itemColorData,
+  dInfinitySprites,
+} from "../../../data/itemData";
 
 function ItemContent({
   sortOption,
   filterOption,
   nameFilter,
   itemTypeFilter,
+  itemQualityFilter,
   itemsStatus,
   itemsContent,
 }) {
@@ -31,7 +36,7 @@ function ItemContent({
     "black",
   ];
 
-  //   FILTER
+  //   FUNCTIONS
   const filterItems = (item) => {
     // NAMES & QUOTES
     const birthrightQuotes = [
@@ -87,7 +92,12 @@ function ItemContent({
     };
     const typeCondition = itemTypeFilter.includes(typeTrans[item.type]);
 
-    return [filterCondition, typeCondition].every((condition) => condition);
+    // QUALITY
+    const qualityCondition = itemQualityFilter.includes(item.quality);
+
+    return [filterCondition, typeCondition, qualityCondition].every(
+      (condition) => condition
+    );
   };
 
   return (
@@ -142,7 +152,18 @@ function ItemContent({
                   .map((item, itemIdx) => (
                     <img
                       key={itemIdx}
-                      src={`data:image/png;base64,${itemImageData[item.id]}`}
+                      src={
+                        //   random sprite for D Infinity
+                        item.name === "D Infinity"
+                          ? `data:image/png;base64,${
+                              dInfinitySprites[
+                                Math.floor(
+                                  Math.random() * dInfinitySprites.length
+                                )
+                              ]
+                            }`
+                          : `data:image/png;base64,${itemImageData[item.id]}`
+                      }
                       alt=""
                       className={[
                         "me-1",

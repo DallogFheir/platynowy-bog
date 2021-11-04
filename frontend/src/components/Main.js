@@ -13,9 +13,11 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
 
   //   VARIABLES
   const itemTypes = ["pasywny", "aktywny"];
+  const itemQualities = [0, 1, 2, 3, 4];
 
   // FILTERS
   const [itemTypeFilter, setItemTypeFilter] = useState(itemTypes);
+  const [itemQualityFilter, setItemQualityFilter] = useState(itemQualities);
 
   return (
     <main className="container-fluid text-light">
@@ -35,7 +37,10 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                     <ItemFilters
                       itemTypeFilter={itemTypeFilter}
                       setItemTypeFilter={setItemTypeFilter}
+                      itemQualityFilter={itemQualityFilter}
+                      setItemQualityFilter={setItemQualityFilter}
                       itemTypes={itemTypes}
+                      itemQualities={itemQualities}
                     />
                   );
               }
@@ -50,6 +55,7 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                       filterOption={filterOption}
                       nameFilter={nameFilter}
                       itemTypeFilter={itemTypeFilter}
+                      itemQualityFilter={itemQualityFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                     />
