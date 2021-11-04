@@ -5,7 +5,7 @@ import ItemContent from "./main/content/ItemContent";
 import Filters from "./main/Filters";
 import "./Main.css";
 
-function Main({ sortOption, typeOption, popup }) {
+function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
   const [desc, setDesc] = useState(null);
 
   //   API STATES
@@ -28,6 +28,8 @@ function Main({ sortOption, typeOption, popup }) {
                   return (
                     <ItemContent
                       sortOption={sortOption}
+                      filterOption={filterOption}
+                      nameFilter={nameFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                     />
