@@ -2,7 +2,7 @@ import { useState } from "react";
 import useAPI from "../hooks/useAPI";
 import Description from "./Description";
 import ItemContent from "./main/content/ItemContent";
-import Filters from "./main/Filters";
+import ItemFilters from "./main/filters/ItemFilters";
 import "./Main.css";
 
 function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
@@ -10,6 +10,12 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
 
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
+
+  //   VARIABLES
+  const itemTypes = ["pasywny", "aktywny"];
+
+  // FILTERS
+  const [itemTypeFilter, setItemTypeFilter] = useState(itemTypes);
 
   return (
     <main className="container-fluid text-light">
@@ -26,10 +32,24 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
               switch (typeOption) {
                 case "przedmioty":
                   return (
+                    <ItemFilters
+                      itemTypeFilter={itemTypeFilter}
+                      setItemTypeFilter={setItemTypeFilter}
+                      itemTypes={itemTypes}
+                    />
+                  );
+              }
+            })()}
+            <hr />
+            {(() => {
+              switch (typeOption) {
+                case "przedmioty":
+                  return (
                     <ItemContent
                       sortOption={sortOption}
                       filterOption={filterOption}
                       nameFilter={nameFilter}
+                      itemTypeFilter={itemTypeFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                     />

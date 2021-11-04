@@ -5,6 +5,7 @@ function ItemContent({
   sortOption,
   filterOption,
   nameFilter,
+  itemTypeFilter,
   itemsStatus,
   itemsContent,
 }) {
@@ -30,7 +31,7 @@ function ItemContent({
     "black",
   ];
 
-  //   FILTERS
+  //   FILTER
   const filterItems = (item) => {
     // NAMES & QUOTES
     const birthrightQuotes = [
@@ -62,7 +63,7 @@ function ItemContent({
     const nameLower = item.name.toLowerCase().replace(/[.']/g, "");
     const quoteLower = item.quote.toLowerCase().replace(/[.']/g, "");
     const nameFilterLower = nameFilter?.toLowerCase().replace(/[.']/g, "");
-    const filterByName =
+    const filterCondition =
       nameFilter === null
         ? true
         : nameLower.includes(nameFilterLower) ||
@@ -79,7 +80,14 @@ function ItemContent({
           (item.name === "Humbleing Bundle" &&
             "humbling bundle".includes(nameFilterLower));
 
-    return [filterByName].every((condition) => condition);
+    // TYPE
+    const typeTrans = {
+      passive: "pasywny",
+      active: "aktywny",
+    };
+    const typeCondition = itemTypeFilter.includes(typeTrans[item.type]);
+
+    return [filterCondition, typeCondition].every((condition) => condition);
   };
 
   return (
