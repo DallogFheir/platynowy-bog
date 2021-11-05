@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
-import { itemPools } from "./data/itemData";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Description from "./components/Description";
@@ -41,7 +40,6 @@ function App() {
           typeOption={typeOption}
           filterOption={filterOption}
           nameFilter={nameFilter}
-          itemPools={itemPools}
           popup={popup}
         />
       </div>

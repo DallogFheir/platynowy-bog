@@ -3,6 +3,7 @@ import {
   itemImageData,
   itemColorData,
   dInfinitySprites,
+  itemTransformations,
 } from "../../../data/itemData";
 
 function ItemContent({
@@ -13,6 +14,7 @@ function ItemContent({
   itemQualityFilter,
   itemRechargeFilter,
   itemPoolFilter,
+  itemTransformationFilter,
   itemsStatus,
   itemsContent,
 }) {
@@ -155,12 +157,21 @@ function ItemContent({
 
     const poolCondition = itemPoolFilter.some((pool) => pools.includes(pool));
 
+    // TRANSFORMATIONS
+    const transformationCondition =
+      itemTransformationFilter === null
+        ? true
+        : "transformation" in item
+        ? item.transformation.includes(itemTransformationFilter)
+        : false;
+
     return [
       filterCondition,
       typeCondition,
       qualityCondition,
       rechargeCondition,
       poolCondition,
+      transformationCondition,
     ].every((condition) => condition);
   };
 

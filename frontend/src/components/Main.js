@@ -1,19 +1,13 @@
 import { useState } from "react";
 import useAPI from "../hooks/useAPI";
 import useLocalStorage from "../hooks/useLocalStorage";
+import { itemPools, itemTransformations } from "../data/itemData";
 import Description from "./Description";
 import ItemContent from "./main/content/ItemContent";
 import ItemFilters from "./main/filters/ItemFilters";
 import "./Main.css";
 
-function Main({
-  sortOption,
-  typeOption,
-  filterOption,
-  nameFilter,
-  itemPools,
-  popup,
-}) {
+function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
   const [desc, setDesc] = useState(null);
 
   //   API STATES
@@ -52,6 +46,8 @@ function Main({
     "itemPoolFilter",
     itemPools.map(([poolName, _]) => poolName)
   );
+  const [itemTransformationFilter, setItemTransformationFilter] =
+    useLocalStorage("itemTransformationFilter", null);
 
   return (
     <main className="container-fluid text-light">
@@ -77,6 +73,8 @@ function Main({
                       setItemRechargeFilter={setItemRechargeFilter}
                       itemPoolFilter={itemPoolFilter}
                       setItemPoolFilter={setItemPoolFilter}
+                      itemTransformationFilter={itemTransformationFilter}
+                      setItemTransformationFilter={setItemTransformationFilter}
                       itemTypes={itemTypes}
                       itemQualities={itemQualities}
                       itemRecharges={itemRecharges}
@@ -98,6 +96,7 @@ function Main({
                       itemQualityFilter={itemQualityFilter}
                       itemRechargeFilter={itemRechargeFilter}
                       itemPoolFilter={itemPoolFilter}
+                      itemTransformationFilter={itemTransformationFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                     />

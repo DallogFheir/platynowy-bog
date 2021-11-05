@@ -1,3 +1,4 @@
+import { itemTransformations } from "../../../data/itemData";
 import "./Filters.css";
 
 function ItemFilters({
@@ -9,6 +10,8 @@ function ItemFilters({
   setItemRechargeFilter,
   itemPoolFilter,
   setItemPoolFilter,
+  itemTransformationFilter,
+  setItemTransformationFilter,
   itemTypes,
   itemQualities,
   itemRecharges,
@@ -192,6 +195,33 @@ function ItemFilters({
         >
           wszystkie
         </button>
+      </div>
+      <div className="mt-2">
+        <span className="filter-name">Transformacja:</span>
+        {itemTransformations.map(
+          ([transformationName, transformationImage], transformationIdx) => (
+            <img
+              key={transformationIdx}
+              className={[
+                "ms-2",
+                "mt-1",
+                "clickable",
+                itemTransformationFilter === transformationName
+                  ? ""
+                  : "unselected",
+              ].join(" ")}
+              src={`data:image/png;base64,${transformationImage}`}
+              alt=""
+              onClick={() => {
+                if (itemTransformationFilter === transformationName) {
+                  setItemTransformationFilter(null);
+                } else {
+                  setItemTransformationFilter(transformationName);
+                }
+              }}
+            />
+          )
+        )}
       </div>
     </div>
   );
