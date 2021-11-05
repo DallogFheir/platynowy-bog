@@ -1,13 +1,21 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 function useAPI(resource, typeState) {
-  const [status, setStatus] = useState("loading");
+  const [leftPage, setLeftPage] = useState(true);
+  const [status, setStatus] = useState("start");
   const [content, setContent] = useState(null);
 
-  const fetchResource = useCallback(async () => {
-    //   only fetch if status is not loaded
-    if (status !== "loaded") {
+  //   whenever typeState changes, page was left
+  useEffect(() => {
+    setLeftPage(true);
+  }, [typeState, setLeftPage]);
+
+  useEffect(() => {
+    const fetchResource = async () => {
+      setLeftPage(false);
+
       try {
+        setStatus("loading");
         const res = await fetch(`http://localhost:5000/api/${resource}`);
 
         if (res.ok) {
@@ -20,19 +28,21 @@ function useAPI(resource, typeState) {
       } catch (e) {
         setStatus("failed");
       }
-    }
-  }, [resource, status]);
+    };
 
-  //   retry fetching if type state changes to current resource
-  useEffect(() => {
     const typeStateTrans = {
       przedmioty: "items",
     };
 
-    if (typeStateTrans[typeState] === resource) {
+    // retry fetching if page was left, fetching failed previously (or is first one), and resource is current
+    if (
+      leftPage &&
+      (status === "failed" || status === "start") &&
+      typeStateTrans[typeState] === resource
+    ) {
       fetchResource();
     }
-  }, [resource, fetchResource, typeState]);
+  }, [resource, typeState, leftPage, setLeftPage, status]);
 
   return [content, status];
 }

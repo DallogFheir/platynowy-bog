@@ -179,6 +179,7 @@ function ItemContent({
     <>
       {(() => {
         switch (itemsStatus) {
+          case "start":
           case "loading":
             return (
               <p className="text-center mt-2 fs-5">
