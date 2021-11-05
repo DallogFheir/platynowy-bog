@@ -1,12 +1,13 @@
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
+import fortunes from "./data/fortunes";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Description from "./components/Description";
 import "./App.css";
 
 function App() {
-  // GLOBAL STATES
+  // #region GLOBAL STATES
   // sorting/filtering options
   const [typeOption, setTypeOption] = useLocalStorage(
     "typeOption",
@@ -22,6 +23,15 @@ function App() {
 
   const [popup, setPopup] = useState(false);
   const popupDiv = useRef(null);
+  //   #endregion
+
+  // print fortune to console
+  useEffect(() => {
+    console.log(
+      "%c(╥_╥) " + fortunes[Math.floor(Math.random() * fortunes.length)],
+      "font-variant: small-caps; font-size: 20px;"
+    );
+  }, []);
 
   return (
     <>
