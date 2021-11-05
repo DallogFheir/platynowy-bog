@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
+import { itemPools, itemTransformations } from "./data/itemData";
 import fortunes from "./data/fortunes";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
@@ -36,6 +37,18 @@ function App() {
     );
   }, []);
 
+  //   add listener to close popup
+  useEffect(() => {
+    const listener = (e) => {
+      if (popup && !popupDiv.current?.contains(e.target)) {
+        setPopup(false);
+        setSelectedContent(null);
+      }
+    };
+    document.addEventListener("click", listener);
+    return () => document.removeEventListener("click", listener);
+  }, [popup]);
+
   return (
     <>
       <div className={["wrapper", popup ? "popup-active" : ""].join(" ")}>
@@ -56,11 +69,19 @@ function App() {
           selectedContent={selectedContent}
           setSelectedContent={setSelectedContent}
           popup={popup}
+          setPopup={setPopup}
+          itemPools={itemPools}
+          itemTransformations={itemTransformations}
         />
       </div>
       {popup && (
         <div ref={popupDiv} className="desc-popup">
-          <Description />
+          <Description
+            itemPools={itemPools}
+            itemTransformations={itemTransformations}
+            selectedContent={selectedContent}
+            popup={popup}
+          />
         </div>
       )}
     </>

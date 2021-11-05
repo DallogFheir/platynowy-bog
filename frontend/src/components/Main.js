@@ -1,6 +1,5 @@
 import useAPI from "../hooks/useAPI";
 import useLocalStorage from "../hooks/useLocalStorage";
-import { itemPools, itemTransformations } from "../data/itemData";
 import Description from "./Description";
 import ItemContent from "./main/content/ItemContent";
 import ItemFilters from "./main/filters/ItemFilters";
@@ -14,6 +13,9 @@ function Main({
   selectedContent,
   setSelectedContent,
   popup,
+  setPopup,
+  itemPools,
+  itemTransformations,
 }) {
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
@@ -105,6 +107,8 @@ function Main({
                       itemPools={itemPools}
                     />
                   );
+                default:
+                  throw new Error(`Unknown type option: ${typeOption}`);
               }
             })()}
             <hr />
@@ -126,8 +130,12 @@ function Main({
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                       setSelectedContent={setSelectedContent}
+                      popup={popup}
+                      setPopup={setPopup}
                     />
                   );
+                default:
+                  throw new Error(`Unknown type option: ${typeOption}`);
               }
             })()}
           </div>

@@ -19,6 +19,8 @@ function ItemContent({
   itemsStatus,
   itemsContent,
   setSelectedContent,
+  popup,
+  setPopup,
 }) {
   const itemColors = [
     "multicolor",
@@ -271,7 +273,13 @@ function ItemContent({
                         setSelectedContent(item);
                       }}
                       onMouseOut={() => {
-                        setSelectedContent(null);
+                        //   only set selected back to null if popup is not up
+                        // otherwise it will trigger
+                        !popup && setSelectedContent(null);
+                      }}
+                      onClick={() => {
+                        setSelectedContent(item);
+                        setPopup(true);
                       }}
                     />
                   ))}
