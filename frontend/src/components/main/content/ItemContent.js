@@ -11,10 +11,10 @@ function ItemContent({
   nameFilter,
   itemTypeFilter,
   itemQualityFilter,
+  itemRechargeFilter,
   itemsStatus,
   itemsContent,
 }) {
-  // VARIABLES
   const itemColors = [
     "multicolor",
     "white",
@@ -36,7 +36,6 @@ function ItemContent({
     "black",
   ];
 
-  //   FUNCTIONS
   const filterItems = (item) => {
     // NAMES & QUOTES
     const birthrightQuotes = [
@@ -95,9 +94,33 @@ function ItemContent({
     // QUALITY
     const qualityCondition = itemQualityFilter.includes(item.quality);
 
-    return [filterCondition, typeCondition, qualityCondition].every(
-      (condition) => condition
-    );
+    // RECHARGE TIME
+    let rechargeCondition;
+
+    const rechargeTrans = {
+      "one time use": "jednorazowego użytku",
+      unlimited: "nielimitowany",
+      other: "inny",
+    };
+
+    if (item.type === "active") {
+      const rechargeTime = Number.isInteger(item.rechargeTime.amount)
+        ? item.rechargeTime.unit === "rooms"
+          ? item.rechargeTime.amount
+          : "czasowy"
+        : rechargeTrans[item.rechargeTime.amount];
+
+      rechargeCondition = itemRechargeFilter.includes(rechargeTime);
+    } else {
+      rechargeCondition = true;
+    }
+
+    return [
+      filterCondition,
+      typeCondition,
+      qualityCondition,
+      rechargeCondition,
+    ].every((condition) => condition);
   };
 
   return (

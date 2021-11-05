@@ -6670,7 +6670,7 @@
     "quote": "Fetus shots",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
     "unlock": { "boss": "The Beast", "character": "Lilith" },
-    "type": "active"
+    "type": "passive"
   },
   "679": {
     "id": 679,

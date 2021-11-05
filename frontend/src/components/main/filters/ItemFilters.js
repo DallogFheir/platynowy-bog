@@ -5,18 +5,23 @@ function ItemFilters({
   setItemTypeFilter,
   itemQualityFilter,
   setItemQualityFilter,
+  itemRechargeFilter,
+  setItemRechargeFilter,
   itemTypes,
   itemQualities,
+  itemRecharges,
 }) {
   return (
     <div>
       <div>
         <span className="filter-name">Typ:</span>
-        {itemTypes.map((type) => (
+        {itemTypes.map((type, typeIdx) => (
           <button
+            key={typeIdx}
             className={[
               "btn",
               "ms-2",
+              "mt-2",
               itemTypeFilter.includes(type) ? "btn-light" : "btn-secondary",
             ].join(" ")}
             type="button"
@@ -34,11 +39,13 @@ function ItemFilters({
       </div>
       <div className="mt-2">
         <span className="filter-name">Jakość:</span>
-        {itemQualities.map((quality) => (
+        {itemQualities.map((quality, qualityIdx) => (
           <button
+            key={qualityIdx}
             className={[
               "btn",
               "ms-2",
+              "mt-2",
               itemQualityFilter.includes(quality)
                 ? "btn-light"
                 : "btn-secondary",
@@ -72,6 +79,54 @@ function ItemFilters({
             //   otherwise select none
             else {
               setItemQualityFilter([]);
+            }
+          }}
+        >
+          wszystkie
+        </button>
+      </div>
+      <div className="mt-2">
+        <span className="filter-name">Czas ładowania:</span>
+        {itemRecharges.map((recharge, rechargeIdx) => (
+          <button
+            key={rechargeIdx}
+            className={[
+              "btn",
+              "ms-2",
+              "mt-2",
+              itemRechargeFilter.includes(recharge)
+                ? "btn-light"
+                : "btn-secondary",
+            ].join(" ")}
+            type="button"
+            onClick={() => {
+              if (itemRechargeFilter.includes(recharge)) {
+                setItemRechargeFilter(
+                  itemRechargeFilter.filter((el) => el !== recharge)
+                );
+              } else {
+                setItemRechargeFilter([...itemRechargeFilter, recharge]);
+              }
+            }}
+          >
+            {recharge}
+          </button>
+        ))}
+        <button
+          type="button"
+          className="btn ms-2 mt-2 btn-success"
+          onClick={() => {
+            //   if not all selected, select all
+            if (
+              itemRecharges.filter(
+                (recharge) => !itemRechargeFilter.includes(recharge)
+              ).length !== 0
+            ) {
+              setItemRechargeFilter([...itemRecharges]);
+            }
+            //   otherwise select none
+            else {
+              setItemRechargeFilter([]);
             }
           }}
         >

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useAPI from "../hooks/useAPI";
+import useLocalStorage from "../hooks/useLocalStorage";
 import Description from "./Description";
 import ItemContent from "./main/content/ItemContent";
 import ItemFilters from "./main/filters/ItemFilters";
@@ -14,10 +15,32 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
   //   VARIABLES
   const itemTypes = ["pasywny", "aktywny"];
   const itemQualities = [0, 1, 2, 3, 4];
+  const itemRecharges = [
+    1,
+    2,
+    3,
+    4,
+    6,
+    12,
+    "czasowy",
+    "nielimitowany",
+    "jednorazowego użytku",
+    "inny",
+  ];
 
   // FILTERS
-  const [itemTypeFilter, setItemTypeFilter] = useState(itemTypes);
-  const [itemQualityFilter, setItemQualityFilter] = useState(itemQualities);
+  const [itemTypeFilter, setItemTypeFilter] = useLocalStorage(
+    "itemTypeFilter",
+    itemTypes
+  );
+  const [itemQualityFilter, setItemQualityFilter] = useLocalStorage(
+    "itemQualityFilter",
+    itemQualities
+  );
+  const [itemRechargeFilter, setItemRechargeFilter] = useLocalStorage(
+    "itemRechargeFilter",
+    itemRecharges
+  );
 
   return (
     <main className="container-fluid text-light">
@@ -39,8 +62,11 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                       setItemTypeFilter={setItemTypeFilter}
                       itemQualityFilter={itemQualityFilter}
                       setItemQualityFilter={setItemQualityFilter}
+                      itemRechargeFilter={itemRechargeFilter}
+                      setItemRechargeFilter={setItemRechargeFilter}
                       itemTypes={itemTypes}
                       itemQualities={itemQualities}
+                      itemRecharges={itemRecharges}
                     />
                   );
               }
@@ -56,6 +82,7 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                       nameFilter={nameFilter}
                       itemTypeFilter={itemTypeFilter}
                       itemQualityFilter={itemQualityFilter}
+                      itemRechargeFilter={itemRechargeFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                     />
