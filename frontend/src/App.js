@@ -18,8 +18,11 @@ function App() {
     "filterOption",
     "usuń"
   );
-  //   filters
+
+  //   other
   const [nameFilter, setNameFilter] = useState(null);
+
+  const [selectedContent, setSelectedContent] = useState(null);
 
   const [popup, setPopup] = useState(false);
   const popupDiv = useRef(null);
@@ -50,6 +53,8 @@ function App() {
           typeOption={typeOption}
           filterOption={filterOption}
           nameFilter={nameFilter}
+          selectedContent={selectedContent}
+          setSelectedContent={setSelectedContent}
           popup={popup}
         />
       </div>

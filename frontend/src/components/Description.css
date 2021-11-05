@@ -1,0 +1,47 @@
+.desc-container {
+  position: sticky;
+  top: 0;
+}
+
+.obj-name {
+  margin-bottom: 0;
+  font-variant: small-caps;
+}
+
+.obj-name u {
+  font-size: 1.02em;
+}
+
+.obj-prop {
+  font-size: 1em;
+}
+
+.obj-quote {
+  font-size: 80%;
+  color: rgb(224, 224, 224);
+  font-size: 1em;
+}
+
+.obj-info {
+  font-variant: small-caps;
+  font-size: 1em;
+}
+
+.obj-desc {
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+.obj-desc li {
+  margin-bottom: 4px;
+}
+
+.obj-desc-short {
+  font-size: 0.8em;
+  color: rgb(187, 187, 187);
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

@@ -18,6 +18,7 @@ function ItemContent({
   itemBossFilter,
   itemsStatus,
   itemsContent,
+  setSelectedContent,
 }) {
   const itemColors = [
     "multicolor",
@@ -266,6 +267,12 @@ function ItemContent({
                         !filterItems(item) ? "unselected" : "",
                         item.name === "Dark Bum" ? "dark-bum" : "",
                       ].join(" ")}
+                      onMouseOver={() => {
+                        setSelectedContent(item);
+                      }}
+                      onMouseOut={() => {
+                        setSelectedContent(null);
+                      }}
                     />
                   ))}
               </div>

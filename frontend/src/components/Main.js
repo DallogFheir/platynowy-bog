@@ -1,15 +1,20 @@
-import { useState } from "react";
 import useAPI from "../hooks/useAPI";
 import useLocalStorage from "../hooks/useLocalStorage";
-import { itemPools } from "../data/itemData";
+import { itemPools, itemTransformations } from "../data/itemData";
 import Description from "./Description";
 import ItemContent from "./main/content/ItemContent";
 import ItemFilters from "./main/filters/ItemFilters";
 import "./Main.css";
 
-function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
-  const [desc, setDesc] = useState(null);
-
+function Main({
+  sortOption,
+  typeOption,
+  filterOption,
+  nameFilter,
+  selectedContent,
+  setSelectedContent,
+  popup,
+}) {
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
 
@@ -62,7 +67,14 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
       <div className="row">
         <div className="d-none d-md-block col-md-3 desc">
           {/* show description if popup isn't up */}
-          {desc && !popup && <Description />}
+          {selectedContent && !popup && (
+            <Description
+              itemPools={itemPools}
+              itemTransformations={itemTransformations}
+              selectedContent={selectedContent}
+              popup={popup}
+            />
+          )}
         </div>
         <div className="col-md-9 items">
           <div className="mt-2">
@@ -113,6 +125,7 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                       itemBossFilter={itemBossFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
+                      setSelectedContent={setSelectedContent}
                     />
                   );
               }

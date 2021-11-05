@@ -1,5 +1,223 @@
-function Description() {
-  return <div></div>;
+import parse from "html-react-parser";
+import { itemDescriptionData, poolOrder } from "../data/itemData";
+import "./Description.css";
+
+function Description({
+  itemPools,
+  itemTransformations,
+  selectedContent,
+  popup,
+}) {
+  // #region PARSING FUNCTIONS
+  const parseDescription = (itemId) => {
+    const desc = itemDescriptionData[itemId];
+    const paragraphs = desc.split("\n");
+    const textArray = [];
+    let firstLiYetToGet = true;
+    let thereAreLis = false;
+    let firstLi;
+    let lastLi;
+
+    //   convert * to <li>s and ** to <em>s
+    for (const [idx, p] of paragraphs.entries()) {
+      if (p.startsWith("* ")) {
+        thereAreLis = true;
+
+        textArray.push(`<li>${p.replace("* ", "")}</li>`);
+
+        if (firstLiYetToGet) {
+          firstLi = idx;
+          firstLiYetToGet = false;
+        }
+        lastLi = idx;
+      } else {
+        textArray.push(`<p class="obj-desc">${p}</p>`);
+      }
+    }
+
+    if (thereAreLis) {
+      textArray.splice(firstLi, 0, '<ul class="obj-desc">');
+      textArray.splice(lastLi + 2, 0, "</ul>");
+    }
+
+    let text;
+    // if desc isn't in popup, cut down to 600 characters
+    if (!popup) {
+      let characterCount = 0;
+      const cutTextArray = [];
+      for (const textFrag of textArray) {
+        characterCount += textFrag.length;
+
+        if (characterCount <= 600) {
+          cutTextArray.push(textFrag);
+        } else {
+          break;
+        }
+      }
+
+      if (cutTextArray.length !== textArray.length) {
+        cutTextArray.push(
+          '<p class="obj-desc-short">Naciśnij na ikonę przedmiotu, żeby zobaczyć pełny opis.</p>'
+        );
+      }
+
+      text = cutTextArray.join("");
+    } else {
+      text = textArray.join("");
+    }
+
+    return text;
+  };
+
+  const parseRechargeTime = (rechargeTimeToParse) => {
+    const rechargeTimeTrans = {
+      unlimited: "nielimitowany",
+      "one time use": "jednorazowego użytku",
+      other: "inny",
+    };
+
+    if (Number.isInteger(rechargeTimeToParse.amount)) {
+      if (rechargeTimeToParse.unit === "rooms") {
+        return rechargeTimeToParse.amount;
+      } else {
+        return `${rechargeTimeToParse.amount} s`;
+      }
+    } else {
+      return rechargeTimeTrans[rechargeTimeToParse.amount];
+    }
+  };
+
+  const parsePools = (poolsToParse) => {
+    const pools = [];
+    for (const poolType in poolsToParse) {
+      switch (poolType) {
+        case "normal":
+        case "beggars":
+        case "chests":
+        case "other":
+          pools.push(...poolsToParse[poolType]);
+          break;
+        case "Greed Mode":
+          pools.push(
+            ...poolsToParse["Greed Mode"].map((pool) => `Greed ${pool}`)
+          );
+          break;
+        case "mini-boss":
+        case "boss":
+        case "starting item":
+        case "obstacles":
+          pools.push(poolType);
+          break;
+        case "machines":
+          if (poolsToParse["machines"].includes("Crane Game")) {
+            pools.push("Crane Game");
+          }
+
+          const machinesWithoutCraneGame = poolsToParse["machines"].filter(
+            (machine) => machine !== "Crane Game"
+          );
+
+          if (machinesWithoutCraneGame.length !== 0) {
+            pools.push("machines");
+          }
+          break;
+        default:
+          throw new Error(`Pool is of unknown type: ${poolType}.`);
+      }
+    }
+
+    pools.sort((a, b) => poolOrder.indexOf(a) - poolOrder.indexOf(b));
+    return pools;
+  };
+
+  const parseUnlock = (unlockToParse) => {
+    const bossTrans = {
+      Satan: "Szatana",
+      Isaac: "Isaaca",
+      "Boss Rush": "Boss Rusha",
+      Hush: "Husha",
+      "Mega Satan": "Mega Szatana",
+    };
+
+    return `pokonanie ${
+      unlockToParse.boss in bossTrans
+        ? bossTrans[unlockToParse.boss]
+        : unlockToParse.boss
+    } jako ${unlockToParse.character}`;
+  };
+  //   #endregion
+
+  return (
+    <div className="text-center mt-2 text-light desc-container">
+      {/* {popup && <img src={`data:image/png;base64`} alt="" />} */}
+      <p className="fs-5 obj-name">
+        {/* sometimes show wrong name for Monster Manua/el */}
+        <u>
+          {selectedContent.name === "Monster Manual"
+            ? Math.floor(Math.random() * 10) >= 6
+              ? "Monster Manuel"
+              : "Monster Manual"
+            : selectedContent.name}
+        </u>
+      </p>
+      <p className="obj-quote">"{selectedContent.quote}"</p>
+      <hr />
+      {parse(parseDescription(selectedContent.id))}
+      <hr />
+      <p className="mb-1 obj-prop">
+        <span className="obj-info">Id:</span> {selectedContent.id}
+      </p>
+      <p className="mb-1 obj-prop">
+        <span className="obj-info">Jakość: </span>
+        {selectedContent.quality}
+      </p>
+      <p className="mb-1 obj-prop">
+        <span className="obj-info">Typ: </span>
+        {selectedContent.type === "active" ? "aktywny" : "pasywny"}
+      </p>
+      {selectedContent.type === "active" && (
+        <p className="mb-1 obj-prop">
+          <span className="obj-info">Czas ładowania: </span>
+          {parseRechargeTime(selectedContent.rechargeTime)}
+        </p>
+      )}
+      <p>
+        <span className="obj-info">Pula: </span>
+        {parsePools(selectedContent.pool).map((pool, poolIdx) => (
+          <img
+            key={poolIdx}
+            src={`data:image/webp;base64,${
+              itemPools.filter(([poolName, _]) => poolName === pool)[0][1]
+            }`}
+            alt=""
+            className="me-1"
+          />
+        ))}
+      </p>
+      {selectedContent.transformation && (
+        <p>
+          <span className="obj-info">Transformacja: </span>
+          {selectedContent.transformation.map((trans, transIdx) => (
+            <img
+              key={transIdx}
+              src={`data:image/png;base64,${
+                itemTransformations.filter(
+                  ([transName, _]) => transName === trans
+                )[0][1]
+              }`}
+              alt=""
+            />
+          ))}
+        </p>
+      )}
+      {"unlock" in selectedContent && (
+        <p className="obj-prop">
+          <span className="obj-info">Sposób odblokowania: </span> <br />
+          {parseUnlock(selectedContent.unlock)}
+        </p>
+      )}
+    </div>
+  );
 }
 
 export default Description;
