@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useAPI from "../hooks/useAPI";
 import useLocalStorage from "../hooks/useLocalStorage";
-import { itemPools, itemTransformations } from "../data/itemData";
+import { itemPools } from "../data/itemData";
 import Description from "./Description";
 import ItemContent from "./main/content/ItemContent";
 import ItemFilters from "./main/filters/ItemFilters";
@@ -48,6 +48,14 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
   );
   const [itemTransformationFilter, setItemTransformationFilter] =
     useLocalStorage("itemTransformationFilter", null);
+  const [itemCharacterFilter, setItemCharacterFilter] = useLocalStorage(
+    "itemCharacterFilter",
+    null
+  );
+  const [itemBossFilter, setItemBossFilter] = useLocalStorage(
+    "itemBossFilter",
+    null
+  );
 
   return (
     <main className="container-fluid text-light">
@@ -75,6 +83,10 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                       setItemPoolFilter={setItemPoolFilter}
                       itemTransformationFilter={itemTransformationFilter}
                       setItemTransformationFilter={setItemTransformationFilter}
+                      itemCharacterFilter={itemCharacterFilter}
+                      setItemCharacterFilter={setItemCharacterFilter}
+                      itemBossFilter={itemBossFilter}
+                      setItemBossFilter={setItemBossFilter}
                       itemTypes={itemTypes}
                       itemQualities={itemQualities}
                       itemRecharges={itemRecharges}
@@ -97,6 +109,8 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                       itemRechargeFilter={itemRechargeFilter}
                       itemPoolFilter={itemPoolFilter}
                       itemTransformationFilter={itemTransformationFilter}
+                      itemCharacterFilter={itemCharacterFilter}
+                      itemBossFilter={itemBossFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                     />

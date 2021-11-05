@@ -1,4 +1,8 @@
-import { itemTransformations } from "../../../data/itemData";
+import {
+  itemTransformations,
+  itemCharacters,
+  itemBosses,
+} from "../../../data/itemData";
 import "./Filters.css";
 
 function ItemFilters({
@@ -12,6 +16,10 @@ function ItemFilters({
   setItemPoolFilter,
   itemTransformationFilter,
   setItemTransformationFilter,
+  itemCharacterFilter,
+  setItemCharacterFilter,
+  itemBossFilter,
+  setItemBossFilter,
   itemTypes,
   itemQualities,
   itemRecharges,
@@ -222,6 +230,52 @@ function ItemFilters({
             />
           )
         )}
+      </div>
+      <div className="mt-2">
+        <span className="filter-name">Postać odblokowująca:</span>
+        {itemCharacters.map(([characterName, characterImage], characterIdx) => (
+          <img
+            key={characterIdx}
+            className={[
+              "ms-2",
+              "mt-1",
+              "clickable",
+              itemCharacterFilter === characterName ? "" : "unselected",
+            ].join(" ")}
+            src={`data:image/png;base64,${characterImage}`}
+            alt=""
+            onClick={() => {
+              if (itemCharacterFilter === characterName) {
+                setItemCharacterFilter(null);
+              } else {
+                setItemCharacterFilter(characterName);
+              }
+            }}
+          />
+        ))}
+      </div>
+      <div className="mt-2">
+        <span className="filter-name">Boss odblokowujący:</span>
+        {itemBosses.map(([bossName, bossImage], bossIdx) => (
+          <img
+            key={bossIdx}
+            className={[
+              "ms-2",
+              "mt-1",
+              "clickable",
+              itemBossFilter === bossName ? "" : "unselected",
+            ].join(" ")}
+            src={`data:image/png;base64,${bossImage}`}
+            alt=""
+            onClick={() => {
+              if (itemBossFilter === bossName) {
+                setItemBossFilter(null);
+              } else {
+                setItemBossFilter(bossName);
+              }
+            }}
+          />
+        ))}
       </div>
     </div>
   );

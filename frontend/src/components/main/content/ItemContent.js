@@ -3,7 +3,6 @@ import {
   itemImageData,
   itemColorData,
   dInfinitySprites,
-  itemTransformations,
 } from "../../../data/itemData";
 
 function ItemContent({
@@ -15,6 +14,8 @@ function ItemContent({
   itemRechargeFilter,
   itemPoolFilter,
   itemTransformationFilter,
+  itemCharacterFilter,
+  itemBossFilter,
   itemsStatus,
   itemsContent,
 }) {
@@ -165,6 +166,22 @@ function ItemContent({
         ? item.transformation.includes(itemTransformationFilter)
         : false;
 
+    // CHARACTER TO UNLOCK ITEM
+    const characterCondition =
+      itemCharacterFilter === null
+        ? true
+        : "unlock" in item && "character" in item.unlock
+        ? item.unlock.character === itemCharacterFilter
+        : false;
+
+    // BOSS TO UNLOCK ITEM
+    const bossCondition =
+      itemBossFilter === null
+        ? true
+        : "unlock" in item && "boss" in item.unlock
+        ? item.unlock.boss === itemBossFilter
+        : false;
+
     return [
       filterCondition,
       typeCondition,
@@ -172,6 +189,8 @@ function ItemContent({
       rechargeCondition,
       poolCondition,
       transformationCondition,
+      characterCondition,
+      bossCondition,
     ].every((condition) => condition);
   };
 
