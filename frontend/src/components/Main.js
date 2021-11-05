@@ -6,7 +6,14 @@ import ItemContent from "./main/content/ItemContent";
 import ItemFilters from "./main/filters/ItemFilters";
 import "./Main.css";
 
-function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
+function Main({
+  sortOption,
+  typeOption,
+  filterOption,
+  nameFilter,
+  itemPools,
+  popup,
+}) {
   const [desc, setDesc] = useState(null);
 
   //   API STATES
@@ -41,6 +48,10 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
     "itemRechargeFilter",
     itemRecharges
   );
+  const [itemPoolFilter, setItemPoolFilter] = useLocalStorage(
+    "itemPoolFilter",
+    itemPools.map(([poolName, _]) => poolName)
+  );
 
   return (
     <main className="container-fluid text-light">
@@ -64,9 +75,12 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                       setItemQualityFilter={setItemQualityFilter}
                       itemRechargeFilter={itemRechargeFilter}
                       setItemRechargeFilter={setItemRechargeFilter}
+                      itemPoolFilter={itemPoolFilter}
+                      setItemPoolFilter={setItemPoolFilter}
                       itemTypes={itemTypes}
                       itemQualities={itemQualities}
                       itemRecharges={itemRecharges}
+                      itemPools={itemPools}
                     />
                   );
               }
@@ -83,6 +97,7 @@ function Main({ sortOption, typeOption, filterOption, nameFilter, popup }) {
                       itemTypeFilter={itemTypeFilter}
                       itemQualityFilter={itemQualityFilter}
                       itemRechargeFilter={itemRechargeFilter}
+                      itemPoolFilter={itemPoolFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                     />

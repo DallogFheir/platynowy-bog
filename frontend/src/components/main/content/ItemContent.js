@@ -12,6 +12,7 @@ function ItemContent({
   itemTypeFilter,
   itemQualityFilter,
   itemRechargeFilter,
+  itemPoolFilter,
   itemsStatus,
   itemsContent,
 }) {
@@ -115,11 +116,51 @@ function ItemContent({
       rechargeCondition = true;
     }
 
+    // POOLS
+    const pools = [];
+    for (const poolType in item.pool) {
+      switch (poolType) {
+        case "normal":
+        case "beggars":
+        case "chests":
+        case "other":
+          pools.push(...item.pool[poolType]);
+          break;
+        case "Greed Mode":
+          pools.push(...item.pool["Greed Mode"].map((pool) => `Greed ${pool}`));
+          break;
+        case "mini-boss":
+        case "boss":
+        case "starting item":
+        case "obstacles":
+          pools.push(poolType);
+          break;
+        case "machines":
+          if (item.pool["machines"].includes("Crane Game")) {
+            pools.push("Crane Game");
+          }
+
+          const machinesWithoutCraneGame = item.pool["machines"].filter(
+            (machine) => machine !== "Crane Game"
+          );
+
+          if (machinesWithoutCraneGame.length !== 0) {
+            pools.push("machines");
+          }
+          break;
+        default:
+          throw new Error(`Pool is of unknown type: ${poolType}.`);
+      }
+    }
+
+    const poolCondition = itemPoolFilter.some((pool) => pools.includes(pool));
+
     return [
       filterCondition,
       typeCondition,
       qualityCondition,
       rechargeCondition,
+      poolCondition,
     ].every((condition) => condition);
   };
 

@@ -8,7 +8,10 @@ from time import sleep
 
 
 def open_resource(resource_name):
-    return open(Path(__file__).parent.parent / "resources" / (resource_name + ".json"))
+    return open(
+        Path(__file__).parent.parent / "resources" / (resource_name + ".json"),
+        encoding="utf-8",
+    )
 
 
 # ITEMS
@@ -18,3 +21,11 @@ def items():
         items = json.load(f)
 
     return jsonify(items)
+
+
+@app.route("/api/items/<id>")
+def items_id(id):
+    with open_resource("items") as f:
+        items = json.load(f)
+
+    return jsonify(items[id])

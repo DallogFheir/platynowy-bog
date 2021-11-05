@@ -1,3 +1,8 @@
 .filter-name {
   font-variant: small-caps;
 }
+
+/* underline under pools with on-hover info */
+.pool-info {
+  border-bottom: 1px dotted white;
+}

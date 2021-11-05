@@ -7,10 +7,23 @@ function ItemFilters({
   setItemQualityFilter,
   itemRechargeFilter,
   setItemRechargeFilter,
+  itemPoolFilter,
+  setItemPoolFilter,
   itemTypes,
   itemQualities,
   itemRecharges,
+  itemPools,
 }) {
+  const poolsHoverInfo = {
+    "Baby Shop": "sklepy z Adoption Papers",
+    "mini-boss": "mini-bossy",
+    boss: "konkretny boss",
+    obstacles: "przeszkody",
+    machines: "inne maszyny",
+    "starting item": "przedmioty startowe postaci lub ich wbudowane mechaniki",
+    other: "inna",
+  };
+
   return (
     <div>
       <div>
@@ -21,7 +34,7 @@ function ItemFilters({
             className={[
               "btn",
               "ms-2",
-              "mt-2",
+              "mt-1",
               itemTypeFilter.includes(type) ? "btn-light" : "btn-secondary",
             ].join(" ")}
             type="button"
@@ -45,7 +58,7 @@ function ItemFilters({
             className={[
               "btn",
               "ms-2",
-              "mt-2",
+              "mt-1",
               itemQualityFilter.includes(quality)
                 ? "btn-light"
                 : "btn-secondary",
@@ -66,7 +79,7 @@ function ItemFilters({
         ))}
         <button
           type="button"
-          className="btn ms-2 btn-success"
+          className="btn ms-2 mt-1 btn-success"
           onClick={() => {
             //   if not all selected, select all
             if (
@@ -93,7 +106,7 @@ function ItemFilters({
             className={[
               "btn",
               "ms-2",
-              "mt-2",
+              "mt-1",
               itemRechargeFilter.includes(recharge)
                 ? "btn-light"
                 : "btn-secondary",
@@ -114,7 +127,7 @@ function ItemFilters({
         ))}
         <button
           type="button"
-          className="btn ms-2 mt-2 btn-success"
+          className="btn ms-2 mt-1 btn-success"
           onClick={() => {
             //   if not all selected, select all
             if (
@@ -127,6 +140,53 @@ function ItemFilters({
             //   otherwise select none
             else {
               setItemRechargeFilter([]);
+            }
+          }}
+        >
+          wszystkie
+        </button>
+      </div>
+      <div className="mt-2">
+        <span className="filter-name">Pula:</span>
+        {itemPools.map(([poolName, poolImage], poolIdx) => (
+          <img
+            key={poolIdx}
+            className={[
+              "ms-2",
+              "mt-1",
+              "clickable",
+              itemPoolFilter.includes(poolName) ? "" : "unselected",
+              poolName in poolsHoverInfo ? "pool-info" : "",
+            ].join(" ")}
+            src={`data:image/png;base64,${poolImage}`}
+            alt=""
+            title={poolName in poolsHoverInfo ? poolsHoverInfo[poolName] : ""}
+            onClick={() => {
+              if (itemPoolFilter.includes(poolName)) {
+                setItemPoolFilter(
+                  itemPoolFilter.filter((el) => el !== poolName)
+                );
+              } else {
+                setItemPoolFilter([...itemPoolFilter, poolName]);
+              }
+            }}
+          />
+        ))}
+        <button
+          type="button"
+          className="btn ms-2 mt-1 btn-success"
+          onClick={() => {
+            //   if not all selected, select all
+            if (
+              itemPools.filter(
+                ([poolName, _]) => !itemPoolFilter.includes(poolName)
+              ).length !== 0
+            ) {
+              setItemPoolFilter(itemPools.map(([poolName, _]) => poolName));
+            }
+            //   otherwise select none
+            else {
+              setItemPoolFilter([]);
             }
           }}
         >
