@@ -233,7 +233,7 @@ function ItemContent({
           case "loaded":
             return (
               <div>
-                {Object.values(itemsContent)
+                {itemsContent
                   .sort(
                     sortOption === "wg ID"
                       ? (a, b) => a.id - b.id

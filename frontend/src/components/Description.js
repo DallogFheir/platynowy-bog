@@ -142,11 +142,19 @@ function Description({
       "Mega Satan": "Mega Szatana",
     };
 
-    return `pokonanie ${
+    let unlockString = `pokonanie ${
       unlockToParse.boss in bossTrans
         ? bossTrans[unlockToParse.boss]
         : unlockToParse.boss
-    } jako ${unlockToParse.character}`;
+    }`;
+
+    if ("numberOfTimes" in unlockToParse) {
+      unlockString += ` ${unlockToParse.numberOfTimes} razy`;
+    } else {
+      unlockString += ` jako ${unlockToParse.character}`;
+    }
+
+    return unlockString;
   };
   //   #endregion
 

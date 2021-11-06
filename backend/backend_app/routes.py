@@ -20,7 +20,7 @@ def items():
     with open_resource("items") as f:
         items = json.load(f)
 
-    return jsonify(items)
+    return jsonify(items.values())
 
 
 @app.route("/api/items/<id>")
