@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import "./Content.css";
 import {
   itemImageData,
@@ -23,6 +24,11 @@ function ItemContent({
   popup,
   setPopup,
 }) {
+  const dInfinitySprite = useMemo(
+    () => dInfinitySprites[Math.floor(Math.random() * dInfinitySprites.length)],
+    []
+  );
+
   const itemColors = [
     "multicolor",
     "white",
@@ -297,13 +303,7 @@ function ItemContent({
                       src={
                         //   random sprite for D Infinity
                         item.name === "D Infinity"
-                          ? `data:image/png;base64,${
-                              dInfinitySprites[
-                                Math.floor(
-                                  Math.random() * dInfinitySprites.length
-                                )
-                              ]
-                            }`
+                          ? `data:image/png;base64,${dInfinitySprite}`
                           : `data:image/png;base64,${itemImageData[item.id]}`
                       }
                       alt=""
