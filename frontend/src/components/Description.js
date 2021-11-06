@@ -290,6 +290,8 @@ function Description({
           {parseUnlock(selectedContent.unlock)}
         </p>
       )}
+      {/* margin at the bottom in popup */}
+      <div className="mb-2"></div>
     </div>
   );
 }

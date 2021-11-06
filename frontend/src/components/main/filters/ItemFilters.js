@@ -2,6 +2,7 @@ import {
   itemTransformations,
   itemCharacters,
   itemBosses,
+  itemUnlockMethods,
 } from "../../../data/itemData";
 import "./Filters.css";
 
@@ -20,6 +21,8 @@ function ItemFilters({
   setItemCharacterFilter,
   itemBossFilter,
   setItemBossFilter,
+  itemUnlockMethodFilter,
+  setItemUnlockMethodFilter,
   itemTypes,
   itemQualities,
   itemRecharges,
@@ -33,6 +36,11 @@ function ItemFilters({
     machines: "inne maszyny",
     "starting item": "przedmioty startowe postaci lub ich wbudowane mechaniki",
     other: "inna",
+  };
+  const unlockMethodsHoverInfo = {
+    challenge: "wyzwania",
+    "Donation Machine": "wpłacanie do Donation Machine/Greed Donation Machine",
+    other: "inne sposoby",
   };
 
   return (
@@ -249,6 +257,7 @@ function ItemFilters({
                 setItemCharacterFilter(null);
               } else {
                 setItemCharacterFilter(characterName);
+                setItemUnlockMethodFilter(null);
               }
             }}
           />
@@ -274,10 +283,40 @@ function ItemFilters({
                 setItemBossFilter(null);
               } else {
                 setItemBossFilter(bossName);
+                setItemUnlockMethodFilter(null);
               }
             }}
           />
         ))}
+      </div>
+      <div className="mt-2">
+        <span className="filter-name">Inny sposób odblokowania:</span>
+        {itemUnlockMethods.map(
+          ([unlockMethodName, unlockMethodImage], unlockMethodIdx) => (
+            <img
+              key={unlockMethodIdx}
+              className={[
+                "ms-2",
+                "mt-1",
+                "clickable",
+                itemUnlockMethodFilter === unlockMethodName ? "" : "unselected",
+                "pool-info",
+              ].join(" ")}
+              src={`data:image/png;base64,${unlockMethodImage}`}
+              alt=""
+              title={unlockMethodsHoverInfo[unlockMethodName]}
+              onClick={() => {
+                if (itemUnlockMethodFilter === unlockMethodName) {
+                  setItemUnlockMethodFilter(null);
+                } else {
+                  setItemUnlockMethodFilter(unlockMethodName);
+                  setItemCharacterFilter(null);
+                  setItemBossFilter(null);
+                }
+              }}
+            />
+          )
+        )}
       </div>
     </div>
   );

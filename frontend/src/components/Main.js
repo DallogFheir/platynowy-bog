@@ -63,6 +63,10 @@ function Main({
     "itemBossFilter",
     null
   );
+  const [itemUnlockMethodFilter, setItemUnlockMethodFilter] = useLocalStorage(
+    "itemUnlockMethodFilter",
+    null
+  );
 
   return (
     <main className="container-fluid text-light">
@@ -101,6 +105,8 @@ function Main({
                       setItemCharacterFilter={setItemCharacterFilter}
                       itemBossFilter={itemBossFilter}
                       setItemBossFilter={setItemBossFilter}
+                      itemUnlockMethodFilter={itemUnlockMethodFilter}
+                      setItemUnlockMethodFilter={setItemUnlockMethodFilter}
                       itemTypes={itemTypes}
                       itemQualities={itemQualities}
                       itemRecharges={itemRecharges}
@@ -127,6 +133,7 @@ function Main({
                       itemTransformationFilter={itemTransformationFilter}
                       itemCharacterFilter={itemCharacterFilter}
                       itemBossFilter={itemBossFilter}
+                      itemUnlockMethodFilter={itemUnlockMethodFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
                       setSelectedContent={setSelectedContent}

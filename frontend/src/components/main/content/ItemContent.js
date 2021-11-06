@@ -16,6 +16,7 @@ function ItemContent({
   itemTransformationFilter,
   itemCharacterFilter,
   itemBossFilter,
+  itemUnlockMethodFilter,
   itemsStatus,
   itemsContent,
   setSelectedContent,
@@ -219,6 +220,14 @@ function ItemContent({
       }
     }
 
+    // OTHER UNLOCK METHOD
+    const unlockMethodCondition =
+      itemUnlockMethodFilter === null
+        ? true
+        : "unlock" in item
+        ? item.unlock.method.replace("Greed ", "") === itemUnlockMethodFilter
+        : false;
+
     return [
       filterCondition,
       typeCondition,
@@ -228,6 +237,7 @@ function ItemContent({
       transformationCondition,
       characterCondition,
       bossCondition,
+      unlockMethodCondition,
     ].every((condition) => condition);
   };
 
