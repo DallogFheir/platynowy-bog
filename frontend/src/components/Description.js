@@ -18,7 +18,7 @@ function Description({
     let firstLi;
     let lastLi;
 
-    //   convert * to <li>s and ** to <em>s
+    //   convert * to <li>s
     for (const [idx, p] of paragraphs.entries()) {
       if (p.startsWith("* ")) {
         thereAreLis = true;
@@ -65,6 +65,9 @@ function Description({
     } else {
       text = textArray.join("");
     }
+
+    // convert ** to <em></em>
+    text = text.replace(/\*\*(.*?)\*\*/g, "<em>$1</em>");
 
     return text;
   };
