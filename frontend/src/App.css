@@ -1,17 +1,21 @@
 html {
+  overflow: auto;
   height: 100%;
 }
 
 body {
+  overflow: auto;
   height: 100%;
   font-family: "Open Sans", sans-serif;
 }
 
 #root {
+  overflow: auto;
   height: 100%;
 }
 
 .wrapper {
+  overflow: auto;
   height: 100%;
 }
 

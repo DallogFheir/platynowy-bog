@@ -6,10 +6,15 @@ main > .row {
   min-height: 100%;
 }
 
+.desc-container {
+  position: relative;
+  padding: 10px;
+  background-color: #31373d;
+}
+
 .desc {
   position: sticky;
   top: 60px;
-  background-color: #31373d;
   font-size: 12px;
 }
 

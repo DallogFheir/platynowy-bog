@@ -78,16 +78,18 @@ function Main({
   return (
     <main className="container-fluid text-light">
       <div className="row">
-        <div className="d-none d-md-block col-md-3 desc">
-          {/* show description if popup isn't up */}
-          {selectedContent && !popup && (
-            <Description
-              itemPools={itemPools}
-              itemTransformations={itemTransformations}
-              selectedContent={selectedContent}
-              popup={popup}
-            />
-          )}
+        <div className="d-none d-md-block col-md-3 desc-container">
+          <div className="desc">
+            {/* show description if popup isn't up */}
+            {selectedContent && !popup && (
+              <Description
+                itemPools={itemPools}
+                itemTransformations={itemTransformations}
+                selectedContent={selectedContent}
+                popup={popup}
+              />
+            )}
+          </div>
         </div>
         <div className="col-md-9 items">
           <div className="mt-2">

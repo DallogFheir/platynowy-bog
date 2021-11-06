@@ -5,7 +5,7 @@
     "name": "'M",
     "quote": "t's broken9Reroll your dest",
     "description": "Przy użyciu aktywnego przedmiotu przelosowuje go w inny.\nNowy przedmiot będzie w całkowicie nienaładowany.\nNowy przedmiot nie liczy się do żadnej transformacji, nawet jeśli Isaac odłoży go i podniesie ponownie.\nPrzedmiot zostanie przelosowany dopiero, gdy jego ładunek zostanie zużyty, np. w przypadku Spin to Win cały ładunek musi zostać wyczerpany. 'M nie działa w ogóle na Notched Axe ani na przedmioty jednorazowego użytku (oprócz Sacrifical Altar, który może zostać użyty bez bycia zużytym, gdy Isaac nie ma żadnych chowańców).\n'M nie może przelosować przedmiotu w Broken Shovel, Mom's Shovel, Bag of Crafting, Hold, Sumptorium, Flip ani Recall.",
-    "unlock": { "method": "defeat", "target": "Mother", "character": "Eden" },
+    "unlock": { "method": "boss", "boss": "Mother", "character": "Eden" },
     "setDrop": null,
     "color": "multicolor"
   },
@@ -36,8 +36,8 @@
     "quote": "Give them a home",
     "description": "Sklepy odwiedzone po podniesieniu trinketu będą sprzedawały chowańce zamiast innych przedmiotów. Jeśli Isaac trzyma Adoption Papers, chowańce będzie przecenione na 10 monet; w przeciwnym wypadku będą kosztowały 15 monet.\nW Greed Modzie, tylko przedmiot z puli Sklepu zostanie zastąpiony przez chowańca.",
     "unlock": {
-      "method": "defeat",
-      "target": "Mother",
+      "method": "boss",
+      "boss": "Mother",
       "character": "Tainted Lilith"
     },
     "setDrop": null,
@@ -50,8 +50,8 @@
     "quote": "Attack buddy",
     "description": "Przyzywa szarańczę, która lata w kierunku, w którym Isaac strzela, i zadaje obrażenia kontaktowe równe Obrażeniom Isaaca.",
     "unlock": {
-      "method": "defeat",
-      "target": "Mother",
+      "method": "boss",
+      "boss": "Mother",
       "character": "Tainted Apollyon"
     },
     "setDrop": null,
@@ -73,7 +73,7 @@
     "name": "Azazel's Stump",
     "quote": "Unleash your inner demon",
     "description": "Daje Isaacowi szansę na wizualne zmienienie się w Azazela i zyskanie krótkiego Brimstone'a oraz lotu po przejściu pokoju. Efekt trwa do przejścia i wyjścia z następnego pokoju.",
-    "unlock": { "target": "Mother", "character": "Tainted Azazel" },
+    "unlock": { "boss": "Mother", "character": "Tainted Azazel" },
     "setDrop": null,
     "color": "black"
   },
@@ -124,8 +124,8 @@
     "quote": "Virtue's reward",
     "description": "Przy wejściu do Angel Roomu generuje 5 orbitali-ogników.\nWpłacanie żebraczkom ma szansę na wygenerowanie orbitala-ognika.",
     "unlock": {
-      "method": "defeat",
-      "target": "Mother",
+      "method": "boss",
+      "boss": "Mother",
       "character": "Tainted Bethany"
     },
     "setDrop": null,
@@ -138,8 +138,8 @@
     "quote": "My faith protects me",
     "description": "Przy przejściu na nowe piętro wygeneruje 4 orbitale-ogniki, takie same, jak domyślne ogniki Book of Virtues.",
     "unlock": {
-      "method": "defeat",
-      "target": "Boss Rush",
+      "method": "boss",
+      "boss": "Boss Rush",
       "character": "Bethany"
     },
     "setDrop": null,
@@ -162,8 +162,8 @@
     "quote": "With darkness comes power",
     "description": "Daje Isaacowi bonus do Obrażeń +0,5 za każdy z następujących przedmiotów/trinketów, który posiada: Abaddon, Black Candle, Black Lipstick, Ceremonial Robes, Daemon's Tail, False PHD, Goat Head, Match Book, Missing Page 2 lub Safety Pin.",
     "unlock": {
-      "method": "defeat",
-      "target": "Ultra Greed",
+      "method": "boss",
+      "boss": "Ultra Greed",
       "character": "Eve"
     },
     "setDrop": null,
@@ -175,7 +175,7 @@
     "name": "Black Lipstick",
     "quote": "Evil up",
     "description": "Podwaja szansę na pojawienie się Black Heartów.",
-    "unlock": { "method": "defeat", "target": "The Lamb", "character": "Eve" },
+    "unlock": { "method": "boss", "boss": "The Lamb", "character": "Eve" },
     "setDrop": null,
     "color": "black"
   },
@@ -195,7 +195,7 @@
     "name": "Blessed Penny",
     "quote": "Wealth of purity",
     "description": "Daje szansę na wygenerowanie 1/2 Soul Hearta, gdy Isaac podnosi monetę. Szansa jest zależna od wartości monety:\n* Penny - 16,6%\n*Double Penny - 30,5%\n* Nickel - 59,7%\n* Dime - 83,3%",
-    "unlock": { "method": "defeat", "target": "???", "character": "Bethany" },
+    "unlock": { "method": "boss", "boss": "???", "character": "Bethany" },
     "setDrop": null,
     "color": "blue"
   },
@@ -205,7 +205,7 @@
     "name": "Blind Rage",
     "quote": "Blind to damage",
     "description": "Podwaja klatki nietykalności, jakie Isaac dostaje po otrzymaniu obrażeń.",
-    "unlock": { "method": "defeat", "target": "Hush", "character": "Samson" },
+    "unlock": { "method": "boss", "boss": "Hush", "character": "Samson" },
     "setDrop": null,
     "color": "white"
   },
@@ -225,7 +225,7 @@
     "name": "Bloody Penny",
     "quote": "Wealth of health",
     "description": "Daje 25% szansy na wygenerowanie 1/2 Czerwonego Serca, gdy Isaac podnosi monetę.\nMa szansę wypaść ze Special Shopkeepera.",
-    "unlock": { "method": "defeat", "target": "???", "character": "Samson" },
+    "unlock": { "method": "boss", "boss": "???", "character": "Samson" },
     "setDrop": ["Special Shopkeeper"],
     "color": "red"
   },
@@ -235,7 +235,7 @@
     "name": "???'s Soul",
     "quote": "Imaginary friend",
     "description": "Przyzywa chowańca, który lata po pokoju po przekątnej i co 2/3 sekundy strzela spektralnymi i samonaprowadzającymi łzami, które zadają 3,5 Obrażeń.\nBox of Friends nie podwaja tego chowańca.",
-    "unlock": { "method": "defeat", "target": "The Lamb", "character": "???" },
+    "unlock": { "method": "boss", "boss": "The Lamb", "character": "???" },
     "setDrop": null,
     "color": "blue"
   },
@@ -246,8 +246,8 @@
     "quote": "Look between the rooms",
     "description": "Wejście do pokoju, który wymaga klucza, nie zużyje klucza, ale za to przeniesie Isaaca do długiego niebieskiego pokoju przypominającego piętro ???. Pokój ten może zawierać Blue Gapery, Blue Boile i/lub Blue Conjoined Fatty.\nWyjście z pokoju prowadzi do pokoju, do którego Isaac chciał wejść. Niebieski pokój nie może zostać ponownie odwiedzony.\nEfekt działa również na drzwi, które wymagają 2 kluczy, drzwi, które wymagają monety do wejścia, drzwi do przejścia do Downpouru/Drossu (w ich przypadku wygenerowany pokój nie będzie miał wyjścia, ale po wyjściu przez drzwi, przez które Isaac wszedł, drzwi będą otwarte) oraz drzwi do Husha.",
     "unlock": {
-      "method": "defeat",
-      "target": "The Beast",
+      "method": "boss",
+      "boss": "The Beast",
       "character": "Tainted Cain"
     },
     "setDrop": null,
@@ -279,7 +279,7 @@
     "name": "Broken Ankh",
     "quote": "Eternal life?",
     "description": "Daje Isaacowi 22,22% szansy na odrodzenie się jako ???. Efekt może zajść wiele razy podczas rozgrywki.\nBroken Ankh jest dziewiąty w kolejności aktywacji przedmiotów/trinketów odradzających, przed Judas' Shadow, Missing Poster i Birthright.",
-    "unlock": { "method": "defeat", "target": "Satan", "character": "Lazarus" },
+    "unlock": { "method": "boss", "boss": "Satan", "character": "Lazarus" },
     "setDrop": null,
     "color": "black"
   },
@@ -291,7 +291,7 @@
     "description": "Daje 33% szansy na dodanie niewidocznego przedmiotu do Treasure Roomów. Na alternatywnych piętrach zamiast tego ujawnia dodatkowe przedmioty.\nPo podniesieniu jednego przedmiotu, drugi znika.",
     "unlock": {
       "method": "complete challenge",
-      "target": "Seeing Double",
+      "boss": "Seeing Double",
       "number": 40
     },
     "setDrop": null,
@@ -355,7 +355,7 @@
     "description": "Daje 25% szansy na wygenerowanie bomby, gdy Isaac podnosi monetę.\nMa szansę wypaść z TNT lub Special Shopkeeperów.",
     "unlock": {
       "method": "complete challenge",
-      "target": "Beans!",
+      "boss": "Beans!",
       "number": 13
     },
     "setDrop": ["TNT", "Special Shopkeeper"],
@@ -377,7 +377,7 @@
     "name": "Cain's Eye",
     "quote": "May you see your destination",
     "description": "Przy przejściu na nowe piętro, ma szansę na wywołanie efektu The Compass.\nSzansa jest zależna od Szczęścia i wynosi 100% przy Szczęściu 3.",
-    "unlock": { "method": "defeat", "target": "???", "character": "Cain" },
+    "unlock": { "method": "boss", "boss": "???", "character": "Cain" },
     "setDrop": null,
     "color": "white"
   },
@@ -419,7 +419,7 @@
     "description": "Daje szansę na dodanie 1 ładunku do przedmiotu aktywnego, gdy Isaac podnosi monetę.\nSzansa jest równa 1/6 wartości monety.",
     "unlock": {
       "method": "donate",
-      "target": "Battery Bum",
+      "boss": "Battery Bum",
       "howMuch": "until they pay out with an item",
       "numberOfTimes": 5
     },
@@ -464,7 +464,7 @@
     "description": "Za każdym razem, gdy Isaac podnosi monetę, ma 50% szansy na otrzymanie 1 dodatkowego centa.",
     "unlock": {
       "method": "donate",
-      "target": "Shell Game/Hell Game",
+      "boss": "Shell Game/Hell Game",
       "numberOfTimes": 100
     },
     "setDrop": ["Golden Poop"],
@@ -487,8 +487,8 @@
     "quote": "You feel cursed... kinda.",
     "description": "Przy otrzymaniu obrażeń przez Isaaca wywołuje efekt The D6, D8, D12 lub D20.",
     "unlock": {
-      "method": "defeat",
-      "target": "Ultra Greed",
+      "method": "boss",
+      "boss": "Ultra Greed",
       "character": "???"
     },
     "setDrop": null,
@@ -501,8 +501,8 @@
     "quote": "Infested",
     "description": "Ma szansę na wygenerowanie losowej szarańczy, gdy Isaac zabije przeciwnika.",
     "unlock": {
-      "method": "defeat",
-      "target": ["Isaac", "???", "Satan", "The Lamb"],
+      "method": "boss",
+      "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Apollyon"
     },
     "setDrop": null,
@@ -515,8 +515,8 @@
     "quote": "Drain me",
     "description": "Gdy Isaac otrzyma obrażenia, otrzyma je najpierw w Czerwone Serca, a nie Soul Hearty/Black Hearty/Rotten Hearty.\nBone Hearty zostaną najpierw opróżnione z Czerwonych Serc, ale nie zostaną zniszczone, jeśli Isaac ma czerwone serca.",
     "unlock": {
-      "method": "defeat",
-      "target": "Ultra Greedier",
+      "method": "boss",
+      "boss": "Ultra Greedier",
       "character": "Eve"
     },
     "setDrop": null,
@@ -529,8 +529,8 @@
     "quote": "Call to the other side",
     "description": "Daje szansę na otwarcie Czerwonego Pokoju po przejściu pokoju.\nSzansa zależy od liczby posiadanych Crystal Key i tego, czy pokój, który Isaac przeszedł, jest normalny czy sam jest czerwony:\n*1: normalny - 33,3%, czerwony - 12,5%\n*2: normalny - 50%, czerwony - 16,6%\n*3: normalny - 100%, czerwony - 25%\n*4: normalny - 100%, czerwony - 50%\n*5: normalny - 100%, czerwony - 100%",
     "unlock": {
-      "method": "defeat",
-      "target": "Mother",
+      "method": "boss",
+      "boss": "Mother",
       "character": "Tainted Lost"
     },
     "setDrop": null,
@@ -543,8 +543,8 @@
     "quote": "Wealth of misery",
     "description": "Gdy Isaac podniesie monetę, zostanie przeteleportowany do losowego pokoju.",
     "unlock": {
-      "method": "defeat",
-      "target": "Mother",
+      "method": "boss",
+      "boss": "Mother",
       "character": "Tainted Keeper"
     },
     "setDrop": null,
@@ -567,8 +567,8 @@
     "quote": "DMG up",
     "description": "Isaac otrzymuje bonus +2 Obrażeń, aplikowany po wszystkich obliczeniach obrażeń, ale przed mnożnikami.",
     "unlock": {
-      "method": "defeat",
-      "target": "The Lamb",
+      "method": "boss",
+      "boss": "The Lamb",
       "character": "Judas"
     },
     "setDrop": null,
@@ -580,7 +580,7 @@
     "name": "Daemon's Tail",
     "quote": "Evil up",
     "description": "80% znajdziek-serc jest zastąpione kluczami. Wszystkie pozostałe znajdźki-serca są zastąpione Black Heartami, jeśli to możliwe (jest to niemożliwe, gdy dana mechanika zawsze wyrzuca dany typ serca, np. Tinted Rock, Little C.H.A.D., niebieskie ogniska, Super Secret Roomy z ustalonym typem serce, itp.).",
-    "unlock": { "method": "defeat", "target": "Satan", "character": "Azazel" },
+    "unlock": { "method": "boss", "boss": "Satan", "character": "Azazel" },
     "setDrop": null,
     "color": "black"
   },
@@ -590,7 +590,7 @@
     "name": "Devil's Crown",
     "quote": "His special customer",
     "description": "Przy podniesieniu trinketu nieodwiedzone Treasure Roomy zostaną zastąpione przez Czerwone Treasure Roomy, które będą oferowały przedmioty z puli Devil Roomu za ich normalny koszt w układzie z Diabłem. Zakup tych przedmiotów wpływa na szansę na Angel Room.\nPodwójne Treasure Roomy będą zawierały 2 przedmioty, z których oba mogą zostać zakupione.\nTrinket wpływa na Treasure Roomy, które nie zostały jeszcze odwiedzone. Wyrzucenie trinketu zmieni je z powrotem w zwykłe Treasure Roomy, jeśli nie zostały odwiedzone.\nPodczas Ascentu, otwarte Treasure Roomy nie mogą zostać zmienione, natomiast nieotwarte i nieodwiedzone tak.\nNie ma efektu w Greed Modzie.",
-    "unlock": { "method": "defeat", "target": "Mother", "character": "Azazel" },
+    "unlock": { "method": "boss", "boss": "Mother", "character": "Azazel" },
     "setDrop": null,
     "color": "black"
   },
@@ -601,8 +601,8 @@
     "quote": "Bonus roll",
     "description": "Ma 50% szansy na danie Isaacowi przedmiotu-kostki (oprócz Spindown Dice i D Infinity) w miejscu na kartę/pigułkę, gdy wejdzie on do nowego pokoju. Kostka znika, gdy Isaac wyjdzie z pokoju.\nEfekt daje Isaacowi również możliwość trzymania 2 kart/pigułek na dany pokój, więc kostka nie zastąpi jego obecnie trzymanej karty/pigułki.\nTyp kostki jest zależny od liczby pokoi, które Isaac przeszedł.",
     "unlock": {
-      "method": "defeat",
-      "target": "Mother",
+      "method": "boss",
+      "boss": "Mother",
       "character": "Tainted Isaac"
     },
     "setDrop": null,
@@ -625,8 +625,8 @@
     "quote": "Oops!",
     "description": "Po przejściu pokoju generuje przyjacielskiego Dipa.\nZmienia wszystkie Dipy w przyjacielskie Dipy.",
     "unlock": {
-      "method": "defeat",
-      "target": ["Isaac", "???", "Satan", "The Lamb"],
+      "method": "boss",
+      "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted ???"
     },
     "setDrop": null,
@@ -688,7 +688,7 @@
     "name": "Eve's Bird Foot",
     "quote": "Revenge from beyond",
     "description": "Daje Isaacowi szansę na przyzwanie chowańca podobnego do Dead Bird na czas trwania obecnego pokoju za każdym razem, gdy przeciwnik ginie.\nChowaniec zadaje 2 Obrażeń na tick. Tylko jeden może zostać wygenerowany na pokój.\nSzansa jest zależna od Szczęścia i wynosi 5% przy Szczęściu 0 i 100% przy Szczęściu 8.",
-    "unlock": { "method": "defeat", "target": "Isaac", "character": "Eve" },
+    "unlock": { "method": "boss", "boss": "Isaac", "character": "Eve" },
     "setDrop": null,
     "color": "grey"
   },
@@ -699,8 +699,8 @@
     "quote": "Fun extras",
     "description": "Przy użyciu przedmiotu aktywnego, aktywuje efekt losowego przedmiotu, którego ładunek wynosi 1 lub 2 pokoje.\nPrzedmioty, które ładują się czasowo lub których ładunek jest nielimitowany, mogą aktywować dodatkowy efekt tylko raz na pokój.",
     "unlock": {
-      "method": "defeat",
-      "target": ["Isaac", "???", "Satan", "The Lamb"],
+      "method": "boss",
+      "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Bethany"
     },
     "setDrop": null,
