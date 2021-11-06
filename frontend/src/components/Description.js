@@ -15,6 +15,8 @@ function Description({
 }) {
   // #region PARSING FUNCTIONS
   const parseDescription = (itemId) => {
+    const characterLimit = 800;
+
     const desc = itemDescriptionData[itemId];
     const paragraphs = desc.split("\n");
     const textArray = [];
@@ -53,7 +55,7 @@ function Description({
       for (const textFrag of textArray) {
         characterCount += textFrag.length;
 
-        if (characterCount <= 600) {
+        if (characterCount <= characterLimit) {
           cutTextArray.push(textFrag);
         } else {
           break;

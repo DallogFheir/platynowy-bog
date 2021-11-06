@@ -107,7 +107,7 @@ function Main({
             </div>
             <hr />
             <div
-              className={["collapse", filtersFolded ? "" : "show"].join(" ")}
+              className={filtersFolded ? "fold-container" : "fold-container-in"}
             >
               {(() => {
                 switch (typeOption) {
