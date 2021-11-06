@@ -3,9 +3,6 @@ import json
 from pathlib import Path
 from . import app
 
-# TODO remove sleep
-from time import sleep
-
 
 def open_resource(resource_name):
     return open(
@@ -20,7 +17,7 @@ def items():
     with open_resource("items") as f:
         items = json.load(f)
 
-    return jsonify(list(items.values()))
+    return jsonify(sorted(items.values(), key=lambda k: k["id"]))
 
 
 @app.route("/api/items/<id>")
@@ -29,3 +26,20 @@ def items_id(id):
         items = json.load(f)
 
     return jsonify(items[id])
+
+
+# TRINKETS
+@app.route("/api/trinkets")
+def trinkets():
+    with open_resource("trinkets") as f:
+        trinkets = json.load(f)
+
+    return jsonify(sorted(trinkets.values(), key=lambda k: k["id"]))
+
+
+@app.route("/api/trinkets/<id>")
+def trinkets_id(id):
+    with open_resource("trinkets") as f:
+        trinkets = json.load(f)
+
+    return jsonify(trinkets[id])
