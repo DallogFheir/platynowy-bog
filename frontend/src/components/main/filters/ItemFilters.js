@@ -34,7 +34,7 @@ function ItemFilters({
     boss: "konkretny boss",
     obstacles: "przeszkody",
     machines: "inne maszyny",
-    "starting item": "przedmioty startowe postaci lub ich wbudowane mechaniki",
+    "starting item": "przedmioty startowe postaci",
     other: "inna",
   };
   const unlockMethodsHoverInfo = {

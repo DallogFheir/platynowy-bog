@@ -36,7 +36,7 @@ function Main({
     "inny",
   ];
 
-  // FILTERS
+  // #region FILTERS
   const [itemTypeFilter, setItemTypeFilter] = useLocalStorage(
     "itemTypeFilter",
     itemTypes
@@ -67,6 +67,13 @@ function Main({
     "itemUnlockMethodFilter",
     null
   );
+  // #endregion
+
+  //   FIX TO WORK WITH BOOTSTRAP'S COLLAPSE
+  const [filtersFolded, setFiltersFolded] = useLocalStorage(
+    "filtersFolded",
+    false
+  );
 
   return (
     <main className="container-fluid text-light">
@@ -84,39 +91,58 @@ function Main({
         </div>
         <div className="col-md-9 items">
           <div className="mt-2">
-            <p className="text-center fs-5 title">{typeOption.toUpperCase()}</p>
+            <div className="fold-btn-container">
+              <p className="text-center fs-5 title">
+                {typeOption.toUpperCase()}
+              </p>
+              <button
+                type="button"
+                className="btn btn-light fold-btn"
+                onClick={() => {
+                  setFiltersFolded((prev) => !prev);
+                }}
+              >
+                {filtersFolded ? "▼" : "▲"}
+              </button>
+            </div>
             <hr />
-            {(() => {
-              switch (typeOption) {
-                case "przedmioty":
-                  return (
-                    <ItemFilters
-                      itemTypeFilter={itemTypeFilter}
-                      setItemTypeFilter={setItemTypeFilter}
-                      itemQualityFilter={itemQualityFilter}
-                      setItemQualityFilter={setItemQualityFilter}
-                      itemRechargeFilter={itemRechargeFilter}
-                      setItemRechargeFilter={setItemRechargeFilter}
-                      itemPoolFilter={itemPoolFilter}
-                      setItemPoolFilter={setItemPoolFilter}
-                      itemTransformationFilter={itemTransformationFilter}
-                      setItemTransformationFilter={setItemTransformationFilter}
-                      itemCharacterFilter={itemCharacterFilter}
-                      setItemCharacterFilter={setItemCharacterFilter}
-                      itemBossFilter={itemBossFilter}
-                      setItemBossFilter={setItemBossFilter}
-                      itemUnlockMethodFilter={itemUnlockMethodFilter}
-                      setItemUnlockMethodFilter={setItemUnlockMethodFilter}
-                      itemTypes={itemTypes}
-                      itemQualities={itemQualities}
-                      itemRecharges={itemRecharges}
-                      itemPools={itemPools}
-                    />
-                  );
-                default:
-                  throw new Error(`Unknown type option: ${typeOption}`);
-              }
-            })()}
+            <div
+              className={["collapse", filtersFolded ? "" : "show"].join(" ")}
+            >
+              {(() => {
+                switch (typeOption) {
+                  case "przedmioty":
+                    return (
+                      <ItemFilters
+                        itemTypeFilter={itemTypeFilter}
+                        setItemTypeFilter={setItemTypeFilter}
+                        itemQualityFilter={itemQualityFilter}
+                        setItemQualityFilter={setItemQualityFilter}
+                        itemRechargeFilter={itemRechargeFilter}
+                        setItemRechargeFilter={setItemRechargeFilter}
+                        itemPoolFilter={itemPoolFilter}
+                        setItemPoolFilter={setItemPoolFilter}
+                        itemTransformationFilter={itemTransformationFilter}
+                        setItemTransformationFilter={
+                          setItemTransformationFilter
+                        }
+                        itemCharacterFilter={itemCharacterFilter}
+                        setItemCharacterFilter={setItemCharacterFilter}
+                        itemBossFilter={itemBossFilter}
+                        setItemBossFilter={setItemBossFilter}
+                        itemUnlockMethodFilter={itemUnlockMethodFilter}
+                        setItemUnlockMethodFilter={setItemUnlockMethodFilter}
+                        itemTypes={itemTypes}
+                        itemQualities={itemQualities}
+                        itemRecharges={itemRecharges}
+                        itemPools={itemPools}
+                      />
+                    );
+                  default:
+                    throw new Error(`Unknown type option: ${typeOption}`);
+                }
+              })()}
+            </div>
             <hr />
             {(() => {
               switch (typeOption) {

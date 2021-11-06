@@ -16,3 +16,13 @@ main > .row {
 .items {
   background-color: #4a535c;
 }
+
+.fold-btn-container {
+  position: relative;
+}
+
+.fold-btn {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
