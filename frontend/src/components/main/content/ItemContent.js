@@ -178,12 +178,46 @@ function ItemContent({
         : false;
 
     // BOSS TO UNLOCK ITEM
-    const bossCondition =
-      itemBossFilter === null
-        ? true
-        : "unlock" in item && "boss" in item.unlock
-        ? item.unlock.boss === itemBossFilter
-        : false;
+    let bossCondition;
+    if (itemBossFilter === null) {
+      bossCondition = true;
+    } else {
+      if ("unlock" in item && "boss" in item.unlock) {
+        let bossName = item.unlock.boss;
+
+        // end bosses
+        if (
+          [
+            "Mom's Heart",
+            "Mom's Heart/It Lives!",
+            "Isaac",
+            "???",
+            "Satan",
+            "The Lamb",
+            "Boss Rush",
+            "Hush",
+            "Mega Satan",
+            "Delirium",
+            "Mother",
+            "The Beast",
+            "Ultra Greed",
+            "Ultra Greedier",
+          ].includes(bossName)
+        ) {
+          // translate Mom's Heart to Mom's Heart/It Lives!
+          if (bossName === "Mom's Heart") {
+            bossName = "Mom's Heart/It Lives!";
+          }
+
+          bossCondition = itemBossFilter === bossName;
+        } else {
+          // boss other than end bosses
+          bossCondition = itemBossFilter === "other";
+        }
+      } else {
+        bossCondition = false;
+      }
+    }
 
     return [
       filterCondition,

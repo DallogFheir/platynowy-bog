@@ -264,9 +264,11 @@ function ItemFilters({
               "mt-1",
               "clickable",
               itemBossFilter === bossName ? "" : "unselected",
+              bossName === "other" ? "pool-info" : "",
             ].join(" ")}
             src={`data:image/png;base64,${bossImage}`}
             alt=""
+            title={bossName === "other" ? "inny" : ""}
             onClick={() => {
               if (itemBossFilter === bossName) {
                 setItemBossFilter(null);

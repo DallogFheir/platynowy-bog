@@ -1,5 +1,10 @@
 import parse from "html-react-parser";
-import { itemDescriptionData, poolOrder } from "../data/itemData";
+import {
+  itemDescriptionData,
+  itemImageData,
+  itemUnlockData,
+  poolOrder,
+} from "../data/itemData";
 import "./Description.css";
 
 function Description({
@@ -134,24 +139,77 @@ function Description({
   };
 
   const parseUnlock = (unlockToParse) => {
+    const nonDeclinable = [
+      "???",
+      "The Lamb",
+      "Delirium",
+      "Mother",
+      "The Beast",
+      "Mom's Heart",
+      "Mom's Heart/It Lives!",
+      "Baby Plum",
+    ];
     const bossTrans = {
-      Satan: "Szatana",
-      Isaac: "Isaaca",
-      "Boss Rush": "Boss Rusha",
-      Hush: "Husha",
-      "Mega Satan": "Mega Szatana",
+      Angel: "Anioła",
+      all: "wszystkich bossów",
+      "all Harbingers": "wszystkich Jeźdźców Apokalipsy",
+      "all 7 Deadly Sins": "wszystkich 7 Grzechów Głównych",
+      Mom: "Mamy",
+      "a Harbinger": "Jeźdźca Apokalipsy",
     };
 
-    let unlockString = `pokonanie ${
-      unlockToParse.boss in bossTrans
-        ? bossTrans[unlockToParse.boss]
-        : unlockToParse.boss
-    }`;
+    let unlockString;
+    switch (unlockToParse.method) {
+      case "boss":
+        unlockString = "pokonanie ";
 
-    if ("numberOfTimes" in unlockToParse) {
-      unlockString += ` ${unlockToParse.numberOfTimes} razy`;
-    } else {
-      unlockString += ` jako ${unlockToParse.character}`;
+        let bossName = unlockToParse.boss;
+        if (bossName in bossTrans) {
+          bossName = bossTrans[bossName];
+        }
+        unlockString += bossName;
+
+        // add genitival -a
+        if (
+          !(unlockToParse.boss in bossTrans) &&
+          !nonDeclinable.includes(bossName)
+        ) {
+          unlockString += "a";
+        }
+
+        if ("character" in unlockToParse) {
+          let characterName = unlockToParse.character;
+
+          if (characterName === "all") {
+            characterName = "wszystkie postaci";
+          } else if (characterName === "all non-tainted") {
+            characterName = "wszystkie niesplamione postaci";
+          }
+
+          unlockString += ` jako ${characterName}`;
+        }
+
+        if ("numberOfTimes" in unlockToParse) {
+          unlockString += ` ${unlockToParse.numberOfTimes} razy`;
+        }
+
+        if (unlockToParse.mode === "Hard Mode") {
+          unlockString += " na Hard Modzie";
+        }
+
+        break;
+      case "challenge":
+        unlockString = `przejście wyzwania #${unlockToParse.challengeNumber}: ${unlockToParse.challengeName}`;
+        break;
+      case "other":
+        unlockString = itemUnlockData[selectedContent.id];
+        break;
+      case "Donation Machine":
+      case "Greed Donation Machine":
+        unlockString = `wpłacenie ${unlockToParse.amount} monet do ${unlockToParse.method}`;
+        break;
+      default:
+        throw new Error(`Unknown unlock method: ${unlockToParse.method}`);
     }
 
     return unlockString;
@@ -160,7 +218,12 @@ function Description({
 
   return (
     <div className="text-center mt-2 text-light desc-container">
-      {/* {popup && <img src={`data:image/png;base64`} alt="" />} */}
+      {popup && (
+        <img
+          src={`data:image/png;base64,${itemImageData[selectedContent.id]}`}
+          alt=""
+        />
+      )}
       <p className="fs-5 obj-name">
         {/* sometimes show wrong name for Monster Manua/el */}
         <u>
