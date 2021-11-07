@@ -6,6 +6,7 @@ import ItemFilters from "./main/filters/ItemFilters";
 import TrinketContent from "./main/content/TrinketContent";
 import TrinketFilters from "./main/filters/TrinketFilters";
 import "./Main.css";
+import TrinketDescription from "./main/description/TrinketDescription";
 
 function Main({
   sortOption,
@@ -114,6 +115,13 @@ function Main({
                       <ItemDescription
                         itemPools={itemPools}
                         itemTransformations={itemTransformations}
+                        selectedContent={selectedContent}
+                        popup={popup}
+                      />
+                    );
+                  case "trinkety":
+                    return (
+                      <TrinketDescription
                         selectedContent={selectedContent}
                         popup={popup}
                       />

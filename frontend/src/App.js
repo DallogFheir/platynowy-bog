@@ -6,6 +6,7 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import ItemDescription from "./components/main/description/ItemDescription";
 import "./App.css";
+import TrinketDescription from "./components/main/description/TrinketDescription";
 
 function App() {
   // #region GLOBAL STATES
@@ -83,6 +84,13 @@ function App() {
                   <ItemDescription
                     itemPools={itemPools}
                     itemTransformations={itemTransformations}
+                    selectedContent={selectedContent}
+                    popup={popup}
+                  />
+                );
+              case "trinkety":
+                return (
+                  <TrinketDescription
                     selectedContent={selectedContent}
                     popup={popup}
                   />

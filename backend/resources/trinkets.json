@@ -32,7 +32,11 @@
     "id": 162,
     "name": "Azazel's Stump",
     "quote": "Unleash your inner demon",
-    "unlock": { "boss": "Mother", "character": "Tainted Azazel" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Azazel"
+    }
   },
   "135": { "id": 135, "name": "A Lighter", "quote": "Watch the world burn" },
   "48": { "id": 48, "name": "A Missing Page", "quote": "It glows with power" },
@@ -125,9 +129,9 @@
     "name": "Broken Glasses",
     "quote": "Double vision?",
     "unlock": {
-      "method": "complete challenge",
-      "boss": "Seeing Double",
-      "number": 40
+      "method": "challenge",
+      "challengeName": "Seeing Double",
+      "challengeNumber": 40
     }
   },
   "6": { "id": 6, "name": "Broken Magnet", "quote": "It kinda works!" },
@@ -140,9 +144,9 @@
     "name": "Burnt Penny",
     "quote": "Wealth of chaos",
     "unlock": {
-      "method": "complete challenge",
-      "boss": "Beans!",
-      "number": 13
+      "method": "challenge",
+      "challengeName": "Beans!",
+      "challengeNumber": 13
     },
     "setDrop": ["TNT", "Special Shopkeeper"]
   },
@@ -161,10 +165,8 @@
     "name": "Charged Penny",
     "quote": "Wealth of power",
     "unlock": {
-      "method": "donate",
-      "boss": "Battery Bum",
-      "howMuch": "until they pay out with an item",
-      "numberOfTimes": 5
+      "method": "other",
+      "other": "donate to Battery Bums until they pay out with an item 5 times"
     }
   },
   "130": { "id": 130, "name": "Chewed Pen", "quote": "It's leaking" },
@@ -184,9 +186,8 @@
     "name": "Counterfeit Penny",
     "quote": "Wealth of wealth",
     "unlock": {
-      "method": "donate",
-      "boss": "Shell Game/Hell Game",
-      "numberOfTimes": 100
+      "method": "other",
+      "other": "play Shell Game/Hell Game 100 times"
     },
     "setDrop": ["Golden Poop"]
   },
@@ -318,20 +319,30 @@
     "id": 125,
     "name": "Extension Cord",
     "quote": "Charged friends",
-    "unlock": true
+    "unlock": {
+      "method": "other",
+      "other": "collect The Battery, 9 Volt and Car Battery"
+    }
   },
   "69": { "id": 69, "name": "Faded Polaroid", "quote": "You feel faded" },
   "123": {
     "id": 123,
     "name": "Filigree Feather",
     "quote": "Angelic spoils",
-    "unlock": true
+    "unlock": {
+      "method": "other",
+      "other": "pick up both Key Pieces in a single run"
+    }
   },
   "128": {
     "id": 128,
     "name": "Finger Bone",
     "quote": "It looks brittle",
-    "unlock": { "boss": "Ultra Greed", "character": "The Forgotten" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greed",
+      "character": "The Forgotten"
+    }
   },
   "29": { "id": 29, "name": "Fish Head", "quote": "It stinks" },
   "151": { "id": 151, "name": "Flat File", "quote": "No more spikes" },
@@ -346,13 +357,17 @@
     "id": 141,
     "name": "Forgotten Lullaby",
     "quote": "Sing for your friends",
-    "unlock": true
+    "unlock": { "method": "other", "other": "blow up The Siren's skull     " }
   },
   "180": {
     "id": 180,
     "name": "Found Soul",
     "quote": "Finally!",
-    "unlock": true
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Jacob"
+    }
   },
   "148": { "id": 148, "name": "Friendship Necklace", "quote": "Gather round" },
   "134": { "id": 134, "name": "Gigante Bean", "quote": "Mega farts" },
@@ -361,6 +376,7 @@
     "name": "Gilded Key",
     "quote": "Less is more",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Cain"
     }
@@ -379,13 +395,18 @@
     "id": 168,
     "name": "Hollow Heart",
     "quote": "A brittle blessing",
-    "unlock": { "boss": "Mother", "character": "Tainted Forgotten" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Forgotten"
+    }
   },
   "155": {
     "id": 155,
     "name": "Holy Crown",
     "quote": "Walk the path of the saint",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Magdalene"
     }
@@ -395,33 +416,38 @@
     "id": 188,
     "name": "Ice Cube",
     "quote": "Stay frosty",
-    "unlock": { "challenge": "Pica Run", "number": 41 }
+    "unlock": {
+      "method": "challenge",
+      "challengeName": "Pica Run",
+      "challengeNumber": 41
+    }
   },
   "46": { "id": 46, "name": "Isaac's Fork", "quote": "Consume thy enemy" },
   "54": {
     "id": 54,
     "name": "Isaac's Head",
     "quote": "Dead friend",
-    "unlock": { "boss": "Boss Rush", "character": "Isaac" }
+    "unlock": { "method": "boss", "boss": "Boss Rush", "character": "Isaac" }
   },
   "129": { "id": 129, "name": "Jawbreaker", "quote": "Don't chew on it" },
   "56": {
     "id": 56,
     "name": "Judas' Tongue",
     "quote": "Payment received",
-    "unlock": { "boss": "Satan", "character": "Judas" }
+    "unlock": { "method": "boss", "boss": "Satan", "character": "Judas" }
   },
   "85": {
     "id": 85,
     "name": "Karma",
     "quote": "Karma up",
-    "unlock": { "boss": "The Lamb", "character": "Keeper" }
+    "unlock": { "method": "boss", "boss": "The Lamb", "character": "Keeper" }
   },
   "171": {
     "id": 171,
     "name": "Keeper's Bargain",
     "quote": "Money talks",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Keeper"
     }
@@ -431,6 +457,7 @@
     "name": "Kid's Drawing",
     "quote": "Looks familiar...",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Lost"
     }
@@ -446,38 +473,38 @@
     "id": 176,
     "name": "Lil Clot",
     "quote": "Mini friend",
-    "unlock": { "boss": "Mother", "character": "Tainted Eve" }
+    "unlock": { "method": "boss", "boss": "Mother", "character": "Tainted Eve" }
   },
   "86": { "id": 86, "name": "Lil Larva", "quote": "The poop is moving..." },
   "117": {
     "id": 117,
     "name": "Locust of Conquest",
     "quote": "I bring Conquest",
-    "unlock": { "boss": "Boss Rush", "character": "Apollyon" }
+    "unlock": { "method": "boss", "boss": "Boss Rush", "character": "Apollyon" }
   },
   "116": {
     "id": 116,
     "name": "Locust of Death",
     "quote": "I bring Death",
-    "unlock": { "boss": "The Lamb", "character": "Apollyon" }
+    "unlock": { "method": "boss", "boss": "The Lamb", "character": "Apollyon" }
   },
   "115": {
     "id": 115,
     "name": "Locust of Famine",
     "quote": "I bring Famine",
-    "unlock": { "boss": "???", "character": "Apollyon" }
+    "unlock": { "method": "boss", "boss": "???", "character": "Apollyon" }
   },
   "114": {
     "id": 114,
     "name": "Locust of Pestilence",
     "quote": "I bring Pestilence",
-    "unlock": { "boss": "Satan", "character": "Apollyon" }
+    "unlock": { "method": "boss", "boss": "Satan", "character": "Apollyon" }
   },
   "113": {
     "id": 113,
     "name": "Locust of War",
     "quote": "I bring War",
-    "unlock": { "boss": "Isaac", "character": "Apollyon" }
+    "unlock": { "method": "boss", "boss": "Isaac", "character": "Apollyon" }
   },
   "106": { "id": 106, "name": "Lost Cork", "quote": "Uncorked" },
   "70": { "id": 70, "name": "Louse", "quote": "Itchy, tasty..." },
@@ -491,7 +518,11 @@
     "id": 160,
     "name": "Lucky Sack",
     "quote": "Free goodies!",
-    "unlock": { "boss": "Mother", "character": "Tainted Cain" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Cain"
+    }
   },
   "42": {
     "id": 42,
@@ -503,7 +534,7 @@
     "id": 55,
     "name": "Maggy's Faith",
     "quote": "Faith's reward",
-    "unlock": { "boss": "The Lamb", "character": "Magdalene" }
+    "unlock": { "method": "boss", "boss": "The Lamb", "character": "Magdalene" }
   },
   "41": {
     "id": 41,
@@ -515,19 +546,23 @@
     "id": 91,
     "name": "Meconium",
     "quote": "Eww",
-    "unlock": { "boss": "Ultra Greedier", "character": "???" }
+    "unlock": { "method": "boss", "boss": "Ultra Greedier", "character": "???" }
   },
   "23": {
     "id": 23,
     "name": "Missing Poster",
     "quote": "???",
-    "unlock": { "boss": "The Lamb", "character": "Isaac" }
+    "unlock": { "method": "boss", "boss": "The Lamb", "character": "Isaac" }
   },
   "166": {
     "id": 166,
     "name": "Modeling Clay",
     "quote": "???",
-    "unlock": { "boss": "Mother", "character": "Tainted Eden" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Eden"
+    }
   },
   "87": { "id": 87, "name": "Mom's Locket", "quote": "You feel her love" },
   "153": {
@@ -535,6 +570,7 @@
     "name": "Mom's Lock",
     "quote": "A piece of her love",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Isaac"
     }
@@ -546,7 +582,11 @@
     "id": 156,
     "name": "Mother's Kiss",
     "quote": "HP up",
-    "unlock": { "boss": "Mother", "character": "Tainted Magdalene" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Magdalene"
+    }
   },
   "137": { "id": 137, "name": "Myosotis", "quote": "Forget me not..." },
   "25": { "id": 25, "name": "Mysterious Candy", "quote": "Uh-oh!" },
@@ -554,7 +594,7 @@
     "id": 21,
     "name": "Mysterious Paper",
     "quote": "???",
-    "unlock": { "boss": "???", "character": "Eden" }
+    "unlock": { "method": "boss", "boss": "???", "character": "Eden" }
   },
   "88": { "id": 88, "name": "NO!", "quote": "Never again!" },
   "98": { "id": 98, "name": "Nose Goblin", "quote": "Seems magic..." },
@@ -563,6 +603,7 @@
     "name": "Nuh Uh!",
     "quote": "Don't want!",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Eden"
     }
@@ -571,7 +612,11 @@
     "id": 174,
     "name": "Number Magnet",
     "quote": "6",
-    "unlock": { "boss": "Mother", "character": "Tainted Judas" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Judas"
+    }
   },
   "143": {
     "id": 143,
@@ -589,7 +634,7 @@
     "id": 19,
     "name": "Paper Clip",
     "quote": "Master of lockpicking",
-    "startingTrinket": "Cain"
+    "setDrop": ["starting trinket"]
   },
   "112": { "id": 112, "name": "Pay to Win", "quote": "..." },
   "145": {
@@ -604,13 +649,18 @@
     "id": 76,
     "name": "Poker Chip",
     "quote": "It's double down time!",
-    "unlock": { "challenge": "I RULE!", "number": 26 }
+    "unlock": {
+      "method": "challenge",
+      "challengeName": "I RULE!",
+      "challengeNumber": 26
+    }
   },
   "167": {
     "id": 167,
     "name": "Polished Bone",
     "quote": "Friends from beyond",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Forgotten"
     }
@@ -624,6 +674,7 @@
     "name": "RC Remote",
     "quote": "Controllable buddies!",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Jacob"
     }
@@ -633,13 +684,13 @@
     "id": 84,
     "name": "Rib of Greed",
     "quote": "Feels greedy",
-    "unlock": { "boss": "Ultra Greed", "character": "Keeper" }
+    "unlock": { "method": "boss", "boss": "Ultra Greed", "character": "Keeper" }
   },
   "164": {
     "id": 164,
     "name": "Ring Cap",
     "quote": "Twice the bang!",
-    "unlock": { "boss": "Mother", "character": "Tainted ???" }
+    "unlock": { "method": "boss", "boss": "Mother", "character": "Tainted ???" }
   },
   "11": { "id": 11, "name": "Ring Worm", "quote": "Woop woop!" },
   "7": { "id": 7, "name": "Rosary Bead", "quote": "Faith up" },
@@ -659,7 +710,7 @@
     "id": 58,
     "name": "Samson's Lock",
     "quote": "Your rage grows",
-    "unlock": { "boss": "The Lamb", "character": "Samson" }
+    "unlock": { "method": "boss", "boss": "The Lamb", "character": "Samson" }
   },
   "78": {
     "id": 78,
@@ -676,38 +727,50 @@
     "id": 189,
     "name": "Sigil of Baphomet",
     "quote": "Revel in death",
-    "unlock": { "challenge": "Bloody Mary", "number": 37 }
+    "unlock": {
+      "method": "challenge",
+      "challengeName": "Bloody Mary",
+      "challengeNumber": 37
+    }
   },
   "110": {
     "id": 110,
     "name": "Silver Dollar",
     "quote": "Feels lucky...",
-    "unlock": { "boss": "Delirium", "character": "Cain" }
+    "unlock": { "method": "boss", "boss": "Delirium", "character": "Cain" }
   },
   "119": {
     "id": 119,
     "name": "Stem Cell",
     "quote": "Regen",
-    "unlock": { "boss": "Ultra Greedier", "character": "Samson" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Samson"
+    }
   },
   "13": {
     "id": 13,
     "name": "Store Credit",
     "quote": "YES!",
-    "unlock": { "boss": "???", "character": "Lazarus" }
+    "unlock": { "method": "boss", "boss": "???", "character": "Lazarus" }
   },
   "83": {
     "id": 83,
     "name": "Store Key",
     "quote": "Stores are open",
-    "unlock": { "donation": "Greed Donation Machine", "amount": 666 },
-    "startingTrinket": "Keeper"
+    "unlock": {
+      "other": "donate 666 coins to Greed Donation Machine",
+      "method": "other"
+    },
+    "setDrop": ["starting trinket"]
   },
   "175": {
     "id": 175,
     "name": "Strange Key",
     "quote": "What could it open?",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Eve"
     }
@@ -716,7 +779,11 @@
     "id": 74,
     "name": "Stud Finder",
     "quote": "The ground below feels hollow...",
-    "unlock": { "challenge": "BRAINS!", "number": 27 }
+    "unlock": {
+      "method": "challenge",
+      "challengeName": "BRAINS!",
+      "challengeNumber": 27
+    }
   },
   "99": { "id": 99, "name": "Super Ball", "quote": "Boing!" },
   "68": { "id": 68, "name": "Super Magnet", "quote": "It pulls" },
@@ -724,14 +791,22 @@
     "id": 178,
     "name": "Swallowed M80",
     "quote": "Bang!",
-    "unlock": { "boss": "Mother", "character": "Tainted Samson" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Samson"
+    }
   },
   "1": {
     "id": 1,
     "name": "Swallowed Penny",
     "quote": "Gulp!",
     "setDrop": ["urn", "Special Shopkeeper"],
-    "unlock": { "challenge": "Slow Roll", "number": 15 }
+    "unlock": {
+      "method": "challenge",
+      "challengeName": "Slow Roll",
+      "challengeNumber": 15
+    }
   },
   "65": { "id": 65, "name": "Tape Worm", "quote": "Floooooooooop!" },
   "139": { "id": 139, "name": "Teardrop Charm", "quote": "It feels lucky" },
@@ -740,6 +815,7 @@
     "name": "Telescope Lens",
     "quote": "Seek the stars",
     "unlock": {
+      "method": "other",
       "other": "collecting 3 \"star\" items in one run (Card Reading, Crystal Ball, Deck of Cards, Echo Chamber, Magic 8 Ball, Star of Bethlehem, Tarot Cloth, Zodiac signs, Planetarium items)"
     }
   },
@@ -748,6 +824,7 @@
     "name": "Temporary Tattoo",
     "quote": "You feel braver",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Samson"
     }
@@ -757,6 +834,7 @@
     "name": "The Left Hand",
     "quote": "The left-hand path reaps dark rewards",
     "unlock": {
+      "method": "boss",
       "boss": "???",
       "character": "Judas",
       "other": "defeat Ultra Pride"
@@ -767,6 +845,7 @@
     "name": "The Twins",
     "quote": "I'm seeing double...",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Lilith"
     }
@@ -777,13 +856,18 @@
     "id": 157,
     "name": "Torn Card",
     "quote": "Death awaits",
-    "unlock": { "boss": "Mother", "character": "Tainted Lazarus" }
+    "unlock": {
+      "method": "boss",
+      "boss": "Mother",
+      "character": "Tainted Lazarus"
+    }
   },
   "158": {
     "id": 158,
     "name": "Torn Pocket",
     "quote": "A hole in your pocket",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Lazarus"
     }
@@ -808,6 +892,7 @@
     "name": "Wicked Crown",
     "quote": "Walk the path of the wicked",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Azazel"
     }
@@ -825,6 +910,7 @@
     "name": "Your Soul",
     "quote": "Give it to me",
     "unlock": {
+      "method": "boss",
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Judas"
     }
