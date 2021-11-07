@@ -92,6 +92,13 @@ function Main({
     "itemUnlockMethodFilter",
     null
   );
+
+  const [trinketUnlockMethodFilter, setTrinketUnlockMethodFilter] =
+    useLocalStorage("trinketUnlockMethodFilter", null);
+  const [trinketSetDropFilter, setTrinketSetDropFilter] = useLocalStorage(
+    "trinketSetDropFilter",
+    false
+  );
   // #endregion
 
   //   FIX TO WORK WITH BOOTSTRAP'S COLLAPSE
@@ -182,7 +189,16 @@ function Main({
                       />
                     );
                   case "trinkety":
-                    return <TrinketFilters />;
+                    return (
+                      <TrinketFilters
+                        trinketUnlockMethodFilter={trinketUnlockMethodFilter}
+                        setTrinketUnlockMethodFilter={
+                          setTrinketUnlockMethodFilter
+                        }
+                        trinketSetDropFilter={trinketSetDropFilter}
+                        setTrinketSetDropFilter={setTrinketSetDropFilter}
+                      />
+                    );
                   default:
                     throw new Error(`Unknown type option: ${typeOption}`);
                 }
@@ -219,6 +235,8 @@ function Main({
                       sortOption={sortOption}
                       filterOption={filterOption}
                       nameFilter={nameFilter}
+                      trinketUnlockMethodFilter={trinketUnlockMethodFilter}
+                      trinketSetDropFilter={trinketSetDropFilter}
                       trinketsStatus={trinketsStatus}
                       trinketsContent={trinketsContent}
                       colors={colors}

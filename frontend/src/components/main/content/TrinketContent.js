@@ -5,6 +5,9 @@ import { itemImageData } from "../../../data/itemData";
 function TrinketContent({
   sortOption,
   filterOption,
+  nameFilter,
+  trinketUnlockMethodFilter,
+  trinketSetDropFilter,
   trinketsStatus,
   trinketsContent,
   setSelectedContent,
@@ -12,7 +15,32 @@ function TrinketContent({
   popup,
   setPopup,
 }) {
-  const filterTrinkets = () => true;
+  const filterTrinkets = (trinket) => {
+    //   NAMES & QUOTES
+    const nameLower = trinket.name.toLowerCase().replace(/[.']/g, "");
+    const quoteLower = trinket.quote.toLowerCase().replace(/[.']/g, "");
+    const nameFilterLower = nameFilter?.toLowerCase().replace(/[.']/g, "");
+
+    const nameCondition =
+      nameFilter === null
+        ? true
+        : nameLower.includes(nameFilterLower) ||
+          quoteLower.includes(nameFilterLower);
+
+    // UNLOCK METHOD
+    const unlockMethodCondition =
+      trinketUnlockMethodFilter === null
+        ? true
+        : "unlock" in trinket &&
+          trinket.unlock.method === trinketUnlockMethodFilter;
+
+    // SET DROP
+    const setDropCondition = trinketSetDropFilter ? "setDrop" in trinket : true;
+
+    return [nameCondition, unlockMethodCondition, setDropCondition].every(
+      (condition) => condition
+    );
+  };
 
   return (
     <>

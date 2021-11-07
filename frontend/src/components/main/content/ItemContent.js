@@ -61,7 +61,7 @@ function ItemContent({
     const nameLower = item.name.toLowerCase().replace(/[.']/g, "");
     const quoteLower = item.quote.toLowerCase().replace(/[.']/g, "");
     const nameFilterLower = nameFilter?.toLowerCase().replace(/[.']/g, "");
-    const filterCondition =
+    const nameCondition =
       nameFilter === null
         ? true
         : nameLower.includes(nameFilterLower) ||
@@ -210,12 +210,11 @@ function ItemContent({
     const unlockMethodCondition =
       itemUnlockMethodFilter === null
         ? true
-        : "unlock" in item
-        ? item.unlock.method.replace("Greed ", "") === itemUnlockMethodFilter
-        : false;
+        : "unlock" in item &&
+          item.unlock.method.replace("Greed ", "") === itemUnlockMethodFilter;
 
     return [
-      filterCondition,
+      nameCondition,
       typeCondition,
       qualityCondition,
       rechargeCondition,

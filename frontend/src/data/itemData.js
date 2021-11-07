@@ -1,7 +1,4 @@
-// create maps for ordered objects
-const mapOrderToImages = (order, images) => {
-  return order.map((el) => [el, images[el]]);
-};
+import mapOrderToImages from "./mapOrderToImages";
 
 // FRONTEND DATA
 export const itemImageData = {
