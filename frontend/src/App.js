@@ -4,6 +4,7 @@ import { itemPools, itemTransformations } from "./data/itemData";
 import fortunes from "./data/fortunes";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import ItemDescription from "./components/main/description/ItemDescription";
 import "./App.css";
 import TrinketDescription from "./components/main/description/TrinketDescription";
@@ -74,6 +75,7 @@ function App() {
           itemPools={itemPools}
           itemTransformations={itemTransformations}
         />
+        <Footer />
       </div>
       {popup && (
         <div ref={popupDiv} className="desc-popup">

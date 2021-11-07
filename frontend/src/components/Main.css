@@ -1,5 +1,5 @@
 main {
-  height: 100%;
+  flex: 1;
 }
 
 main > .row {
@@ -19,6 +19,7 @@ main > .row {
 }
 
 .items {
+  padding: 10px;
   background-color: #4a535c;
 }
 
