@@ -1,8 +1,10 @@
 import useAPI from "../hooks/useAPI";
 import useLocalStorage from "../hooks/useLocalStorage";
-import Description from "./Description";
+import ItemDescription from "./main/description/ItemDescription";
 import ItemContent from "./main/content/ItemContent";
 import ItemFilters from "./main/filters/ItemFilters";
+import TrinketContent from "./main/content/TrinketContent";
+import TrinketFilters from "./main/filters/TrinketFilters";
 import "./Main.css";
 
 function Main({
@@ -19,6 +21,7 @@ function Main({
 }) {
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
+  const [trinketsContent, trinketsStatus] = useAPI("trinkets", typeOption);
 
   //   VARIABLES
   const itemTypes = ["pasywny", "aktywny"];
@@ -34,6 +37,27 @@ function Main({
     "nielimitowany",
     "jednorazowego użytku",
     "inny",
+  ];
+
+  const colors = [
+    "multicolor",
+    "white",
+    "faded-white",
+    "light-purple",
+    "purple",
+    "light-blue",
+    "blue",
+    "light-green",
+    "green",
+    "yellow",
+    "gold",
+    "orange",
+    "pink",
+    "red",
+    "light-brown",
+    "brown",
+    "grey",
+    "black",
   ];
 
   // #region FILTERS
@@ -81,14 +105,23 @@ function Main({
         <div className="d-none d-md-block col-md-3 desc-container">
           <div className="desc">
             {/* show description if popup isn't up */}
-            {selectedContent && !popup && (
-              <Description
-                itemPools={itemPools}
-                itemTransformations={itemTransformations}
-                selectedContent={selectedContent}
-                popup={popup}
-              />
-            )}
+            {selectedContent &&
+              !popup &&
+              (() => {
+                switch (typeOption) {
+                  case "przedmioty":
+                    return (
+                      <ItemDescription
+                        itemPools={itemPools}
+                        itemTransformations={itemTransformations}
+                        selectedContent={selectedContent}
+                        popup={popup}
+                      />
+                    );
+                  default:
+                    throw new Error(`Unknown type option: ${typeOption}`);
+                }
+              })()}
           </div>
         </div>
         <div className="col-md-9 items">
@@ -140,6 +173,8 @@ function Main({
                         itemPools={itemPools}
                       />
                     );
+                  case "trinkety":
+                    return <TrinketFilters />;
                   default:
                     throw new Error(`Unknown type option: ${typeOption}`);
                 }
@@ -164,6 +199,21 @@ function Main({
                       itemUnlockMethodFilter={itemUnlockMethodFilter}
                       itemsStatus={itemsStatus}
                       itemsContent={itemsContent}
+                      colors={colors}
+                      setSelectedContent={setSelectedContent}
+                      popup={popup}
+                      setPopup={setPopup}
+                    />
+                  );
+                case "trinkety":
+                  return (
+                    <TrinketContent
+                      sortOption={sortOption}
+                      filterOption={filterOption}
+                      nameFilter={nameFilter}
+                      trinketsStatus={trinketsStatus}
+                      trinketsContent={trinketsContent}
+                      colors={colors}
                       setSelectedContent={setSelectedContent}
                       popup={popup}
                       setPopup={setPopup}

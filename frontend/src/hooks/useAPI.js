@@ -32,6 +32,7 @@ function useAPI(resource, typeState) {
 
     const typeStateTrans = {
       przedmioty: "items",
+      trinkety: "trinkets",
     };
 
     // retry fetching if page was left, fetching failed previously (or is first one), and resource is current

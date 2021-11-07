@@ -4,7 +4,7 @@ import { itemPools, itemTransformations } from "./data/itemData";
 import fortunes from "./data/fortunes";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import Description from "./components/Description";
+import ItemDescription from "./components/main/description/ItemDescription";
 import "./App.css";
 
 function App() {
@@ -76,12 +76,21 @@ function App() {
       </div>
       {popup && (
         <div ref={popupDiv} className="desc-popup">
-          <Description
-            itemPools={itemPools}
-            itemTransformations={itemTransformations}
-            selectedContent={selectedContent}
-            popup={popup}
-          />
+          {(() => {
+            switch (typeOption) {
+              case "przedmioty":
+                return (
+                  <ItemDescription
+                    itemPools={itemPools}
+                    itemTransformations={itemTransformations}
+                    selectedContent={selectedContent}
+                    popup={popup}
+                  />
+                );
+              default:
+                throw new Error(`Unknown type option: ${typeOption}`);
+            }
+          })()}
         </div>
       )}
     </>

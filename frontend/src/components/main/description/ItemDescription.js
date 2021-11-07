@@ -4,10 +4,10 @@ import {
   itemImageData,
   itemUnlockData,
   poolOrder,
-} from "../data/itemData";
+} from "../../../data/itemData";
 import "./Description.css";
 
-function Description({
+function ItemDescription({
   itemPools,
   itemTransformations,
   selectedContent,
@@ -169,7 +169,7 @@ function Description({
         if (bossName in bossTrans) {
           bossName = bossTrans[bossName];
         }
-        unlockString += bossName;
+        unlockString += bossName.replace("Satan", "Szatan");
 
         // add genitival -a
         if (
@@ -296,4 +296,4 @@ function Description({
   );
 }
 
-export default Description;
+export default ItemDescription;

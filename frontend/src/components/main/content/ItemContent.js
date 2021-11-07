@@ -20,6 +20,7 @@ function ItemContent({
   itemUnlockMethodFilter,
   itemsStatus,
   itemsContent,
+  colors,
   setSelectedContent,
   popup,
   setPopup,
@@ -28,27 +29,6 @@ function ItemContent({
     () => dInfinitySprites[Math.floor(Math.random() * dInfinitySprites.length)],
     []
   );
-
-  const itemColors = [
-    "multicolor",
-    "white",
-    "faded-white",
-    "light-purple",
-    "purple",
-    "light-blue",
-    "blue",
-    "light-green",
-    "green",
-    "yellow",
-    "gold",
-    "orange",
-    "pink",
-    "red",
-    "light-brown",
-    "brown",
-    "grey",
-    "black",
-  ];
 
   const filterItems = (item) => {
     // NAMES & QUOTES
@@ -290,8 +270,8 @@ function ItemContent({
                       : (a, b) => {
                           //   sort by color first, then by ID
                           const colorSort =
-                            itemColors.indexOf(itemColorData[a.id]) -
-                            itemColors.indexOf(itemColorData[b.id]);
+                            colors.indexOf(itemColorData[a.id]) -
+                            colors.indexOf(itemColorData[b.id]);
 
                           return colorSort === 0 ? a.id - b.id : colorSort;
                         }
