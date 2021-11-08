@@ -1,0 +1,2 @@
+- finish API docs
+- make custom error pages

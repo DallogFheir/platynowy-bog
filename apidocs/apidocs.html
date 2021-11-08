@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platynowy Bóg - API documentation</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>API reference</h1>
+    <h2>items</h2>
+    <h3>/api/items</h3>
+    <p>retrieves an array of all items</p>
+    <h3>/api/items/&lt;id&gt;</h3>
+    <p>retrieves an item by its ID</p>
+    <p>An item object contains the following properties:</p>
+    <ul>
+      <li><strong>id</strong> : <em>integer</em></li>
+      <li><strong>name</strong> : <em>string</em></li>
+      <li>
+        <strong>pool</strong> : <em>object</em> – pools where the item can be
+        found; possible properties:
+        <ul>
+          <li>
+            <strong>normal</strong> : <em>array[string]</em> – array of pools in
+            non-Greed(ier) mode
+          </li>
+          <li>
+            <strong>Greed Mode</strong> : <em>array[string]</em> – array of
+            pools in Greed(ier) mode
+          </li>
+        </ul>
+      </li>
+      <li><strong>quality</strong> : <em>integer</em></li>
+      <li><strong>quote</strong> : <em>string</em></li>
+      <li>
+        <strong>type</strong> : <em>string</em> – possible values:
+        <ul>
+          <li>"active"</li>
+          <li>"passive"</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -11,7 +11,7 @@ header {
 }
 
 .searchbar {
-  width: 190px;
+  width: 100%;
 }
 
 /* make links in navbar white/grey on hover instead of blue */

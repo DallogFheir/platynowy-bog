@@ -11,6 +11,12 @@ def open_resource(resource_name):
     )
 
 
+# main site
+@app.route("/")
+def home():
+    return app.send_static_file("index.html")
+
+
 # ITEMS
 @app.route("/api/items")
 def items():

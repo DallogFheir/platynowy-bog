@@ -10,7 +10,12 @@ function Footer() {
       </p>
       <p>
         Strona wzorowana na{" "}
-        <a className="link" href="https://platinumgod.co.uk/" target="_blank">
+        <a
+          className="link"
+          href="https://platinumgod.co.uk/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Platinum God
         </a>
         .
@@ -21,6 +26,7 @@ function Footer() {
           className="link"
           href="https://bindingofisaacrebirth.fandom.com/wiki/Binding_of_Isaac:_Rebirth_Wiki"
           target="_blank"
+          rel="noreferrer"
         >
           The Binding of Isaac: Rebirth Wiki
         </a>
@@ -44,6 +50,7 @@ function Footer() {
             className="link"
             href="https://github.com/DallogFheir"
             target="_blank"
+            rel="noreferrer"
           >
             DallogFheir
           </a>
@@ -54,6 +61,7 @@ function Footer() {
             className="link"
             href="https://steamcommunity.com/id/dallogfheir/"
             target="_blank"
+            rel="noreferrer"
           >
             DallogFheir
           </a>
@@ -64,6 +72,7 @@ function Footer() {
             className="link"
             href="https://twitter.com/DallogFheir"
             target="_blank"
+            rel="noreferrer"
           >
             @DallogFheir
           </a>

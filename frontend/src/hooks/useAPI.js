@@ -16,7 +16,7 @@ function useAPI(resource, typeState) {
 
       try {
         setStatus("loading");
-        const res = await fetch(`http://localhost:5000/api/${resource}`);
+        const res = await fetch(`/api/${resource}`);
 
         if (res.ok) {
           const data = await res.json();

@@ -56,15 +56,15 @@ function Navbar({
         <button
           className="navbar-toggler me-2"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarToggle"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div id="navbarToggle" className="collapse navbar-collapse">
           <ul className="nav nav-tabs ms-auto me-3 flex-column flex-sm-row">
             {menus.map((menu, idx) => (
-              <li key={idx} className="nav-item dropdown">
+              <li key={idx} className="nav-item dropdown text-center">
                 {/* eslint-disable jsx-a11y/anchor-is-valid */}
                 <a
                   href="#"
