@@ -107,14 +107,16 @@ function ItemDescription({
         case "other":
           pools.push(...poolsToParse[poolType]);
           break;
-        case "Greed Mode":
-          pools.push(
-            ...poolsToParse["Greed Mode"].map((pool) => `Greed ${pool}`)
-          );
+        case "greedMode":
+          pools.push(...poolsToParse.greedMode.map((pool) => `Greed ${pool}`));
           break;
-        case "mini-boss":
+        case "miniBoss":
+          pools.push("mini-boss");
+          break;
+        case "startingItem":
+          pools.push("starting item");
+          break;
         case "boss":
-        case "starting item":
         case "obstacles":
           pools.push(poolType);
           break;

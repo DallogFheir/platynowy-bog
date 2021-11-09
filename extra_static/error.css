@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #4a535c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+.wrapper {
+  background-color: #31373d;
+  padding: 50px;
+  text-align: center;
+}
+
+p {
+  margin: 10px auto;
+}
+
+a {
+  color: #9fabb8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #727a83;
+}
+
+.error-code {
+  font-variant: small-caps;
+  font-weight: 700;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platynowy Bóg - API documentation</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAvCAYAAABDq4KNAAAB5klEQVR4nO2ZO07DQBCG/0UpCBJCQjwUiYIiDRegQdyAguNAhahANFyFghtENHAAmpRIEQ/RUERUS/VH9tibWa/XDlr7q7xydrKZT7szsY21FlUYGpObMLfWVArQAmurXkATGF9TNHR1cwsAuL68yN3/T8Z6U9mxy5hkFQa7bYpIY760aSxJU4OqE3wzHmo0Br2pZbjM9KdfJAqmYu0FlyEtfgyzSZpa1Km6hrQMNx0/S5Km1NOvqbp0dHwCANjZ2wUAfH18AgBen58qxS9bX5KmvPeUzEisU1Iak2gGy9aXtikSakDLONEyXzfO3FqTpKng3i80o5wn45C6pofG2CRNqaefrxHCTBJm9PTsPGiBLjMH43Fu/DadLq7TNLUO5AxVNeMLMx5aj2hmNBoBAGazWW78MpksPpukqcLpJzMVy5zcW9peoQFCM+T+dwsAcFfyXd0wJetGrMpPJo8PubHLjGSZGUk3TJGf73cARXNE65olvkZ8uTvcAFDca0Cippx1iqY2t/dLxy5oUDMj64wvnJftILJ0r0vXjGi4Kr+8r6GZIcn/8x3wF7JLd3UUoeZiGyHLnnKlaYoX0hhxmatLTDOStE0R7fmerzlZ6Zsw4iJJU629nXfRxJvG3lQZvubafPf7B7y+JRQK/uuwAAAAAElFTkSuQmCC"
+        alt=""
+      />
+      API reference
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAvCAYAAABDq4KNAAAB5klEQVR4nO2ZO07DQBCG/0UpCBJCQjwUiYIiDRegQdyAguNAhahANFyFghtENHAAmpRIEQ/RUERUS/VH9tibWa/XDlr7q7xydrKZT7szsY21FlUYGpObMLfWVArQAmurXkATGF9TNHR1cwsAuL68yN3/T8Z6U9mxy5hkFQa7bYpIY760aSxJU4OqE3wzHmo0Br2pZbjM9KdfJAqmYu0FlyEtfgyzSZpa1Km6hrQMNx0/S5Km1NOvqbp0dHwCANjZ2wUAfH18AgBen58qxS9bX5KmvPeUzEisU1Iak2gGy9aXtikSakDLONEyXzfO3FqTpKng3i80o5wn45C6pofG2CRNqaefrxHCTBJm9PTsPGiBLjMH43Fu/DadLq7TNLUO5AxVNeMLMx5aj2hmNBoBAGazWW78MpksPpukqcLpJzMVy5zcW9peoQFCM+T+dwsAcFfyXd0wJetGrMpPJo8PubHLjGSZGUk3TJGf73cARXNE65olvkZ8uTvcAFDca0Cippx1iqY2t/dLxy5oUDMj64wvnJftILJ0r0vXjGi4Kr+8r6GZIcn/8x3wF7JLd3UUoeZiGyHLnnKlaYoX0hhxmatLTDOStE0R7fmerzlZ6Zsw4iJJU629nXfRxJvG3lQZvubafPf7B7y+JRQK/uuwAAAAAElFTkSuQmCC"
+        alt=""
+      />
+    </h1>
+    <h2>items</h2>
+    <h3>/api/items</h3>
+    <p>retrieves an array of all items</p>
+    <h3>/api/items/&lt;id&gt;</h3>
+    <p>retrieves an item by its ID</p>
+    <p>An item object contains the following properties:</p>
+    <ul>
+      <li><strong>id</strong> : <em>integer</em></li>
+      <li><strong>name</strong> : <em>string</em></li>
+      <li><strong>quote</strong> : <em>string</em></li>
+      <li>
+        <strong>type</strong> : <em>string</em> – possible values:
+        <ul>
+          <li><code>"active"</code></li>
+          <li><code>"passive"</code></li>
+        </ul>
+      </li>
+      <li><strong>quality</strong> : <em>integer</em></li>
+      <li>
+        <strong>pool</strong> : <em>object</em> – pools where the item can be
+        found; possible properties:
+        <ul>
+          <li>
+            <strong>normal</strong> : <em>array[string]</em> – array of pools in
+            non-Greed(ier) mode
+          </li>
+          <li>
+            <strong>greedMode</strong> : <em>array[string]</em> – array of pools
+            in Greed(ier) mode
+          </li>
+          <li>
+            <strong>boss</strong> : <em>array[string]</em> – array of bosses
+            which drop the item
+          </li>
+          <li>
+            <strong>miniBoss</strong> : <em>array[string]</em> – array of
+            mini-bosses which drop the item
+          </li>
+          <li>
+            <strong>chests</strong> : <em>array[string]</em> – array of chest
+            types which can contain the item
+          </li>
+          <li>
+            <strong>beggars</strong> : <em>array[string]</em> – array of beggars
+            which can pay out with the item
+          </li>
+          <li>
+            <strong>machines</strong> : <em>array[string]</em> – array of
+            machines which can pay out with the item
+          </li>
+          <li>
+            <strong>obstacles</strong> : <em>array[string]</em> – array of
+            obstacles which can drop the item after being destroyed
+          </li>
+          <li>
+            <strong>startingItem</strong> : <em>array[string]</em> – array of
+            characters for whom the item is a starting item
+          </li>
+          <li>
+            <strong>other</strong> : <em>array[string]</em> – array of other
+            possible ways to find the item; possible values:
+            <ul>
+              <li><code>"Baby Shop"</code></li>
+              <li><code>"other"</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="optional">optional</span> <strong>transformation</strong> :
+        <em>array[string]</em> – array of transformations (if any)
+      </li>
+      <li>
+        <span class="optional">optional</span> <strong>rechargeTime</strong> :
+        <em>object</em> – if the item is active, an object representing its
+        recharge time; properties:
+        <ul>
+          <li>
+            <strong>amount</strong> : <em>integer | string</em> – integer
+            represeting the amount of rooms/seconds, or string equal to:
+            <ul>
+              <li>
+                <code>"one time use"</code>
+              </li>
+              <li><code>"unlimited"</code></li>
+              <li><code>"other"</code></li>
+            </ul>
+          </li>
+          <li>
+            <span class="optional">optional</span> <strong>unit</strong> :
+            <em>string</em> – possible values:
+            <ul>
+              <li><code>"rooms"</code></li>
+              <li><code>"s"</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

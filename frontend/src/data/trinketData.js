@@ -233,7 +233,7 @@ export const trinketDescriptionData = {
   67: "Przy otrzymaniu obrażeń przez Isaaca wywołuje efekt The D6, D8, D12 lub D20.",
   185: "Ma szansę na wygenerowanie losowej szarańczy, gdy Isaac zabije przeciwnika.",
   107: "Gdy Isaac otrzyma obrażenia, otrzyma je najpierw w Czerwone Serca, a nie Soul Hearty/Black Hearty/Rotten Hearty.\nBone Hearty zostaną najpierw opróżnione z Czerwonych Serc, ale nie zostaną zniszczone, jeśli Isaac ma czerwone serca.",
-  170: "Daje szansę na otwarcie Czerwonego Pokoju po przejściu pokoju.\nSzansa zależy od liczby posiadanych Crystal Key i tego, czy pokój, który Isaac przeszedł, jest normalny czy sam jest czerwony:\n*1: normalny - 33,3%, czerwony - 12,5%\n*2: normalny - 50%, czerwony - 16,6%\n*3: normalny - 100%, czerwony - 25%\n*4: normalny - 100%, czerwony - 50%\n*5: normalny - 100%, czerwony - 100%",
+  170: "Daje szansę na otwarcie Czerwonego Pokoju po przejściu pokoju.\nSzansa zależy od liczby posiadanych Crystal Key i tego, czy pokój, który Isaac przeszedł, jest normalny czy sam jest czerwony:\n* 1: normalny - 33,3%, czerwony - 12,5%\n* 2: normalny - 50%, czerwony - 16,6%\n* 3: normalny - 100%, czerwony - 25%\n* 4: normalny - 100%, czerwony - 50%\n* 5: normalny - 100%, czerwony - 100%",
   172: "Gdy Isaac podniesie monetę, zostanie przeteleportowany do losowego pokoju.",
   43: "Jeśli po otrzymaniu obrażeń Isaac będzie miał 1/2 serca lub mniej (oprócz pustych Bone Heartów), zostanie przeteleportowany do losowego pokoju.\nEfekt nie bierze pod uwagę pustych Bone Heartów, np. gdy Isaac posiada 12 pustych Bone Heartów i otrzyma obrażenia, zostanie przeteleportowany.",
   35: "Isaac otrzymuje bonus +2 Obrażeń, aplikowany po wszystkich obliczeniach obrażeń, ale przed mnożnikami.",

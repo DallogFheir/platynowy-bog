@@ -1,4 +1,4 @@
-from flask import jsonify
+from flask import jsonify, render_template
 import json
 from pathlib import Path
 from . import app
@@ -15,6 +15,29 @@ def open_resource(resource_name):
 @app.route("/")
 def home():
     return app.send_static_file("index.html")
+
+
+# API docs
+@app.route("/apidocs")
+def apidocs():
+    return app.send_static_file("apidocs.html")
+
+
+# error handlers
+@app.errorhandler(404)
+def error_404(error):
+    error_code = error.code
+    message = "Nie znaleziono strony."
+
+    return render_template("error.html", error_code=error_code, message=message), 404
+
+
+@app.errorhandler(500)
+def error_500(error):
+    error_code = error.code
+    message = "Wystąpił błąd ze strony serwera. Spróbuj ponownie później."
+
+    return render_template("error.html", error_code=error_code, message=message), 500
 
 
 # ITEMS
