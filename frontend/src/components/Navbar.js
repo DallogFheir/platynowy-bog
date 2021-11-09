@@ -50,8 +50,8 @@ function Navbar({
     <header>
       <nav className="navbar navbar-expand-md navbar-dark bg-dark">
         <div className="navbar-brand ms-2">
-          <img src="platinum-god.png" alt=""></img>
-          <span className="ms-2 title d-none d-md-inline">PLATYNOWY BÓG</span>
+          <img src="platinum-god.png" alt="" />
+          <span className="ms-2 title">PLATYNOWY BÓG</span>
         </div>
         <button
           className="navbar-toggler me-2"
@@ -62,7 +62,7 @@ function Navbar({
           <span className="navbar-toggler-icon"></span>
         </button>
         <div id="navbarToggle" className="collapse navbar-collapse">
-          <ul className="nav nav-tabs ms-auto me-3 flex-column flex-sm-row">
+          <ul className="nav nav-tabs ms-auto me-3 flex-column flex-sm-row d-none d-md-flex">
             {menus.map((menu, idx) => (
               <li key={idx} className="nav-item dropdown text-center">
                 {/* eslint-disable jsx-a11y/anchor-is-valid */}
@@ -80,7 +80,7 @@ function Navbar({
                         <input
                           type="radio"
                           name={menu.name}
-                          defaultChecked={option === menu.state}
+                          checked={option === menu.state}
                           id={option}
                           className="form-check-input"
                           onChange={(e) => {
@@ -97,9 +97,31 @@ function Navbar({
               </li>
             ))}
           </ul>
+          <form className="mt-2 mb-2 d-md-none text-center text-light">
+            {menus.map((menu, menuIdx) => (
+              <div key={menuIdx} className="mt-2">
+                <label className="ms-2 me-2" htmlFor={menu.name}>
+                  {menu.name.toUpperCase() + ":"}
+                </label>
+                <select
+                  id={menu.name}
+                  value={menu.state}
+                  onChange={(e) => {
+                    menu.setState(e.target.value);
+                  }}
+                >
+                  {menu.options.map((option, optionIdx) => (
+                    <option key={optionIdx} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            ))}
+          </form>
           <form
             action=""
-            className="form-inline me-2"
+            className="form-inline me-2 ms-2"
             onSubmit={(e) => e.preventDefault()}
           >
             <input
