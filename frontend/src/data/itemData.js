@@ -1478,7 +1478,7 @@ export const itemDescriptionData = {
   130: "Daje Isaacowi latanie.\nJeśli statystyka Szybkości wynosi poniżej 1,5, zwiększa ją do 1,5.\nPrzy użyciu Isaac szarżuje przez pokój, będąc nietykalnym i zadając obrażenia równe 4 * statystyki Obrażeń + 28.\nWypada z Headless Horsemana.",
   131: "Przyzywa chowańca, który wyrzuca bombę co 3 pokoje. Pierwsze wyrzucenie nastąpi po 2 pokojach.",
   132: "Łzy dostają bonus do obrażeń zależny od odległości, jaką pokonały, około +0,5-0,6 na płytkę.\nPoza Greed Mode'em może wypaść tylko z Krampusa lub z Mystery Gifta.",
-  133: "Przy użyciu usuwa kontener Czerwonego Serca ze zdrowia Isaaca i zamienia je w 3 Soul Hearty.",
+  133: "Przy użyciu usuwa kontener Czerwonego Serca ze zdrowia Isaaca i zamienia go w 3 Soul Hearty.",
   134: "Daje 1/3 szansy na to, że nagroda za przejście pokoju zostanie zamieniona na zwykłą skrzynkę lub Złotą Skrzynkę, ale też 1/3 szansy na to, że zostanie zamieniona w brak nagrody.",
   135: "Przy użyciu rani Isaaca na 1/2 serca lub 1 serce od Rozdziału 4 i generuje 1-2 monety na normalnym poziomie trudności i 1 monetę na Hard modzie.\nW przypadku Keepera generuje 0-1 monet.\nMa szansę wypaść z Blood Donation Machine po wpłaceniu do niej.",
   136: "Przyzywa kukłę, która wybucha po 5 sekundach, zadając 185 Obrażeń.",
