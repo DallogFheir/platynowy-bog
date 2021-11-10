@@ -14,7 +14,6 @@ body {
   height: 100%;
   background-color: #4a535c;
   font-family: "Open Sans", sans-serif;
-  font-size: 2em;
   color: white;
 }
 
@@ -38,6 +37,8 @@ a:hover {
 }
 
 .error-code {
+  margin: auto 10px;
+  font-size: 2em;
   font-variant: small-caps;
   font-weight: 700;
 }
