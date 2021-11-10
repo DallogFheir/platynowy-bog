@@ -81,13 +81,15 @@ def encode_to_base64(img_bytes_io):
 if __name__ == "__main__":
     inputs = Path("C:/Users/Adam/Desktop/itens")
 
-    browser = webdriver.Firefox()
+    browser = webdriver.Firefox(
+        executable_path=r"C:\Users\Adam\Desktop\geckodriver-v0.30.0-win64\geckodriver.exe"
+    )
 
     items = {}
 
     for file in inputs.iterdir():
         try:
-            match = re.fullmatch(r"Collectible_(.*?)_icon", file.stem)
+            match = re.fullmatch(r"Trinket_(.*?)_icon", file.stem)
             name = match[1] if match is not None else file.stem
 
             resized = get_resized_img(browser, file, 200)
@@ -102,7 +104,5 @@ if __name__ == "__main__":
 
             items[name] = b64
         finally:
-            with open(
-                "D:/programowanie/projects/wip/platynowy-bog/datad.json", "w"
-            ) as f:
+            with open("E:/projekty React/wip/platynowy-bog/datad.json", "w") as f:
                 json.dump(items, f)

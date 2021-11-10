@@ -914,5 +914,54 @@
       "boss": ["Isaac", "???", "Satan", "The Lamb"],
       "character": "Tainted Judas"
     }
+  },
+  "102": {
+    "id": 102,
+    "name": "Fragmented Card",
+    "quote": "Double moon"
+  },
+  "111": {
+    "id": 111,
+    "name": "Bloody Crown",
+    "quote": "Drips with blood...",
+    "unlock": {
+      "method": "boss",
+      "boss": "Delirium",
+      "character": "Samson"
+    }
+  },
+  "82": {
+    "id": 82,
+    "name": "Golden Horse Shoe",
+    "quote": "Feel lucky?"
+  },
+  "118": {
+    "id": 118,
+    "name": "Bat Wing",
+    "quote": "They are growing...",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Azazel"
+    }
+  },
+  "122": {
+    "id": 122,
+    "name": "Butter!",
+    "quote": "Can't hold it!",
+    "unlock": {
+      "method": "other",
+      "other": "complete 2 Victory Laps and start a 3rd"
+    }
+  },
+  "94": {
+    "id": 94,
+    "name": "Fish Tail",
+    "quote": "It also stinks!"
+  },
+  "95": {
+    "id": 95,
+    "name": "Black Tooth",
+    "quote": "It looks dead"
   }
 }
