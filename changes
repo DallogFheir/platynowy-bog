@@ -123,20 +123,6 @@ Fixes:
 - Fixed an exploit with the Forgotten which allowed taking infinite items from the Death Certificate area
 - Fixed Lil Abaddon not scaling with BFFs
 - Fixed Brimstone dealing one less damage tick than intended
-- Fixed several orbitals doing less contact damage than intended
-- Fixed invisible mirrors and devil room doors which could appear along walls where a door should not be present
-- Fixed Ludovico tears periodically getting destroyed in sidescrolling sections
-- Fixed red chests forcing the devil room to be initialized when opened, regardless of whether they contain a teleport to the devil room or not (this sometimes caused angel rooms not to generate properly)
-- Fixed treasure rooms in the mirror dimension counting as treasure rooms for the purpose of calculating Planetarium spawning chance
-- Fixed battery bums not giving charges to Tainted Forgotten when touched by his soul
-- Fixed battery bums not being able to recharge Book of Virtues
-- Fixed Luna light beams granting their stat bonus to the wrong character when playing as Tainted Forgotten
-- Fixed The Emperor? being able to create final boss fights when used in Caves II or Depths II (or equivalent floors)
-- Fixed The Emperor? creating a bugged Monstro fight when used in Gehenna and the Blue Womb
-- Fixed Genesis giving a lot more items than intended when multiple copies of the same items are owned
-- Fixed Genesis giving less items than intended when used by characters with multiple bodies (such as Jacob and Esau)
-- Fixed Genesis duplicating starting items from challenges and not removing Damocles and Missing No
-- Fixed Vanishing Twin not working correctly when fighting Great Gideon
-- Fixed the bottom right corner of closet rooms having no collision (this could rarely result in entities getting stuck there)
 
 - new Converter sprite
+- ultra secret room item pool
