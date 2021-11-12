@@ -122,7 +122,6 @@ Fixes:
 - Fixed Recall causing the Forgotten's body to hover in the air with Car Battery
 - Fixed an exploit with the Forgotten which allowed taking infinite items from the Death Certificate area
 - Fixed Lil Abaddon not scaling with BFFs
-- Fixed Brimstone dealing one less damage tick than intended
 
 - new Converter sprite
 - ultra secret room item pool
