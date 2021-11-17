@@ -1509,7 +1509,7 @@ export const itemDescriptionData = {
   159: "Daje Isaacowi lot oraz łzy spektralne.",
   16: "+2 Czerwone Serca.\nDodatkowo leczy wszystkie czerwone serca Isaaca.",
   160: "Przy użyciu przyzywa 5 promieni światła z nieba, które zadają 20 + Obrażenia Isaaca, do 8 razy, i utrzymują się przez 0,8 sekundy. Promienie mają wysoką szansę na bezpośrednie namierzenie przeciwników.",
-  161: "Po śmierci Isaac odradza się jako ??? z 3 Soul Heartami.",
+  161: "Po śmierci Isaac odradza się jako ??? z 3 Soul Heartami.\nTainted ??? zostanie odrodzony jako on sam, a nie ???.",
   162: "Daje Isaacowi szansę na wywołanie efektu Book of Shadows przy otrzymaniu przez niego obrażeń, tworząc tarczę, która chroni go przed obrażeniami przez 7 sekund.\nSzansa jest zależna od Szczęścia i wynosi 100% przy Szczęściu 27.",
   163: "Przyzywa chowańca, który podąża za Isaaciem i co 2/3 sekundy strzela łzami spektralnymi, które zadają 3,5 Obrażeń.\nMa szansę wypaść z czaszek.",
   164: "Przy użyciu Isaac będzie trzymał świeczkę nad głową. Naciśnięcie klawisza strzału wyśle płomień w danym kierunku. Płomień zadaje 23 Obrażeń na tick (zadaje obrażenia ok. 6 razy na sekundę) i wygasza się po ok. 2 sekundach.\nPłomień jest w stanie również zniszczyć pociski przeciwników i Shopkeeperów oraz wygasić ogniska.",
