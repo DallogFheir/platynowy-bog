@@ -55,7 +55,6 @@ Additions:
 - Monster Manual can now grant Twisted Pair
 - Sacrificial Altar can now grant Vengeful Spirit, Hungry Soul and Blood Puppy
 - Cube Baby can now be picked up and thrown using Mom's Bracelet
-- Psy Fly now enters a brief cooldown period after reflecting a certain number of projectiles (it's still really good don't worry)
 - Guppy's Eye now displays the contents of Shopkeepers
 - 20/20 no longer adds an extra shot when combined with the Inner Eye or Mutant Spider, instead cancels out the firerate decrease they grant (extra copies of 20/20 add 1 extra shot per copy)
 - Mega Mush now grants more invincibility frames after its effect expires
@@ -64,7 +63,6 @@ Additions:
 - Abaddon can no longer kill the player if they have Alabaster Box
 - Spelunker Hat and Host Hat now block projectiles falling from above
 - Spelunker Hat now reveals rooms up to 2 rooms away
-- Increased the aura damage of Godhead tears from 1.05 to 2
 
 - new Converter sprite
 - ultra secret room item pool
