@@ -427,7 +427,11 @@
   "38": {
     "id": 38,
     "name": "Tammy's Head",
-    "pool": { "greedMode": ["Treasure Room"], "machines": ["Crane Game"] },
+    "pool": {
+      "normal": ["Treasure Room"],
+      "greedMode": ["Treasure Room"],
+      "machines": ["Crane Game"]
+    },
     "quality": 3,
     "quote": "Reusable tear burst",
     "rechargeTime": { "amount": 1, "unit": "rooms" },
