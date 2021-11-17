@@ -1698,7 +1698,7 @@ export const itemDescriptionData = {
   33: "Daje Isaacowi latanie na czas trwania obecnego pokoju.\nNatychmiastowo zabija Mamę (także tę w Mauzoleum), Mom's Heart (także to w Mauzoleum) i It Lives.\nZabija Isaaca, jeśli zostanie użyta na Szatanie.",
   330: "5,5x szybkostrzelność.\n0,2x Obrażenia.\n0,5x rozmiar łez.\nZmniejsza odrzut łez.\nPrzedmiotów, które zastępują łzy i które trzeba ładować, takie jak Brimstone, Chocolate Milk czy Monstro's Lung, nie trzeba więcej ładować i mogą być używane bez przerwy.",
   331: "+0,5 Obrażeń.\n-0,3 Łez.\n+0,5 Zasięgu.\n-0,3 Szybkości Strzałów.\n+0,8 Wysokości Łez.\nŁzy Isaaca otrzymują efekt samonaprowadzania oraz aurę, która zadaje 1,05 Obrażeń na tick.",
-  332: "Po śmierci odradza Isaaca w tym samym miejscu, w którym umarł, jako Lazarus Risen.\nLazarus' Rags jest siódmym przedmiotem w kolejności aktywacji przedmiotów odradzających, po Soul of Lazarus, 1up!, drugim życiem Lazarusa, Dead Cat, Inner Child i Guppy's Collar.",
+  332: "Po śmierci odradza Isaaca w tym samym miejscu, w którym umarł, jako Lazarus Risen.\nLazarus' Rags jest siódmym przedmiotem w kolejności aktywacji przedmiotów odradzających, po Soul of Lazarus, 1up!, drugim życiem Lazarusa, Dead Cat, Inner Child i Guppy's Collar.\nTainted Lazarus zostanie odrodzony jako on sam, a nie Lazarus Risen.",
   333: "Daje efekt Treasure Map, Blue Map i The Compass, odsłaniając całą mapę wraz z zawartością wszystkich pokoi, wliczając Secret Roomy i Super Secret Roomy.",
   334: "+3 Czerwone Serca.",
   335: "+2 Soul Hearty.\nIsaac otrzymuję aurę, która odpycha pociski przeciwników.\nAura ma co chwilę inną siłę, czasami tylko spowalnia pociski, czasami całkowicie zmienia kierunek ich lotu.",
