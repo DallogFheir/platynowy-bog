@@ -1988,7 +1988,6 @@
     "id": 173,
     "name": "Mitre",
     "pool": {
-      "greedMode": ["Angel Room"],
       "normal": ["Treasure Room", "Angel Room"]
     },
     "quality": 3,
@@ -6049,7 +6048,7 @@
     "id": 543,
     "name": "Hallowed Ground",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Angel Room"],
       "normal": ["Treasure Room", "Angel Room"]
     },
     "quality": 1,
