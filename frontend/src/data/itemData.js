@@ -1609,7 +1609,7 @@ export const itemDescriptionData = {
   25: "+1 Czerwone Serce.\nDodatkowo leczy 1 czerwone serce.\nJeśli jakaś pula przedmiotów zostanie w pełni wyczerpana, od tego momentu będzie zawierać tylko Breakfast.",
   250: "Wszystkie bomby-znajdźki zostają zmienione w podwójne bomby.",
   251: "Generuje 1 losową kartę lub runę.\nZamienia wszystkie pigułki w karty (oprócz pigułki w Sklepie, w którym Started Deck zostanie kupiony).\nIsaac może nosić 2 karty na raz.",
-  252: "Pozwala Isaacowi na trzymanie 2 pigułek na raz.\nGeneruje losową pigułkę przy podniesieniu.\nWszystkie karty i runy (oraz Dice Shard i Cracked Key) zostaną zamienione w pigułki, wliczając kartę/runę obecnie trzymaną przez Isaaca.\nCzaszka z X-em w Depths II/Necropolis II/Dank Depths II będzie zawierała pigułkę Telepills zamiast The Fool.\nPostacie, które mają aktywny item w miejscu na pigułki, otrzymają trzecie miejsce na pigułki.",
+  252: "Pozwala Isaacowi na trzymanie 2 pigułek na raz.\nGeneruje losową pigułkę przy podniesieniu.\nWszystkie karty zostaną zamienione w pigułki, wliczając kartę obecnie trzymaną przez Isaaca.\nCzaszka z X-em w Depths II/Necropolis II/Dank Depths II będzie zawierała pigułkę Telepills zamiast The Fool.\nPostacie, które mają aktywny item w miejscu na pigułki, otrzymają trzecie miejsce na pigułki.",
   253: "+1 Czerwone Serce.\nDodatkowo leczy 1 czerwone serce.\n+1 Szczęścia.",
   254: "+1 Obrażeń.\n+1,5 Zasięg.\n+0,5 Wysokości Łez.\nPowyższe statystyki odnoszą się jedynie do łez wystrzeliwanych z lewego oka Isaaca.\nMa szansę wypaść z polipów.",
   255: "+0,5 Łez.\n+0,2 Szybkości Strzałów.",
