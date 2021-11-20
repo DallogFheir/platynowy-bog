@@ -30,10 +30,6 @@ Additions:
 - Removed a redundant range increase granted by Sacred Heart and Godhead (this was originally needed to counteract the shot speed decrease)
 - Converter now has 3 room cooldown
 - Mama Mega now has a more intuitive interaction with golden bombs: using it will now consume a golden bomb if the player has one, allowing it to be used again
-- Suplex now scales in damage and area of effect with the player's size
-- Blood Puppy will no longer try to attack the player when they are unable to move
-- Mirrors can no longer be broken by tear effects (such as Sulfuric Acid and Terra)
-- Anima Sola can now chain up to two targets if the player has Car Battery, if only one valid target is present it will be chained for twice the duration
 
 - new Converter sprite
 - ultra secret room item pool
