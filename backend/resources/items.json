@@ -3328,7 +3328,7 @@
     "pool": { "normal": ["Shop"] },
     "quality": 1,
     "quote": "Convert your soul",
-    "rechargeTime": { "amount": "unlimited" },
+    "rechargeTime": { "amount": 3, "unit": "rooms" },
     "type": "active"
   },
   "297": {
