@@ -34,7 +34,6 @@ Additions:
 - Blood Puppy will no longer try to attack the player when they are unable to move
 - Mirrors can no longer be broken by tear effects (such as Sulfuric Acid and Terra)
 - Anima Sola can now chain up to two targets if the player has Car Battery, if only one valid target is present it will be chained for twice the duration
-- Pop tears will now start falling to the ground after bouncing off each other 8 times
 
 - new Converter sprite
 - ultra secret room item pool
