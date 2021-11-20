@@ -58,9 +58,6 @@ Additions:
 - Guppy's Eye now displays the contents of Shopkeepers
 - 20/20 no longer adds an extra shot when combined with the Inner Eye or Mutant Spider, instead cancels out the firerate decrease they grant (extra copies of 20/20 add 1 extra shot per copy)
 - Mega Mush now grants more invincibility frames after its effect expires
-- Spirit Shackles now grants more invincibility frames after revival
-- The random item effect granted by Modeling Clay is now seeded per room
-- Abaddon can no longer kill the player if they have Alabaster Box
 
 - new Converter sprite
 - ultra secret room item pool
