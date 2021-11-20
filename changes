@@ -43,9 +43,6 @@ Additions:
 - Reviving after dying from having 100% broken hearts now removes 1 broken heart to prevent situations where the player would be still alive despite having no health
 - Dark Arts now only grants its temporary damage buff to Dark Judas and Tainted Judas
 - Damage buff granted by Dark Arts now decays faster the higher it is, but no longer decays while Dark Arts is active
-- Binge Eater now gives -0.03 speed per food item held
-- Binge Eater + Breakfast now increases range and shot speed (instead of range and speed)
-- Binge Eater + Dessert now increases damage and shot speed (instead of damage and speed)
 
 - new Converter sprite
 - ultra secret room item pool
