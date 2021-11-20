@@ -39,8 +39,6 @@ Additions:
 - Rebalanced the cooldown of Blank Card, Placebo and Clear Rune with certain effects
 - Bombs can now be suplexed
 - Little Baggy no longer affects pocket items that are neither pills nor cards (such as runes)
-- Heartbreak can no longer kill the player on pickup
-- Reviving after dying from having 100% broken hearts now removes 1 broken heart to prevent situations where the player would be still alive despite having no health
 
 - new Converter sprite
 - ultra secret room item pool
