@@ -27,6 +27,5 @@ Additions:
 - Notched Axe now creates bridges when breaking rocks next to pits
 - 'M now rerolls Notched Axe when it runs out of durability
 - Capped the proc rate of Ghost Pepper and Bird's Eye to 50% (holding both removes the cap)
-- Removed a redundant range increase granted by Sacred Heart and Godhead (this was originally needed to counteract the shot speed decrease)
 
 - ultra secret room item pool
