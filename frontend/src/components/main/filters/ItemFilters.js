@@ -29,6 +29,7 @@ function ItemFilters({
   itemPools,
 }) {
   const poolsHoverInfo = {
+    "Ultra Secret Room": "Ultra Secret Room",
     "Baby Shop": "sklepy z Adoption Papers",
     "mini-boss": "mini-bossy",
     boss: "konkretny boss",
