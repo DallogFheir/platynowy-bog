@@ -7898,8 +7898,12 @@
   "711": {
     "id": 711,
     "name": "Flip",
-    "pool": { "startingItem": ["Tainted Lazarus"] },
-    "quality": 3,
+    "pool": {
+      "normal": ["Curse Room", "Secret Room", "Ultra Secret Room"],
+      "greedMode": ["Secret Room", "Shop"],
+      "startingItem": ["Tainted Lazarus"]
+    },
+    "quality": 4,
     "quote": "Life and death",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
     "unlock": {
