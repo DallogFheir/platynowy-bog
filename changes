@@ -8,7 +8,5 @@ Additions:
 - Tainted Azazel now sneezes automatically when charging instead of when releasing a partial charge
 - Hitting enemies with Tainted Azazel's sneeze cuts the remaining charge time in half
 - Hitting enemies with Tainted Azazel's sneeze inflicts them with a Brimstone Curse which makes them more vulnerable to Brimstone attacks and causes them to explode when killed by Brimstone
-- Tainted Eve's clots are no longer lost when recalled by Sumptorium if she has full health, instead they will drop to the ground next to her
-- Tainted Eve's clots now start with 15 HP when spawned and slowly decay down to 1 HP (5 HP for non-red hearts)
 
 - ultra secret room item pool

@@ -7931,9 +7931,13 @@
   "713": {
     "id": 713,
     "name": "Sumptorium",
-    "pool": { "startingItem": ["Tainted Eve"] },
+    "pool": {
+      "normal": ["Treasure Room"],
+      "greedMode": ["Treasure Room"],
+      "startingItem": ["Tainted Eve"]
+    },
     "quality": 3,
-    "quote": "Return",
+    "quote": "Blood to blood",
     "rechargeTime": { "amount": 1, "unit": "s" },
     "unlock": {
       "boss": "Delirium",
