@@ -8326,5 +8326,41 @@
       "method": "boss"
     },
     "type": "active"
+  },
+  "730": {
+    "id": 730,
+    "name": "Glass Eye",
+    "pool": {
+      "normal": ["Boss Room"],
+      "greedMode": ["Boss Room"],
+      "machines": ["Crane Game"],
+      "chests": ["Golden Chest"]
+    },
+    "quality": 3,
+    "quote": "DMG + luck up",
+    "type": "passive"
+  },
+  "731": {
+    "id": 731,
+    "name": "Stye",
+    "pool": {
+      "normal": ["Boss Room"],
+      "greedMode": ["Boss Room"]
+    },
+    "quality": 2,
+    "quote": "DMG + range up",
+    "type": "passive"
+  },
+  "732": {
+    "id": 732,
+    "name": "Mom's Ring",
+    "pool": {
+      "chests": ["Golden Chest", "Mom's Chest"],
+      "greedMode": ["Shop"]
+    },
+    "quality": 3,
+    "quote": "DMG up",
+    "type": "passive",
+    "transformation": ["Yes Mother?"]
   }
 }

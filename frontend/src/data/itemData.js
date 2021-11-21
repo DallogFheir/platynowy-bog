@@ -2,6 +2,9 @@ import mapOrderToImages from "./mapOrderToImages";
 
 // FRONTEND DATA
 export const itemImageData = {
+  730: "UklGRpYCAABXRUJQVlA4WAoAAAAQAAAAIQAAHwAAQUxQSDMAAAABDzD/ERFCUSJA0YIBjLTVjWQAYT7eCSL6H9EzYqbMjTp3ch44Q/kyEMdOzo06B2XpGTMAVlA4IDwCAACQCgCdASoiACAAPmUijkWkIaEarf4AQAZEoArDN1cTmAfgBrt8EA/gGUAfsBDOeDp0T/nZwOj2fvWrs/2Hm6+1VYmPgRH9etssGbSt1StXZAL/6SMpp/BfeIEvUuAA/v8q+ehP0Najf/4Nt07lmqpv3Yb3nV4S6zVv5WtQkvp+yQtXx0/ArzWuM5KvXf7z4X0Vv8NZoS//wa/Ym51/X/XTNHy3I107/emKDP2QvRVsAh6gtZaOqM1nrr1/CXWHl+oos8Ot8vVzN/gVn//LjNruA+q/nzXsJ7Ffb9+Pz77VflE+bnYxyR2f9z7e5rwl1lvfsWTvc///Gyh5kJ6is53OFql/WGgH/2sHE+a/w8T3JEUmf+h50B1k//3CHvHcm64D/9/+5QRRNyksU/kzeRG43ARR2u7/9///8B+14f//CA/8Iu2NP/+///8B+14f/wgP/CLtjT//v///AfteH//v///FMvqP/7//+A/a8P/3//4pl9QmQYZ/mjTydLLbQNslpn8MVqf+Uc+CPURnP8j/zXh9VE/7JH2K+3/hnyPfA6sM2Jl0WAWV4ZA88nSUQ5D/3Yp6gtf+RL0Ero/w7MhNQnr7w35xv6Bkc6iTK+VZ0+CuYDK4kk4hDycB0vedflsROXk68tj31qV7JOEYVdpCccdgv9/gj3/RfKJrKIVHoDZ3IRtB/Aegk95afnlbBbQMeLTFLxEzZEK3uvnlHIMM+y2QrItn2EIymkewlH091tD3695KLODUVgAAAA==",
+  731: "UklGRnQDAABXRUJQVlA4WAoAAAAQAAAAKQAAKQAAQUxQSEgAAAABDzD/ERGCQQMhbkgQgCSsdwiolRdAcl0MCRH9nwDZ5DuCZtvCCwHZCVhyAZ7wTeKjf4zFR/5oeRKAJQvQJACpeEmz5SLZZhVWUDggBgMAAFANAJ0BKioAKgA+bTKVSKQioiEnOAgAgA2JQBZ2fJ4oHTSeqPJJ6Z/sGatagM/ZgfxAd76YA/mfty9wH8f+zno7eul61fQASdz2BNtB5hegAnDVe4Im4i+0bfW44o3r2zT5TCuKzk8ChzJOzF7O0RsGCdAA/v5utnZK9ozE74KCL5gm6mNmcPjeroYjAZzZAfXnrW7zW4BfCZfxlI+qxL+jOTN8szHHmXfG+Ey/gseNViXTM0bgPggHmaAvCXvDGt28o5ltWE9KlNHIVki4vjb3jnIQBO+OfTfzm6P8q8HGO7nUgp1Ppj9fPh+/4yttE7Uw/sZu0/CZfxlI+qxLc/p9N2i7WiyoMauBZT92/AtbpzVg3EaBK8/Wcp1nT3bFqv4LHdgio0fP/AyFpafy51EYgei8gp/GyIBbWR+13yXvtaEWQQ8kahLRLqrVfyTNUQ2Mpxuxp/nMfUEDOyrNJajTqAYg+7J2sXQB8ii1evOvtXtrjt6Rh4N0L16X/SfK0tMPVluK9pB+bUSH3jWgv7kvNCIl5k/zoR/VDcWvxt9SPlwlt5pixqOVF31RveHKhQf+DpnrP7FODxWLZIOgCxY25Z5w2SHOvySS+y7Zvy2X/V+p60fz/59C1H9IW9UncK0UrQYKEtH/mL8mfD9/xlbaJ2eyV9XeL6HHvyiv0vJvaYkvl7GV6BiRh317LAfPtn8uoSj23HlAedl6IY6N8U1HPzYOJIi+f/Bhcj+xIvrDnVuH/ryTkUhte7nWZQ63WTpfHZ0OH/lSbK/0M/ckWbo6kg6SITHdoY7Q6fNd/axGEQy8TrRa24LKeKseP/wzeRJ6AbrumE9TQfuBbYg7QsljEq0AA012H5X9qjDWWIFhjOQVnUBkSrjeVwG36CbevsZH7s9/7EP392Wyjj7My10ijfb7Zf1VmMHSsww3kJpyFPlvRvu7g5Eu4jg4AP3GdRDn0h0swu4j+RWOpw6XiQZUuTTjsNwRPOmg0oLgLHKbYBees8/hPjcluNsCqeLkf7nNu/AAAA==",
+  732: "UklGRjYCAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSDUAAAABDzD/ERFCQRpJzsELeElr/SSdgINeLET0PxhEJdbV0MzsjT+wq4mVgC+TxmbYyew3tdcYVABWUDgg2gEAAPAGAJ0BKiAAIAA+bTCTRqQjIaEwGAgAgA2JYwCdIBBMIOR1oAzp9tK6YYZ/8Ty8MVPA7elvgicvynvLN8C314AA/vplf2vNT7s8hFvnfxKbgKSgOPxm2y/2FtRTSKSzt3spoKp+MrRBneUc+/EHsQ8QDboj/9lGNLffLZeX3irQbSff8qFtB/Q0rEoStzMk5xzvNHtAxETfVcse1/V07vdfMgfxhzVoXPHmjOIkGi1ULmXh0XFu1tFbB4xsVrQZjJbVOVEQnnfZsNu/0xMf9l/Mn+/FzOn8eBT+q8g28IXwUN3HGp6LO8SP4b32hxqz6QZr8bFa0GcvygO3HzfqwHzbRfjP9ivt/e45N/XyjvoHJhdRoJOMIlSgeHn97mkX5O2pfAASTePiD/8dw/7hGm9XjXi3ZlAqdg4K33/77M/V38Gv+DWtUfmTtyy/2R/crnRFNadpPAGCWrD2Sl0pyr9d8CHfknk92OLpw4nzoZXea0d/qp2AHrsT9AapboZSzuDxT5WpawVqkYjuYwGdeusdB/MtaSHbSh/ZWwax8Zi3r4TLXfxiX348cLsEnkGnYB5cISEIdE9T7c6ao0oW1vUp5XfztCakhGIb1eUWiiFGIJ07LfIM1owAAA==",
   1: "iVBORw0KGgoAAAANSUhEUgAAAB0AAAAtCAYAAABS6WCiAAABjElEQVR4nNVYsW7CMBB9rjqEoSNSf4CdblRiqEQHBiR+oP0ABoZ+CUOHTJ36BUiMRepWhkpkzw8gdWwlul0HdBK+nhOHJLJ5m+07+57vHYdjiAgaOsaoC3siozpUwEXdDU6BkUxdDCXqMA7LVDKcPo9Uh+V8bY1PYRyE6WVbG8ubO76RONVbNbdl6t8TmfPOadkN8c10jKE4c8rwza2PXdic+qrWhSoqD8tU1hlHWJWxZCb3BwLltPTQ5XxtRT8eTjAeTpz26XaBdLuod2gbcPZTGe19X2f3lq3UdZ6f3TxZ88HU62SaU97IAT3Ts8bhmCaAylBG6Mvc5Xc8H0c/ZdU1BW2/uNT7+vFtGQ4GOwD/64/rmet0s7m2/B5vr6xx+C4j8Z79AgDu+ok1zwylKnOyf5HYX0Nc/fRl1j0spF8AgJ/kkEtZrzzmXH9mD7D8xf5AaPVKuP4Vunql7CYM7VUXF1OG78tcoujdGledtsGQEQdTZlgWscvOxz9O9TKKviEU2Z9fnTbxTZDxB5EL5tAqKZN3AAAAAElFTkSuQmCC",
   10: "iVBORw0KGgoAAAANSUhEUgAAACMAAAArCAYAAADyijE0AAAA5UlEQVR4nO2XMQ7DIAxFv6sO5bQdczQOk7GHYKRLXAUaC5u0kiP5bSCL4C/b5FOtFXsSUbuxUWqlo30tmnNvZz7wa4iVkW7eY1XIcq4vZR5Ac3Mp8z7DkULa+H2cK2Xu2kDOjDP5R435VoYzPjtXRhwp60oZ85xhnsvSrHPOAIBSCgDgta6mi7ibM5+a6btllpSSKd7t2/TVTdoJzDWiRdOdvpXRwl3T1wjvz+BKGer/9EZYu+2yb5NZGWak0Mzb5luZcAcb4Q4kwh1IhDuQCHcgEe5AItyBRLgDiXAHEuEOJFy5gzeVeMiF9zDo9wAAAABJRU5ErkJggg==",
   100: "iVBORw0KGgoAAAANSUhEUgAAACEAAAArCAYAAAD2f+EJAAABD0lEQVR4nO2Yuw6DMAxFr6sO5Wc6wv+PMPZnGN3JFbVwnDZAL1LPCAlKjq7zQFQVNXQidQ0DZlWJ3l1aPrwVEplonXnG0gynib0NeGZVoTBxzRrc+x4AMI7j2/NhGAAAj2lq6g+wZSLKwpysI52E5V/dn8LEfxBGWh2W4lK6W/ufw4StA74KrP6z9BuldYXCRLpOeKIVsJY1I+c0EWXAzzAztswYlwkjM+JNZLtpZITfhPHtrlqLmeA/Wdlp2BuJ9oJa1vYcChM/O23T3TtemTjyxuWhMCE34PAbl3/GbcKPeOvM8FVHKbXAdn9oSt/hMBG92DMDHgoT/0EY6Q0sIkt9VnVLuE1EM81m+IkB4wnc0aLbk52nswAAAABJRU5ErkJggg==",
@@ -1437,6 +1440,9 @@ export const itemColorData = {
   147: "grey",
   94: "light-purple",
   76: "pink",
+  730: "white",
+  731: "pink",
+  732: "gold",
 };
 
 export const itemDescriptionData = {
@@ -2156,6 +2162,9 @@ export const itemDescriptionData = {
   97: "Przy użyciu generuje serce, monetę, bombę, klucz, baterię, pigułkę, kartę lub runę.\nSerca, które przedmiot generuje, to pełne czerwone serce, Soul Heart lub Black Heart.\nBomby i klucze zawsze będą pojedyncze (przedmiot nie generuje 1+1 bomb ani kluczy).",
   98: "Chowaniec, który wyrzuca Soul Hearty co na zmianę 7 lub 8 pokoi.",
   99: "Przyzywa chowańca, który podąża za Isaaciem i co 2/3 sekundy strzela spowalniającymi łzami, które zadają 3,5 Obrażeń.\nMa szansę wypaść z Gisha.",
+  730: "+0,75 Obrażeń.\n+1 Szczęścia.",
+  731: "+28% Obrażeń na prawym oku Isaaca.\n+7 Zasięgu na prawym oku Isaaca.\n-0,3 Szybkości Strzałów na prawym oku Isaaca.",
+  732: "+1 Obrażeń.\nWyrzuca losową runę lub Soul Stone'a przy podniesieniu (jeśli jakiekolwiek zostały odblokowane).",
 };
 
 export const itemUnlockData = {
