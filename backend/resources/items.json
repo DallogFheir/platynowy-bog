@@ -67,7 +67,7 @@
     "id": 7,
     "name": "Blood of the Martyr",
     "pool": {
-      "greedMode": ["Treasure Room", "Angel Room"],
+      "greedMode": ["Treasure Room", "Angel Room", "Curse Room"],
       "chests": ["Wooden Chest"],
       "normal": ["Treasure Room", "Angel Room"]
     },
@@ -582,7 +582,7 @@
     "id": 51,
     "name": "Pentagram",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Curse Room"],
       "beggars": ["Devil Beggar"],
       "machines": ["Crane Game"],
       "normal": ["Curse Room", "Boss Room", "Devil Room", "Ultra Secret Room"]
@@ -896,7 +896,7 @@
     "id": 80,
     "name": "The Pact",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "beggars": ["Devil Beggar"],
       "normal": ["Curse Room", "Devil Room", "Ultra Secret Room"]
     },
@@ -2491,7 +2491,7 @@
     "id": 216,
     "name": "Ceremonial Robes",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "beggars": ["Devil Beggar"],
       "normal": ["Curse Room", "Devil Room"]
     },
@@ -2577,7 +2577,7 @@
     "id": 225,
     "name": "Gimpy",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "beggars": ["Devil Beggar"],
       "normal": ["Treasure Room", "Curse Room", "Devil Room"]
     },
@@ -2937,7 +2937,10 @@
   "260": {
     "id": 260,
     "name": "Black Candle",
-    "pool": { "greedMode": ["Shop"], "normal": ["Shop", "Curse Room"] },
+    "pool": {
+      "greedMode": ["Shop", "Curse Room"],
+      "normal": ["Shop", "Curse Room"]
+    },
     "quality": 3,
     "quote": "Curse immunity + evil up",
     "type": "passive",
@@ -4176,7 +4179,7 @@
     "id": 371,
     "name": "Curse of the Tower",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Curse Room"],
       "chests": ["Red Chest"],
       "normal": ["Treasure Room", "Curse Room"]
     },
@@ -4596,7 +4599,7 @@
     "id": 408,
     "name": "Athame",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room"]
     },
     "quality": 2,
@@ -4962,7 +4965,7 @@
     "id": 442,
     "name": "Dark Prince's Crown",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room"]
     },
     "quality": 1,
@@ -5058,7 +5061,7 @@
     "id": 451,
     "name": "Tarot Cloth",
     "pool": {
-      "greedMode": ["Shop", "Devil Room"],
+      "greedMode": ["Shop", "Devil Room", "Curse Room"],
       "machines": ["Crane Game"],
       "normal": ["Shop", "Curse Room"]
     },
@@ -5237,7 +5240,7 @@
     "id": 468,
     "name": "Shade",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room"],
       "other": ["Baby Shop"]
     },
@@ -5318,7 +5321,7 @@
     "id": 475,
     "name": "Plan C",
     "pool": {
-      "greedMode": ["Shop"],
+      "greedMode": ["Shop", "Curse Room"],
       "beggars": ["Devil Beggar"],
       "chests": ["Red Chest"],
       "normal": ["Shop", "Curse Room", "Devil Room", "Ultra Secret Room"]
@@ -5581,7 +5584,7 @@
     "id": 496,
     "name": "Euthanasia",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Curse Room"],
       "beggars": ["Devil Beggar"],
       "normal": ["Treasure Room", "Curse Room"]
     },
@@ -5663,7 +5666,7 @@
     "id": 503,
     "name": "Little Horn",
     "pool": {
-      "greedMode": ["Treasure Room", "Devil Room"],
+      "greedMode": ["Treasure Room", "Devil Room", "Curse Room"],
       "beggars": ["Devil Beggar"],
       "normal": ["Curse Room"]
     },
@@ -5722,7 +5725,7 @@
     "id": 508,
     "name": "Mom's Razor",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Curse Room"],
       "chests": ["Old Chest", "Mom's Chest"],
       "normal": ["Treasure Room", "Curse Room"]
     },
@@ -6062,7 +6065,7 @@
     "id": 536,
     "name": "Sacrifical Altar",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room"]
     },
     "quality": 2,
@@ -6404,7 +6407,7 @@
     "id": 565,
     "name": "Blood Puppy",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Curse Room"],
       "chests": ["Red Chest"],
       "normal": ["Treasure Room", "Curse Room", "Ultra Secret Room"]
     },
@@ -6443,7 +6446,7 @@
     "id": 569,
     "name": "Blood Oath",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room"]
     },
     "quality": 2,
@@ -7207,7 +7210,11 @@
   "642": {
     "id": 642,
     "name": "Magic Skin",
-    "pool": { "chests": ["Red Chest"], "normal": ["Shop", "Curse Room"] },
+    "pool": {
+      "chests": ["Red Chest"],
+      "normal": ["Shop", "Curse Room"],
+      "greedMode": ["Curse Room"]
+    },
     "quality": 2,
     "quote": "All your desires fulfilled",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
@@ -7345,7 +7352,7 @@
     "id": 654,
     "name": "False PHD",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "chests": ["Red Chest"],
       "normal": ["Curse Room", "Devil Room", "Ultra Secret Room"]
     },
@@ -7759,7 +7766,7 @@
     "id": 692,
     "name": "Sanguine Bond",
     "pool": {
-      "greedMode": ["Shop", "Devil Room"],
+      "greedMode": ["Shop", "Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room", "Ultra Secret Room"]
     },
     "quality": 1,
@@ -7793,7 +7800,7 @@
     "id": 694,
     "name": "Heartbreak",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room", "Ultra Secret Room"]
     },
     "quality": 3,
@@ -7904,7 +7911,7 @@
     "id": 702,
     "name": "Vengeful Spirit",
     "pool": {
-      "greedMode": ["Devil Room"],
+      "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room", "Ultra Secret Room"]
     },
     "quality": 2,
