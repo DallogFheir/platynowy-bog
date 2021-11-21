@@ -13,11 +13,5 @@ Additions:
 - Bag of Crafting now yields a random item instead of Breakfast when its result would normally be an item that hasn't been unlocked yet
 - Bag of Crafting can now purchase pickups on sale in a shop
 - Using Anima Sola in a room with no enemies as Tainted Jacob now immediately summons Dark Esau
-- Rocket in a Jar now aims purely based on the player's aim direction (normal bombs are placed if the player is not attacking)
-- Piercing Dr. Fetus bombs now inflict contact damage when passing through enemies
-- Dr. Fetus + Rocket in a Jar + Polyphemus now fires piercing rockets that can explode twice
-- Mom’s Knife now synergizes with Technology and Tech X (similar to the Forgotten’s thrown bone)
-- Trisagion shots now trigger on-hit effects only when touching enemies or obstacles
-- The Bean and most fart sources now push enemies, bombs and pickups
 
 - ultra secret room item pool
