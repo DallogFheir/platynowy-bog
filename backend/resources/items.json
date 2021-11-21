@@ -114,7 +114,10 @@
   "11": {
     "id": 11,
     "name": "1up!",
-    "pool": { "greedMode": ["Boss Room"], "normal": ["Secret Room"] },
+    "pool": {
+      "greedMode": ["Boss Room", "Secret Room"],
+      "normal": ["Secret Room"]
+    },
     "quality": 2,
     "quote": "Extra life",
     "transformation": ["Fun Guy"],
@@ -175,7 +178,10 @@
   "16": {
     "id": 16,
     "name": "Raw Liver",
-    "pool": { "greedMode": ["Boss Room"], "normal": ["Secret Room"] },
+    "pool": {
+      "greedMode": ["Boss Room", "Secret Room"],
+      "normal": ["Secret Room"]
+    },
     "quality": 2,
     "quote": "HP up",
     "type": "passive"
@@ -183,7 +189,10 @@
   "17": {
     "id": 17,
     "name": "Skeleton Key",
-    "pool": { "normal": ["Treasure Room", "Secret Room"] },
+    "pool": {
+      "normal": ["Treasure Room", "Secret Room"],
+      "greedMode": ["Secret Room"]
+    },
     "quality": 3,
     "quote": "99 keys",
     "type": "passive"
@@ -207,7 +216,7 @@
   "20": {
     "id": 20,
     "name": "Transcendence",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 3,
     "quote": "We all float down here...",
     "unlock": { "boss": "Mom's Heart", "numberOfTimes": 3, "method": "boss" },
@@ -390,7 +399,7 @@
     "id": 35,
     "name": "The Necronomicon",
     "pool": {
-      "greedMode": ["Treasure Room", "Devil Room"],
+      "greedMode": ["Treasure Room", "Devil Room", "Secret Room"],
       "normal": ["Library", "Secret Room", "Devil Room"]
     },
     "quality": 1,
@@ -941,7 +950,10 @@
   "84": {
     "id": 84,
     "name": "We Need to Go Deeper!",
-    "pool": { "greedMode": ["Shop"], "normal": ["Secret Room", "Devil Room"] },
+    "pool": {
+      "greedMode": ["Shop", "Secret Room"],
+      "normal": ["Secret Room", "Devil Room"]
+    },
     "quality": 0,
     "quote": "Reusable level skip",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
@@ -1396,7 +1408,7 @@
     "id": 120,
     "name": "Odd Mushroom",
     "pool": {
-      "greedMode": ["Treasure Room", "Boss Room"],
+      "greedMode": ["Treasure Room", "Boss Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 3,
@@ -1408,7 +1420,7 @@
     "id": 121,
     "name": "Odd Mushroom",
     "pool": {
-      "greedMode": ["Treasure Room", "Boss Room"],
+      "greedMode": ["Treasure Room", "Boss Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 2,
@@ -1484,7 +1496,8 @@
     "name": "Forget Me Now",
     "pool": {
       "beggars": ["Devil Beggar"],
-      "normal": ["Treasure Room", "Secret Room", "Devil Room"]
+      "normal": ["Treasure Room", "Secret Room", "Devil Room"],
+      "greedMode": ["Secret Room"]
     },
     "quality": 3,
     "quote": "I don't remember...",
@@ -1943,7 +1956,7 @@
   "168": {
     "id": 168,
     "name": "Epic Fetus",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 4,
     "quote": "On-demand air strike",
     "type": "passive",
@@ -2194,7 +2207,8 @@
     "name": "Pyro",
     "pool": {
       "beggars": ["Bomb Bum"],
-      "normal": ["Treasure Room", "Secret Room"]
+      "normal": ["Treasure Room", "Secret Room"],
+      "greedMode": ["Secret Room"]
     },
     "quality": 3,
     "quote": "99 bombs",
@@ -2447,7 +2461,7 @@
     "id": 213,
     "name": "Lost Contact",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 2,
@@ -2574,7 +2588,10 @@
   "226": {
     "id": 226,
     "name": "Black Lotus",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Secret Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room", "Secret Room"],
+      "normal": ["Secret Room"]
+    },
     "quality": 2,
     "quote": "HP up 3x!",
     "type": "passive"
@@ -2726,7 +2743,7 @@
     "id": 242,
     "name": "Infamy",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 2,
@@ -2896,7 +2913,10 @@
   "258": {
     "id": 258,
     "name": "Missing No.",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Secret Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room", "Secret Room"],
+      "normal": ["Secret Room"]
+    },
     "quality": 2,
     "quote": "Syntax error",
     "unlock": { "boss": "Boss Rush", "character": "Lazarus", "method": "boss" },
@@ -2939,7 +2959,8 @@
     "name": "Missing Page 2",
     "pool": {
       "beggars": ["Devil Beggar"],
-      "normal": ["Secret Room", "Devil Room"]
+      "normal": ["Secret Room", "Devil Room"],
+      "greedMode": ["Secret Room"]
     },
     "quality": 0,
     "quote": "Evil up. Your enemies will pay!",
@@ -2948,7 +2969,11 @@
   "263": {
     "id": 263,
     "name": "Clear Rune",
-    "pool": { "machines": ["Crane Game"], "normal": ["Secret Room"] },
+    "pool": {
+      "machines": ["Crane Game"],
+      "normal": ["Secret Room"],
+      "greedMode": ["Secret Room"]
+    },
     "quality": 2,
     "quote": "Rune mimic",
     "rechargeTime": { "amount": "other" },
@@ -3058,7 +3083,7 @@
     "id": 271,
     "name": "Mystery Sack",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "beggars": ["Beggar"],
       "normal": ["Treasure Room", "Secret Room"]
     },
@@ -3250,7 +3275,10 @@
   "286": {
     "id": 286,
     "name": "Blank Card",
-    "pool": { "greedMode": ["Shop"], "normal": ["Shop", "Secret Room"] },
+    "pool": {
+      "greedMode": ["Shop", "Secret Room"],
+      "normal": ["Shop", "Secret Room"]
+    },
     "quality": 2,
     "quote": "Card mimic",
     "rechargeTime": { "amount": "other" },
@@ -3534,7 +3562,7 @@
     "id": 316,
     "name": "Cursed Eye",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "chests": ["Red Chest"],
       "normal": ["Treasure Room", "Secret Room"]
     },
@@ -3586,7 +3614,7 @@
     "id": 321,
     "name": "Samson's Chains",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 1,
@@ -3871,7 +3899,10 @@
   "348": {
     "id": 348,
     "name": "Placebo",
-    "pool": { "greedMode": ["Shop"], "normal": ["Shop", "Secret Room"] },
+    "pool": {
+      "greedMode": ["Shop", "Secret Room"],
+      "normal": ["Shop", "Secret Room"]
+    },
     "quality": 2,
     "quote": "Pill mimic",
     "rechargeTime": { "amount": "other" },
@@ -4350,7 +4381,7 @@
     "id": 389,
     "name": "Rune Bag",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 3,
@@ -4487,7 +4518,10 @@
   "402": {
     "id": 402,
     "name": "Chaos",
-    "pool": { "greedMode": ["Shop"], "normal": ["Shop", "Secret Room"] },
+    "pool": {
+      "greedMode": ["Shop", "Secret Room"],
+      "normal": ["Shop", "Secret Room"]
+    },
     "quality": 3,
     "quote": "!!!",
     "type": "passive"
@@ -4520,7 +4554,7 @@
     "id": 405,
     "name": "GB Bug",
     "pool": {
-      "greedMode": ["Shop"],
+      "greedMode": ["Shop", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 0,
@@ -4723,7 +4757,7 @@
   "424": {
     "id": 424,
     "name": "Sack Head",
-    "pool": { "normal": ["Shop", "Secret Room"] },
+    "pool": { "normal": ["Shop", "Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 3,
     "quote": "More sacks!",
     "type": "passive"
@@ -5007,7 +5041,10 @@
   "450": {
     "id": 450,
     "name": "Eye of Greed",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Secret Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room", "Secret Room"],
+      "normal": ["Secret Room"]
+    },
     "quality": 2,
     "quote": "Gold tears!",
     "unlock": {
@@ -5467,7 +5504,7 @@
   "489": {
     "id": 489,
     "name": "D Infinity",
-    "pool": { "greedMode": ["Shop"], "normal": ["Secret Room"] },
+    "pool": { "greedMode": ["Shop", "Secret Room"], "normal": ["Secret Room"] },
     "quality": 1,
     "quote": "Reroll forever",
     "rechargeTime": { "amount": "other" },
@@ -5591,7 +5628,7 @@
   "500": {
     "id": 500,
     "name": "Sack of Sacks",
-    "pool": { "greedMode": ["Shop"], "normal": ["Secret Room"] },
+    "pool": { "greedMode": ["Shop", "Secret Room"], "normal": ["Secret Room"] },
     "quality": 3,
     "quote": "Gives sacks",
     "unlock": {
@@ -5604,7 +5641,7 @@
   "501": {
     "id": 501,
     "name": "Greed's Gullet",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 1,
     "quote": "Money = health!",
     "type": "passive",
@@ -6162,7 +6199,11 @@
   "546": {
     "id": 546,
     "name": "Dad's Ring",
-    "pool": { "chests": ["Old Chest"], "normal": ["Secret Room"] },
+    "pool": {
+      "chests": ["Old Chest"],
+      "normal": ["Secret Room"],
+      "greedMode": ["Secret Room"]
+    },
     "quality": 3,
     "quote": "Father's blessing",
     "unlock": {
@@ -6329,7 +6370,7 @@
   "562": {
     "id": 562,
     "name": "Rock Bottom",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 2,
     "quote": "It's only up from there",
     "unlock": {
@@ -6421,7 +6462,11 @@
   "571": {
     "id": 571,
     "name": "Orphan Socks",
-    "pool": { "chests": ["Golden Chest"], "normal": ["Secret Room"] },
+    "pool": {
+      "chests": ["Golden Chest"],
+      "normal": ["Secret Room"],
+      "greedMode": ["Secret Room"]
+    },
     "quality": 1,
     "quote": "Speed up + your feet feel stronger",
     "type": "passive"
@@ -6552,7 +6597,7 @@
   "582": {
     "id": 582,
     "name": "Wavy Cap",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 1,
     "quote": "Tears up. A mind changing experience!",
     "rechargeTime": { "amount": "other" },
@@ -6810,7 +6855,7 @@
     "id": 609,
     "name": "Eternal D6",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "machines": ["Crane Game"],
       "miniBoss": ["Ultra Pride"],
       "normal": ["Treasure Room", "Secret Room"],
@@ -6853,7 +6898,7 @@
     "id": 612,
     "name": "Lost Soul",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"],
       "other": ["Baby Shop"]
     },
@@ -6983,7 +7028,7 @@
     "id": 625,
     "name": "Mega Mush",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 4,
@@ -7016,7 +7061,7 @@
   "628": {
     "id": 628,
     "name": "Death Certificate",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 4,
     "quote": "Where am I?",
     "rechargeTime": { "amount": "one time use" },
@@ -7051,7 +7096,7 @@
   "632": {
     "id": 632,
     "name": "Evil Charm",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 1,
     "quote": "Luck up + you feel protected",
     "type": "passive"
@@ -7096,7 +7141,7 @@
   "636": {
     "id": 636,
     "name": "R Key",
-    "pool": { "greedMode": ["Shop"], "normal": ["Secret Room"] },
+    "pool": { "greedMode": ["Shop", "Secret Room"], "normal": ["Secret Room"] },
     "quality": 4,
     "quote": "Time to start over",
     "rechargeTime": { "amount": "one time use" },
@@ -7380,7 +7425,7 @@
   "664": {
     "id": 664,
     "name": "Binge Eater",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 3,
     "quote": "All you can eat",
     "type": "passive"
@@ -7402,7 +7447,7 @@
   "667": {
     "id": 667,
     "name": "Strawman",
-    "pool": { "greedMode": ["Shop"], "normal": ["Secret Room"] },
+    "pool": { "greedMode": ["Shop", "Secret Room"], "normal": ["Secret Room"] },
     "quality": 2,
     "quote": "A helping hand",
     "unlock": {
@@ -7423,7 +7468,7 @@
   "669": {
     "id": 669,
     "name": "Sausage",
-    "pool": { "normal": ["Secret Room"] },
+    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
     "quality": 3,
     "quote": "All stats up",
     "type": "passive"
@@ -7474,7 +7519,7 @@
   "674": {
     "id": 674,
     "name": "Spirit Shackles",
-    "pool": { "greedMode": ["Shop"], "normal": ["Secret Room"] },
+    "pool": { "greedMode": ["Shop", "Secret Room"], "normal": ["Secret Room"] },
     "quality": 3,
     "quote": "Unfinished business",
     "unlock": {
@@ -7513,7 +7558,7 @@
     "id": 677,
     "name": "Astral Projection",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 2,
@@ -7654,7 +7699,7 @@
     "id": 688,
     "name": "Inner Child",
     "pool": {
-      "greedMode": ["Shop"],
+      "greedMode": ["Shop", "Secret Room"],
       "normal": ["Secret Room"],
       "other": ["other"]
     },
@@ -7670,7 +7715,7 @@
   "689": {
     "id": 689,
     "name": "Glitched Crown",
-    "pool": { "greedMode": ["Shop"], "normal": ["Secret Room"] },
+    "pool": { "greedMode": ["Shop", "Secret Room"], "normal": ["Secret Room"] },
     "quality": 4,
     "quote": "?????",
     "unlock": {
@@ -7697,7 +7742,7 @@
     "id": 691,
     "name": "Sacred Orb",
     "pool": {
-      "greedMode": ["Shop", "Angel Room"],
+      "greedMode": ["Shop", "Angel Room", "Secret Room"],
       "normal": ["Secret Room", "Angel Room"]
     },
     "quality": 4,
@@ -7830,7 +7875,7 @@
     "id": 700,
     "name": "Echo Chamber",
     "pool": {
-      "greedMode": ["Shop"],
+      "greedMode": ["Shop", "Secret Room"],
       "normal": ["Secret Room", "Ultra Secret Room"]
     },
     "quality": 2,
@@ -7845,7 +7890,7 @@
   "701": {
     "id": 701,
     "name": "Isaac's Tomb",
-    "pool": { "greedMode": ["Shop"], "normal": ["Secret Room"] },
+    "pool": { "greedMode": ["Shop", "Secret Room"], "normal": ["Secret Room"] },
     "quality": 3,
     "quote": "Buried memories",
     "unlock": {
@@ -7875,7 +7920,7 @@
     "id": 703,
     "name": "Esau Jr.",
     "pool": {
-      "greedMode": ["Treasure Room", "Shop"],
+      "greedMode": ["Treasure Room", "Shop", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room", "Ultra Secret Room"]
     },
     "quality": 2,
@@ -8077,7 +8122,7 @@
     "id": 716,
     "name": "Keeper's Sack",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Shop", "Secret Room"]
     },
     "quality": 3,
@@ -8089,7 +8134,7 @@
     "id": 717,
     "name": "Keeper's Kin",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Treasure Room", "Secret Room"]
     },
     "quality": 2,
@@ -8106,7 +8151,7 @@
     "id": 719,
     "name": "Keeper's Box",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Secret Room"],
       "chests": ["Wooden Chest"],
       "normal": ["Shop", "Secret Room"]
     },
@@ -8134,7 +8179,7 @@
     "id": 721,
     "name": "TMTRAINER",
     "pool": {
-      "greedMode": ["Treasure Room", "Shop"],
+      "greedMode": ["Treasure Room", "Shop", "Secret Room"],
       "normal": ["Secret Room"]
     },
     "quality": 2,
@@ -8168,7 +8213,7 @@
     "id": 723,
     "name": "Spindown Dice",
     "pool": {
-      "greedMode": ["Treasure Room", "Shop"],
+      "greedMode": ["Treasure Room", "Shop", "Secret Room"],
       "machines": ["Crane Game"],
       "normal": ["Treasure Room", "Secret Room"]
     },
