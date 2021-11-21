@@ -10,8 +10,5 @@ Additions:
 - Hitting enemies with Tainted Azazel's sneeze inflicts them with a Brimstone Curse which makes them more vulnerable to Brimstone attacks and causes them to explode when killed by Brimstone
 - Tainted Eve's clots are no longer lost when recalled by Sumptorium if she has full health, instead they will drop to the ground next to her
 - Tainted Eve's clots now start with 15 HP when spawned and slowly decay down to 1 HP (5 HP for non-red hearts)
-- Bag of Crafting now yields a random item instead of Breakfast when its result would normally be an item that hasn't been unlocked yet
-- Bag of Crafting can now purchase pickups on sale in a shop
-- Using Anima Sola in a room with no enemies as Tainted Jacob now immediately summons Dark Esau
 
 - ultra secret room item pool

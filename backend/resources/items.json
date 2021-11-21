@@ -7880,7 +7880,11 @@
   "710": {
     "id": 710,
     "name": "Bag of Crafting",
-    "pool": { "startingItem": ["Tainted Cain"] },
+    "pool": {
+      "normal": ["Treasure Room"],
+      "greedMode": ["Treasure Room"],
+      "startingItem": ["Tainted Cain"]
+    },
     "quality": 3,
     "quote": "Make your destiny",
     "rechargeTime": { "amount": "unlimited" },
