@@ -7184,7 +7184,7 @@
     },
     "quality": 3,
     "quote": "Gross!",
-    "rechargeTime": { "amount": 6, "unit": "rooms" },
+    "rechargeTime": { "amount": 4, "unit": "rooms" },
     "unlock": { "boss": "Mother", "character": "Magdalene", "method": "boss" },
     "type": "active"
   },
