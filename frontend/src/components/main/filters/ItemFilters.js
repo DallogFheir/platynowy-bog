@@ -33,6 +33,7 @@ function ItemFilters({
     "Baby Shop": "sklepy z Adoption Papers",
     "mini-boss": "mini-bossy",
     boss: "konkretny boss",
+    Bumbino: "Bumbino po zebraniu 12 centów",
     obstacles: "przeszkody",
     machines: "inne maszyny",
     "starting item": "przedmioty startowe postaci",

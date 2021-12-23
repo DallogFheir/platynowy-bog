@@ -58,7 +58,11 @@
   "6": {
     "id": 6,
     "name": "Number One",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room"],
+      "normal": ["Treasure Room"],
+      "boss": ["Bumbino"]
+    },
     "quality": 2,
     "quote": "Tears up + range down",
     "type": "passive"
@@ -412,7 +416,11 @@
   "36": {
     "id": 36,
     "name": "The Poop",
-    "pool": { "normal": ["Treasure Room"], "obstacles": ["buckets"] },
+    "pool": {
+      "normal": ["Treasure Room"],
+      "obstacles": ["buckets"],
+      "boss": ["Bumbino"]
+    },
     "quality": 0,
     "quote": "Plop!",
     "rechargeTime": { "amount": 1, "unit": "rooms" },
@@ -511,6 +519,7 @@
     "pool": {
       "greedMode": ["Treasure Room"],
       "miniBoss": ["Super Lust"],
+      "boss": ["Bumbino"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
     "quality": 1,
@@ -633,7 +642,11 @@
   "56": {
     "id": 56,
     "name": "Lemon Mishap",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room"],
+      "normal": ["Treasure Room"],
+      "boss": ["Bumbino"]
+    },
     "quality": 1,
     "quote": "Oops...",
     "rechargeTime": { "amount": 2, "unit": "rooms" },
@@ -975,7 +988,7 @@
   "86": {
     "id": 86,
     "name": "Monstro's Tooth",
-    "pool": { "normal": ["Treasure Room"] },
+    "pool": { "normal": ["Treasure Room"], "boss": ["Bumbino"] },
     "quality": 1,
     "quote": "Summon Monstro",
     "rechargeTime": { "amount": 3, "unit": "rooms" },
@@ -1192,7 +1205,11 @@
   "103": {
     "id": 103,
     "name": "The Common Cold",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room"],
+      "normal": ["Treasure Room"],
+      "boss": ["Bumbino"]
+    },
     "quality": 1,
     "quote": "Poison damage",
     "type": "passive"
@@ -2419,6 +2436,7 @@
     "pool": {
       "greedMode": ["Treasure Room"],
       "beggars": ["Bomb Bum"],
+      "boss": ["Bumbino"],
       "normal": ["Treasure Room"]
     },
     "quality": 2,
@@ -5008,7 +5026,11 @@
   "446": {
     "id": 446,
     "name": "Dead Tooth",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room"],
+      "normal": ["Treasure Room"],
+      "boss": ["Bumbino"]
+    },
     "quality": 1,
     "quote": "Toxic breath",
     "type": "passive"
@@ -5083,7 +5105,11 @@
   "453": {
     "id": 453,
     "name": "Compound Fracture",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room"],
+      "normal": ["Treasure Room"],
+      "boss": ["Bumbino"]
+    },
     "quality": 2,
     "quote": "Bone tears!",
     "unlock": { "boss": "Delirium", "character": "Lazarus", "method": "boss" },
@@ -5146,7 +5172,11 @@
   "459": {
     "id": 459,
     "name": "Sinus Infection",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room"],
+      "normal": ["Treasure Room"],
+      "boss": ["Bumbino"]
+    },
     "quality": 3,
     "quote": "Booger tears!",
     "type": "passive"
