@@ -1,116 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Platynowy Bóg - API documentation</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF–8" />
+    <meta http–equiv="X–UA–Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device–width, initial–scale=1.0" />
+    <title>Platynowy Bóg – API documentation</title>
+    <link rel="stylesheet" href="apidocs.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x–icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>
-      <img src="data:image/png;base64," alt="" />
-      API reference
-      <img src="data:image/png;base64," alt="" />
-    </h1>
-    <h2>items</h2>
-    <h3>/api/items</h3>
-    <p>retrieves an array of all items</p>
-    <h3>/api/items/&lt;id&gt;</h3>
-    <p>retrieves an item by its ID</p>
-    <p>An item object contains the following properties:</p>
-    <ul>
-      <li><strong>id</strong> : <em>integer</em></li>
-      <li><strong>name</strong> : <em>string</em></li>
-      <li><strong>quote</strong> : <em>string</em></li>
-      <li>
-        <strong>type</strong> : <em>string</em> – possible values:
+    <div class="wrapper">
+      <p class="backlink center"><a href="/">go back to main page</a></p>
+      <h1 class="title center">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAYAAAApzaJuAAABTElEQVR4nOWZOxKCMBBAF8fR0svQqZ1H4B5aegQ7tbOg0J4j2KkdBQfgENKJjRbOqllYCJkgSXwNk89M4LEbMosHDKPh4MGN6SDL7x431mtzYVUKd9u2IUqZMbNNUUPH86XVhWeTsdD+NmakqT5nyPd9rQvFcSy0/cn01X8+AcDnTWX53TPTlOxEfFIaCxyyxlebLQAALBdzAHgZs9NUU0MIzlfJYjtNcYaoAW6eijE7TVG4rML+prFXhp2mrre8crwuO/8n+zhkDWHs0W9fFW6ZkjWkglumKDrPYW6ZovuPzpOqW6Zo9nE7f5P9CXHLVB0qhhC3TOmMIYodptI0Fa5dYIepMAy7uA8BO0zRk2IQBKXjqtDsjKKoMMdIUx6tT+32BwD4XWyh+d1m/e4z0lQhppIkEdq6K3oyGGmKrQ53hbE1z87/OCDfdfQnehiDgPUcT2cAAAAASUVORK5CYII="
+          alt=""
+          class="img"
+        />
+        API reference
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAYAAAApzaJuAAABTElEQVR4nOWZOxKCMBBAF8fR0svQqZ1H4B5aegQ7tbOg0J4j2KkdBQfgENKJjRbOqllYCJkgSXwNk89M4LEbMosHDKPh4MGN6SDL7x431mtzYVUKd9u2IUqZMbNNUUPH86XVhWeTsdD+NmakqT5nyPd9rQvFcSy0/cn01X8+AcDnTWX53TPTlOxEfFIaCxyyxlebLQAALBdzAHgZs9NUU0MIzlfJYjtNcYaoAW6eijE7TVG4rML+prFXhp2mrre8crwuO/8n+zhkDWHs0W9fFW6ZkjWkglumKDrPYW6ZovuPzpOqW6Zo9nE7f5P9CXHLVB0qhhC3TOmMIYodptI0Fa5dYIepMAy7uA8BO0zRk2IQBKXjqtDsjKKoMMdIUx6tT+32BwD4XWyh+d1m/e4z0lQhppIkEdq6K3oyGGmKrQ53hbE1z87/OCDfdfQnehiDgPUcT2cAAAAASUVORK5CYII="
+          alt=""
+          class="img"
+        />
+      </h1>
+      <div class="section"><h2>items</h2></div>
+      <div class="section">
+        <h3><span class="http-method">GET</span> /api/items</h3>
+        <p>retrieves an array of all items – <a href="/api/items" target="_blank">example</a></p>
+      </div>
+      <div class="section">
+        <h3><span class="http-method">GET</span> /api/items/&lt;id&gt;</h3>
+        <p>retrieves an item by its ID – <a href="/api/items/650" target="_blank">example</a></p>
+      </div>
+      <div class="section">
+        <p>An item object contains the following properties:</p>
         <ul>
-          <li><code>"active"</code></li>
-          <li><code>"passive"</code></li>
-        </ul>
-      </li>
-      <li><strong>quality</strong> : <em>integer</em></li>
-      <li>
-        <strong>pool</strong> : <em>object</em> – pools where the item can be
-        found; possible properties:
-        <ul>
+          <li><strong>id</strong> : <em>integer</em></li>
+          <li><strong>name</strong> : <em>string</em></li>
+          <li><strong>quote</strong> : <em>string</em></li>
           <li>
-            <strong>normal</strong> : <em>array[string]</em> – array of pools in
-            non-Greed(ier) mode
-          </li>
-          <li>
-            <strong>greedMode</strong> : <em>array[string]</em> – array of pools
-            in Greed(ier) mode
-          </li>
-          <li>
-            <strong>boss</strong> : <em>array[string]</em> – array of bosses
-            which drop the item
-          </li>
-          <li>
-            <strong>miniBoss</strong> : <em>array[string]</em> – array of
-            mini-bosses which drop the item
-          </li>
-          <li>
-            <strong>chests</strong> : <em>array[string]</em> – array of chest
-            types which can contain the item
-          </li>
-          <li>
-            <strong>beggars</strong> : <em>array[string]</em> – array of beggars
-            which can pay out with the item
-          </li>
-          <li>
-            <strong>machines</strong> : <em>array[string]</em> – array of
-            machines which can pay out with the item
-          </li>
-          <li>
-            <strong>obstacles</strong> : <em>array[string]</em> – array of
-            obstacles which can drop the item after being destroyed
-          </li>
-          <li>
-            <strong>startingItem</strong> : <em>array[string]</em> – array of
-            characters for whom the item is a starting item
-          </li>
-          <li>
-            <strong>other</strong> : <em>array[string]</em> – array of other
-            possible ways to find the item; possible values:
+            <strong>type</strong> : <em>string</em> – possible values:
             <ul>
-              <li><code>"Baby Shop"</code></li>
-              <li><code>"other"</code></li>
+              <li><code>"active"</code></li>
+              <li><code>"passive"</code></li>
             </ul>
           </li>
-        </ul>
-      </li>
-      <li>
-        <span class="optional">optional</span> <strong>transformation</strong> :
-        <em>array[string]</em> – array of transformations (if any)
-      </li>
-      <li>
-        <span class="optional">optional</span> <strong>rechargeTime</strong> :
-        <em>object</em> – if the item is active, an object representing its
-        recharge time; properties:
-        <ul>
+          <li><strong>quality</strong> : <em>integer</em></li>
           <li>
-            <strong>amount</strong> : <em>integer | string</em> – integer
-            represeting the amount of rooms/seconds, or string equal to:
+            <strong>pool</strong> : <em>object</em> – pools where the item can
+            be found; possible properties:
             <ul>
               <li>
-                <code>"one time use"</code>
+                <strong>normal</strong> : <em>array[string]</em> – array of
+                pools in non–Greed(ier) mode
               </li>
-              <li><code>"unlimited"</code></li>
-              <li><code>"other"</code></li>
+              <li>
+                <strong>greedMode</strong> : <em>array[string]</em> – array of
+                pools in Greed(ier) mode
+              </li>
+              <li>
+                <strong>boss</strong> : <em>array[string]</em> – array of bosses
+                which drop the item (including the special Bumbino pool)
+              </li>
+              <li>
+                <strong>miniBoss</strong> : <em>array[string]</em> – array of
+                mini–bosses which drop the item
+              </li>
+              <li>
+                <strong>chests</strong> : <em>array[string]</em> – array of
+                chest types which can contain the item
+              </li>
+              <li>
+                <strong>beggars</strong> : <em>array[string]</em> – array of
+                beggars which can pay out with the item
+              </li>
+              <li>
+                <strong>machines</strong> : <em>array[string]</em> – array of
+                machines which can pay out with the item
+              </li>
+              <li>
+                <strong>obstacles</strong> : <em>array[string]</em> – array of
+                obstacles which can drop the item after being destroyed
+              </li>
+              <li>
+                <strong>startingItem</strong> : <em>array[string]</em> – array
+                of characters for whom the item is a starting item
+              </li>
+              <li>
+                <strong>other</strong> : <em>array[string]</em> – array of other
+                possible ways to find the item; possible values:
+                <ul>
+                  <li><code>"Baby Shop"</code></li>
+                  <li><code>"other"</code></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li>
-            <span class="optional">optional</span> <strong>unit</strong> :
-            <em>string</em> – possible values:
+            <span class="optional">optional</span>
+            <strong>transformation</strong> : <em>array[string]</em> – array of
+            transformations (if any)
+          </li>
+          <li>
+            <span class="optional">optional</span>
+            <strong>rechargeTime</strong> : <em>object</em> – if the item is
+            active, an object representing its recharge time; properties:
             <ul>
-              <li><code>"rooms"</code></li>
-              <li><code>"s"</code></li>
+              <li>
+                <strong>amount</strong> : <em>integer</em> | <em>string</em> – integer
+                represeting the amount of rooms/seconds, or string equal to:
+                <ul>
+                  <li>
+                    <code>"one time use"</code>
+                  </li>
+                  <li><code>"unlimited"</code></li>
+                  <li><code>"other"</code></li>
+                </ul>
+              </li>
+              <li>
+                <span class="optional">optional</span> <strong>unit</strong> :
+                <em>string</em> – possible values:
+                <ul>
+                  <li><code>"rooms"</code></li>
+                  <li><code>"s"</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            optional <strong>unlock</strong> : <em>object</em> – object
+            representing how to unlock the trinket; properties:
+            <ul>
+              <li>
+                <strong>method</strong> : <em>string</em> – possible values:
+                <ul>
+                  <li><code>"boss"</code></li>
+                  <li><code>"challenge"</code></li>
+                  <li><code>"Donation Machine"</code></li>
+                  <li><code>"Greed Donation Machine"</code></li>
+                  <li><code>"other"</code></li>
+                </ul>
+              </li>
+              <li>
+                optional <strong>boss</strong> : <em>string</em> – if the method
+                of unlocking is <code>"boss"</code>; boss to defeat
+              </li>
+              <li>
+                optional <strong>character</strong> : <em>string</em> – if the
+                method of unlocking is <code>"boss"</code>; character with which
+                the boss needs to be defeated
+              </li>
+              <li>
+                optional <strong>numberOfTimes</strong> : <em>integer</em> – if
+                the method of unlocking is <code>"boss"</code>; how many times
+                the boss needs to be defeated
+              </li>
+              <li>
+                optional <strong>mode</strong> : <em>string</em> – if the method
+                of unlocking is <code>"boss"</code>; the only possible value is
+                <code>"Hard Mode"</code> if the boss needs to be defeated in
+                Hard Mode
+              </li>
+              <li>
+                optional <strong>challengeNumber</strong> : <em>integer</em> –
+                if the method of unlocking is <code>"challenge"</code>; the
+                number of the challenge
+              </li>
+              <li>
+                optional <strong>challengeName</strong> : <em>string</em> – if
+                the method of unlocking is <code>"challenge"</code>; the name of
+                the challenge
+              </li>
+              <li>
+                optional <strong>amount</strong> : <em>integer</em> – if the
+                method of unlocking is <code>"Donation Machine"</code> or
+                <code>"Greed Donation Machine"</code>; the amount of money to
+                donate to the machine
+              </li>
+              <li>
+                optional <strong>other</strong> : <em>string</em> – if the
+                method of unlocking is <code>"other"</code>; the way to unlock
+                the item
+              </li>
             </ul>
           </li>
         </ul>
-      </li>
-    </ul>
+      </div>
+      <div class="section"><h2>trinkets</h2></div>
+      <div class="section">
+          <h3><span class="http-method">GET</span> /api/trinkets</h3>
+          <p>retrieves an array of all trinkets – <a href="/api/trinkets" target="_blank">example</a></p>
+      </div>
+      <div class="section">
+          <h3><span class="http-method">GET</span> /api/trinkets/&lt;id&gt;</h3>
+          <p>retrieves a trinket by its ID – <a href="/api/trinkets/52" target="_blank">example</a></p>
+      </div>
+      <div class="section">
+          <p>A trinket object contains the following properties:</p>
+          <ul>
+            <li><strong>id</strong> : <em>integer</em></li>
+            <li><strong>name</strong> : <em>string</em></li>
+            <li><strong>quote</strong> : <em>string</em></li>
+            <li>
+              optional <strong>setDrop</strong> : <em>array[string]</em> – array of
+              set ways to obtain the trinket
+            </li>
+            <li>
+              optional <strong>unlock</strong> : <em>object</em> – object
+              representing how to unlock the trinket; properties:
+              <ul>
+                <li>
+                  <strong>method</strong> : <em>string</em> – possible values:
+                  <ul>
+                    <li><code>"boss"</code></li>
+                    <li><code>"challenge"</code></li>
+                    <li><code>"other"</code></li>
+                  </ul>
+                </li>
+                <li>
+                  optional <strong>boss</strong> : <em>string</em> – if the method
+                  of unlocking is <code>"boss"</code>; boss to defeat
+                </li>
+                <li>
+                  optional <strong>character</strong> : <em>string</em> – if the
+                  method of unlocking is <code>"boss"</code>; character with which
+                  the boss needs to be defeated
+                </li>
+                <li>
+                  optional <strong>challengeNumber</strong> : <em>integer</em> – if
+                  the method of unlocking is <code>"challenge"</code>; the number of
+                  the challenge
+                </li>
+                <li>
+                  optional <strong>challengeName</strong> : <em>string</em> – if the
+                  method of unlocking is <code>"challenge"</code>; the name of the
+                  challenge
+                </li>
+                <li>
+                  optional <strong>other</strong> : <em>string</em> – if the method
+                  of unlocking is <code>"other"</code>; the way to unlock the
+                  trinket
+                </li>
+              </ul>
+            </li>
+          </ul>
+      </divc>
+    </div>
   </body>
 </html>

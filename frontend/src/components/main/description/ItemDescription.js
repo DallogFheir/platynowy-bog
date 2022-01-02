@@ -117,11 +117,11 @@ function ItemDescription({
           pools.push("starting item");
           break;
         case "boss":
-          if (item.pool.boss.includes("Bumbino")) {
+          if (poolsToParse.boss.includes("Bumbino")) {
             pools.push("Bumbino");
           }
 
-          if (item.pool.boss.filter((el) => el !== "Bumbino").length !== 0) {
+          if (poolsToParse.boss.filter((el) => el !== "Bumbino").length !== 0) {
             pools.push("boss");
           }
           break;
