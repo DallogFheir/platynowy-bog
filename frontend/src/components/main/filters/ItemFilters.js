@@ -57,7 +57,9 @@ function ItemFilters({
               "ms-2",
               "mt-1",
               itemTypeFilter.includes(type) ? "btn-light" : "btn-secondary",
-            ].join(" ")}
+            ]
+              .join(" ")
+              .trim()}
             type="button"
             onClick={() => {
               if (itemTypeFilter.includes(type)) {
@@ -83,7 +85,9 @@ function ItemFilters({
               itemQualityFilter.includes(quality)
                 ? "btn-light"
                 : "btn-secondary",
-            ].join(" ")}
+            ]
+              .join(" ")
+              .trim()}
             type="button"
             onClick={() => {
               if (itemQualityFilter.includes(quality)) {
@@ -131,7 +135,9 @@ function ItemFilters({
               itemRechargeFilter.includes(recharge)
                 ? "btn-light"
                 : "btn-secondary",
-            ].join(" ")}
+            ]
+              .join(" ")
+              .trim()}
             type="button"
             onClick={() => {
               if (itemRechargeFilter.includes(recharge)) {
@@ -178,7 +184,9 @@ function ItemFilters({
               "clickable",
               itemPoolFilter.includes(poolName) ? "" : "unselected",
               poolName in poolsHoverInfo ? "pool-info" : "",
-            ].join(" ")}
+            ]
+              .join(" ")
+              .trim()}
             src={`data:image/png;base64,${poolImage}`}
             alt=""
             title={poolName in poolsHoverInfo ? poolsHoverInfo[poolName] : ""}
@@ -227,7 +235,9 @@ function ItemFilters({
                 itemTransformationFilter === transformationName
                   ? ""
                   : "unselected",
-              ].join(" ")}
+              ]
+                .join(" ")
+                .trim()}
               src={`data:image/png;base64,${transformationImage}`}
               alt=""
               onClick={() => {
@@ -251,7 +261,9 @@ function ItemFilters({
               "mt-1",
               "clickable",
               itemCharacterFilter === characterName ? "" : "unselected",
-            ].join(" ")}
+            ]
+              .join(" ")
+              .trim()}
             src={`data:image/png;base64,${characterImage}`}
             alt=""
             onClick={() => {
@@ -276,7 +288,9 @@ function ItemFilters({
               "clickable",
               itemBossFilter === bossName ? "" : "unselected",
               bossName === "other" ? "pool-info" : "",
-            ].join(" ")}
+            ]
+              .join(" ")
+              .trim()}
             src={`data:image/png;base64,${bossImage}`}
             alt=""
             title={bossName === "other" ? "inny" : ""}
@@ -303,7 +317,9 @@ function ItemFilters({
                 "clickable",
                 itemUnlockMethodFilter === unlockMethodName ? "" : "unselected",
                 "pool-info",
-              ].join(" ")}
+              ]
+                .join(" ")
+                .trim()}
               src={`data:image/png;base64,${unlockMethodImage}`}
               alt=""
               title={unlockMethodsHoverInfo[unlockMethodName]}

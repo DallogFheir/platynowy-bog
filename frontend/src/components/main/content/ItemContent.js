@@ -316,7 +316,9 @@ function ItemContent({
                         "clickable",
                         !filterItems(item) ? "unselected" : "",
                         item.name === "Dark Bum" ? "dark-bum" : "",
-                      ].join(" ")}
+                      ]
+                        .join(" ")
+                        .trim()}
                       onMouseOver={() => {
                         setSelectedContent(item);
                       }}

@@ -103,7 +103,9 @@ function TrinketContent({
                         "me-1",
                         "clickable",
                         !filterTrinkets(trinket) ? "unselected" : "",
-                      ].join(" ")}
+                      ]
+                        .join(" ")
+                        .trim()}
                       onMouseOver={() => {
                         setSelectedContent(trinket);
                       }}

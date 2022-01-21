@@ -29,7 +29,9 @@ function TrinketFilters({
                   ? ""
                   : "unselected",
                 "pool-info",
-              ].join(" ")}
+              ]
+                .join(" ")
+                .trim()}
               src={`data:image/png;base64,${unlockMethodImage}`}
               alt=""
               title={unlockMethodsHoverInfo[unlockMethodName]}
@@ -52,7 +54,9 @@ function TrinketFilters({
             "ms-2",
             "mt-1",
             !trinketSetDropFilter ? "btn-light" : "btn-secondary",
-          ].join(" ")}
+          ]
+            .join(" ")
+            .trim()}
           type="button"
           onClick={() => {
             setTrinketSetDropFilter((prev) => !prev);

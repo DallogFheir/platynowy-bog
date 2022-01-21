@@ -53,7 +53,9 @@ function App() {
 
   return (
     <>
-      <div className={["wrapper", popup ? "popup-active" : ""].join(" ")}>
+      <div
+        className={["wrapper", popup ? "popup-active" : ""].join(" ").trim()}
+      >
         <Navbar
           typeOption={typeOption}
           setTypeOption={setTypeOption}

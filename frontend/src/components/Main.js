@@ -107,10 +107,21 @@ function Main({
     false
   );
 
+  const isHoverable = window.matchMedia("(hover: hover)").matches;
+
   return (
     <main className="container-fluid text-light">
       <div className="row">
-        <div className="d-none d-md-block col-md-3 desc-container">
+        <div
+          className={[
+            "d-none",
+            "col-md-3",
+            "desc-container",
+            isHoverable ? "d-md-block" : "",
+          ]
+            .join(" ")
+            .trim()}
+        >
           <div className="desc">
             {/* show description if popup isn't up */}
             {selectedContent &&
@@ -139,7 +150,9 @@ function Main({
               })()}
           </div>
         </div>
-        <div className="col-md-9 items">
+        <div
+          className={[isHoverable ? "col-md-9" : "col-12", "items"].join(" ")}
+        >
           <div className="mt-2">
             <div className="fold-btn-container">
               <p className="text-center fs-5 title">
