@@ -85,7 +85,8 @@ function Footer() {
         />{" "}
         Bumbo want coin{" "}
         <a
-          href="https://www.paypal.com/donate/?hosted_button_id=5BFBWEBH7VH2E"
+          className="link"
+          href="https://www.paypal.com/donate/?hosted_button_id=KZFLN9LL9KKA8"
           target="_blank"
         >
           PayPal
