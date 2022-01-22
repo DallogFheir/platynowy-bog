@@ -1,5 +1,3 @@
-// #TODO expanding navbar doesn't work
-
 import { useEffect, useRef } from "react";
 import "./Navbar.css";
 
