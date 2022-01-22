@@ -37,7 +37,7 @@ function TrinketDescription({ selectedContent, popup }) {
     }
 
     if (thereAreLis) {
-      textArray.splice(firstLi, 0, '<ul class="obj-desc">');
+      textArray.splice(firstLi, 0, '<ul class="obj-desc p-0">');
       textArray.splice(lastLi + 2, 0, "</ul>");
     }
 
