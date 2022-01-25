@@ -9,18 +9,25 @@ function Navbar({
   filterOption,
   setFilterOption,
   setNameFilter,
+  popup,
 }) {
   // ADD EVENT LISTENER TO TYPE TO SEARCH BAR FROM WHEREVER
   const searchBarInput = useRef(null);
   useEffect(() => {
-    const focusSearchBar = () => {
-      searchBarInput.current.focus();
+    const focusSearchBar = (e) => {
+      if (
+        !popup &&
+        window.getSelection().type !== "Range" &&
+        !["ArrowUp", "ArrowDown", "PageUp", "PageDown"].includes(e.key)
+      ) {
+        searchBarInput.current.focus();
+      }
     };
 
     document.addEventListener("keydown", focusSearchBar);
 
     return () => document.removeEventListener("keydown", focusSearchBar);
-  }, []);
+  }, [popup]);
 
   // MENUS
   const menus = [

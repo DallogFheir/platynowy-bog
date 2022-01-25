@@ -64,6 +64,7 @@ function App() {
           filterOption={filterOption}
           setFilterOption={setFilterOption}
           setNameFilter={setNameFilter}
+          popup={popup}
         />
         <Main
           sortOption={sortOption}
