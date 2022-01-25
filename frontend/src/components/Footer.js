@@ -88,6 +88,7 @@ function Footer() {
           className="link"
           href="https://www.paypal.com/donate/?hosted_button_id=KZFLN9LL9KKA8"
           target="_blank"
+          rel="noreferrer"
         >
           PayPal
         </a>
