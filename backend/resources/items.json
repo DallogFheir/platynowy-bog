@@ -5390,7 +5390,7 @@
     "pool": {
       "greedMode": ["Shop"],
       "normal": ["Devil Room", "Angel Room"],
-      "other": ["startingItem"]
+      "startingItem": ["Apollyon"]
     },
     "quality": 4,
     "quote": "Consume",
