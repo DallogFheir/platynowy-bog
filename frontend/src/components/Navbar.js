@@ -54,7 +54,12 @@ function Navbar({
   return (
     <header>
       <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-        <div className="navbar-brand ms-2">
+        <div
+          className="navbar-brand ms-2"
+          onClick={() => {
+            searchBarInput.current.value = "";
+          }}
+        >
           <img src="platinum-god.png" alt="" />
           <span className="ms-2 title">PLATYNOWY BÓG</span>
         </div>
