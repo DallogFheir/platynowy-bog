@@ -58,6 +58,7 @@ function Navbar({
           className="navbar-brand ms-2"
           onClick={() => {
             searchBarInput.current.value = "";
+            setNameFilter("");
           }}
         >
           <img src="platinum-god.png" alt="" />
