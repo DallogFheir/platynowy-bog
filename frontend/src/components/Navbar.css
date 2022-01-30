@@ -6,6 +6,10 @@ header {
   height: 60px;
 }
 
+.navbar-brand {
+  cursor: pointer;
+}
+
 .title {
   font-weight: 700;
 }
