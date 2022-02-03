@@ -14,22 +14,24 @@
     />
   </head>
   <body>
-    <div class="wrapper">
-        <p>
-          <img
-            src={{"data:image/png;base64," + icon}}
-            alt=""
-          />
-          <span class="error-code">Błąd {{ error_code }}</span>
-          <img
-            src={{"data:image/png;base64," + icon}}
-            alt=""
-          />
-        </p>
-        <p>{{ message }}</p>
-        <p>Wróć do:</p>
-        <p><a href={{ url_for("home")}}>Platynowy Bóg</a></p>
-        <p><a href={{ url_for("apidocs")}}>🇬🇧 API documentation</a></p>
+    <div class="error-wrapper">
+        <div class="error-horizontal">
+            <p class="error-p">
+              <img
+                src={{"data:image/png;base64," + icon}}
+                alt=""
+              />
+              <span class="error-code">Błąd {{ error_code }}</span>
+              <img
+                src={{"data:image/png;base64," + icon}}
+                alt=""
+              />
+            </p>
+            <p class="error-p">{{ message }}</p>
+            <p class="error-p">Wróć do:</p>
+            <p class="error-p"><a class="error-link" href={{ url_for("home")}}>Platynowy Bóg</a></p>
+            <p class="error-p"><a class="error-link" href={{ url_for("apidocs")}}>🇬🇧 API documentation</a></p>
+        </div>
     </div>
   </body>
 </html>
