@@ -1,0 +1,83 @@
+{
+  "10": {
+    "1": {
+      "groupId": 10,
+      "id": 1,
+      "name": "Red Heart"
+    },
+    "2": {
+      "groupId": 10,
+      "id": 2,
+      "name": "Half Red Heart"
+    },
+    "3": {
+      "groupId": 10,
+      "id": 3,
+      "name": "Soul Heart"
+    },
+    "4": {
+      "groupId": 10,
+      "id": 4,
+      "name": "Eternal Heart"
+    },
+    "5": {
+      "groupId": 10,
+      "id": 5,
+      "name": "Double Heart"
+    },
+    "6": {
+      "groupId": 10,
+      "id": 6,
+      "name": "Black Heart"
+    },
+    "7": {
+      "groupId": 10,
+      "id": 7,
+      "name": "Gold Heart",
+      "unlock": {
+        "method": "challenge",
+        "challengeNumber": 21,
+        "challengeName": "XXXXXXXXL"
+      }
+    },
+    "8": {
+      "groupId": 10,
+      "id": 8,
+      "name": "Half Soul Heart",
+      "unlock": {
+        "method": "boss",
+        "boss": "Mom's Heart/It Lives!",
+        "numberOfTimes": 5
+      }
+    },
+    "9": {
+      "groupId": 10,
+      "id": 9,
+      "name": "Scared Heart",
+      "unlock": { "method": "other", "other": "reset 7 times in a row" }
+    },
+    "10": {
+      "groupId": 10,
+      "id": 10,
+      "name": "Blended Heart"
+    },
+    "11": {
+      "groupId": 10,
+      "id": 11,
+      "name": "Bone Heart",
+      "unlock": {
+        "method": "other",
+        "other": "digging up the dirt patch in the Grave Room in Dark Room"
+      }
+    },
+    "12": {
+      "groupId": 10,
+      "id": 12,
+      "name": "Rotten Heart",
+      "unlock": {
+        "method": "other",
+        "other": "entering Corpse for the first time"
+      }
+    }
+  }
+}

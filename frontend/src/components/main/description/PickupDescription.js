@@ -1,17 +1,17 @@
 import parse from "html-react-parser";
 import {
-  trinketDescriptionData,
-  trinketImageData,
-  trinketUnlockData,
-} from "../../../data/trinketData";
+  pickupDescriptionData,
+  pickupImageData,
+  pickupUnlockData,
+} from "../../../data/pickupData";
 import "./Description.css";
 
-function TrinketDescription({ selectedContent, popup }) {
+function PickupDescription({ selectedContent, popup }) {
   // #region PARSING FUNCTIONS
-  const parseDescription = (trinketID) => {
+  const parseDescription = (pickupGroupId, pickupId) => {
     const characterLimit = 800;
 
-    const desc = trinketDescriptionData[trinketID];
+    const desc = pickupDescriptionData[pickupGroupId][pickupId];
     const paragraphs = desc.split("\n");
     const textArray = [];
     let firstLiYetToGet = true;
@@ -104,12 +104,17 @@ function TrinketDescription({ selectedContent, popup }) {
         if ("character" in unlockToParse) {
           unlockString += ` jako ${unlockToParse.character}`;
         }
+
+        if ("numberOfTimes" in unlockToParse) {
+          unlockString += ` ${unlockToParse.numberOfTimes} razy`;
+        }
         break;
       case "challenge":
         unlockString = `przejście wyzwania #${unlockToParse.challengeNumber}: ${unlockToParse.challengeName}`;
         break;
       case "other":
-        unlockString = trinketUnlockData[selectedContent.id];
+        unlockString =
+          pickupUnlockData[selectedContent.groupId][selectedContent.id];
         break;
       default:
         throw new Error(`Unknown unlock method: ${unlockToParse.method}`);
@@ -117,55 +122,31 @@ function TrinketDescription({ selectedContent, popup }) {
 
     return unlockString;
   };
-
-  const parseSetDrop = (setDropToParse) => {
-    const dropTrans = {
-      "starting trinket": "trinket startowy",
-      polyp: "polipy",
-      "Special Shopkeeper": "specjalni Shopkeeperzy",
-      "after clearing 3 consecutive floors without taking damage":
-        "po przejściu 3 pięter pod rząd bez otrzymania obrażeń",
-      urn: "dzbany",
-      mushroom: "grzyby",
-      "Golden Poop": "Złote Kupy",
-    };
-
-    return setDropToParse
-      .map((drop) => {
-        if (drop in dropTrans) {
-          return dropTrans[drop];
-        }
-
-        return drop;
-      })
-      .join(", ");
-  };
   //   #endregion
 
   return (
     <div className="text-center mt-2 text-light desc-container">
       {popup && (
         <img
-          src={`data:image/png;base64,${trinketImageData[selectedContent.id]}`}
+          src={`data:image/png;base64,${
+            pickupImageData[selectedContent.groupId][selectedContent.id]
+          }`}
           alt=""
         />
       )}
       <p className="fs-5 obj-name">
         <u>{selectedContent.name}</u>
       </p>
-      <p className="obj-quote">"{selectedContent.quote}"</p>
+      {"quote" in selectedContent && (
+        <p className="obj-quote">"{selectedContent.quote}"</p>
+      )}
       <hr />
-      {parse(parseDescription(selectedContent.id))}
+      {parse(parseDescription(selectedContent.groupId, selectedContent.id))}
       <hr />
       <p className="mb-1 obj-prop">
-        <span className="obj-info">Id:</span> {selectedContent.id}
+        <span className="obj-info">Id:</span>{" "}
+        {`${selectedContent.groupId}.${selectedContent.id}`}
       </p>
-      {"setDrop" in selectedContent && (
-        <p className="obj-prop">
-          <span className="obj-info">Ustalony drop: </span> <br />
-          {parseSetDrop(selectedContent.setDrop)}
-        </p>
-      )}
       {"unlock" in selectedContent && (
         <p className="obj-prop">
           <span className="obj-info">Sposób odblokowania: </span> <br />
@@ -176,4 +157,4 @@ function TrinketDescription({ selectedContent, popup }) {
   );
 }
 
-export default TrinketDescription;
+export default PickupDescription;

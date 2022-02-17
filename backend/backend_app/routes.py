@@ -84,3 +84,24 @@ def trinkets_id(id):
         trinkets = json.load(f)
 
     return jsonify(trinkets[id])
+
+
+# PICKUPS
+@app.route("/api/pickups")
+def pickups():
+    with open_resource("pickups") as f:
+        pickups = json.load(f)
+
+    values = []
+    for subdict in pickups.values():
+        values.extend(subdict.values())
+
+    return jsonify(sorted(values, key=lambda k: (k["groupId"], k["id"])))
+
+
+@app.route("/api/pickups/<group_id>/<id>")
+def pickups_id(group_id, id):
+    with open_resource("pickups") as f:
+        pickups = json.load(f)
+
+    return jsonify(pickups[group_id][id])

@@ -82,7 +82,7 @@ if __name__ == "__main__":
     inputs = Path("C:/Users/Adam/Desktop/itens")
 
     browser = webdriver.Firefox(
-        executable_path=r"C:\Users\Adam\Desktop\geckodriver-v0.30.0-win64\geckodriver.exe"
+        executable_path=r"C:\geckodriver-v0.30.0-win64\geckodriver.exe"
     )
 
     items = {}
@@ -104,5 +104,7 @@ if __name__ == "__main__":
 
             items[name] = b64
         finally:
-            with open("E:/projekty React/wip/platynowy-bog/datad.json", "w") as f:
+            with open(
+                r"E:\programowanie\projekty\utrzymywane\platynowy-bog\datad.json", "w"
+            ) as f:
                 json.dump(items, f)

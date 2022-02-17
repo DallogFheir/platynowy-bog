@@ -6,8 +6,9 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ItemDescription from "./components/main/description/ItemDescription";
-import "./App.css";
 import TrinketDescription from "./components/main/description/TrinketDescription";
+import PickupDescription from "./components/main/description/PickupDescription";
+import "./App.css";
 
 function App() {
   // #region GLOBAL STATES
@@ -96,6 +97,13 @@ function App() {
               case "trinkety":
                 return (
                   <TrinketDescription
+                    selectedContent={selectedContent}
+                    popup={popup}
+                  />
+                );
+              case "znajdźki":
+                return (
+                  <PickupDescription
                     selectedContent={selectedContent}
                     popup={popup}
                   />
