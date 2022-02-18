@@ -37,18 +37,18 @@ export const pickupColorData = {
 
 export const pickupDescriptionData = {
   10: {
-    1: "Leczy 1 czerwone serce.",
+    1: "Leczy 1 czerwone serce.\nDrop czerwonego serca zawsze ma szansę zostać zastąpiony Soul Heartem, Black Heartem lub Eternal Heartem, chyba że efekt danego przedmiotu/znajdźki precyzuje, że jest w stanie wygenerować tylko czerwone serce.",
     2: "Leczy 1/2 czerwonego serca.",
-    3: "Dodaje Soul Hearta do zdrowia Isaaca, za kontenerami czerwonych serc. Soul Hearty nie są stałymi kontenerami, po straceniu znikają.\nW większości przypadków zdrowie z Soul Heartów zostanie wyczerpane przed zdrowiem z czerwonych serc. Wyjątkiem są Blood Donation Machine i Devil Beggary.\nSoul Hearty mogą zostać użyte do wypełnienia połowy Black Hearta.",
+    3: "Dodaje Soul Hearta do zdrowia Isaaca, za kontenerami czerwonych serc. Soul Hearty nie są stałymi kontenerami, po ich stracie znikają.\nW większości przypadków zdrowie z Soul Heartów zostanie wyczerpane przed zdrowiem z czerwonych serc. Wyjątkiem są Blood Donation Machine i Devil Beggary.\nSoul Hearty mogą zostać użyte do wypełnienia połowy Black Hearta.",
     4: "Przy przejściu na następne piętro lub przy zebraniu 2 Eternal Heartów na jednym piętrze daje Isaacowi kontener czerwonego serca (lub odpowiednik dla postaci, które nie posiadają czerwonych serc).\nEternal Heart umieszcza się na ostatnim czerwonym sercu lub Bone Hearcie Isaaca, lub w przypadku ich braku, na ostatnim Soul/Black Hearcie.\nEternal Heart przyjmuje 1/2 serca obrażeń, które nie liczy się jako obrażenie w czerwone serce dla szansy na Devil/Angel Rooma.",
     5: "Leczy 2 czerwone serca.",
-    6: "Zachowuje się jak Soul Heart, oprócz tego, że przy straceniu zadaje wszystkim przeciwnikom w pokoju 40 Obrażeń.\nMissing Page i Missing Page 2 podwajają obrażenia.",
+    6: "Zachowuje się jak Soul Heart, oprócz tego, że przy ich stracie zadaje wszystkim przeciwnikom w pokoju 40 Obrażeń.\nMissing Page i Missing Page 2 podwajają te obrażenia.\nGdy zdrowie Isaaca jest wypełnione do końca Soul Heartami, podniesienie Black Hearta zastąpi nim ostatniego Soul Hearta.",
     7: "Nie dodaje zdrowia, ale umieszcza się na ostatnim sercu Isaaca. Gdy to serce zostanie stracone, Gold Heart pęknie i wygeneruje 3-8 monet oraz wywoła na przeciwnikach efekt Midas' Touch.",
     8: "Dodaje 1/2 Soul Hearta do zdrowia Isaaca.\nMoże zostać użyte do wypełnienia połowy Black Hearta.",
-    9: "Leczy 1 czerwone serce.\nUcieka od Isaaca, gdy ten się do niego zbliża.",
+    9: "Leczy 1 czerwone serce.\nUcieka od Isaaca, gdy ten się do niego zbliża.\nPulsuje szybciej od zwykłego czerwonego serca.",
     10: "Leczy 1 czerwone serce, a jeśli nie ma wolnych kontenerów, daje Isaacowi 1 Soul Hearta. Przy wolnym 1/2 czerwonego serca leczy go oraz daje Isaacowi 1/2 Soul Hearta.\nDark Bum oraz The Jar nie zbiorą tego serca.",
     11: "Jest w stanie przyjąć 1 1/2 serca obrażeń i może zostać wypełnione czerwonymi sercami i Rotten Heartami.\nDla postaci, które nie mogą posiadać czerwonych serc, nie może zostać wypełnione i przyjmuje tylko 1/2 serca obrażeń.",
-    12: "Wypełnia ostatni kontener czerwonych serc Isaaca, nawet jeśli jest już wypełniony zwykłym czerwonym sercem. Generuje 2 Niebieski Muszki przy przejściu każdego pokoju.\nZawsze przyjmuje pełne 1 serce obrażeń.",
+    12: "Wypełnia ostatni kontener czerwonych serc Isaaca, nawet jeśli jest już wypełniony zwykłym czerwonym sercem. Generuje 2 Niebieski Muszki przy przejściu każdego pokoju.\nZawsze przyjmuje pełne 1 serce obrażeń.\nZostaje wpłacony do Blood Donation Machine lub Devil Beggara dopiero, gdy wszystkie inne czerwone serca zostaną wyczerpane.\nJeśli Rotten Hearty nie zostały jeszcze odblokowane, wszystkie pokoje zawierające je (np. Super Secret Room w stylu Corpse) będą zawierać 1/2 czerwonych serc.\nStrata Rotten Hearta nie liczy się jako obrażenie w czerwone serce dla szansy na Devil/Angel Room.",
   },
 };
 
