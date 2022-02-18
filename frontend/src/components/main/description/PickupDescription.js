@@ -112,6 +112,12 @@ function PickupDescription({ selectedContent, popup }) {
       case "challenge":
         unlockString = `przejście wyzwania #${unlockToParse.challengeNumber}: ${unlockToParse.challengeName}`;
         break;
+      case "Donation Machine":
+      case "Greed Donation Machine":
+        unlockString = `wpłacenie ${unlockToParse.amount} monet${
+          unlockToParse.amount === 1 ? "y" : ""
+        } do ${unlockToParse.method}`;
+        break;
       case "other":
         unlockString =
           pickupUnlockData[selectedContent.groupId][selectedContent.id];

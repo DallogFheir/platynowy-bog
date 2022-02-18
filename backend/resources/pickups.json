@@ -79,5 +79,56 @@
         "other": "entering Corpse for the first time"
       }
     }
+  },
+  "20": {
+    "1": {
+      "groupId": 20,
+      "id": 1,
+      "name": "Penny"
+    },
+    "2": {
+      "groupId": 20,
+      "id": 2,
+      "name": "Nickel"
+    },
+    "3": {
+      "groupId": 20,
+      "id": 3,
+      "name": "Dime"
+    },
+    "4": {
+      "groupId": 20,
+      "id": 4,
+      "name": "Double Penny"
+    },
+    "5": {
+      "groupId": 20,
+      "id": 5,
+      "name": "Lucky Penny",
+      "unlock": {
+        "method": "Greed Donation Machine",
+        "amount": 1
+      }
+    },
+    "6": {
+      "groupId": 20,
+      "id": 6,
+      "name": "Sticky Nickel",
+      "unlock": {
+        "method": "boss",
+        "boss": "Boss Rush",
+        "character": "Keeper"
+      }
+    },
+    "7": {
+      "groupId": 20,
+      "id": 7,
+      "name": "Golden Penny",
+      "unlock": {
+        "method": "boss",
+        "boss": "Mega Satan",
+        "character": "Tainted Keeper"
+      }
+    }
   }
 }
