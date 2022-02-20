@@ -1,4 +1,4 @@
-from flask import jsonify, render_template
+from flask import abort, jsonify, render_template
 import json
 from pathlib import Path
 from . import app
@@ -66,7 +66,10 @@ def items_id(id):
     with open_resource("items") as f:
         items = json.load(f)
 
-    return jsonify(items[id])
+    item = items.get(id)
+    if item is None:
+        abort(404)
+    return jsonify(item)
 
 
 # TRINKETS
@@ -83,7 +86,10 @@ def trinkets_id(id):
     with open_resource("trinkets") as f:
         trinkets = json.load(f)
 
-    return jsonify(trinkets[id])
+    trinket = trinkets.get(id)
+    if trinket is None:
+        abort(404)
+    return jsonify(trinket)
 
 
 # PICKUPS
@@ -104,4 +110,10 @@ def pickups_id(group_id, id):
     with open_resource("pickups") as f:
         pickups = json.load(f)
 
-    return jsonify(pickups[group_id][id])
+    pickup_group = pickups.get(group_id)
+    if pickup_group is None:
+        abort(404)
+    pickup = pickup_group.get(id)
+    if pickup is None:
+        abort(404)
+    return jsonify(pickup)
