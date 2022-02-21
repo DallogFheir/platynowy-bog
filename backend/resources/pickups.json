@@ -168,5 +168,12 @@
       "id": 7,
       "name": "Giga Bomb"
     }
+  },
+  "41": {
+    "0": {
+      "groupId": 41,
+      "id": 0,
+      "name": "Throwable Bomb"
+    }
   }
 }
