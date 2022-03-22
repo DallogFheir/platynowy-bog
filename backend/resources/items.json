@@ -816,15 +816,7 @@
     "id": 73,
     "name": "Cube of Meat",
     "pool": {
-      "greedMode": [
-        "Treasure Room",
-        "Shop",
-        "Curse Room",
-        "Secret Room",
-        "Boss Room",
-        "Devil Room",
-        "Angel Room"
-      ],
+      "greedMode": ["Shop", "Boss Room"],
       "normal": ["Ultra Secret Room"],
       "boss": ["Famine", "Pestilence", "War", "Death"],
       "other": ["Baby Shop"]
@@ -1362,7 +1354,7 @@
     "id": 115,
     "name": "Ouija Board",
     "pool": {
-      "greedMode": ["Treasure Room", "Devil Room"],
+      "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Devil Room"]
     },
     "quality": 2,
@@ -1386,7 +1378,7 @@
     "id": 117,
     "name": "Dead Bird",
     "pool": {
-      "greedMode": ["Treasure Room", "Devil Room"],
+      "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room"],
       "other": ["Baby Shop"],
       "startingItem": ["Eve"]
@@ -1498,8 +1490,8 @@
     "id": 126,
     "name": "Razor Blade",
     "pool": {
+      "normal": ["Curse Room"],
       "beggars": ["Devil Beggar"],
-      "normal": ["Devil Room"],
       "startingItem": ["Eve"]
     },
     "quality": 0,
@@ -2171,7 +2163,10 @@
   "186": {
     "id": 186,
     "name": "Blood Rights",
-    "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
+    "pool": {
+      "greedMode": ["Treasure Room"],
+      "normal": ["Treasure Room", "Devil Room"]
+    },
     "quality": 0,
     "quote": "Mass enemy damage at a cost",
     "rechargeTime": { "amount": "unlimited" },
@@ -2411,6 +2406,7 @@
     "name": "Ball of Bandages",
     "pool": {
       "boss": ["Famine", "Pestilence", "War", "Death"],
+      "greedMode": ["Boss Room"],
       "other": ["Baby Shop"]
     },
     "quality": 2,
@@ -5698,7 +5694,7 @@
     "pool": {
       "greedMode": ["Treasure Room", "Devil Room", "Curse Room"],
       "beggars": ["Devil Beggar"],
-      "normal": ["Curse Room"]
+      "normal": ["Devil Room", "Curse Room"]
     },
     "quality": 3,
     "quote": "Big brother is watching",
@@ -5755,9 +5751,9 @@
     "id": 508,
     "name": "Mom's Razor",
     "pool": {
-      "greedMode": ["Treasure Room", "Curse Room"],
+      "greedMode": ["Treasure Room"],
       "chests": ["Old Chest", "Mom's Chest"],
-      "normal": ["Treasure Room", "Curse Room"]
+      "normal": ["Treasure Room"]
     },
     "quality": 1,
     "quote": "It's sharp!",
@@ -7473,7 +7469,7 @@
     "pool": {
       "greedMode": ["Devil Room"],
       "chests": ["Red Chest"],
-      "normal": ["Devil Room"]
+      "normal": ["Curse Room", "Devil Room"]
     },
     "quality": 2,
     "quote": "An eye for secrets",
