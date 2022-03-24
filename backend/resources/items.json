@@ -1490,7 +1490,8 @@
     "id": 126,
     "name": "Razor Blade",
     "pool": {
-      "normal": ["Curse Room"],
+      "normal": ["Curse Room", "Treasure Room"],
+      "greedMode": ["Curse Room", "Treasure Room"],
       "beggars": ["Devil Beggar"],
       "startingItem": ["Eve"]
     },
