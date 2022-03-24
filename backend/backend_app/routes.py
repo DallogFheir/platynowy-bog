@@ -1,4 +1,4 @@
-from flask import abort, jsonify, render_template
+from flask import abort, jsonify, make_response, render_template
 import json
 from pathlib import Path
 from . import app
@@ -58,7 +58,10 @@ def items():
     with open_resource("items") as f:
         items = json.load(f)
 
-    return jsonify(sorted(items.values(), key=lambda k: k["id"]))
+    resp = make_response(jsonify(sorted(items.values(), key=lambda k: k["id"])))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
 
 
 @app.route("/api/items/<id>")
@@ -69,7 +72,11 @@ def items_id(id):
     item = items.get(id)
     if item is None:
         abort(404)
-    return jsonify(item)
+
+    resp = make_response(jsonify(item))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
 
 
 # TRINKETS
@@ -78,7 +85,10 @@ def trinkets():
     with open_resource("trinkets") as f:
         trinkets = json.load(f)
 
-    return jsonify(sorted(trinkets.values(), key=lambda k: k["id"]))
+    resp = make_response(jsonify(sorted(trinkets.values(), key=lambda k: k["id"])))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
 
 
 @app.route("/api/trinkets/<id>")
@@ -89,4 +99,8 @@ def trinkets_id(id):
     trinket = trinkets.get(id)
     if trinket is None:
         abort(404)
-    return jsonify(trinket)
+
+    resp = make_response(jsonify(trinket))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
