@@ -1157,7 +1157,7 @@
       "other": ["Baby Shop"]
     },
     "quality": 1,
-    "quote": "Psychich friend",
+    "quote": "Psychic friend",
     "transformation": ["Conjoined"],
     "type": "passive",
     "unlock": { "boss": "Steven", "method": "boss" }
