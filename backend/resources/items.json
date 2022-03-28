@@ -959,7 +959,7 @@
       "greedMode": ["Shop", "Secret Room"],
       "normal": ["Secret Room", "Devil Room"]
     },
-    "quality": 0,
+    "quality": 2,
     "quote": "Reusable level skip",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
     "type": "active"
@@ -1128,7 +1128,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Angel Room"]
     },
-    "quality": 4,
+    "quality": 3,
     "quote": "Soul generator",
     "unlock": { "boss": "Isaac", "character": "Magdalene", "method": "boss" },
     "type": "passive"
@@ -2353,7 +2353,7 @@
     "id": 201,
     "name": "Iron Bar",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 3,
+    "quality": 2,
     "quote": "DMG up + concussive tears",
     "type": "passive"
   },
@@ -3748,7 +3748,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Angel Room"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Eternal life?",
     "unlock": { "boss": "Isaac", "character": "Lazarus", "method": "boss" },
     "type": "passive"
@@ -4358,7 +4358,7 @@
       "machines": ["Crane Game"],
       "normal": ["Treasure Room"]
     },
-    "quality": 0,
+    "quality": 1,
     "quote": "Rerolls rocks",
     "rechargeTime": { "amount": 3, "unit": "rooms" },
     "unlock": { "boss": "Hush", "character": "Cain", "method": "boss" },
@@ -4605,7 +4605,7 @@
       "greedMode": ["Treasure Room", "Angel Room"],
       "normal": ["Treasure Room"]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "Aura stat boost",
     "type": "passive",
     "unlock": { "boss": "Hush", "character": "Magdalene", "method": "boss" }
@@ -5084,7 +5084,7 @@
       "machines": ["Crane Game"],
       "normal": ["Shop", "Curse Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "I see the future",
     "type": "passive"
   },
@@ -5107,7 +5107,7 @@
       "normal": ["Treasure Room"],
       "boss": ["Bumbino"]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "Bone tears!",
     "unlock": { "boss": "Delirium", "character": "Lazarus", "method": "boss" },
     "type": "passive"
@@ -5182,7 +5182,7 @@
     "id": 460,
     "name": "Glaucoma",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 1,
     "quote": "Blind tears!",
     "type": "passive"
   },
@@ -5223,7 +5223,7 @@
     "id": 464,
     "name": "Glyph of Balance",
     "pool": { "greedMode": ["Angel Room"], "normal": ["Angel Room"] },
-    "quality": 1,
+    "quality": 3,
     "quote": "A gift from above",
     "unlock": {
       "boss": "Ultra Greedier",
@@ -5625,7 +5625,7 @@
     "id": 497,
     "name": "Camo Undies",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 0,
+    "quality": 2,
     "quote": "Camo kid",
     "type": "passive"
   },
@@ -5735,7 +5735,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Watch your back!",
     "type": "passive"
   },
@@ -5756,7 +5756,7 @@
       "chests": ["Old Chest", "Mom's Chest"],
       "normal": ["Treasure Room"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "It's sharp!",
     "rechargeTime": { "amount": 4, "unit": "rooms" },
     "transformation": ["Yes Mother?"],
@@ -6330,7 +6330,7 @@
     "id": 555,
     "name": "Golden Razor",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 1,
     "quote": "Pain from gain",
     "rechargeTime": { "amount": "unlimited" },
     "type": "active",
@@ -6800,7 +6800,7 @@
     "id": 602,
     "name": "Member Card",
     "pool": { "normal": ["Shop"] },
-    "quality": 1,
+    "quality": 2,
     "quote": "Exclusive access!",
     "type": "passive",
     "unlock": {
@@ -6958,7 +6958,7 @@
       "normal": ["Treasure Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 0,
+    "quality": 2,
     "quote": "Puffy buddy",
     "type": "passive"
   },
@@ -8297,7 +8297,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Double tap sneeze",
     "unlock": {
       "boss": "Delirium",
