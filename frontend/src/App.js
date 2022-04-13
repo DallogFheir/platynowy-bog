@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { itemPools } from "./data/itemData";
-import { itemTransformations } from "./data/transformationsData";
+import { transformationImageData } from "./data/transformationsData";
 import fortunes from "./data/fortunes";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
@@ -77,7 +77,7 @@ function App() {
           popup={popup}
           setPopup={setPopup}
           itemPools={itemPools}
-          itemTransformations={itemTransformations}
+          transformationImageData={transformationImageData}
         />
         <Footer />
       </div>
@@ -89,7 +89,7 @@ function App() {
                 return (
                   <ItemDescription
                     itemPools={itemPools}
-                    itemTransformations={itemTransformations}
+                    transformationImageData={transformationImageData}
                     selectedContent={selectedContent}
                     popup={popup}
                   />

@@ -18,7 +18,7 @@ function Main({
   popup,
   setPopup,
   itemPools,
-  itemTransformations,
+  transformationImageData,
 }) {
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
@@ -132,7 +132,7 @@ function Main({
                     return (
                       <ItemDescription
                         itemPools={itemPools}
-                        itemTransformations={itemTransformations}
+                        transformationImageData={transformationImageData}
                         selectedContent={selectedContent}
                         popup={popup}
                       />

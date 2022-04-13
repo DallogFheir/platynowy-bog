@@ -9,7 +9,7 @@ import "./Description.css";
 
 function ItemDescription({
   itemPools,
-  itemTransformations,
+  transformationImageData,
   selectedContent,
   popup,
 }) {
@@ -287,7 +287,7 @@ function ItemDescription({
             <img
               key={transIdx}
               src={`data:image/png;base64,${
-                itemTransformations.filter(
+                transformationImageData.filter(
                   ([transName, _]) => transName === trans
                 )[0][1]
               }`}

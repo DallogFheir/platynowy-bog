@@ -44,7 +44,7 @@ const transformationOrder = [
   "Spider Baby",
   "Stompy",
 ];
-export const itemTransformations = mapOrderToImages(
+export const transformationImageData = mapOrderToImages(
   transformationOrder,
   transformationImages
 );
