@@ -1,9 +1,9 @@
 import {
-  itemTransformations,
   itemCharacters,
   itemBosses,
   itemUnlockMethods,
 } from "../../../data/itemData";
+import { itemTransformations } from "../../../data/transformationsData";
 import "./Filters.css";
 
 function ItemFilters({

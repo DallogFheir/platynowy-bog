@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
-import { itemPools, itemTransformations } from "./data/itemData";
+import { itemPools } from "./data/itemData";
+import { itemTransformations } from "./data/transformationsData";
 import fortunes from "./data/fortunes";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
