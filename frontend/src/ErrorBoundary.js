@@ -36,7 +36,11 @@ class ErrorBoundary extends React.Component {
             </p>
             <p class="error-p">
               <a class="error-link" href="/apidocs">
-                🇬🇧 API documentation
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABL0lEQVQ4T2NkoBAwUqifAWzA+/fv/4cWbvywZ/89AZiB7y8UMjxUtQBz5W+fYBA06Ifb5WSv8LFvWye/wZubjIwXRNT/M/Pz/JQ5s4cdpAKmEJcBMHH5Kwd/MrCzszMyyNX9v6544fPPqzd5QTaBDdHvY3h/sQjVBfr9DFflzn75feMOD0JdP9AL8nX/wd6AOln+0oGfDJwcYNcgewHEZhbk+ylzaheKSxlB/scVkMgG4FIDDgNKYoJyAyj2AnIggrzyxMz959/3H9lBIY0RBj9+/nyoaw+Wg0U3OBrfXywEBwNIA6uq/Bftp+Y82KIRWR2bpupnrYdGvJBY+PXr50NtOxST8SUksEtNXX/+/fAZmJCAABQTJT6VRCdlZweFj2smBPILCgoyUiczUZIOAEkLrwEbahiTAAAAAElFTkSuQmCC"
+                  alt=""
+                />{" "}
+                API documentation
               </a>
             </p>
           </div>
