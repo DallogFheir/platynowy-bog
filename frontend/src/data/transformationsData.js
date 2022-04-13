@@ -48,3 +48,38 @@ export const itemTransformations = mapOrderToImages(
   transformationOrder,
   transformationImages
 );
+
+export const transformationDescriptionData = {
+  0: "Daje Isaacowi latanie oraz powoduje, że za każdym razem, gdy łza uderzy w przeciwnika, istnieje 50% szansy na wygenerowanie Niebieskiej Muszki.\nJeśli wszystkie 9 żyć z Dead Cata zostały zużyte, Dead Cat zostanie usunięty z ekwipunku Isaaca, co może potencjalnie cofnąć transformację w Guppy'ego.",
+  1: "Daje Isaacowi latanie oraz powoduje, że niektórzy mali przeciwnicy-muchy zamieniają się w Niebieskie Muchy, a inni przeciwnicy-muchy stają się przyjaźni.",
+  2: "+1 kontener Czerwonego Serca.",
+  3: "Daje Isaacowi latanie oraz +3 Soul Hearty.",
+  4: "Isaac tworzy pod sobą zielony śluz, który zadaje 6 Obrażeń na sekundę.\nIsaac staje się odporny na truciznę.",
+  5: "+2 Obrażeń. +0,15 Szybkości.\nGeneruje pigułkę przy transformacji.",
+  6: "Isaac zyskuje pasywny Mom’s Knife, który porusza się za nim i zadaje 2x jego Obrażenia.",
+  7: "Isaac, oprócz zwykłych łez, będzie strzelał po przekątnej dwiema dodatkowymi łzami.\n-0,3 Obrażeń i lekko zmniejsza Łzy.\nIncubus Lilith oraz chowańce z Cambion Conception i Monster Manual nie liczą się do tej transformacji.\nUżycie Sacrifical Altar może spowodować usunięcie transformacji, jeśli liczba chowańców wliczających się do niej spadnie poniżej 3.",
+  8: "Daje Isaacowi latanie oraz +2 Black Hearty.\nKolce wygenerowane przez Sanguine Bond mają 1% szansy na wywołanie tej transformacji.",
+  9: "Za każdym razem, gdy zostanie zniszczona kupa, Isaac uleczy się o 1/2 czerwonego serca.",
+  10: "Za każdym razem, gdy Isaac strzela, istnieje 25% szansy, że wystrzeli łzy z obu oczu.\nW przypadku Jacoba i Esau oraz Tainted Lazarusa, aby obie postaci przeszły transformację, muszą podnieść 3 osobne przedmioty (w sumie 6).",
+  11: "+1 kontener Czerwonego Serca.",
+  12: "Isaac otrzymuje chowańca-pająka, który nakłada losowe efekty na przeciwników, z którymi wejdzie w kontakt.",
+  13: "Przy otrzymywaniu obrażeń istnieje szansa, że Isaac wytworzy kamienne fale. Isaac może również niszczyć przeszkody poprzez wchodzenie w nie.\nWejście w Spiked Rocki czasami nie zadaje obrażeń, zależnie od rozmiaru Isaaca, jego szybkości oraz kąta, pod jakim w nie wszedł.",
+  14: "Zastępuje Bum Frienda, Dark Buma i Key Buma, zbierając znajdźki, które oni zbierają, i generując w zamian podwójne nagrody.\nDark Bum z Cambion Conception nie wlicza się do tej transformacji.\nJeśli po osiągnięciu transformacji zostanie zebrany któryś z przedmiotów, nowy żebraczek nie pojawi się.",
+};
+
+export const transformationColorData = {
+  1: "black",
+  2: "black",
+  3: "orange",
+  4: "pink",
+  5: "green",
+  6: "pink",
+  7: "pink",
+  8: "black",
+  9: "yellow",
+  10: "pink",
+  11: "pink",
+  12: "pink",
+  13: "pink",
+  14: "pink",
+};
