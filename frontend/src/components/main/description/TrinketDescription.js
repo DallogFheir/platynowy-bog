@@ -58,7 +58,7 @@ function TrinketDescription({ selectedContent, popup }) {
 
       if (cutTextArray.length !== textArray.length) {
         cutTextArray.push(
-          '<p class="obj-desc-short">Naciśnij na ikonę przedmiotu, żeby zobaczyć pełny opis.</p>'
+          '<p class="obj-desc-short">Naciśnij na ikonę trinketu, żeby zobaczyć pełny opis.</p>'
         );
       }
 

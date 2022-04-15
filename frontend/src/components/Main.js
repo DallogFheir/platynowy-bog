@@ -7,6 +7,8 @@ import TrinketContent from "./main/content/TrinketContent";
 import TrinketFilters from "./main/filters/TrinketFilters";
 import "./Main.css";
 import TrinketDescription from "./main/description/TrinketDescription";
+import TransformationContent from "./main/content/TransformationContent";
+import TransformationDescription from "./main/description/TransformationDescription";
 
 function Main({
   sortOption,
@@ -23,6 +25,10 @@ function Main({
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
   const [trinketsContent, trinketsStatus] = useAPI("trinkets", typeOption);
+  const [transformationsContent, transformationsStatus] = useAPI(
+    "transformations",
+    typeOption
+  );
 
   //   VARIABLES
   const itemTypes = ["pasywny", "aktywny"];
@@ -144,6 +150,13 @@ function Main({
                         popup={popup}
                       />
                     );
+                  case "transformacje":
+                    return (
+                      <TransformationDescription
+                        selectedContent={selectedContent}
+                        popup={popup}
+                      />
+                    );
                   default:
                     throw new Error(`Unknown type option: ${typeOption}`);
                 }
@@ -158,66 +171,78 @@ function Main({
               <p className="text-center fs-5 title">
                 {typeOption.toUpperCase()}
               </p>
-              <button
-                type="button"
-                className="btn btn-light fold-btn"
-                onClick={() => {
-                  setFiltersFolded((prev) => !prev);
-                }}
-              >
-                {filtersFolded ? "▼" : "▲"}
-              </button>
+              {typeOption !== "transformacje" && (
+                <button
+                  type="button"
+                  className="btn btn-light fold-btn"
+                  onClick={() => {
+                    setFiltersFolded((prev) => !prev);
+                  }}
+                >
+                  {filtersFolded ? "▼" : "▲"}
+                </button>
+              )}
             </div>
             <hr />
-            <div
-              className={filtersFolded ? "fold-container" : "fold-container-in"}
-            >
-              {(() => {
-                switch (typeOption) {
-                  case "przedmioty":
-                    return (
-                      <ItemFilters
-                        itemTypeFilter={itemTypeFilter}
-                        setItemTypeFilter={setItemTypeFilter}
-                        itemQualityFilter={itemQualityFilter}
-                        setItemQualityFilter={setItemQualityFilter}
-                        itemRechargeFilter={itemRechargeFilter}
-                        setItemRechargeFilter={setItemRechargeFilter}
-                        itemPoolFilter={itemPoolFilter}
-                        setItemPoolFilter={setItemPoolFilter}
-                        itemTransformationFilter={itemTransformationFilter}
-                        setItemTransformationFilter={
-                          setItemTransformationFilter
-                        }
-                        itemCharacterFilter={itemCharacterFilter}
-                        setItemCharacterFilter={setItemCharacterFilter}
-                        itemBossFilter={itemBossFilter}
-                        setItemBossFilter={setItemBossFilter}
-                        itemUnlockMethodFilter={itemUnlockMethodFilter}
-                        setItemUnlockMethodFilter={setItemUnlockMethodFilter}
-                        itemTypes={itemTypes}
-                        itemQualities={itemQualities}
-                        itemRecharges={itemRecharges}
-                        itemPools={itemPools}
-                      />
-                    );
-                  case "trinkety":
-                    return (
-                      <TrinketFilters
-                        trinketUnlockMethodFilter={trinketUnlockMethodFilter}
-                        setTrinketUnlockMethodFilter={
-                          setTrinketUnlockMethodFilter
-                        }
-                        trinketSetDropFilter={trinketSetDropFilter}
-                        setTrinketSetDropFilter={setTrinketSetDropFilter}
-                      />
-                    );
-                  default:
-                    throw new Error(`Unknown type option: ${typeOption}`);
-                }
-              })()}
-            </div>
-            <hr />
+            {typeOption !== "transformacje" && (
+              <>
+                <div
+                  className={
+                    filtersFolded ? "fold-container" : "fold-container-in"
+                  }
+                >
+                  {(() => {
+                    switch (typeOption) {
+                      case "przedmioty":
+                        return (
+                          <ItemFilters
+                            itemTypeFilter={itemTypeFilter}
+                            setItemTypeFilter={setItemTypeFilter}
+                            itemQualityFilter={itemQualityFilter}
+                            setItemQualityFilter={setItemQualityFilter}
+                            itemRechargeFilter={itemRechargeFilter}
+                            setItemRechargeFilter={setItemRechargeFilter}
+                            itemPoolFilter={itemPoolFilter}
+                            setItemPoolFilter={setItemPoolFilter}
+                            itemTransformationFilter={itemTransformationFilter}
+                            setItemTransformationFilter={
+                              setItemTransformationFilter
+                            }
+                            itemCharacterFilter={itemCharacterFilter}
+                            setItemCharacterFilter={setItemCharacterFilter}
+                            itemBossFilter={itemBossFilter}
+                            setItemBossFilter={setItemBossFilter}
+                            itemUnlockMethodFilter={itemUnlockMethodFilter}
+                            setItemUnlockMethodFilter={
+                              setItemUnlockMethodFilter
+                            }
+                            itemTypes={itemTypes}
+                            itemQualities={itemQualities}
+                            itemRecharges={itemRecharges}
+                            itemPools={itemPools}
+                          />
+                        );
+                      case "trinkety":
+                        return (
+                          <TrinketFilters
+                            trinketUnlockMethodFilter={
+                              trinketUnlockMethodFilter
+                            }
+                            setTrinketUnlockMethodFilter={
+                              setTrinketUnlockMethodFilter
+                            }
+                            trinketSetDropFilter={trinketSetDropFilter}
+                            setTrinketSetDropFilter={setTrinketSetDropFilter}
+                          />
+                        );
+                      default:
+                        throw new Error(`Unknown type option: ${typeOption}`);
+                    }
+                  })()}
+                </div>
+                <hr />
+              </>
+            )}
             {(() => {
               switch (typeOption) {
                 case "przedmioty":
@@ -252,6 +277,20 @@ function Main({
                       trinketSetDropFilter={trinketSetDropFilter}
                       trinketsStatus={trinketsStatus}
                       trinketsContent={trinketsContent}
+                      colors={colors}
+                      setSelectedContent={setSelectedContent}
+                      popup={popup}
+                      setPopup={setPopup}
+                    />
+                  );
+                case "transformacje":
+                  return (
+                    <TransformationContent
+                      sortOption={sortOption}
+                      filterOption={filterOption}
+                      nameFilter={nameFilter}
+                      transformationsStatus={transformationsStatus}
+                      transformationsContent={transformationsContent}
                       colors={colors}
                       setSelectedContent={setSelectedContent}
                       popup={popup}

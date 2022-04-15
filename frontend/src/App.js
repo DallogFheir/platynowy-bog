@@ -1,14 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { itemPools } from "./data/itemData";
-import { transformationImageData } from "./data/transformationsData";
+import { transformationImageData } from "./data/transformationData";
 import fortunes from "./data/fortunes";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ItemDescription from "./components/main/description/ItemDescription";
-import "./App.css";
 import TrinketDescription from "./components/main/description/TrinketDescription";
+import TransformationDescription from "./components/main/description/TransformationDescription";
+import "./App.css";
 
 function App() {
   // #region GLOBAL STATES
@@ -97,6 +98,13 @@ function App() {
               case "trinkety":
                 return (
                   <TrinketDescription
+                    selectedContent={selectedContent}
+                    popup={popup}
+                  />
+                );
+              case "transformacje":
+                return (
+                  <TransformationDescription
                     selectedContent={selectedContent}
                     popup={popup}
                   />

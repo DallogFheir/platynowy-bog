@@ -3,7 +3,7 @@ import {
   itemBosses,
   itemUnlockMethods,
 } from "../../../data/itemData";
-import { transformationImageData } from "../../../data/transformationsData";
+import { transformationImageData } from "../../../data/transformationData";
 import "./Filters.css";
 
 function ItemFilters({
