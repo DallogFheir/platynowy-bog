@@ -93,27 +93,42 @@ function TransformationDescription({ selectedContent, popup }) {
       <p className="mb-1 obj-prop">
         <span className="obj-info">Id:</span> {selectedContent.id}
       </p>
-      <p className="mb-1 obj-prop">
-        <span className="obj-info">Przedmioty:</span>{" "}
-        {selectedContent.items((itemId) => (
-          <img src={itemImageData[itemId]} alt="" />
-        ))}
-      </p>
+      {"items" in selectedContent && (
+        <p className="mb-1 obj-prop">
+          <span className="obj-info">Przedmioty:</span>{" "}
+          {selectedContent.items.map((itemId, idx) => (
+            <img
+              key={idx}
+              class="small-margin"
+              src={`data:image/png;base64,${itemImageData[itemId]}`}
+              alt=""
+            />
+          ))}
+        </p>
+      )}
       {"trinkets" in selectedContent && (
         <p className="mb-1 obj-prop">
           <span className="obj-info">Trinkety:</span>{" "}
-          {selectedContent.trinkets((trinketId) => (
-            <img src={trinketImageData[trinketId]} alt="" />
+          {selectedContent.trinkets.map((trinketId, idx) => (
+            <img
+              key={idx}
+              src={`data:image/png;base64,${trinketImageData[trinketId]}`}
+              alt=""
+            />
           ))}
         </p>
       )}
       {"pills" in selectedContent && (
-        <p className="mb-1 obj-prop">
-          <span className="obj-info">Pigułki:</span>{" "}
-          {selectedContent.pills.map((pill) => (
-            <p>{pill}</p>
-          ))}
-        </p>
+        <>
+          <p className="mb-1 obj-prop">
+            <span className="obj-info">Pigułki:</span>
+          </p>
+          <div>
+            {selectedContent.pills.map((pill, idx) => (
+              <p key={idx}>{pill}</p>
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

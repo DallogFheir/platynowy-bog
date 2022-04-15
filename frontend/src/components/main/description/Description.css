@@ -40,3 +40,7 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.small-margin {
+  margin: 0 5px;
+}

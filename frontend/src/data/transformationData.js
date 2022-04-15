@@ -1,6 +1,8 @@
 import mapOrderToImages from "./mapOrderToImages";
 
 const transformationImages = {
+  Adult:
+    "UklGRnoDAABXRUJQVlA4WAoAAAAQAAAAHQAAIAAAQUxQSE8AAAABcNi2bSBp/6V1d/91nPsfICImgNQjVeOZ44HFyGpg+WD9FS6+wNXf2oYtNgBXEXogG/K1xbHlN6WBHGgQKyMjcMc/xozphHlGM6GrgkoKAFZQOCAEAwAA0A8AnQEqHgAhAADAEiWMAnTLEYRrtG3kGsd/ST2oPVb1SyU/zX8e9EP/efxeyyn43/cfyi/oGsQf4D8ktkI/m/9j/ID/Ae/3/JeRr5q/zvuB/xb+Nf2j+wft7/a//z9M3rN9Cb9ODpokVN3/bxOIU8uQS11xqvCFMg+81DXqS1TF9VytZb0AAP7679hjo3+7oBybrdO/F/859tdKq73+xx4LMm5l3f5fpOR0YY0jrDAVF47YWRXmaBZ3ePIX6fEiw/1iRA04MJo3/hRWOKGBy6ZX8NmuWmfcUX/FazBdRE54uk/zmfd9LA7XiesZUwdsSnAvd/+wwV/73xb4VtHi0+ss1DvUOhc+fk3Nyhgsymc+4d84h7aCmW43WzzBXVlG8mCm/Bsi0WPrC/l38UKl8Lv4aw7VNbvd6fGNNSp4dwyQMSY+HdYn5l1a7wciJsB9MJWZWsj//ggdbkJ8rBfy5w95GkR+Fijn7E5GLHxCF/xOumPrSZsRPY8MokYs+MCu5Q7i2qtr/TyIc0SWLC3I382cGykqMz14HMowMwcO+MAIC8aQvlosaY5v9DzszqzSQxVwbmpnT7VQOeJWeu1caATzMFZpAy5qnjGamj/bePGWtyWFefMNF0W/Rcjib2Cx+JnaxpIRz0Ixf+m2BuJQWl6di9tAmNiISEQXA3DjJKoAFpoGv8EqPvbi0jnTmdHGroGn3cyM+ip//+1qBw2+TpLsWQOIkL//M6SGH7+bdQ521OceUGxv+Aw3duT78zvf//S8iuX3JVO5c8JFEre43ABhJZ4+X8DI0hLVXZEcaPb/nPR3+iBEjxrFdeuIp0K15Uzua7naxQMvQsuG8kYrk+SSLm5j8gQGqUb3+WzCWOPRcGps3BkqcmVnX/TzTD4O/BC0+rdyvxncsSGHkvlh06J5wML55W74e5yAV9bXJINl3u5E6Xq+tffLi6Uxze+ou/Zgul62j8oT8i0xShQueoodWOuGAOni1DC5OTvnyIjpTf2PBg8EJDiCn0tBTgXVFwAAAA==",
   Beelzebub:
     "UklGRqACAABXRUJQVlA4WAoAAAAQAAAAGwAAIAAAQUxQSD8AAAABYNy2kSP137QuznrjOyImgKK/BC232FwyWDD6Y/jDeDc7dvIo6UEncvSyIx4lPYAcnxn+E9RrNPehQlIFlSIAVlA4IDoCAABQCwCdASocACEAAMASJZwDK1SCrQKIHaPeWPXfJrvbPx3zF3Ih9FA/I7mby7n+V5Qfn//d/lV9BP6a/2P80P7ByFv7AHdQ8lm3cqsqpq/2e8/CPkVFtuFZsLqVel0MSYfXljAA/v/Y/GO/r6qEK18cXCL4SiigHxDOLfTjARgmz6AYP430IiojHjJ998nia/cD/EEk6gijb5IJn8z8di/9k/g1F5ylwe3neLA2tYzVHTfMcsr9VRszfLY0TmJK9rRtz2Nk+3gzuxSD4ZuOR5eA0+2jB2hLCSR4VDObv7W31oozpuYBvRknJB5goWlPknsp/q7zGY/caJU0Iio2NrG3//00f95rk0ILXnmd/f0McU5Fi0CzDcBZ+gf/zuz7kjeTr0amMHdHBJ9LMdLJVEQAO9VI+ln3cfUlU0K+3/MdNEz2ebrnW5o3c6/Qte+aINNnN3kSxQcq1Lp/eCdRYGNVp9gMfPfYeIbhXcEScPUI6mDf9a2bzN4C/eNbmrEcuH7vzTSfGC0Nltw1iynxltGUjyfZ8i/tZ2eaY7Ou+E85G88/hGcAAK14JTBywakBu5uh5mvYADfvSUmoMtvpH6Q9Tuh+D4vkJTxROaYfG+87ckM9QVFaRY1HlRCvZUC37uon/kuyjxivmQLLVTmfejpLmnl3Sv192RStM7I+qg8IOvl/WR6ClhkHi+WSZYRo4TMjR+nnMfFn1j5a1zvJa1m///oALVmCFx8h+X/o8H//9BO6nVL0MSYtgAA=",
   Bob: "UklGRiQDAABXRUJQVlA4WAoAAAAQAAAAGwAAIAAAQUxQSEMAAAABYNy2kSP137QuenzxHRETQOgpReOJ48hiYPXE8oH1y7zwIn8lV3ARPR5Fi+MO5w3iCbnjyOIbMCOfMM2YJzRVUAkBAFZQOCC6AgAAEA0AnQEqHAAhAADAEiWwAnTLLsDeucWI4b001L6gNsB+oHQq+oDeAPQA6TH9z/SQtiX9Ve0rRvmG5qO4waJjz0M0rzZ/1PcG/VT/fcCP+xSDnW0Lp3O1gtyYUlNxk2PMZz+1SnbnZwx/jyfXZrsTVAAA/v/Y/kV6B5Btrin//3snkXni4TmcJqF/mgj0fxlKMxYD6cA4u45wpITwJloFlp2pEyBLEdxOXF+NEvqN5bAxCLH3uhFKR/8pqRb0iqfIdYlPieVxMduWmiK/RZ/zVdri7av3zDa/YFmKg9sNcTmuqLifbsXB9i39fWiGGvUj353x8/OY9je+YZQ3i39fVxpJ5SE0XZCZKTp2CiYxl8xfuWPe8/jJwd//H0Y1CEgK/w18h1cqAOTIfg2lcX7sT+4fJzmH+nsTlpisP55SxAyAcZ2HC60fOwJW775iHqy+r9/1+Prnx9d7TkfCb0YWnP93xs5i3yQ53rO7Ulz0/jHXdEVdO1xfP4+6DI5wocsSbfGOtgjbMHSd8+lQNV5z77uvIYeezzhSWI8TFQvDUJXlQkOw6QGqskv0JSAm9XG59LcbYTGx+QT/DZjVSm7FOPludfivaTl46CXk6LbGbtw2tyKYxgtj38SFP3bQQjonjJZm8z//owonttuH2Tpxd2P/wO7Eaz/542F2QK5vB75i3uF8LvCruzXGiKgUIJrf75i3Oc7cDSEvwW29CoFx4D9GRs0tRnlH1Y7GpRwbaVIOes/Kyr9mKziOBvY5nEfnj0FleDnnVdhtW+dn0Svc+r8J+gOH/YK+NE7VFcdf8Bsx9aBUYBRDaZHmHppU7/eEAgGUuz/mxBmY4xG0crGPc4LdIyIT//++6wQ/9dmz/6vd+i7AThbPPltLV1glHmH17EKg8xpfB/c5jNJYEFc5nWsN0TnyDNTAAAA=",
@@ -31,23 +33,30 @@ const transformationImages = {
 const transformationOrder = [
   "Guppy",
   "Beelzebub",
-  "Super Bum",
-  "Yes Mother?",
-  "Bob",
   "Fun Guy",
-  "Leviathan",
-  "Conjoined",
-  "Spun",
   "Seraphim",
+  "Bob",
+  "Spun",
+  "Yes Mother?",
+  "Conjoined",
+  "Leviathan",
   "Oh Crap",
   "Bookworm",
+  "Adult",
   "Spider Baby",
   "Stompy",
+  "Super Bum",
 ];
-export const transformationImageData = mapOrderToImages(
+export const itemTransformationImageData = mapOrderToImages(
   transformationOrder,
   transformationImages
 );
+
+const transformationImageData = {};
+transformationOrder.forEach((transformationName, idx) => {
+  transformationImageData[idx] = transformationImages[transformationName];
+});
+export { transformationImageData };
 
 export const transformationDescriptionData = {
   0: "Daje Isaacowi latanie oraz powoduje, że za każdym razem, gdy łza uderzy w przeciwnika, istnieje 50% szansy na wygenerowanie Niebieskiej Muszki.\nJeśli wszystkie 9 żyć z Dead Cata zostały zużyte, Dead Cat zostanie usunięty z ekwipunku Isaaca, co może potencjalnie cofnąć transformację w Guppy'ego.",

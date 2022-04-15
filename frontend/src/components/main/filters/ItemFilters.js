@@ -3,7 +3,7 @@ import {
   itemBosses,
   itemUnlockMethods,
 } from "../../../data/itemData";
-import { transformationImageData } from "../../../data/transformationData";
+import { itemTransformationImageData } from "../../../data/transformationData";
 import "./Filters.css";
 
 function ItemFilters({
@@ -224,7 +224,7 @@ function ItemFilters({
       </div>
       <div className="mt-2">
         <span className="filter-name">Transformacja:</span>
-        {transformationImageData.map(
+        {itemTransformationImageData.map(
           ([transformationName, transformationImage], transformationIdx) => (
             <img
               key={transformationIdx}
