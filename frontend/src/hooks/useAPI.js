@@ -20,6 +20,15 @@ function useAPI(resource, typeState) {
 
         if (res.ok) {
           const data = await res.json();
+
+          if (resource === "transformations") {
+            data.forEach((transformation) => {
+              if (!("id" in transformation)) {
+                transformation.id = 14;
+              }
+            });
+          }
+
           setContent(data);
           setStatus("loaded");
         } else {
@@ -33,6 +42,7 @@ function useAPI(resource, typeState) {
     const typeStateTrans = {
       przedmioty: "items",
       trinkety: "trinkets",
+      transformacje: "transformations",
     };
 
     // retry fetching if page was left, fetching failed previously (or is first one), and resource is current

@@ -58,7 +58,8 @@ def items():
     with open_resource("items") as f:
         items = json.load(f)
 
-    resp = make_response(jsonify(sorted(items.values(), key=lambda k: k["id"])))
+    sorted_items = sorted(items.values(), key=lambda k: k["id"])
+    resp = make_response(jsonify(sorted_items))
     resp.headers["Access-Control-Allow-Origin"] = "*"
 
     return resp
@@ -85,7 +86,8 @@ def trinkets():
     with open_resource("trinkets") as f:
         trinkets = json.load(f)
 
-    resp = make_response(jsonify(sorted(trinkets.values(), key=lambda k: k["id"])))
+    sorted_trinkets = sorted(trinkets.values(), key=lambda k: k["id"])
+    resp = make_response(jsonify(sorted_trinkets))
     resp.headers["Access-Control-Allow-Origin"] = "*"
 
     return resp
@@ -101,6 +103,35 @@ def trinkets_id(id):
         abort(404)
 
     resp = make_response(jsonify(trinket))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
+
+
+@app.route("/api/transformations")
+def transformations():
+    with open_resource("transformations") as f:
+        transformations = json.load(f)
+
+    sorted_keys = sorted(int(k) for k in transformations)
+    sorted_transformations = [transformations[str(k)] for k in sorted_keys]
+    resp = make_response(jsonify(sorted_transformations))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
+
+
+@app.route("/api/transformations/<id>")
+def transformations_id(id):
+    with open_resource("transformations") as f:
+        transformations = json.load(f)
+
+    print(id)
+    transformation = transformations.get(id)
+    if transformation is None:
+        abort(404)
+
+    resp = make_response(jsonify(transformation))
     resp.headers["Access-Control-Allow-Origin"] = "*"
 
     return resp

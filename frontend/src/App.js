@@ -1,13 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import useLocalStorage from "./hooks/useLocalStorage";
-import { itemPools, itemTransformations } from "./data/itemData";
+import { itemPools } from "./data/itemData";
+import { itemTransformationImageData } from "./data/transformationData";
 import fortunes from "./data/fortunes";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ItemDescription from "./components/main/description/ItemDescription";
-import "./App.css";
 import TrinketDescription from "./components/main/description/TrinketDescription";
+import TransformationDescription from "./components/main/description/TransformationDescription";
+import "./App.css";
 
 function App() {
   // #region GLOBAL STATES
@@ -76,7 +78,7 @@ function App() {
           popup={popup}
           setPopup={setPopup}
           itemPools={itemPools}
-          itemTransformations={itemTransformations}
+          itemTransformationImageData={itemTransformationImageData}
         />
         <Footer />
       </div>
@@ -88,7 +90,7 @@ function App() {
                 return (
                   <ItemDescription
                     itemPools={itemPools}
-                    itemTransformations={itemTransformations}
+                    itemTransformationImageData={itemTransformationImageData}
                     selectedContent={selectedContent}
                     popup={popup}
                   />
@@ -96,6 +98,13 @@ function App() {
               case "trinkety":
                 return (
                   <TrinketDescription
+                    selectedContent={selectedContent}
+                    popup={popup}
+                  />
+                );
+              case "transformacje":
+                return (
+                  <TransformationDescription
                     selectedContent={selectedContent}
                     popup={popup}
                   />
