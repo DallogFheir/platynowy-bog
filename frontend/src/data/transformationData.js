@@ -77,18 +77,19 @@ export const transformationDescriptionData = {
 };
 
 export const transformationColorData = {
+  0: "black",
   1: "black",
-  2: "black",
-  3: "orange",
-  4: "pink",
-  5: "green",
+  2: "orange",
+  3: "pink",
+  4: "green",
+  5: "pink",
   6: "pink",
-  7: "pink",
-  8: "black",
-  9: "yellow",
+  7: "black",
+  8: "yellow",
+  9: "pink",
   10: "pink",
   11: "pink",
   12: "pink",
-  13: "pink",
+  13: "orange",
   14: "pink",
 };
