@@ -42,6 +42,7 @@ function useAPI(resource, typeState) {
     const typeStateTrans = {
       przedmioty: "items",
       trinkety: "trinkets",
+      pigułki: "pills",
       transformacje: "transformations",
     };
 

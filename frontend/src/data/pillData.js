@@ -1,3 +1,5 @@
+import mapOrderToImages from "./mapOrderToImages";
+
 export const pillDescriptionData = {
   normal: {
     0: "Isaac puszcza bąka, zadając 5 Obrażeń i zatruwając pobliskich przeciwników.",
@@ -112,3 +114,16 @@ export const pillUnlockData = {
   45: "zebranie wszystkich wpisów w Bestiariuszu",
   46: "zebranie 50 przedmiotów w jednej rozgrywce",
 };
+
+// FILTERS DATA
+const pillUnlockMethodImages = {
+  challenge:
+    "UklGRggDAABXRUJQVlA4IPwCAADwDACdASogACAAPm0uk0YkIqGhMAgAgA2JbACdMzRCv2M5PGA2wG4A3hbeP/JViX3c7+7ZoK1fuq/kBrAaSCSx8kHuJ7gf8S/Yn8ne4r+3vsALd4YZZq/X/HV0iAUxbZ1Nss4hU7E2NPti3Pj34IcAAP7+/z+p++T+W4vDM+aj62Tt22y9vxAw31/2mtArcJQ1fgzCBvl2Ix3/Py746TtPxEnGg/G//fslF0B//t+6f/MfY1Ztj/DeVxZF/4A6Rz/+6ARb//HWRcI3yyAic0xRngO6fzyXbc1dnq7MvjNe7PmXrnQkV1kEPwJmm8YvyA/7Z3ItP9GNL00PbCJXiWEWkfa4y0b/57/2sYzzQbBltxH/9tp0B/dbgevbPlXg5K+Ouy4v+A3fxY/9Qw5QtiPj/nzanW6foNIIZtdngf4rj2Z3WWg/4/49CmGb2xsCWY8EMw6z/FcezNtGwl2PQphm9xwEd/sL3H6wBMSO2Mn61VxR/7bZc7t9fna5K8p54Ol5YcBrtwFGkqFyE2lfstMWtrpdpVBTi00c/W4XoGKGATPe3/j/5e/Jv+RjrReGUs2SK2j0VE2PuiKH93bsf5tONLkdDFtIQGYBRjxfG8z9H1gJJfWH3kv8bHSMhvT4NOX7wvift1zhVflTU6M3dgnu9iD/f96+/g9KE/0pOaT2RMvP2ARq9wlAX/109EEu7sxyPpVM9Hv5Ev13n/7J+OJHQAT/wv/7KO6/cDvx3xv5IaM+6CkvJ9iMXp0fmf/+59evzrd/2AHlXZqzGBnog1BSZRAEEYPaY3FZpcD8Dh+5xLIWZMvI2c+/AibtlnqTvVX8n+7QedGAywyzXqiv1WNtTH7v7xDCJzCoraFdfv5cvsoKnEHl5CGYkf/me2pOoQtWYZy/beFIp7d+W+ZiWTsGZPUgB2rSvdVr/Af2R/9Gc+vooXeLQ2jtNJX9pWjpdO7q982sh7rPPu63xC0PZzj9AtUYDaeIghoMxD8iXRl9WmKiTEek6fv8g10AAA==",
+  other:
+    "iVBORw0KGgoAAAANSUhEUgAAACcAAAApCAYAAAC2qTBFAAAA+ElEQVR4nO2YMQ6DMBAElyhFHgRlOh5lqigVn6KjhP+kJNUG6YSxMQn4HE+HOaFjWNnGxQ2YECmXsxtYIzcXylUO9MNwRh/oug4A8Gyaz5guc6Qsy0MaGMfRek+nORt803tVrdYxu3u+gG5zvqYksj7EpG5zW425nrPFoG5zNh5tCwCo6xrAbIIZXZrxgdnga3JvhnSboyEa4LUxZrFeZkma24JuczQks2XDNS/SvA+6zRGbMd8VxJXVJdIwZ+MXxkja5iR7TEnSNifnrW8YI2mbk2vn35jLzYWyO3M+O9pQdJpbO8M4Cl3m+NcUA1GbK/JpeiBRN/cG7rVS+2KdrboAAAAASUVORK5CYII=",
+};
+const pillUnlockMethodOrder = ["challenge", "other"];
+export const pillUnlockMethods = mapOrderToImages(
+  pillUnlockMethodOrder,
+  pillUnlockMethodImages
+);

@@ -7,6 +7,8 @@ import TrinketContent from "./main/content/TrinketContent";
 import TrinketFilters from "./main/filters/TrinketFilters";
 import "./Main.css";
 import TrinketDescription from "./main/description/TrinketDescription";
+import PillContent from "./main/content/PillContent";
+import PillFilters from "./main/filters/PillFilters";
 import TransformationContent from "./main/content/TransformationContent";
 import TransformationDescription from "./main/description/TransformationDescription";
 
@@ -25,6 +27,7 @@ function Main({
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
   const [trinketsContent, trinketsStatus] = useAPI("trinkets", typeOption);
+  const [pillsContent, pillsStatus] = useAPI("pills", typeOption);
   const [transformationsContent, transformationsStatus] = useAPI(
     "transformations",
     typeOption
@@ -104,6 +107,11 @@ function Main({
   const [trinketSetDropFilter, setTrinketSetDropFilter] = useLocalStorage(
     "trinketSetDropFilter",
     false
+  );
+
+  const [pillUnlockMethodFilter, setPillUnlockMethodFilter] = useLocalStorage(
+    "pillUnlockMethodFilter",
+    null
   );
   // #endregion
 
@@ -237,6 +245,15 @@ function Main({
                             setTrinketSetDropFilter={setTrinketSetDropFilter}
                           />
                         );
+                      case "pigułki":
+                        return (
+                          <PillFilters
+                            pillUnlockMethodFilter={pillUnlockMethodFilter}
+                            setPillUnlockMethodFilter={
+                              setPillUnlockMethodFilter
+                            }
+                          />
+                        );
                       default:
                         throw new Error(`Unknown type option: ${typeOption}`);
                     }
@@ -283,6 +300,14 @@ function Main({
                       setSelectedContent={setSelectedContent}
                       popup={popup}
                       setPopup={setPopup}
+                    />
+                  );
+                case "pigułki":
+                  return (
+                    <PillContent
+                      nameFilter={nameFilter}
+                      pillsStatus={pillsStatus}
+                      pillsContent={pillsContent}
                     />
                   );
                 case "transformacje":
