@@ -105,3 +105,10 @@ export const pillDescriptionData = {
     49: "Efekt zwiększenia i zmniejszenia statystyk jest podwójny.",
   },
 };
+
+export const pillUnlockData = {
+  43: "ukończenie Victory Lapa, pokonując The Lamb",
+  44: "wzięcie udziału w 31 Daily Challenge'ach",
+  45: "zebranie wszystkich wpisów w Bestiariuszu",
+  46: "zebranie 50 przedmiotów w jednej rozgrywce",
+};
