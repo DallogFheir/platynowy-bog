@@ -108,6 +108,36 @@ def trinkets_id(id):
     return resp
 
 
+# PILLS
+@app.route("/api/pills")
+def pills():
+    with open_resource("pills") as f:
+        pills = json.load(f)
+
+    sorted_keys = sorted(int(k) for k in pills)
+    sorted_pills = [pills[str(k)] for k in sorted_keys]
+    resp = make_response(jsonify(sorted_pills))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
+
+
+@app.route("/api/pills/<id>")
+def pills_id(id):
+    with open_resource("pills") as f:
+        pills = json.load(f)
+
+    pill = pills.get(id)
+    if pill is None:
+        abort(404)
+
+    resp = make_response(jsonify(pill))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
+
+
+# TRANSFORMATIONS
 @app.route("/api/transformations")
 def transformations():
     with open_resource("transformations") as f:
@@ -126,7 +156,6 @@ def transformations_id(id):
     with open_resource("transformations") as f:
         transformations = json.load(f)
 
-    print(id)
     transformation = transformations.get(id)
     if transformation is None:
         abort(404)

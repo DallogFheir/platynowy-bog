@@ -7,6 +7,8 @@ import TrinketContent from "./main/content/TrinketContent";
 import TrinketFilters from "./main/filters/TrinketFilters";
 import "./Main.css";
 import TrinketDescription from "./main/description/TrinketDescription";
+import PillContent from "./main/content/PillContent";
+import PillFilters from "./main/filters/PillFilters";
 import TransformationContent from "./main/content/TransformationContent";
 import TransformationDescription from "./main/description/TransformationDescription";
 
@@ -25,6 +27,7 @@ function Main({
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
   const [trinketsContent, trinketsStatus] = useAPI("trinkets", typeOption);
+  const [pillsContent, pillsStatus] = useAPI("pills", typeOption);
   const [transformationsContent, transformationsStatus] = useAPI(
     "transformations",
     typeOption
@@ -105,6 +108,11 @@ function Main({
     "trinketSetDropFilter",
     false
   );
+
+  const [pillUnlockMethodFilter, setPillUnlockMethodFilter] = useLocalStorage(
+    "pillUnlockMethodFilter",
+    null
+  );
   // #endregion
 
   //   FIX TO WORK WITH BOOTSTRAP'S COLLAPSE
@@ -113,7 +121,8 @@ function Main({
     false
   );
 
-  const isHoverable = window.matchMedia("(hover: hover)").matches;
+  const isHoverable =
+    window.matchMedia("(hover: hover)").matches && typeOption !== "pigułki";
 
   return (
     <main className="container-fluid text-light">
@@ -166,7 +175,9 @@ function Main({
           </div>
         </div>
         <div
-          className={[isHoverable ? "col-md-9" : "col-12", "items"].join(" ")}
+          className={[isHoverable ? "col-md-9" : "col-12 p-4", "items"].join(
+            " "
+          )}
         >
           <div className="mt-2">
             <div className="fold-btn-container">
@@ -237,6 +248,15 @@ function Main({
                             setTrinketSetDropFilter={setTrinketSetDropFilter}
                           />
                         );
+                      case "pigułki":
+                        return (
+                          <PillFilters
+                            pillUnlockMethodFilter={pillUnlockMethodFilter}
+                            setPillUnlockMethodFilter={
+                              setPillUnlockMethodFilter
+                            }
+                          />
+                        );
                       default:
                         throw new Error(`Unknown type option: ${typeOption}`);
                     }
@@ -283,6 +303,15 @@ function Main({
                       setSelectedContent={setSelectedContent}
                       popup={popup}
                       setPopup={setPopup}
+                    />
+                  );
+                case "pigułki":
+                  return (
+                    <PillContent
+                      nameFilter={nameFilter}
+                      pillUnlockMethodFilter={pillUnlockMethodFilter}
+                      pillsStatus={pillsStatus}
+                      pillsContent={pillsContent}
                     />
                   );
                 case "transformacje":
