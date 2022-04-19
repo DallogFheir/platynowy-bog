@@ -13,3 +13,18 @@
   cursor: url(data:image/png;base64,UklGRi4BAABXRUJQVlA4WAoAAAAQAAAAHQAAGwAAQUxQSEgAAAABFyAQSBJcdtqICA02Adi20dOJbmai0y2aSWUKEf2fAPCEABgSdTrU6Gh6hnps+eMkGRi6RUkpwYDU02JRKcFCT0vgSghgsQBWUDggwAAAAHAFAJ0BKh4AHAA+bS6SRaQioZgEAEAGxLSAB1Dd/AWeLljM54eczA2cTnbBtHCH08L93gAA/vvjMfCrh+Eb93cmFIOZGGcM++Da75v/a76QJo/9Mkx8dqYsFpCCJCkVabyzPmy4eGkafEEnLZmCm58K4avmA+fXf6mDpA0oNcwh9k212o1660wwP2Q63qCgCnWj/2cbc6KGK2nslePiQucqvWxqHmafXSNV8ULAVQdAtzTgls0+d619xKLsmQAAAA==),
     auto;
 }
+
+/* pills table */
+.table-pills {
+  margin: 30px;
+  text-align: center;
+}
+
+.table-pills-row {
+  border-top: 1px solid rgb(124, 124, 124);
+}
+
+.table-pills-cell {
+  margin: 10px;
+  padding: 5px;
+}

@@ -306,6 +306,7 @@ function Main({
                   return (
                     <PillContent
                       nameFilter={nameFilter}
+                      pillUnlockMethodFilter={pillUnlockMethodFilter}
                       pillsStatus={pillsStatus}
                       pillsContent={pillsContent}
                     />
