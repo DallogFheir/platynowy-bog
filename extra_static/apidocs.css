@@ -43,7 +43,23 @@ a:hover {
 
 h2 {
   margin: 20px 0;
+}
+
+.section-title {
   text-decoration: underline;
+}
+
+.section-title:hover ~ .anchor {
+  opacity: 1;
+}
+
+.anchor {
+  font-size: 0.8em;
+  opacity: 0;
+}
+
+.anchor:hover {
+  opacity: 1;
 }
 
 h3 {
