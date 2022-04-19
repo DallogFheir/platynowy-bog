@@ -28,3 +28,17 @@
   margin: 10px;
   padding: 5px;
 }
+
+.table-pills-narrow {
+  display: none;
+}
+
+@media (max-width: 696px) {
+  .table-pills-wide {
+    display: none;
+  }
+
+  .table-pills-narrow {
+    display: block;
+  }
+} ;

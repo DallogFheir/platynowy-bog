@@ -124,7 +124,7 @@ function PillContent({
             return (
               <div>
                 <table class="table-pills">
-                  <thead>
+                  <thead class="table-pills-wide">
                     <tr>
                       <th class="table-pills-cell">ID</th>
                       <th class="table-pills-cell">nazwa</th>
@@ -133,7 +133,7 @@ function PillContent({
                       <th class="table-pills-cell">sposób odblokowania</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="table-pills-wide">
                     {pillsContent.filter(filterPills).map((pill, pillIdx) => (
                       <tr class="table-pills-row" key={pillIdx}>
                         <td class="table-pills-cell">{pill.id}</td>
@@ -155,6 +155,54 @@ function PillContent({
                           )}
                         </td>
                         <td class="table-pills-cell">{getUnlock(pill)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                  <tbody class="table-pills-narrow">
+                    {pillsContent.filter(filterPills).map((pill, pillIdx) => (
+                      <tr
+                        class={[pillIdx === 0 ? "" : "table-pills-row"]}
+                        key={pillIdx}
+                      >
+                        <td class="table-pills-cell">
+                          <p>
+                            <strong>ID</strong>
+                          </p>
+                          <p>{pill.id}</p>
+                          <p>
+                            <strong>Nazwa</strong>
+                          </p>
+                          <p>{pill.name}</p>
+                          <p>
+                            <strong>Pigułka zwykła</strong>
+                          </p>
+                          <p>
+                            {parse(
+                              parseDescription(
+                                pillDescriptionData["normal"][pill.id]
+                              )
+                            )}
+                          </p>
+                          <p>
+                            {" "}
+                            <strong>Pigułka Horse Pill</strong>
+                          </p>
+                          <p>
+                            {parse(
+                              parseDescription(
+                                pillDescriptionData["horse"][pill.id]
+                              )
+                            )}
+                          </p>
+                          {getUnlock(pill) !== "" && (
+                            <>
+                              <p>
+                                <strong>Sposób odblokowania</strong>
+                              </p>
+                              <p>{getUnlock(pill)}</p>
+                            </>
+                          )}
+                        </td>
                       </tr>
                     ))}
                   </tbody>

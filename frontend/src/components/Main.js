@@ -121,7 +121,8 @@ function Main({
     false
   );
 
-  const isHoverable = window.matchMedia("(hover: hover)").matches;
+  const isHoverable =
+    window.matchMedia("(hover: hover)").matches && typeOption !== "pigułki";
 
   return (
     <main className="container-fluid text-light">
@@ -174,7 +175,9 @@ function Main({
           </div>
         </div>
         <div
-          className={[isHoverable ? "col-md-9" : "col-12", "items"].join(" ")}
+          className={[isHoverable ? "col-md-9" : "col-12 p-4", "items"].join(
+            " "
+          )}
         >
           <div className="mt-2">
             <div className="fold-btn-container">
