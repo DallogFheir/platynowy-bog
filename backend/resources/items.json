@@ -8088,7 +8088,7 @@
       "startingItem": ["Tainted Lazarus"]
     },
     "quality": 4,
-    "quote": "Life and death",
+    "quote": "Twist of fate",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
     "unlock": {
       "boss": "Delirium",
