@@ -57,3 +57,14 @@ h3 {
 .http-method {
   color: rgb(212, 212, 212);
 }
+
+@media screen and (max-width: 530px) {
+  .img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .img-second {
+    display: none;
+  }
+}
