@@ -1,0 +1,891 @@
+{
+  "1": {
+    "id": 1,
+    "name": "0 - The Fool",
+    "quote": "Where journey begins",
+    "type": "major arcana card"
+  },
+  "2": {
+    "id": 2,
+    "name": "I - The Magician",
+    "quote": "May you never miss your goal",
+    "type": "major arcana card"
+  },
+  "3": {
+    "id": 3,
+    "name": "II - The High Priestess",
+    "quote": "Mother is watching you",
+    "type": "major arcana card"
+  },
+  "4": {
+    "id": 4,
+    "name": "III - The Empress",
+    "quote": "May your rage bring power",
+    "type": "major arcana card"
+  },
+  "5": {
+    "id": 5,
+    "name": "IV - The Emperor",
+    "quote": "Challenge me!",
+    "type": "major arcana card"
+  },
+  "6": {
+    "id": 6,
+    "name": "V - The Hierophant",
+    "quote": "Two prayers for the lost",
+    "type": "major arcana card"
+  },
+  "7": {
+    "id": 7,
+    "name": "VI - The Lovers",
+    "quote": "May you prosper and be in good health",
+    "type": "major arcana card"
+  },
+  "8": {
+    "id": 8,
+    "name": "VII - The Chariot",
+    "quote": "May nothing stand before you",
+    "type": "major arcana card"
+  },
+  "9": {
+    "id": 9,
+    "name": "VIII - Justice",
+    "quote": "May your future become balanced",
+    "type": "major arcana card"
+  },
+  "10": {
+    "id": 10,
+    "name": "IX - The Hermit",
+    "quote": "May you see what life has to offer",
+    "type": "major arcana card"
+  },
+  "11": {
+    "id": 11,
+    "name": "X - Wheel of Fortune",
+    "quote": "Spin the wheel of destiny",
+    "type": "major arcana card"
+  },
+  "12": {
+    "id": 12,
+    "name": "XI - Strength",
+    "quote": "May your power bring rage",
+    "type": "major arcana card"
+  },
+  "13": {
+    "id": 13,
+    "name": "XII - The Hanged Man",
+    "quote": "May you find enlightenment",
+    "type": "major arcana card"
+  },
+  "14": {
+    "id": 14,
+    "name": "XIII - Death",
+    "quote": "Lay waste to all that oppose you",
+    "type": "major arcana card"
+  },
+  "15": {
+    "id": 15,
+    "name": "XIV - Temperance",
+    "quote": "May you be pure in heart",
+    "type": "major arcana card"
+  },
+  "16": {
+    "id": 16,
+    "name": "XV - The Devil",
+    "quote": "Revel in the power of darkness",
+    "type": "major arcana card"
+  },
+  "17": {
+    "id": 17,
+    "name": "XVI - The Tower",
+    "quote": "Destruction brings creation",
+    "type": "major arcana card"
+  },
+  "18": {
+    "id": 18,
+    "name": "XVII - The Stars",
+    "quote": "May you find what you desire",
+    "type": "major arcana card"
+  },
+  "19": {
+    "id": 19,
+    "name": "XVIII - The Moon",
+    "quote": "May you find all you have lost",
+    "type": "major arcana card"
+  },
+  "20": {
+    "id": 20,
+    "name": "XIX - The Sun",
+    "quote": "May the light heal and enlighten you",
+    "type": "major arcana card"
+  },
+  "21": {
+    "id": 21,
+    "name": "XX - Judgement",
+    "quote": "Judge lest ye be judged",
+    "type": "major arcana card"
+  },
+  "22": {
+    "id": 22,
+    "name": "XXI - The World",
+    "quote": "Open your eyes and see",
+    "type": "major arcana card"
+  },
+  "23": {
+    "id": 23,
+    "name": "2 of Clubs",
+    "quote": "Item multiplier",
+    "type": "playing card"
+  },
+  "24": {
+    "id": 24,
+    "name": "2 of Diamonds",
+    "quote": "Item multiplier",
+    "type": "playing card"
+  },
+  "25": {
+    "id": 25,
+    "name": "2 of Spades",
+    "quote": "Item multiplier",
+    "type": "playing card"
+  },
+  "26": {
+    "id": 26,
+    "name": "2 of Hearts",
+    "quote": "Item multiplier",
+    "type": "playing card"
+  },
+  "27": {
+    "id": 27,
+    "name": "Ace of Clubs",
+    "quote": "Convert all",
+    "type": "playing card",
+    "unlock": {
+      "method": "other",
+      "other": "get a 3-win streak"
+    }
+  },
+  "28": {
+    "id": 28,
+    "name": "Ace of Diamonds",
+    "quote": "Convert all",
+    "type": "playing card",
+    "unlock": {
+      "method": "other",
+      "other": "defeat The Lamb in under 20 minutes"
+    }
+  },
+  "29": {
+    "id": 29,
+    "name": "Ace of Spades",
+    "quote": "Convert all",
+    "type": "playing card",
+    "unlock": {
+      "method": "other",
+      "other": "defeat The Lamb without taking hearts, coins or bombs through the entire run"
+    }
+  },
+  "30": {
+    "id": 30,
+    "name": "Ace of Hearts",
+    "quote": "Convert all",
+    "type": "playing card",
+    "unlock": {
+      "method": "other",
+      "other": "complete a chapter (floors I and II) after Basement with only half a heart total (including The Lost)"
+    }
+  },
+  "31": { "id": 31, "name": "Joker", "quote": "???", "type": "playing card" },
+  "46": {
+    "id": 46,
+    "name": "Suicide King",
+    "quote": "A true ending?",
+    "type": "playing card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 7,
+      "challengeName": "Suicide King"
+    }
+  },
+  "79": {
+    "id": 79,
+    "name": "Queen of Hearts",
+    "quote": "<3",
+    "type": "playing card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Mega Satan",
+      "character": "Tainted Magdalene"
+    }
+  },
+  "44": {
+    "id": 44,
+    "name": "Rules Card",
+    "quote": "???",
+    "type": "playing card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 11,
+      "challengeName": "Glass Cannon"
+    }
+  },
+  "48": {
+    "id": 48,
+    "name": "? Card",
+    "quote": "Double Active",
+    "type": "playing card"
+  },
+  "42": {
+    "id": 42,
+    "name": "Chaos Card",
+    "quote": "???",
+    "type": "Magic: The Gathering card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 9,
+      "challengeName": "Demo Man"
+    }
+  },
+  "52": {
+    "id": 52,
+    "name": "Huge Growth",
+    "quote": "Become immense!",
+    "type": "Magic: The Gathering card",
+    "unlock": {
+      "method": "other",
+      "other": "increase in size 5 times during a run"
+    }
+  },
+  "53": {
+    "id": 53,
+    "name": "Ancient Recall",
+    "quote": "Draw 3 cards",
+    "type": "Magic: The Gathering card",
+    "unlock": {
+      "method": "other",
+      "other": "use cards and/or runes 20 times"
+    }
+  },
+  "54": {
+    "id": 54,
+    "name": "Era Walk",
+    "quote": "Savor the moment",
+    "type": "Magic: The Gathering card",
+    "unlock": {
+      "method": "other",
+      "other": "add both Broken Watch and Stop Watch to your collection"
+    }
+  },
+  "43": {
+    "id": 43,
+    "name": "Credit Card",
+    "quote": "Charge it!",
+    "type": "credit card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 10,
+      "challengeName": "Cursed!"
+    }
+  },
+  "45": {
+    "id": 45,
+    "name": "A Card Against Humanity",
+    "quote": "Something stinks...",
+    "type": "Card Against Humanity",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 12,
+      "challengeName": "When Life Gives You Lemons"
+    }
+  },
+  "47": {
+    "id": 47,
+    "name": "Get out of Jail Free Card",
+    "quote": "Open Sesame",
+    "type": "chance card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 22,
+      "challengeName": "SPEED!"
+    }
+  },
+  "51": {
+    "id": 51,
+    "name": "Holy Card",
+    "quote": "You feel protected",
+    "type": "Holy Card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Delirium",
+      "character": "The Lost"
+    }
+  },
+  "80": {
+    "id": 80,
+    "name": "Wild Card",
+    "quote": "Again",
+    "type": "Uno",
+    "unlock": {
+      "method": "boss",
+      "boss": "Mega Satan",
+      "character": "Tainted Eden"
+    }
+  },
+  "32": {
+    "id": 32,
+    "name": "Rune of Hagalaz",
+    "quote": "Destruction",
+    "type": "left-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 1,
+      "challengeName": "Pitch Black"
+    }
+  },
+  "33": {
+    "id": 33,
+    "name": "Rune of Jera",
+    "quote": "Abundance",
+    "type": "left-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 2,
+      "challengeName": "High Brow"
+    }
+  },
+  "34": {
+    "id": 34,
+    "name": "Rune of Ehwaz",
+    "quote": "Passage",
+    "type": "left-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 3,
+      "challengeName": "Head Trauma"
+    }
+  },
+  "35": {
+    "id": 35,
+    "name": "Rune of Dagaz",
+    "quote": "Purity",
+    "type": "left-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 4,
+      "challengeName": "Darkness Falls"
+    }
+  },
+  "36": {
+    "id": 36,
+    "name": "Rune of Ansuz",
+    "quote": "Vision",
+    "type": "right-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 5,
+      "challengeName": "The Tank"
+    }
+  },
+  "37": {
+    "id": 37,
+    "name": "Rune of Perthro",
+    "quote": "Change",
+    "type": "right-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 6,
+      "challengeName": "Solar System"
+    }
+  },
+  "38": {
+    "id": 38,
+    "name": "Rune of Berkano",
+    "quote": "Companionship",
+    "type": "right-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 7,
+      "challengeName": "Purist"
+    }
+  },
+  "39": {
+    "id": 39,
+    "name": "Rune of Algiz",
+    "quote": "Resistance",
+    "type": "right-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 8,
+      "challengeName": "Cat Got Your Tongue"
+    }
+  },
+  "40": {
+    "id": 40,
+    "name": "Blank Rune",
+    "quote": "???",
+    "type": "right-pointing rune",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 30,
+      "challengeName": "The Guardian"
+    }
+  },
+  "41": {
+    "id": 41,
+    "name": "Black Rune",
+    "quote": "Void",
+    "type": "other rune",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Apollyon"
+    }
+  },
+  "55": {
+    "id": 55,
+    "name": "Rune Shard",
+    "quote": "It still glows faintly",
+    "type": "other rune"
+  },
+  "81": {
+    "id": 81,
+    "name": "Soul of Isaac",
+    "quote": "Reroll... or not",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Isaac"
+    }
+  },
+  "82": {
+    "id": 82,
+    "name": "Soul of Magdalene",
+    "quote": "Give me your love!",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Magdalene"
+    }
+  },
+  "83": {
+    "id": 83,
+    "name": "Soul of Cain",
+    "quote": "Opens the unopenable",
+    "type": "Soul Stone"
+  },
+  "84": {
+    "id": 84,
+    "name": "Soul of Judas",
+    "quote": "Right behind you",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Judas"
+    }
+  },
+  "85": {
+    "id": 85,
+    "name": "Soul of ???",
+    "quote": "Chemical warfare",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted ???"
+    }
+  },
+  "86": {
+    "id": 86,
+    "name": "Soul of Eve",
+    "quote": "Your very own murder",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Eve"
+    }
+  },
+  "87": {
+    "id": 87,
+    "name": "Soul of Samson",
+    "quote": "Slay a thousand",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Samson"
+    }
+  },
+  "88": {
+    "id": 88,
+    "name": "Soul of Azazel",
+    "quote": "Demon rage!",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Azazel"
+    }
+  },
+  "89": {
+    "id": 89,
+    "name": "Soul of Lazarus",
+    "quote": "Life after death",
+    "type": "Soul Stone"
+  },
+  "90": {
+    "id": 90,
+    "name": "Soul of Eden",
+    "quote": "Embrace Chaos",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Eden"
+    }
+  },
+  "91": {
+    "id": 91,
+    "name": "Soul of the Lost",
+    "quote": "Leave your body behind",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Lost"
+    }
+  },
+  "92": {
+    "id": 92,
+    "name": "Soul of Lilith",
+    "quote": "Motherhood",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Lilith"
+    }
+  },
+  "93": {
+    "id": 93,
+    "name": "Soul of the Keeper",
+    "quote": "$$$",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Keeper"
+    }
+  },
+  "94": {
+    "id": 94,
+    "name": "Soul of Apollyon",
+    "quote": "Bringer of calamity",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Apollyon"
+    }
+  },
+  "95": {
+    "id": 95,
+    "name": "Soul of the Forgotten",
+    "quote": "Skeletal protector",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Forgotten"
+    }
+  },
+  "96": {
+    "id": 96,
+    "name": "Soul of Bethany",
+    "quote": "Friends from beyond",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Bethany"
+    }
+  },
+  "97": {
+    "id": 97,
+    "name": "Soul of Jacob and Esau",
+    "quote": "Bound by blood",
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Jacob"
+    }
+  },
+  "49": {
+    "id": 49,
+    "name": "Dice Shard",
+    "quote": "D6 + D20",
+    "type": "other"
+  },
+  "50": {
+    "id": 50,
+    "name": "Emergency Contact",
+    "quote": "Help from above",
+    "type": "other"
+  },
+  "78": {
+    "id": 78,
+    "name": "Cracked Key",
+    "quote": "???",
+    "type": "other",
+    "unlock": {
+      "method": "other",
+      "other": "open Mom's Chest in Home for the first time"
+    }
+  },
+  "56": {
+    "id": 56,
+    "name": "0 - The Fool?",
+    "quote": "Let go and move on",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Lost"
+    }
+  },
+  "57": {
+    "id": 57,
+    "name": "I - The Magician?",
+    "quote": "May no harm come to you",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Judas"
+    }
+  },
+  "58": {
+    "id": 58,
+    "name": "II - The High Priestess?",
+    "quote": "Run",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Lilith"
+    }
+  },
+  "59": {
+    "id": 59,
+    "name": "III - The Empress?",
+    "quote": "May your love bring protection",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Eve"
+    }
+  },
+  "60": {
+    "id": 60,
+    "name": "IV - The Emperor?",
+    "quote": "May you find a worthy opponent",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted ???"
+    }
+  },
+  "61": {
+    "id": 61,
+    "name": "V - The Hierophant?",
+    "quote": "Two prayers for the forgotten",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Bethany"
+    }
+  },
+  "62": {
+    "id": 62,
+    "name": "VI - The Lovers?",
+    "quote": "May your heart shatter to pieces",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Magdalene"
+    }
+  },
+  "63": {
+    "id": 63,
+    "name": "VII - The Chariot?",
+    "quote": "May nothing walk past you",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 42,
+      "challengeName": "Hot Potato"
+    }
+  },
+  "64": {
+    "id": 64,
+    "name": "VIII - Justice?",
+    "quote": "May your sins come back to torment you",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 43,
+      "challengeName": "Cantripped"
+    }
+  },
+  "65": {
+    "id": 65,
+    "name": "IX - The Hermit?",
+    "quote": "May you see the value of all things in life",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 44,
+      "challengeName": "Red Redemption"
+    }
+  },
+  "66": {
+    "id": 66,
+    "name": "X - Wheel of Fortune?",
+    "quote": "Throw the dice of fate",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Cain"
+    }
+  },
+  "67": {
+    "id": 67,
+    "name": "XI - Strength?",
+    "quote": "May you break their resolve",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Samson"
+    }
+  },
+  "68": {
+    "id": 68,
+    "name": "XII - The Hanged Man?",
+    "quote": "May your greed know no bounds",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Keeper"
+    }
+  },
+  "69": {
+    "id": 69,
+    "name": "XIII - Death?",
+    "quote": "May life spring forth from the fallen",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Forgotten"
+    }
+  },
+  "70": {
+    "id": 70,
+    "name": "XIV - Temperance?",
+    "quote": "May your hunger be satiated",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "challenge",
+      "challengeNumber": 45,
+      "challengeName": "DELETE THIS"
+    }
+  },
+  "71": {
+    "id": 71,
+    "name": "XV - The Devil?",
+    "quote": "Bask in the light of your mercy",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Azazel"
+    }
+  },
+  "72": {
+    "id": 72,
+    "name": "XVI - The Tower?",
+    "quote": "Creation brings destruction",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Apollyon"
+    }
+  },
+  "73": {
+    "id": 73,
+    "name": "XVII - The Stars?",
+    "quote": "May your loss bring fortune",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Isaac"
+    }
+  },
+  "74": {
+    "id": 74,
+    "name": "XVIII - The Moon?",
+    "quote": "May you remember lost memories",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Jacob"
+    }
+  },
+  "75": {
+    "id": 75,
+    "name": "XIX - The Sun?",
+    "quote": "May the darkness swallow all around you",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Jacob"
+    }
+  },
+  "76": {
+    "id": 76,
+    "name": "XX - Judgement?",
+    "quote": "May you redeem those found wanting",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Lazarus"
+    }
+  },
+  "77": {
+    "id": 77,
+    "name": "XXI - The World?",
+    "quote": "Step into the abyss",
+    "type": "reversed major arcana card",
+    "unlock": {
+      "method": "boss",
+      "boss": "Ultra Greedier",
+      "character": "Tainted Eden"
+    }
+  }
+}
