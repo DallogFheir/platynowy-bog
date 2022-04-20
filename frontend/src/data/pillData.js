@@ -63,8 +63,7 @@ export const pillDescriptionData = {
     6: "Usuwa 2 kontenery czerwonych serc Isaaca.\nJeśli nie jest to możliwe, pigułka zmienia się w Health Up.",
     7: "Dodaje 2 puste kontenery czerwonych serc.",
     8: "Brak efektu oprócz zmiany wyglądu Isaaca.",
-    // TODO czy 2 razy się liczy do transformy
-    9: "Brak efektu oprócz zmiany wyglądu Isaaca.",
+    9: "Brak efektu oprócz zmiany wyglądu Isaaca.\nLiczy się podwójnie do transformacji Adult.",
     10: "Daje Isaacowi Big Fana.",
     11: "-1,2 Zasięgu.",
     12: "+1,5 Zasięgu.",
@@ -87,7 +86,7 @@ export const pillDescriptionData = {
     29: "ten sam efekt, co normalna pigułka",
     30: "Efekt trwa 2 razy dłużej.",
     31: "ten sam efekt, co normalna pigułka",
-    32: "Zwiększa Isaaca podwójnie.",
+    32: "Zwiększa Isaaca podwójnie.\nLiczy się podwójnie do transformacji Stompy.",
     33: "Zmniejsza Isaaca podwójnie.",
     34: "Generuje 2 razy więcej pająków.",
     35: "Generuje 2 razy więcej pająków.",
