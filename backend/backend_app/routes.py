@@ -38,6 +38,20 @@ def error_404(error):
     )
 
 
+@app.errorhandler(405)
+def error_405(error):
+    error_code = error.code
+    message = "Próbujesz zrobić coś niedozwolonego!"
+    error_trinket = "iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAABNklEQVR4nNWXMW7CQBBFnyMKmkg5gEMZiStQ5hbuuAUdKHScIC2db5GSgxAfIBJNOlJ9JTt4d8ChGL+Knd2VPE/7F7vizkzh3Ff/hiq35+HeDzGE7NN55Dr26DMyDhO3dvxxOABQ1zUAXdcB8LpYJOv+GglhYqIf/+1YPK3XAHxtt73zfYQwUXkGch1bZOBxvwfg83hM5l9ms2Qc7kxcmHjb7QBomqa48dl0ZrEmSikJYWLiL0mRgdNyCfymwNY1lpHSmRqnCSEDSoWtKyXXEMOE8qqUbFarZIGXEnWss+Che0cpmcI5homhG3NnwdYtfSkZpwnl3t6YdmxvzBKxTAxNib05Pdq2vajFMnErngF1bI1axvsvKt7ncwA2zntFjnhvVrmJoV9YltI3qIhtQnhGrunU4weFJmZ2RUeqmQAAAABJRU5ErkJggg=="
+
+    return (
+        render_template(
+            "error.html", error_code=error_code, message=message, icon=error_trinket
+        ),
+        405,
+    )
+
+
 @app.errorhandler(500)
 def error_500(error):
     error_code = error.code
