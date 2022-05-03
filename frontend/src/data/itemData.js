@@ -1447,7 +1447,7 @@ export const itemColorData = {
 
 export const itemDescriptionData = {
   1: "+0,7 Łez.",
-  10: "Przyzywa 2 Pretty Fly, które blokują pociski przeciwników i zabija przeciwników-muchy przy kontakcie.\nLimit posiadanych Pretty Fly to 3.",
+  10: "Przyzywa 2 Pretty Fly, które blokują pociski przeciwników i zabijają przeciwników-muchy przy kontakcie.\nLimit posiadanych Pretty Fly to 3.",
   100: "Przyzywa chowańca, który podąża za Isaaciem i co 2/3 sekundy strzela samonaprowadzającymi łzami, które zadają 3,5 Obrażeń.\nMa szansę wypaść ze Stevena.",
   101: "+1 Czerwone Serce.\n+0,3 Obrażeń.\n+0,2 Łez.\n+0,38 Zasięgu.\n+0,3 Szybkości.\n+0,5 Wysokości Łez.",
   102: "Przy użyciu generuje losową pigułkę.",
