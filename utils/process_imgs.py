@@ -15,9 +15,9 @@ from selenium.webdriver.support import expected_conditions as EC
 def get_resized_img(browser, img_path, resize_percent):
     browser.get("https://products.aspose.app/imaging/image-resize/")
 
-    size = browser.find_element(By.CLASS_NAME, "settings-number-edit")
-    size.send_keys(Keys.BACK_SPACE, Keys.BACK_SPACE, Keys.BACK_SPACE)
-    size.send_keys(str(resize_percent))
+    # size = browser.find_element(By.CLASS_NAME, "settings-number-edit")
+    # size.send_keys(Keys.BACK_SPACE, Keys.BACK_SPACE, Keys.BACK_SPACE)
+    # size.send_keys(str(resize_percent))
 
     format_button = browser.find_element(By.ID, "btnSaveAs")
     format_button.click()

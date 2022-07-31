@@ -35,7 +35,13 @@ function Navbar({
       name: "typ",
       state: typeOption,
       setState: setTypeOption,
-      options: ["przedmioty", "trinkety", "pigułki", "transformacje"],
+      options: [
+        "przedmioty",
+        "trinkety",
+        "pigułki",
+        "karty/runy",
+        "transformacje",
+      ],
     },
     {
       name: "sortowanie",
