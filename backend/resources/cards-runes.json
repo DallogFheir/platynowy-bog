@@ -628,19 +628,19 @@
     "id": 49,
     "name": "Dice Shard",
     "quote": "D6 + D20",
-    "type": "other"
+    "type": "Dice Shard"
   },
   "50": {
     "id": 50,
     "name": "Emergency Contact",
     "quote": "Help from above",
-    "type": "other"
+    "type": "Emergency Contact"
   },
   "78": {
     "id": 78,
     "name": "Cracked Key",
     "quote": "???",
-    "type": "other",
+    "type": "Cracked Key",
     "unlock": {
       "method": "other",
       "other": "open Mom's Chest in Home for the first time"

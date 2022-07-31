@@ -10,6 +10,7 @@ import TrinketDescription from "./main/description/TrinketDescription";
 import PillContent from "./main/content/PillContent";
 import PillFilters from "./main/filters/PillFilters";
 import CardsRunesContent from "./main/content/CardsRunesContent";
+import CardsRunesDescription from "./main/description/CardsRunesDescription";
 import TransformationContent from "./main/content/TransformationContent";
 import TransformationDescription from "./main/description/TransformationDescription";
 
@@ -162,6 +163,13 @@ function Main({
                   case "trinkety":
                     return (
                       <TrinketDescription
+                        selectedContent={selectedContent}
+                        popup={popup}
+                      />
+                    );
+                  case "karty/runy":
+                    return (
+                      <CardsRunesDescription
                         selectedContent={selectedContent}
                         popup={popup}
                       />
@@ -330,6 +338,8 @@ function Main({
                       cardsRunesContent={cardsRunesContent}
                       colors={colors}
                       setSelectedContent={setSelectedContent}
+                      popup={popup}
+                      setPopup={setPopup}
                     />
                   );
                 case "transformacje":

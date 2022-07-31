@@ -59,10 +59,7 @@ function CardsRunesContent({
                 {cardsRunesContent
                   .sort(
                     sortOption === "wg ID"
-                      ? (a, b) => {
-                          debugger;
-                          return a.id - b.id;
-                        }
+                      ? (a, b) => a.id - b.id
                       : (a, b) => {
                           //   sort by color first, then by ID
                           const colorSort =
