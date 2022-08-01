@@ -302,6 +302,17 @@ export const cardsRunesColorData = {
   97: "red",
 };
 
+export const cardsRunesUnlockData = {
+  27: "osiągnięcie serii 3 wygranych rozgrywek pod rząd",
+  28: "pokonanie The Lamb w czasie poniżej 20 minut",
+  29: "pokonanie The Lamb bez podnoszenia monet, bomb ani serc przez całą rozgrywkę",
+  30: "przejście rozdziału (piętra I i II) po Basemencie posiadając jedynie pół serca (można użyć The Losta)",
+  52: "powiększenie rozmiaru 5 razy podczas jednej rozgrywki",
+  53: "użycie kart i/lub run 20 razy",
+  54: "posiadanie Broken Watcha i Stopwatcha w kolekcji zebranych przedmiotów",
+  78: "otwarcie Mom's Chest w Home",
+};
+
 // FILTER DATA
 export const cardsRunesTypeImages = {
   "Emergency Contact":

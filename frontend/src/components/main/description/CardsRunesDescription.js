@@ -2,6 +2,7 @@ import parse from "html-react-parser";
 import {
   cardsRunesDescriptionData,
   cardsRunesImageData,
+  cardsRunesUnlockData,
   cardsRunesTypeImages,
 } from "../../../data/cardsRunesData";
 import "./Description.css";
@@ -73,73 +74,50 @@ function CardsRunesDescription({ selectedContent, popup }) {
     return text;
   };
 
-  //   const parseUnlock = (unlockToParse) => {
-  //     const nonDeclinable = [
-  //       "???",
-  //       "The Lamb",
-  //       "Delirium",
-  //       "Mother",
-  //       "The Beast",
-  //       "Mom's Heart/It Lives!",
-  //     ];
+  const parseUnlock = (unlockToParse) => {
+    const nonDeclinable = [
+      "???",
+      "The Lamb",
+      "Delirium",
+      "Mother",
+      "The Beast",
+      "Mom's Heart/It Lives!",
+    ];
 
-  //     let unlockString;
-  //     switch (unlockToParse.method) {
-  //       case "boss":
-  //         unlockString = "pokonanie ";
+    let unlockString;
+    switch (unlockToParse.method) {
+      case "boss":
+        unlockString = "pokonanie ";
 
-  //         let bossName = unlockToParse.boss;
+        let bossName = unlockToParse.boss;
 
-  //         if (bossName instanceof Array) {
-  //           unlockString += "Isaaca, ???, Szatana i The Lamb";
-  //         } else {
-  //           unlockString += bossName.replace("Satan", "Szatan");
+        if (bossName instanceof Array) {
+          unlockString += "Boss Rusha i Husha";
+        } else {
+          unlockString += bossName.replace("Satan", "Szatan");
 
-  //           // add genitival -a
-  //           if (!nonDeclinable.includes(bossName)) {
-  //             unlockString += "a";
-  //           }
-  //         }
+          // add genitival -a
+          if (!nonDeclinable.includes(bossName)) {
+            unlockString += "a";
+          }
+        }
 
-  //         if ("character" in unlockToParse) {
-  //           unlockString += ` jako ${unlockToParse.character}`;
-  //         }
-  //         break;
-  //       case "challenge":
-  //         unlockString = `przejście wyzwania #${unlockToParse.challengeNumber}: ${unlockToParse.challengeName}`;
-  //         break;
-  //       case "other":
-  //         unlockString = trinketUnlockData[selectedContent.id];
-  //         break;
-  //       default:
-  //         throw new Error(`Unknown unlock method: ${unlockToParse.method}`);
-  //     }
+        if ("character" in unlockToParse) {
+          unlockString += ` jako ${unlockToParse.character}`;
+        }
+        break;
+      case "challenge":
+        unlockString = `przejście wyzwania #${unlockToParse.challengeNumber}: ${unlockToParse.challengeName}`;
+        break;
+      case "other":
+        unlockString = cardsRunesUnlockData[selectedContent.id];
+        break;
+      default:
+        throw new Error(`Unknown unlock method: ${unlockToParse.method}`);
+    }
 
-  //     return unlockString;
-  //   };
-
-  //   const parseSetDrop = (setDropToParse) => {
-  //     const dropTrans = {
-  //       "starting trinket": "trinket startowy",
-  //       polyp: "polipy",
-  //       "Special Shopkeeper": "specjalni Shopkeeperzy",
-  //       "after clearing 3 consecutive floors without taking damage":
-  //         "po przejściu 3 pięter pod rząd bez otrzymania obrażeń",
-  //       urn: "dzbany",
-  //       mushroom: "grzyby",
-  //       "Golden Poop": "Złote Kupy",
-  //     };
-
-  //     return setDropToParse
-  //       .map((drop) => {
-  //         if (drop in dropTrans) {
-  //           return dropTrans[drop];
-  //         }
-
-  //         return drop;
-  //       })
-  //       .join(", ");
-  //   };
+    return unlockString;
+  };
   //   #endregion
 
   return (
@@ -163,7 +141,7 @@ function CardsRunesDescription({ selectedContent, popup }) {
         <span className="obj-info">Id:</span> {selectedContent.id}
       </p>
       <p className="obj-prop">
-        <span className="obj-info">Wygląd: </span>
+        <span className="obj-info">Wygląd na ziemi: </span>
         <img
           src={
             "data:image/png;base64," +
@@ -174,12 +152,12 @@ function CardsRunesDescription({ selectedContent, popup }) {
           alt=""
         />
       </p>
-      {/* {"unlock" in selectedContent && (
+      {"unlock" in selectedContent && (
         <p className="obj-prop">
           <span className="obj-info">Sposób odblokowania: </span> <br />
           {parseUnlock(selectedContent.unlock)}
         </p>
-      )} */}
+      )}
     </div>
   );
 }

@@ -473,7 +473,12 @@
     "id": 83,
     "name": "Soul of Cain",
     "quote": "Opens the unopenable",
-    "type": "Soul Stone"
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Cain"
+    }
   },
   "84": {
     "id": 84,
@@ -534,7 +539,12 @@
     "id": 89,
     "name": "Soul of Lazarus",
     "quote": "Life after death",
-    "type": "Soul Stone"
+    "type": "Soul Stone",
+    "unlock": {
+      "method": "boss",
+      "boss": ["Hush", "Boss Rush"],
+      "character": "Tainted Lazarus"
+    }
   },
   "90": {
     "id": 90,
