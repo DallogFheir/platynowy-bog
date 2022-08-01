@@ -10,6 +10,7 @@ import TrinketDescription from "./main/description/TrinketDescription";
 import PillContent from "./main/content/PillContent";
 import PillFilters from "./main/filters/PillFilters";
 import CardsRunesContent from "./main/content/CardsRunesContent";
+import CardsRunesFilters from "./main/filters/CardsRunesFilters";
 import CardsRunesDescription from "./main/description/CardsRunesDescription";
 import TransformationContent from "./main/content/TransformationContent";
 import TransformationDescription from "./main/description/TransformationDescription";
@@ -119,6 +120,13 @@ function Main({
     "pillUnlockMethodFilter",
     null
   );
+
+  const [cardRuneTypeFilter, setCardRuneTypeFilter] = useLocalStorage(
+    "cardRuneTypeFilter",
+    null
+  );
+  const [cardRuneUnlockMethodFilter, setCardRuneUnlockMethodFilter] =
+    useLocalStorage("cardRuneUnlockMethodFilter", null);
   // #endregion
 
   //   FIX TO WORK WITH BOOTSTRAP'S COLLAPSE
@@ -271,7 +279,18 @@ function Main({
                           />
                         );
                       case "karty/runy":
-                        return <></>;
+                        return (
+                          <CardsRunesFilters
+                            cardRuneTypeFilter={cardRuneTypeFilter}
+                            setCardRuneTypeFilter={setCardRuneTypeFilter}
+                            cardRuneUnlockMethodFilter={
+                              cardRuneUnlockMethodFilter
+                            }
+                            setCardRuneUnlockMethodFilter={
+                              setCardRuneUnlockMethodFilter
+                            }
+                          />
+                        );
                       default:
                         throw new Error(`Unknown type option: ${typeOption}`);
                     }
@@ -333,7 +352,10 @@ function Main({
                   return (
                     <CardsRunesContent
                       sortOption={sortOption}
+                      filterOption={filterOption}
                       nameFilter={nameFilter}
+                      cardRuneTypeFilter={cardRuneTypeFilter}
+                      cardRuneUnlockMethodFilter={cardRuneUnlockMethodFilter}
                       cardsRunesStatus={cardsRunesStatus}
                       cardsRunesContent={cardsRunesContent}
                       colors={colors}

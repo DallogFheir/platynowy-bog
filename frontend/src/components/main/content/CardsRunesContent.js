@@ -9,6 +9,8 @@ function CardsRunesContent({
   sortOption,
   filterOption,
   nameFilter,
+  cardRuneTypeFilter,
+  cardRuneUnlockMethodFilter,
   cardsRunesStatus,
   cardsRunesContent,
   setSelectedContent,
@@ -16,8 +18,41 @@ function CardsRunesContent({
   popup,
   setPopup,
 }) {
-  const filterCardsRunes = () => {
-    return true;
+  const filterCardsRunes = (cardRune) => {
+    // NAMES & QUOTES
+    const nameLower = cardRune.name.toLowerCase().replace(/[.']/g, "");
+    const quoteLower = cardRune.quote.toLowerCase().replace(/[.']/g, "");
+    const nameFilterLower = nameFilter?.toLowerCase().replace(/[.']/g, "");
+
+    const nameCondition =
+      nameFilter === null
+        ? true
+        : nameLower.includes(nameFilterLower) ||
+          quoteLower.includes(nameFilterLower);
+
+    // TYPES
+    let type = cardRune.type;
+
+    const otherCardTrans = [
+      "credit card",
+      "chance card",
+      "Card Against Humanity",
+      "Holy Card",
+      "uno",
+    ];
+    if (otherCardTrans.includes(type)) {
+      type = "other card";
+    }
+
+    const otherTrans = ["Dice Shard", "Emergency Contact", "Cracked Key"];
+    if (otherTrans.includes(type)) {
+      type = "other";
+    }
+
+    const typeCondition =
+      cardRuneTypeFilter === null ? true : type === cardRuneTypeFilter;
+
+    return [nameCondition, typeCondition].every((condition) => condition);
   };
 
   return (
