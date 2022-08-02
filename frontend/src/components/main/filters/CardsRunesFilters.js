@@ -1,4 +1,7 @@
-import { cardsRunesTypes } from "../../../data/cardsRunesData";
+import {
+  cardsRunesTypes,
+  cardsRunesUnlockMethods,
+} from "../../../data/cardsRunesData";
 import "./Filters.css";
 
 function CardsRunesFilters({
@@ -12,6 +15,11 @@ function CardsRunesFilters({
     "other rune": "inne runy",
     "Soul Stone": "Soul Stone'y",
     other: "inne",
+  };
+  const unlockMethodsHoverInfo = {
+    challenge: "wyzwanie",
+    other: "inne sposoby",
+    "Boss Rush/Hush": "Boss Rush + Hush",
   };
 
   return (
@@ -45,9 +53,9 @@ function CardsRunesFilters({
           )
         )}
       </div>
-      {/* <div>
+      <div>
         <span className="filter-name">Sposób odblokowania:</span>
-        {trinketUnlockMethods.map(
+        {cardsRunesUnlockMethods.map(
           ([unlockMethodName, unlockMethodImage], unlockMethodIdx) => (
             <img
               key={unlockMethodIdx}
@@ -55,10 +63,10 @@ function CardsRunesFilters({
                 "ms-2",
                 "mt-1",
                 "clickable",
-                trinketUnlockMethodFilter === unlockMethodName
+                cardRuneUnlockMethodFilter === unlockMethodName
                   ? ""
                   : "unselected",
-                "pool-info",
+                unlockMethodName in unlockMethodsHoverInfo ? "pool-info" : "",
               ]
                 .join(" ")
                 .trim()}
@@ -66,16 +74,16 @@ function CardsRunesFilters({
               alt=""
               title={unlockMethodsHoverInfo[unlockMethodName]}
               onClick={() => {
-                if (trinketUnlockMethodFilter === unlockMethodName) {
-                  setTrinketUnlockMethodFilter(null);
+                if (cardRuneUnlockMethodFilter === unlockMethodName) {
+                  setCardRuneUnlockMethodFilter(null);
                 } else {
-                  setTrinketUnlockMethodFilter(unlockMethodName);
+                  setCardRuneUnlockMethodFilter(unlockMethodName);
                 }
               }}
             />
           )
         )}
-      </div> */}
+      </div>
     </div>
   );
 }

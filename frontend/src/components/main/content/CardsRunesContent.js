@@ -52,7 +52,31 @@ function CardsRunesContent({
     const typeCondition =
       cardRuneTypeFilter === null ? true : type === cardRuneTypeFilter;
 
-    return [nameCondition, typeCondition].every((condition) => condition);
+    // UNLOCK METHODS
+    let unlockMethodCondition = cardRuneUnlockMethodFilter === null;
+    if ("unlock" in cardRune) {
+      let unlockMethod;
+
+      if ("boss" in cardRune.unlock) {
+        // Boss Rush + Hush if array, else Mega Satan or Greedier
+        unlockMethod = Array.isArray(cardRune.unlock.boss)
+          ? "Boss Rush/Hush"
+          : cardRune.unlock.boss;
+      } else if ("challengeNumber" in cardRune.unlock) {
+        unlockMethod = "challenge";
+      } else {
+        unlockMethod = "other";
+      }
+
+      unlockMethodCondition =
+        cardRuneUnlockMethodFilter === null
+          ? true
+          : unlockMethod === cardRuneUnlockMethodFilter;
+    }
+
+    return [nameCondition, typeCondition, unlockMethodCondition].every(
+      (condition) => condition
+    );
   };
 
   return (
