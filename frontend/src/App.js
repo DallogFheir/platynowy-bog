@@ -10,6 +10,7 @@ import ItemDescription from "./components/main/description/ItemDescription";
 import TrinketDescription from "./components/main/description/TrinketDescription";
 import TransformationDescription from "./components/main/description/TransformationDescription";
 import "./App.css";
+import CardsRunesDescription from "./components/main/description/CardsRunesDescription";
 
 function App() {
   // #region GLOBAL STATES
@@ -98,6 +99,13 @@ function App() {
               case "trinkety":
                 return (
                   <TrinketDescription
+                    selectedContent={selectedContent}
+                    popup={popup}
+                  />
+                );
+              case "karty/runy":
+                return (
+                  <CardsRunesDescription
                     selectedContent={selectedContent}
                     popup={popup}
                   />

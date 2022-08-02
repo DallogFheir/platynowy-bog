@@ -151,6 +151,35 @@ def pills_id(id):
     return resp
 
 
+# CARDS/RUNES
+@app.route("/api/cards-runes")
+def cards_runes():
+    with open_resource("cards-runes") as f:
+        cards_runes = json.load(f)
+
+    sorted_keys = sorted(int(k) for k in cards_runes)
+    sorted_cards_runes = [cards_runes[str(k)] for k in sorted_keys]
+    resp = make_response(jsonify(sorted_cards_runes))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
+
+
+@app.route("/api/cards-runes/<id>")
+def cards_runes_id(id):
+    with open_resource("cards-runes") as f:
+        cards_runes = json.load(f)
+
+    card_rune = cards_runes.get(id)
+    if card_rune is None:
+        abort(404)
+
+    resp = make_response(jsonify(card_rune))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
+
+
 # TRANSFORMATIONS
 @app.route("/api/transformations")
 def transformations():

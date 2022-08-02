@@ -43,6 +43,7 @@ function useAPI(resource, typeState) {
       przedmioty: "items",
       trinkety: "trinkets",
       pigułki: "pills",
+      "karty/runy": "cards-runes",
       transformacje: "transformations",
     };
 

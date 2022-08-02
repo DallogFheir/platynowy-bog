@@ -15,18 +15,18 @@ from selenium.webdriver.support import expected_conditions as EC
 def get_resized_img(browser, img_path, resize_percent):
     browser.get("https://products.aspose.app/imaging/image-resize/")
 
-    size = browser.find_element_by_class_name("settings-number-edit")
+    size = browser.find_element(By.CLASS_NAME, "settings-number-edit")
     size.send_keys(Keys.BACK_SPACE, Keys.BACK_SPACE, Keys.BACK_SPACE)
     size.send_keys(str(resize_percent))
 
-    format_button = browser.find_element_by_id("btnSaveAs")
+    format_button = browser.find_element(By.ID, "btnSaveAs")
     format_button.click()
-    format = browser.find_element_by_css_selector(
-        ".aspose-dropdown-editor:not(.hidden)"
+    format = browser.find_element(
+        By.CSS_SELECTOR, ".aspose-dropdown-editor:not(.hidden)"
     )
     format.send_keys("PNG", Keys.ARROW_DOWN, Keys.RETURN)
 
-    file_input = browser.find_element_by_css_selector(".filedrop > input[type=file]")
+    file_input = browser.find_element(By.CSS_SELECTOR, ".filedrop > input[type=file]")
     file_input.send_keys(str(img_path))
 
     resize = WebDriverWait(browser, 100).until(
@@ -79,10 +79,10 @@ def encode_to_base64(img_bytes_io):
 
 
 if __name__ == "__main__":
-    inputs = Path("C:/Users/Adam/Desktop/itens")
+    inputs = Path("/home/adam/Desktop/itens")
 
     browser = webdriver.Firefox(
-        executable_path=r"E:\programowanie\projekty\utrzymywane\platynowy-bog\utils\geckodriver.exe"
+        executable_path="/home/adam/lokalne/programowanie/projekty/utrzymywane/platynowy-bog/utils/geckodriver"
     )
 
     items = {}
@@ -105,6 +105,7 @@ if __name__ == "__main__":
             items[name] = b64
         finally:
             with open(
-                "E:/programowanie/projekty/utrzymywane/platynowy-bog/datad.json", "w"
+                "/home/adam/lokalne/programowanie/projekty/utrzymywane/platynowy-bog/utils/datad.json",
+                "w",
             ) as f:
                 json.dump(items, f)

@@ -9,6 +9,9 @@ import "./Main.css";
 import TrinketDescription from "./main/description/TrinketDescription";
 import PillContent from "./main/content/PillContent";
 import PillFilters from "./main/filters/PillFilters";
+import CardsRunesContent from "./main/content/CardsRunesContent";
+import CardsRunesFilters from "./main/filters/CardsRunesFilters";
+import CardsRunesDescription from "./main/description/CardsRunesDescription";
 import TransformationContent from "./main/content/TransformationContent";
 import TransformationDescription from "./main/description/TransformationDescription";
 
@@ -28,6 +31,10 @@ function Main({
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
   const [trinketsContent, trinketsStatus] = useAPI("trinkets", typeOption);
   const [pillsContent, pillsStatus] = useAPI("pills", typeOption);
+  const [cardsRunesContent, cardsRunesStatus] = useAPI(
+    "cards-runes",
+    typeOption
+  );
   const [transformationsContent, transformationsStatus] = useAPI(
     "transformations",
     typeOption
@@ -113,6 +120,13 @@ function Main({
     "pillUnlockMethodFilter",
     null
   );
+
+  const [cardRuneTypeFilter, setCardRuneTypeFilter] = useLocalStorage(
+    "cardRuneTypeFilter",
+    null
+  );
+  const [cardRuneUnlockMethodFilter, setCardRuneUnlockMethodFilter] =
+    useLocalStorage("cardRuneUnlockMethodFilter", null);
   // #endregion
 
   //   FIX TO WORK WITH BOOTSTRAP'S COLLAPSE
@@ -157,6 +171,13 @@ function Main({
                   case "trinkety":
                     return (
                       <TrinketDescription
+                        selectedContent={selectedContent}
+                        popup={popup}
+                      />
+                    );
+                  case "karty/runy":
+                    return (
+                      <CardsRunesDescription
                         selectedContent={selectedContent}
                         popup={popup}
                       />
@@ -257,6 +278,19 @@ function Main({
                             }
                           />
                         );
+                      case "karty/runy":
+                        return (
+                          <CardsRunesFilters
+                            cardRuneTypeFilter={cardRuneTypeFilter}
+                            setCardRuneTypeFilter={setCardRuneTypeFilter}
+                            cardRuneUnlockMethodFilter={
+                              cardRuneUnlockMethodFilter
+                            }
+                            setCardRuneUnlockMethodFilter={
+                              setCardRuneUnlockMethodFilter
+                            }
+                          />
+                        );
                       default:
                         throw new Error(`Unknown type option: ${typeOption}`);
                     }
@@ -312,6 +346,22 @@ function Main({
                       pillUnlockMethodFilter={pillUnlockMethodFilter}
                       pillsStatus={pillsStatus}
                       pillsContent={pillsContent}
+                    />
+                  );
+                case "karty/runy":
+                  return (
+                    <CardsRunesContent
+                      sortOption={sortOption}
+                      filterOption={filterOption}
+                      nameFilter={nameFilter}
+                      cardRuneTypeFilter={cardRuneTypeFilter}
+                      cardRuneUnlockMethodFilter={cardRuneUnlockMethodFilter}
+                      cardsRunesStatus={cardsRunesStatus}
+                      cardsRunesContent={cardsRunesContent}
+                      colors={colors}
+                      setSelectedContent={setSelectedContent}
+                      popup={popup}
+                      setPopup={setPopup}
                     />
                   );
                 case "transformacje":
