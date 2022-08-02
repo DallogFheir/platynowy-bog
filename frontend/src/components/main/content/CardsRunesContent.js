@@ -38,7 +38,7 @@ function CardsRunesContent({
       "chance card",
       "Card Against Humanity",
       "Holy Card",
-      "uno",
+      "Uno card",
     ];
     if (otherCardTrans.includes(type)) {
       type = "other card";
@@ -47,6 +47,11 @@ function CardsRunesContent({
     const otherTrans = ["Dice Shard", "Emergency Contact", "Cracked Key"];
     if (otherTrans.includes(type)) {
       type = "other";
+    }
+
+    const otherRunes = ["Black Rune", "Rune Shard"];
+    if (otherRunes.includes(type)) {
+      type = "other rune";
     }
 
     const typeCondition =

@@ -246,8 +246,9 @@
                 </ul>
               </li>
               <li>
-                optional <strong>boss</strong> : <em>string</em> – if the method
-                of unlocking is <code>"boss"</code>; boss to defeat
+                optional <strong>boss</strong> : <em>string</em> |
+                <em>array[string]</em> – if the method of unlocking is
+                <code>"boss"</code>; boss or bosses to defeat
               </li>
               <li>
                 optional <strong>character</strong> : <em>string</em> – if the
@@ -369,6 +370,95 @@
           <li>
             optional <strong>pills</strong> : <em>array[string]</em> – array of
             the names of pills that contribute to the transformation
+          </li>
+        </ul>
+      </div>
+      <div id="cards-runes" class="section">
+        <h2>
+          <span class="section-title">cards/runes</span>
+          <a class="anchor" href="#cards-runes">¶</a>
+        </h2>
+      </div>
+      <div class="section">
+        <h3><span class="http-method">GET</span> /api/cards-runes</h3>
+        <p>
+          retrieves an array of all cards/runes –
+          <a href="/api/cards-runes" target="_blank">example</a>
+        </p>
+      </div>
+      <div class="section">
+        <h3>
+          <span class="http-method">GET</span> /api/cards-runes/&lt;id&gt;
+        </h3>
+        <p>
+          retrieves a card/rune by its ID –
+          <a href="/api/cards-runes/90" target="_blank">example</a>
+        </p>
+      </div>
+      <div class="section">
+        <p>A card/rune object contains the following properties:</p>
+        <ul>
+          <li><strong>id</strong> : <em>integer</em></li>
+          <li><strong>name</strong> : <em>string</em></li>
+          <li><strong>quote</strong> : <em>string</em></li>
+          <li>
+            <strong>type</strong> : <em>string</em> – depends on the
+            card's/rune's appearance on the ground; possible values:
+            <ul>
+              <li><code>"major arcana card"</code></li>
+              <li><code>"reversed major arcana card"</code></li>
+              <li><code>"playing card"</code></li>
+              <li><code>"Magic: The Gathering card"</code></li>
+              <li><code>"credit card"</code></li>
+              <li><code>"Card Against Humanity"</code></li>
+              <li><code>"chance card"</code></li>
+              <li><code>"Holy Card"</code></li>
+              <li><code>"Uno card"</code></li>
+              <li><code>"left-pointing rune"</code></li>
+              <li><code>"right-pointing rune"</code></li>
+              <li><code>"Black Rune"</code></li>
+              <li><code>"Rune Shard"</code></li>
+              <li><code>"Soul Stone"</code></li>
+            </ul>
+          </li>
+          <li>
+            optional <strong>unlock</strong> : <em>object</em> – object
+            representing how to unlock the card/rune; properties:
+            <ul>
+              <li>
+                <strong>method</strong> : <em>string</em> – possible values:
+                <ul>
+                  <li><code>"boss"</code></li>
+                  <li><code>"challenge"</code></li>
+                  <li><code>"other"</code></li>
+                </ul>
+              </li>
+              <li>
+                optional <strong>boss</strong> : <em>string</em> |
+                <em>array[string]</em> – if the method of unlocking is
+                <code>"boss"</code>; boss or bosses to defeat
+              </li>
+              <li>
+                optional <strong>character</strong> : <em>string</em> – if the
+                method of unlocking is <code>"boss"</code>; character with which
+                the boss needs to be defeated
+              </li>
+              <li>
+                optional <strong>challengeNumber</strong> : <em>integer</em> –
+                if the method of unlocking is <code>"challenge"</code>; the
+                number of the challenge
+              </li>
+              <li>
+                optional <strong>challengeName</strong> : <em>string</em> – if
+                the method of unlocking is <code>"challenge"</code>; the name of
+                the challenge
+              </li>
+              <li>
+                optional <strong>other</strong> : <em>string</em> – if the
+                method of unlocking is <code>"other"</code>; the way to unlock
+                the trinket
+              </li>
+            </ul>
           </li>
         </ul>
       </div>

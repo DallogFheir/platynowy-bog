@@ -324,7 +324,7 @@
     "id": 80,
     "name": "Wild Card",
     "quote": "Again",
-    "type": "Uno",
+    "type": "Uno card",
     "unlock": {
       "method": "boss",
       "boss": "Mega Satan",
@@ -434,7 +434,7 @@
     "id": 41,
     "name": "Black Rune",
     "quote": "Void",
-    "type": "other rune",
+    "type": "Black Rune",
     "unlock": {
       "method": "boss",
       "boss": "Ultra Greedier",
@@ -445,7 +445,7 @@
     "id": 55,
     "name": "Rune Shard",
     "quote": "It still glows faintly",
-    "type": "other rune"
+    "type": "Rune Shard"
   },
   "81": {
     "id": 81,
@@ -549,7 +549,7 @@
   "90": {
     "id": 90,
     "name": "Soul of Eden",
-    "quote": "Embrace Chaos",
+    "quote": "Embrace chaos",
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
