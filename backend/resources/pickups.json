@@ -162,7 +162,11 @@
       "id": 5,
       "name": "Mega Troll Bomb"
     },
-
+    "6": {
+      "groupId": 40,
+      "id": 5,
+      "name": "Mega Troll Bomb"
+    },
     "7": {
       "groupId": 40,
       "id": 7,
@@ -170,10 +174,73 @@
     }
   },
   "41": {
+    "groupId": 41,
+    "name": "Throwable Bomb"
+  },
+  "42": {
     "0": {
-      "groupId": 41,
+      "groupId": 42,
       "id": 0,
-      "name": "Throwable Bomb"
+      "name": "Poop Nugget"
+    },
+    "1": {
+      "groupId": 42,
+      "id": 1,
+      "name": "Big Poop Nugget"
+    }
+  },
+  "30": {
+    "1": {
+      "groupId": 30,
+      "id": 1,
+      "name": "Key"
+    },
+    "2": {
+      "groupId": 30,
+      "id": 2,
+      "name": "Golden Key"
+    },
+    "3": {
+      "groupId": 30,
+      "id": 3,
+      "name": "Key Ring"
+    },
+    "4": {
+      "groupId": 30,
+      "id": 4,
+      "name": "Charged Key",
+      "unlock": {
+        "method": "challenge",
+        "challengeName": "Pokey Mans",
+        "challengeNumber": 33
+      }
+    }
+  },
+  "90": {
+    "1": {
+      "groupId": 90,
+      "id": 1,
+      "name": "Lil' Battery"
+    },
+    "2": {
+      "groupId": 90,
+      "id": 2,
+      "name": "Micro Battery"
+    },
+    "3": {
+      "groupId": 90,
+      "id": 3,
+      "name": "Mega Battery"
+    },
+    "4": {
+      "groupId": 90,
+      "id": 4,
+      "name": "Golden Battery",
+      "unlock": {
+        "method": "boss",
+        "boss": "Mega Satan",
+        "character": "Tainted Forgotten"
+      }
     }
   }
 }
