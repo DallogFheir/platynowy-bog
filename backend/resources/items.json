@@ -391,7 +391,8 @@
     "name": "The Book of Belial",
     "pool": {
       "greedMode": ["Treasure Room", "Devil Room"],
-      "normal": ["Library", "Devil Room"]
+      "normal": ["Library", "Devil Room"],
+      "startingItem": ["Judas"]
     },
     "quality": 2,
     "quote": "Temporary DMG up",
@@ -419,7 +420,8 @@
     "pool": {
       "normal": ["Treasure Room"],
       "obstacles": ["buckets"],
-      "boss": ["Bumbino"]
+      "boss": ["Bumbino"],
+      "startingItem": ["???"]
     },
     "quality": 0,
     "quote": "Plop!",
@@ -520,7 +522,8 @@
       "greedMode": ["Treasure Room"],
       "miniBoss": ["Super Lust"],
       "boss": ["Bumbino"],
-      "normal": ["Treasure Room", "Ultra Secret Room"]
+      "normal": ["Treasure Room", "Ultra Secret Room"],
+      "startingItem": ["Magdalene", "Tainted Magdalene"]
     },
     "quality": 1,
     "quote": "Reusable regeneration",
@@ -1443,7 +1446,8 @@
     "pool": {
       "greedMode": ["Devil Room"],
       "beggars": ["Devil Beggar"],
-      "normal": ["Devil Room", "Ultra Secret Room"]
+      "normal": ["Devil Room", "Ultra Secret Room"],
+      "startingItem": ["Eve"]
     },
     "quality": 2,
     "quote": "Curse up",
@@ -1845,7 +1849,8 @@
     "name": "Bloody Lust",
     "pool": {
       "greedMode": ["Treasure Room", "Devil Room"],
-      "normal": ["Treasure Room", "Devil Room", "Ultra Secret Room"]
+      "normal": ["Treasure Room", "Devil Room", "Ultra Secret Room"],
+      "startingItem": ["Samson"]
     },
     "quality": 3,
     "quote": "RAGE!",
@@ -2648,7 +2653,7 @@
       "beggars": ["Devil Beggar"],
       "normal": ["Devil Room", "Ultra Secret Room"]
     },
-    "quality": 4,
+    "quality": 3,
     "quote": "Evil + DMG up + fear shot",
     "transformation": ["Leviathan"],
     "unlock": { "boss": "???", "character": "Azazel", "method": "boss" },
@@ -8007,7 +8012,8 @@
     "name": "Abyss",
     "pool": {
       "greedMode": ["Devil Room"],
-      "normal": ["Devil Room", "Ultra Secret Room"]
+      "normal": ["Devil Room", "Ultra Secret Room"],
+      "startingItem": ["Tainted Apollyon"]
     },
     "quality": 4,
     "quote": "Come forth from the depths",
