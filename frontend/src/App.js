@@ -34,6 +34,11 @@ function App() {
   const popupDiv = useRef(null);
   //   #endregion
 
+  // add 100% height to #root
+  useEffect(() => {
+    document.querySelector("#root").style.height = "100%";
+  }, []);
+
   // print fortune to console
   useEffect(() => {
     console.log(
