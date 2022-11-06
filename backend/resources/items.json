@@ -51,7 +51,7 @@
       "machines": ["Crane Game"],
       "normal": ["Treasure Room"]
     },
-    "quality": 0,
+    "quality": 2,
     "quote": "Boomerang tears",
     "type": "passive"
   },
@@ -650,7 +650,7 @@
       "normal": ["Treasure Room"],
       "boss": ["Bumbino"]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Oops...",
     "rechargeTime": { "amount": 2, "unit": "rooms" },
     "type": "active"
@@ -839,7 +839,7 @@
       "normal": ["Devil Room"],
       "obstacles": ["urns"]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "+25 coins",
     "unlock": { "boss": "Mom's Heart", "numberOfTimes": 8, "method": "boss" },
     "type": "passive"
@@ -948,7 +948,7 @@
       "beggars": ["Devil Beggar"],
       "normal": ["Devil Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Temporary demon form",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
     "transformation": ["Leviathan"],
@@ -1011,7 +1011,7 @@
       "normal": ["Treasure Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Attack buddy",
     "type": "passive",
     "unlock": { "other": "beat Chapter 2", "method": "other" }
@@ -1067,7 +1067,7 @@
       "machines": ["Crane Game"],
       "normal": ["Treasure Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Temporary Man-Pac",
     "rechargeTime": { "amount": 4, "unit": "rooms" },
     "type": "active",
@@ -1159,7 +1159,7 @@
       "normal": ["Treasure Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Psychic friend",
     "transformation": ["Conjoined"],
     "type": "passive",
@@ -1714,7 +1714,7 @@
       "normal": ["Treasure Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 0,
+    "quality": 1,
     "quote": "He's greedy",
     "transformation": ["Super Bum"],
     "type": "passive"
@@ -1727,7 +1727,7 @@
       "chests": ["Red Chest"],
       "normal": ["Curse Room", "Devil Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Reusable fly hive",
     "rechargeTime": { "amount": 1, "unit": "rooms" },
     "transformation": ["Guppy"],
@@ -1852,7 +1852,7 @@
       "normal": ["Treasure Room", "Devil Room", "Ultra Secret Room"],
       "startingItem": ["Samson"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "RAGE!",
     "unlock": { "boss": "Isaac", "character": "Samson", "method": "boss" },
     "type": "passive"
@@ -2058,7 +2058,7 @@
       "chests": ["Old Chest"],
       "normal": ["Treasure Room"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Opens all doors...",
     "rechargeTime": { "amount": 2, "unit": "rooms" },
     "type": "active",
@@ -2236,7 +2236,7 @@
     "id": 191,
     "name": "3 Dollar Bill",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 3,
     "quote": "Rainbow tears",
     "type": "passive"
   },
@@ -2323,7 +2323,7 @@
       "beggars": ["Beggar"],
       "normal": ["Boss Room"]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Stuff",
     "type": "passive"
   },
@@ -2394,7 +2394,7 @@
     "id": 205,
     "name": "Sharp Plug",
     "pool": { "beggars": ["Battery Bum"], "normal": ["Shop"] },
-    "quality": 1,
+    "quality": 2,
     "quote": "Infinite charge... at a cost",
     "type": "passive"
   },
@@ -2458,7 +2458,7 @@
     "id": 211,
     "name": "Spiderbaby",
     "pool": { "normal": ["Treasure Room"] },
-    "quality": 1,
+    "quality": 0,
     "quote": "Spider revenge",
     "transformation": ["Spider Baby"],
     "type": "passive"
@@ -2472,7 +2472,7 @@
       "machines": ["Crane Game"],
       "normal": ["Curse Room", "Devil Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Eternal life?",
     "transformation": ["Guppy"],
     "type": "passive"
@@ -2527,7 +2527,7 @@
       "chests": ["Old Chest", "Mom's Chest"],
       "normal": ["Treasure Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "You feel itchy...",
     "transformation": ["Yes Mother?"],
     "type": "passive"
@@ -2581,7 +2581,7 @@
     "id": 223,
     "name": "Pyromaniac",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 4,
+    "quality": 3,
     "quote": "Hurts so good +5 bombs",
     "type": "passive"
   },
@@ -2688,7 +2688,7 @@
     "id": 234,
     "name": "Infestation 2",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 4,
+    "quality": 3,
     "quote": "Infestation shot",
     "transformation": ["Spider Baby"],
     "type": "passive"
@@ -2774,7 +2774,7 @@
     "id": 243,
     "name": "Trinity Shield",
     "pool": { "greedMode": ["Angel Room"], "normal": ["Angel Room"] },
-    "quality": 3,
+    "quality": 2,
     "quote": "You feel guarded",
     "type": "passive"
   },
@@ -2799,7 +2799,7 @@
     "id": 245,
     "name": "20/20",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 4,
+    "quality": 3,
     "quote": "Double shot",
     "type": "passive"
   },
@@ -2866,7 +2866,7 @@
     "id": 252,
     "name": "Little Baggy",
     "pool": { "greedMode": ["Shop"], "normal": ["Shop"] },
-    "quality": 1,
+    "quality": 0,
     "quote": "Extra pill room",
     "type": "passive",
     "unlock": {
@@ -2937,7 +2937,7 @@
       "greedMode": ["Treasure Room", "Secret Room"],
       "normal": ["Secret Room"]
     },
-    "quality": 2,
+    "quality": 0,
     "quote": "Syntax error",
     "unlock": { "boss": "Boss Rush", "character": "Lazarus", "method": "boss" },
     "type": "passive"
@@ -2973,7 +2973,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 4,
+    "quality": 3,
     "quote": "Short range mega tears",
     "type": "passive"
   },
@@ -3098,7 +3098,7 @@
       "obstacles": ["buckets"],
       "other": ["Baby Shop"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Blood sucker",
     "type": "passive"
   },
@@ -3162,7 +3162,7 @@
       "normal": ["Treasure Room", "Devil Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Evil friend",
     "transformation": ["Conjoined"],
     "type": "passive"
@@ -3276,7 +3276,7 @@
       "machines": ["Crane Game"],
       "normal": ["Treasure Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Reroll into something else",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
     "type": "active",
@@ -3290,7 +3290,7 @@
       "machines": ["Crane Game"],
       "normal": ["Treasure Room"]
     },
-    "quality": 0,
+    "quality": 1,
     "quote": "Rerolls enemies",
     "rechargeTime": { "amount": 2, "unit": "rooms" },
     "type": "active"
@@ -3312,7 +3312,7 @@
     "id": 287,
     "name": "Book of Secrets",
     "pool": { "normal": ["Treasure Room", "Library", "Secret Room"] },
-    "quality": 0,
+    "quality": 1,
     "quote": "Tome of knowledge",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
     "transformation": ["Bookworm"],
@@ -3510,7 +3510,7 @@
     "id": 308,
     "name": "Aquarius",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 1,
+    "quality": 2,
     "quote": "Trail of tears",
     "type": "passive"
   },
@@ -3526,7 +3526,7 @@
     "id": 310,
     "name": "Eve's Mascara",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 3,
     "quote": "DMG up, tears + shot speed down",
     "unlock": { "boss": "Boss Rush", "character": "Eve", "method": "boss" },
     "type": "passive"
@@ -3613,7 +3613,7 @@
     "id": 319,
     "name": "Cain's Other Eye",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 0,
+    "quality": 2,
     "quote": "Near-sighted friend",
     "unlock": { "boss": "Boss Rush", "character": "Cain", "method": "boss" },
     "type": "passive"
@@ -3662,7 +3662,7 @@
     "id": 323,
     "name": "Isaac's Tears",
     "pool": { "normal": ["Treasure Room"] },
-    "quality": 0,
+    "quality": 1,
     "quote": "Collected tears",
     "rechargeTime": { "amount": 6, "unit": "rooms" },
     "unlock": { "boss": "Isaac", "character": "Isaac", "method": "boss" },
@@ -3692,7 +3692,7 @@
     "id": 326,
     "name": "Breath of Life",
     "pool": { "normal": ["Angel Room"] },
-    "quality": 0,
+    "quality": 1,
     "quote": "Invincibility at a cost",
     "rechargeTime": { "amount": 6, "unit": "s" },
     "type": "active"
@@ -3753,7 +3753,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Angel Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Eternal life?",
     "unlock": { "boss": "Isaac", "character": "Lazarus", "method": "boss" },
     "type": "passive"
@@ -3818,7 +3818,7 @@
     "id": 338,
     "name": "The Boomerang",
     "pool": { "machines": ["Crane Game"], "normal": ["Shop"] },
-    "quality": 2,
+    "quality": 1,
     "quote": "It will never leave you",
     "rechargeTime": { "amount": 2, "unit": "s" },
     "type": "active"
@@ -3873,7 +3873,7 @@
       "chests": ["Golden Chest"],
       "normal": ["Boss Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Luck up",
     "type": "passive"
   },
@@ -4048,7 +4048,7 @@
     "id": 358,
     "name": "The Wiz",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 1,
+    "quality": 0,
     "quote": "Double wiz shot!",
     "type": "passive"
   },
@@ -4136,7 +4136,7 @@
       "normal": ["Treasure Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Lost protector",
     "transformation": ["Beelzebub"],
     "type": "passive"
@@ -4161,7 +4161,7 @@
       "beggars": ["Bomb Bum"],
       "normal": ["Treasure Room"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Egg sack bombs!",
     "transformation": ["Spider Baby"],
     "type": "passive"
@@ -4170,7 +4170,7 @@
     "id": 368,
     "name": "Epiphora",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 1,
+    "quality": 2,
     "quote": "Intensifying tears",
     "type": "passive"
   },
@@ -4203,7 +4203,7 @@
       "chests": ["Red Chest"],
       "normal": ["Treasure Room", "Curse Room"]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Embrace chaos",
     "type": "passive"
   },
@@ -4313,7 +4313,7 @@
       "machines": ["Crane Game"],
       "normal": ["Treasure Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Gotta fetch 'em all!",
     "rechargeTime": { "amount": 2, "unit": "rooms" },
     "type": "active"
@@ -4432,7 +4432,7 @@
       "greedMode": ["Treasure Room", "Devil Room"],
       "normal": ["Treasure Room", "Devil Room"]
     },
-    "quality": 0,
+    "quality": 1,
     "quote": "Turn your enemy",
     "unlock": { "boss": "Hush", "character": "Judas", "method": "boss" },
     "type": "passive"
@@ -4516,7 +4516,7 @@
       "greedMode": ["Devil Room"],
       "normal": ["Devil Room", "Ultra Secret Room"]
     },
-    "quality": 4,
+    "quality": 3,
     "quote": "Consume thy enemy!",
     "transformation": ["Leviathan"],
     "type": "passive",
@@ -4526,7 +4526,7 @@
     "id": 400,
     "name": "Spear of Destiny",
     "pool": { "greedMode": ["Angel Room"], "normal": ["Angel Room"] },
-    "quality": 1,
+    "quality": 2,
     "quote": "Your destiny",
     "type": "passive"
   },
@@ -4534,7 +4534,7 @@
     "id": 401,
     "name": "Explosivo",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 3,
     "quote": "Sticky bomb shot!",
     "type": "passive"
   },
@@ -4622,7 +4622,7 @@
       "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room"]
     },
-    "quality": 1,
+    "quality": 3,
     "quote": "Call to the void",
     "unlock": { "boss": "Hush", "character": "Eve", "method": "boss" },
     "type": "passive"
@@ -4724,7 +4724,7 @@
     "id": 418,
     "name": "Fruit Cake",
     "pool": { "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 3,
     "quote": "Rainbow effects!",
     "type": "passive"
   },
@@ -4793,7 +4793,7 @@
       "machines": ["Crane Game"],
       "normal": ["Shop"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Scared of the dark?",
     "type": "passive"
   },
@@ -4882,7 +4882,7 @@
     "id": 433,
     "name": "My Shadow",
     "pool": { "greedMode": ["Devil Room"], "normal": ["Devil Room"] },
-    "quality": 0,
+    "quality": 2,
     "quote": "Me! And my shaaaadow!",
     "unlock": { "boss": "Ultra Greed", "character": "Judas", "method": "boss" },
     "type": "passive"
@@ -4948,7 +4948,7 @@
       "machines": ["Crane Game"],
       "normal": ["Shop"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "What's inside?",
     "rechargeTime": { "amount": 4, "unit": "rooms" },
     "transformation": ["Yes Mother?"],
@@ -5021,7 +5021,7 @@
     "id": 445,
     "name": "Dog Tooth",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 1,
+    "quality": 2,
     "quote": "Bark at the moon!",
     "type": "passive"
   },
@@ -5100,7 +5100,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "I'm leaking...",
     "type": "passive"
   },
@@ -5134,7 +5134,7 @@
       "chests": ["Golden Chest", "Old Chest"],
       "normal": ["Boss Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "I remember this...",
     "unlock": {
       "boss": "Ultra Greedier",
@@ -5228,7 +5228,7 @@
     "id": 464,
     "name": "Glyph of Balance",
     "pool": { "greedMode": ["Angel Room"], "normal": ["Angel Room"] },
-    "quality": 3,
+    "quality": 2,
     "quote": "A gift from above",
     "unlock": {
       "boss": "Ultra Greedier",
@@ -5336,7 +5336,7 @@
       "normal": ["Treasure Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Chub chub",
     "type": "passive"
   },
@@ -5376,7 +5376,7 @@
       "machines": ["Crane Game"],
       "normal": ["Treasure Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "What will it be?",
     "rechargeTime": { "amount": 4, "unit": "rooms" },
     "unlock": {
@@ -5432,7 +5432,7 @@
     "id": 480,
     "name": "Compost",
     "pool": { "beggars": ["Rotten Beggar"], "normal": ["Shop"] },
-    "quality": 2,
+    "quality": 1,
     "quote": "Gain more friends!",
     "rechargeTime": { "amount": 2, "unit": "rooms" },
     "type": "active"
@@ -5488,7 +5488,7 @@
       "beggars": ["Beggar"],
       "normal": ["Treasure Room", "Shop"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "50/50",
     "rechargeTime": { "amount": 4, "unit": "rooms" },
     "unlock": { "boss": "Delirium", "character": "Keeper", "method": "boss" },
@@ -5586,7 +5586,7 @@
       "beggars": ["Devil Beggar"],
       "normal": ["Treasure Room"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Panic = power",
     "transformation": ["Spun"],
     "type": "passive"
@@ -5608,7 +5608,7 @@
     "id": 495,
     "name": "Ghost Pepper",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 3,
+    "quality": 4,
     "quote": "Flame tears",
     "type": "passive"
   },
@@ -5630,7 +5630,7 @@
     "id": 497,
     "name": "Camo Undies",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 3,
     "quote": "Camo kid",
     "type": "passive"
   },
@@ -5729,7 +5729,7 @@
       "machines": ["Crane Game"],
       "normal": ["Shop"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Gotta catch em...",
     "type": "passive"
   },
@@ -5740,7 +5740,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "Watch your back!",
     "type": "passive"
   },
@@ -5825,7 +5825,7 @@
     "id": 514,
     "name": "Broken Modem",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Shop"] },
-    "quality": 2,
+    "quality": 3,
     "quote": "Lag!",
     "type": "passive",
     "unlock": { "other": "complete 7 Daily Challenges", "method": "other" }
@@ -6018,7 +6018,7 @@
     "id": 529,
     "name": "Pop!",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 1,
     "quote": "Eyeball tears!",
     "type": "passive",
     "unlock": {
@@ -6042,7 +6042,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 3,
+    "quality": 4,
     "quote": "I'm seeing red...",
     "type": "passive",
     "unlock": { "other": "acquire Blood Clot 10 times", "method": "other" }
@@ -6063,7 +6063,7 @@
     "id": 533,
     "name": "Trisagion",
     "pool": { "greedMode": ["Angel Room"], "normal": ["Angel Room"] },
-    "quality": 2,
+    "quality": 3,
     "quote": "Smite thy enemy",
     "type": "passive",
     "unlock": { "other": "take 25 items from Angel Room", "method": "other" }
@@ -6327,7 +6327,7 @@
       "greedMode": ["Devil Room"],
       "normal": ["Devil Room", "Ultra Secret Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "4me",
     "type": "passive"
   },
@@ -6370,7 +6370,7 @@
     "id": 558,
     "name": "Eye Sore",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 1,
     "quote": "More eyes",
     "type": "passive"
   },
@@ -6423,7 +6423,7 @@
       "beggars": ["Bomb Bum"],
       "normal": ["Treasure Room"]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Random blast +5 bombs",
     "type": "passive"
   },
@@ -6481,7 +6481,7 @@
       "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Bleed me dry",
     "unlock": { "boss": "Isaac", "character": "Samson", "method": "boss" },
     "type": "passive"
@@ -6555,7 +6555,7 @@
     "id": 576,
     "name": "Dirty Mind",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 1,
     "quote": "Filthy friends",
     "transformation": ["Oh Crap"],
     "type": "passive",
@@ -6781,7 +6781,7 @@
     "id": 599,
     "name": "Voodoo Head",
     "pool": { "machines": ["Crane Game"], "normal": ["Shop"] },
-    "quality": 1,
+    "quality": 2,
     "quote": "Extra curse rooms",
     "type": "passive"
   },
@@ -6821,7 +6821,7 @@
       "beggars": ["Battery Bum"],
       "normal": ["Shop"]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Instant energy!",
     "type": "passive"
   },
@@ -6834,7 +6834,7 @@
       "machines": ["Crane Game"],
       "normal": ["Shop"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Mother's strength",
     "rechargeTime": { "amount": 1, "unit": "s" },
     "transformation": ["Yes Mother?"],
@@ -6844,7 +6844,7 @@
     "id": 605,
     "name": "The Scooper",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 0,
+    "quality": 1,
     "quote": "Plop!",
     "rechargeTime": { "amount": 3, "unit": "rooms" },
     "type": "active"
@@ -6963,7 +6963,7 @@
       "normal": ["Treasure Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "Puffy buddy",
     "type": "passive"
   },
@@ -7028,7 +7028,7 @@
     "id": 622,
     "name": "Genesis",
     "pool": { "greedMode": ["Angel Room"], "normal": ["Angel Room"] },
-    "quality": 2,
+    "quality": 3,
     "quote": "In the beginning",
     "rechargeTime": { "amount": "one time use" },
     "unlock": {
@@ -7140,7 +7140,7 @@
     "id": 633,
     "name": "Dogma",
     "pool": { "other": ["other"] },
-    "quality": 0,
+    "quality": 3,
     "quote": "Ascended",
     "type": "passive"
   },
@@ -7214,7 +7214,7 @@
       "beggars": ["Rotten Beggar"],
       "normal": ["Treasure Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Gross!",
     "rechargeTime": { "amount": 4, "unit": "rooms" },
     "unlock": { "boss": "Mother", "character": "Magdalene", "method": "boss" },
@@ -7301,7 +7301,7 @@
       "beggars": ["Bomb Bum"],
       "normal": ["Devil Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Demon blast +5 bombs",
     "type": "passive"
   },
@@ -7341,7 +7341,7 @@
       "boss": ["Baby Plum"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Play time!",
     "rechargeTime": { "amount": 4, "unit": "rooms" },
     "transformation": ["Beelzebub"],
@@ -7370,7 +7370,7 @@
     "id": 653,
     "name": "Vade Retro",
     "pool": { "greedMode": ["Angel Room"], "normal": ["Angel Room"] },
-    "quality": 3,
+    "quality": 2,
     "quote": "Begone!",
     "rechargeTime": { "amount": "unlimited" },
     "unlock": {
@@ -7412,7 +7412,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Clogged enemies",
     "type": "passive"
   },
@@ -7528,7 +7528,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Power of love",
     "unlock": {
       "boss": "The Beast",
@@ -7588,7 +7588,7 @@
       "beggars": ["Devil Beggar"],
       "normal": ["Treasure Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "It multiplies",
     "unlock": { "boss": "The Beast", "character": "Samson", "method": "boss" },
     "type": "passive"
@@ -7622,7 +7622,7 @@
       "normal": ["Devil Room"],
       "other": ["Baby Shop"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Abyssal friend",
     "transformation": ["Conjoined"],
     "unlock": { "boss": "The Beast", "character": "Azazel", "method": "boss" },
@@ -7632,7 +7632,7 @@
     "id": 680,
     "name": "Montezuma's Revenge",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 3,
+    "quality": 2,
     "quote": "Oh no...",
     "transformation": ["Oh Crap"],
     "unlock": { "boss": "The Beast", "character": "???", "method": "boss" },
@@ -7684,7 +7684,7 @@
       "greedMode": ["Devil Room"],
       "normal": ["Devil Room", "Ultra Secret Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Out for blood",
     "unlock": {
       "boss": "The Beast",
@@ -7707,7 +7707,7 @@
     "id": 686,
     "name": "Soul Locket",
     "pool": { "greedMode": ["Angel Room"], "normal": ["Angel Room"] },
-    "quality": 2,
+    "quality": 1,
     "quote": "Power of faith",
     "unlock": {
       "boss": "Ultra Greed",
@@ -7851,7 +7851,7 @@
       "greedMode": ["Treasure Room", "Devil Room"],
       "normal": ["Treasure Room", "Devil Room", "Ultra Secret Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "May your rage bring haste",
     "unlock": { "boss": "Mother", "character": "Samson", "method": "boss" },
     "type": "passive"
@@ -7874,7 +7874,7 @@
     "id": 697,
     "name": "Vanishing Twin",
     "pool": { "normal": ["Curse Room", "Secret Room"] },
-    "quality": 3,
+    "quality": 2,
     "quote": "He wants revenge",
     "unlock": { "boss": "Hush", "character": "Jacob & Esau", "method": "boss" },
     "type": "passive"
@@ -7901,7 +7901,7 @@
     "id": 699,
     "name": "Azazel's Rage",
     "pool": { "greedMode": ["Devil Room"], "normal": ["Devil Room"] },
-    "quality": 3,
+    "quality": 2,
     "quote": "Ancient power",
     "unlock": {
       "boss": "The Beast",
@@ -7917,7 +7917,7 @@
       "greedMode": ["Shop", "Secret Room"],
       "normal": ["Secret Room", "Ultra Secret Room"]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "I can see see the future future future",
     "unlock": {
       "boss": "The Beast",
@@ -7946,7 +7946,7 @@
       "greedMode": ["Devil Room", "Curse Room"],
       "normal": ["Curse Room", "Devil Room", "Ultra Secret Room"]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Hot blooded",
     "unlock": {
       "boss": "The Beast",
@@ -7979,7 +7979,7 @@
       "greedMode": ["Devil Room"],
       "normal": ["Devil Room", "Ultra Secret Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Rip and tear",
     "rechargeTime": { "amount": "other" },
     "unlock": {
@@ -7997,7 +7997,7 @@
       "normal": ["Devil Room", "Ultra Secret Room"],
       "startingItem": ["Tainted Judas"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "One with the shadows",
     "rechargeTime": { "amount": 6, "unit": "s" },
     "unlock": {
@@ -8057,7 +8057,7 @@
       "machines": ["Crane Game"],
       "normal": ["Treasure Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Angel breaker",
     "rechargeTime": { "amount": 6, "unit": "s" },
     "unlock": {
@@ -8075,7 +8075,7 @@
       "greedMode": ["Treasure Room"],
       "startingItem": ["Tainted Cain"]
     },
-    "quality": 4,
+    "quality": 3,
     "quote": "Make your destiny",
     "rechargeTime": { "amount": "unlimited" },
     "unlock": {
@@ -8222,7 +8222,7 @@
       "greedMode": ["Treasure Room", "Shop", "Secret Room"],
       "normal": ["Secret Room"]
     },
-    "quality": 2,
+    "quality": 0,
     "quote": "ZZaZZ ZZdZZiZZmZZhZZ ZZvZZ ZZoZZ ZZ ZZsZZlZZhZZsZZoZZaZZiZZ",
     "unlock": {
       "boss": "The Beast",
@@ -8274,7 +8274,7 @@
       "greedMode": ["Treasure Room"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Thick blooded",
     "unlock": {
       "boss": "Delirium",
@@ -8287,7 +8287,7 @@
     "id": 725,
     "name": "IBS",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 2,
+    "quality": 0,
     "quote": "Your stomach rumbles",
     "unlock": {
       "boss": "Delirium",
