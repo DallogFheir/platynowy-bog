@@ -1,0 +1,21 @@
+ Changes
+
+- Removed a redundant range increase from Crown of Light (it used to counteract the shot speed decrease)
+- Added Backstabber to the devil room pool
+- Added Book of Revelations, Stigmata, Jesus Juice and Purity to the angel room pool (they were previously only there in Greed mode)
+- Added C Section to the Ultra Secret room pool
+- Added Mom's Ring to the Old Chest pool
+- Added Epic Fetus to the treasure pool (at very low weight)
+- Added Glowing Hourglass to the Greed mode treasure pool
+- Added Ouija Board to the Greed mode devil pool
+- Added Breath of Life to the Greed mode angel pool
+- Moved Mom's Key from the Greed mode silver treasure pool to the Greed mode shop pool
+- Tainted Bethany can now use her blood charges to place bombs when in possession of Blood Bombs
+- Mom's Toenail now drops a foot every 20 seconds (previously every 2 minutes), with further reduced time for the doubled/golden variants
+- Duct Tape now affects delayed following familiars (such as Multidimensional Baby and Shade)
+- Cracked Dice now has a chance to trigger the D10 effect
+- Updated the sprite for Breath of Life
+
+Fixes
+
+- Fixed Guppy's Eye not being in the curse room pool

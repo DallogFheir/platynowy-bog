@@ -487,7 +487,7 @@
     },
     "quality": 0,
     "quote": "Mass fear",
-    "rechargeTime": { "amount": 3, "unit": "rooms" },
+    "rechargeTime": { "amount": 2, "unit": "rooms" },
     "transformation": ["Yes Mother?"],
     "type": "active"
   },
@@ -3292,7 +3292,7 @@
     },
     "quality": 0,
     "quote": "Rerolls enemies",
-    "rechargeTime": { "amount": 1, "unit": "rooms" },
+    "rechargeTime": { "amount": 2, "unit": "rooms" },
     "type": "active"
   },
   "286": {
@@ -4766,7 +4766,7 @@
     "pool": { "machines": ["Crane Game"], "normal": ["Treasure Room", "Shop"] },
     "quality": 3,
     "quote": "Turn back time",
-    "rechargeTime": { "amount": 3, "unit": "rooms" },
+    "rechargeTime": { "amount": "other" },
     "type": "active"
   },
   "423": {
