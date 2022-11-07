@@ -10,6 +10,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
 
 
 def get_resized_img(browser, img_path, resize_percent):
@@ -81,8 +83,9 @@ def encode_to_base64(img_bytes_io):
 if __name__ == "__main__":
     inputs = Path("/home/adam/Desktop/itens")
 
+    service = GeckoDriverManager().install()
     browser = webdriver.Firefox(
-        executable_path="/home/adam/lokalne/programowanie/projekty/utrzymywane/platynowy-bog/utils/geckodriver"
+        service=Service(service)
     )
 
     items = {}
@@ -93,12 +96,12 @@ if __name__ == "__main__":
             name = match[1] if match is not None else file.stem
 
             resized = get_resized_img(browser, file, 200)
-            # cropped = remove_blank_space(resized)
+            cropped = remove_blank_space(resized)
 
             # with open(file, "rb") as f:
             #     bites = BytesIO(f.read())
 
-            b64 = encode_to_base64(resized)
+            b64 = encode_to_base64(cropped)
 
             print(f"Encoded {name}.")
 

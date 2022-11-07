@@ -878,7 +878,7 @@
     "name": "Book of Revelations",
     "pool": {
       "greedMode": ["Treasure Room", "Angel Room"],
-      "normal": ["Treasure Room", "Library"]
+      "normal": ["Treasure Room", "Angel Room", "Library"]
     },
     "quality": 3,
     "quote": "Reusable soul protection",
@@ -1357,7 +1357,7 @@
     "id": 115,
     "name": "Ouija Board",
     "pool": {
-      "greedMode": ["Treasure Room"],
+      "greedMode": ["Treasure Room", "Devil Room"],
       "normal": ["Treasure Room", "Devil Room"]
     },
     "quality": 2,
@@ -1639,7 +1639,7 @@
     "pool": {
       "greedMode": ["Treasure Room", "Angel Room"],
       "chests": ["Wooden Chest"],
-      "normal": ["Treasure Room"]
+      "normal": ["Treasure Room", "Angel Room"]
     },
     "quality": 2,
     "quote": "DMG + HP up",
@@ -1971,7 +1971,10 @@
   "168": {
     "id": 168,
     "name": "Epic Fetus",
-    "pool": { "normal": ["Secret Room"], "greedMode": ["Secret Room"] },
+    "pool": {
+      "normal": ["Treasure Room", "Secret Room"],
+      "greedMode": ["Secret Room"]
+    },
     "quality": 4,
     "quote": "On-demand air strike",
     "type": "passive",
@@ -2309,7 +2312,7 @@
     "name": "Jesus Juice",
     "pool": {
       "greedMode": ["Boss Room", "Angel Room"],
-      "normal": ["Boss Room"]
+      "normal": ["Boss Room", "Angel Room"]
     },
     "quality": 2,
     "quote": "Damage + range up",
@@ -2331,7 +2334,7 @@
     "id": 199,
     "name": "Mom's Key",
     "pool": {
-      "greedMode": ["Boss Room"],
+      "greedMode": ["Shop"],
       "beggars": ["Key Master"],
       "chests": ["Old Chest", "Mom's Chest"],
       "normal": ["Shop"]
@@ -3691,7 +3694,7 @@
   "326": {
     "id": 326,
     "name": "Breath of Life",
-    "pool": { "normal": ["Angel Room"] },
+    "pool": { "normal": ["Angel Room"], "greedMode": ["Angel Room"] },
     "quality": 1,
     "quote": "Invincibility at a cost",
     "rechargeTime": { "amount": 6, "unit": "s" },
@@ -4608,7 +4611,7 @@
     "name": "Purity",
     "pool": {
       "greedMode": ["Treasure Room", "Angel Room"],
-      "normal": ["Treasure Room"]
+      "normal": ["Treasure Room", "Angel Room"]
     },
     "quality": 3,
     "quote": "Aura stat boost",
@@ -4763,7 +4766,11 @@
   "422": {
     "id": 422,
     "name": "Glowing Hour Glass",
-    "pool": { "machines": ["Crane Game"], "normal": ["Treasure Room", "Shop"] },
+    "pool": {
+      "machines": ["Crane Game"],
+      "normal": ["Treasure Room", "Shop"],
+      "greedMode": ["Treasure Room"]
+    },
     "quality": 3,
     "quote": "Turn back time",
     "rechargeTime": { "amount": "other" },
@@ -5738,7 +5745,7 @@
     "name": "Backstabber",
     "pool": {
       "greedMode": ["Treasure Room"],
-      "normal": ["Treasure Room", "Ultra Secret Room"]
+      "normal": ["Treasure Room", "Devil Room", "Ultra Secret Room"]
     },
     "quality": 3,
     "quote": "Watch your back!",
@@ -7608,7 +7615,10 @@
   "678": {
     "id": 678,
     "name": "C Section",
-    "pool": { "normal": ["Treasure Room"], "greedMode": ["Treasure Room"] },
+    "pool": {
+      "normal": ["Treasure Room", "Ultra Secret Room"],
+      "greedMode": ["Treasure Room"]
+    },
     "quality": 4,
     "quote": "Fetus shots",
     "unlock": { "boss": "The Beast", "character": "Lilith", "method": "boss" },
@@ -8388,7 +8398,7 @@
     "id": 732,
     "name": "Mom's Ring",
     "pool": {
-      "chests": ["Golden Chest", "Mom's Chest"],
+      "chests": ["Golden Chest", "Old Chest", "Mom's Chest"],
       "greedMode": ["Shop"]
     },
     "quality": 3,
