@@ -25,6 +25,7 @@ function ItemContent({
   setSelectedContent,
   popup,
   setPopup,
+  gFuelQuotes,
 }) {
   const dInfinitySprite = useMemo(
     () => dInfinitySprites[Math.floor(Math.random() * dInfinitySprites.length)],
@@ -70,10 +71,8 @@ function ItemContent({
       "Artifact",
       "It's not yours",
     ];
-    const gFuelQuotes = ["GOOD UP"];
 
     const quote = item.quote || "";
-
     // ignore apostrophes and dots
     const nameLower = item.name.toLowerCase().replace(/[.']/g, "");
     const quoteLower = quote.toLowerCase().replace(/[.']/g, "");

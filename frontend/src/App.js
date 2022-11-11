@@ -59,6 +59,39 @@ function App() {
     return () => document.removeEventListener("click", listener);
   }, [popup]);
 
+  const gFuelQuotes = [
+    "SUSPICION UP!",
+    "VOLUME UP!",
+    "BLOOD UP!",
+    "MOMENTUM UP!",
+    "MIX UP!",
+    "HUMOR UP!",
+    "RISK UP!",
+    "AIR RESISTANCE UP!",
+    "ACIDITY UP!",
+    "FAME UP!",
+    "VITALITY UP!",
+    "WHITE BLOOD CELLS UP!",
+    "ENERGY UP",
+    "SHUTTER SPEED UP!",
+    "MORALITY UP!",
+    "STRENGTH UP!",
+    "ACCEPTANCE UP!",
+    "RESPECT UP!",
+    "BUILDING SPEED UP!",
+    "WISDOM UP!",
+    "SHOTS UP!",
+    "THOU ART HERO!",
+    "AMMO CAPACITY UP!",
+    "SHARPNESS UP!",
+    "MISERY UP!",
+    "RANK UP! REACHED RANK: ISAAC'S FACE",
+    "SLEEP HOURS DOWN!",
+    "GOD'S LIGHT UP!",
+    "MOVEMENT UP!",
+    "SENTIENCE UP!",
+  ];
+
   return (
     <>
       <div
@@ -85,6 +118,7 @@ function App() {
           setPopup={setPopup}
           itemPools={itemPools}
           itemTransformationImageData={itemTransformationImageData}
+          gFuelQuotes={gFuelQuotes}
         />
         <Footer />
       </div>
@@ -99,6 +133,7 @@ function App() {
                     itemTransformationImageData={itemTransformationImageData}
                     selectedContent={selectedContent}
                     popup={popup}
+                    gFuelQuotes={gFuelQuotes}
                   />
                 );
               case "trinkety":

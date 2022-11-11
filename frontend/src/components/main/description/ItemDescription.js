@@ -12,6 +12,7 @@ function ItemDescription({
   itemTransformationImageData,
   selectedContent,
   popup,
+  gFuelQuotes,
 }) {
   // #region PARSING FUNCTIONS
   const parseDescription = (itemId) => {
@@ -246,8 +247,14 @@ function ItemDescription({
             : selectedContent.name}
         </u>
       </p>
-      {selectedContent.quote && (
-        <p className="obj-quote">"{selectedContent.quote}"</p>
+      {(selectedContent.quote || selectedContent.name === "G FUEL!") && (
+        <p className="obj-quote">
+          "
+          {selectedContent.name === "G FUEL!"
+            ? gFuelQuotes[Math.floor(Math.random() * gFuelQuotes.length)]
+            : selectedContent.quote}
+          "
+        </p>
       )}
       <hr />
       {parse(parseDescription(selectedContent.id))}

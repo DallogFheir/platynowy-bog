@@ -26,6 +26,7 @@ function Main({
   setPopup,
   itemPools,
   itemTransformationImageData,
+  gFuelQuotes,
 }) {
   //   API STATES
   const [itemsContent, itemsStatus] = useAPI("items", typeOption);
@@ -166,6 +167,7 @@ function Main({
                         }
                         selectedContent={selectedContent}
                         popup={popup}
+                        gFuelQuotes={gFuelQuotes}
                       />
                     );
                   case "trinkety":
@@ -321,6 +323,7 @@ function Main({
                       setSelectedContent={setSelectedContent}
                       popup={popup}
                       setPopup={setPopup}
+                      gFuelQuotes={gFuelQuotes}
                     />
                   );
                 case "trinkety":
