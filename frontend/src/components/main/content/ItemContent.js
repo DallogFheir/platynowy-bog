@@ -69,10 +69,13 @@ function ItemContent({
       "Artifact",
       "It's not yours",
     ];
+    const gFuelQuotes = ["GOOD UP"];
+
+    const quote = item.quote || "";
 
     // ignore apostrophes and dots
     const nameLower = item.name.toLowerCase().replace(/[.']/g, "");
-    const quoteLower = item.quote.toLowerCase().replace(/[.']/g, "");
+    const quoteLower = quote.toLowerCase().replace(/[.']/g, "");
     const nameFilterLower = nameFilter?.toLowerCase().replace(/[.']/g, "");
     const nameCondition =
       nameFilter === null
@@ -82,6 +85,11 @@ function ItemContent({
           //   include Birthright quotes
           (item.name === "Birthright" &&
             birthrightQuotes.some((quote) =>
+              quote.toLowerCase().includes(nameFilterLower)
+            )) ||
+          // include G FUEL! quotes
+          (item.name === "G FUEL!" &&
+            gFuelQuotes.some((quote) =>
               quote.toLowerCase().includes(nameFilterLower)
             )) ||
           // include ManuEL for Monster Manual
@@ -99,7 +107,10 @@ function ItemContent({
     const typeCondition = itemTypeFilter.includes(typeTrans[item.type]);
 
     // QUALITY
-    const qualityCondition = itemQualityFilter.includes(item.quality);
+    const qualityCondition =
+      itemQualityFilter.length === 5
+        ? true
+        : itemQualityFilter.includes(item.quality);
 
     // RECHARGE TIME
     let rechargeCondition;
@@ -290,7 +301,17 @@ function ItemContent({
                 {itemsContent
                   .sort(
                     sortOption === "wg ID"
-                      ? (a, b) => a.id - b.id
+                      ? (a, b) => {
+                          if (a.id === -1) {
+                            return 1;
+                          }
+
+                          if (b.id === -1) {
+                            return -1;
+                          }
+
+                          return a.id - b.id;
+                        }
                       : (a, b) => {
                           //   sort by color first, then by ID
                           const colorSort =

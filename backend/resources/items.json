@@ -1,4 +1,12 @@
 {
+  "-1": {
+    "id": -1,
+    "name": "G FUEL!",
+    "type": "passive",
+    "pool": {
+      "other": ["other"]
+    }
+  },
   "1": {
     "id": 1,
     "name": "The Sad Onion",
@@ -7014,7 +7022,6 @@
     "name": "Birthright",
     "pool": { "greedMode": ["Shop"], "normal": ["Shop"] },
     "quality": 3,
-    "quote": "???",
     "unlock": { "boss": "???", "character": "Jacob & Esau", "method": "boss" },
     "type": "passive"
   },

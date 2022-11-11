@@ -246,17 +246,21 @@ function ItemDescription({
             : selectedContent.name}
         </u>
       </p>
-      <p className="obj-quote">"{selectedContent.quote}"</p>
+      {selectedContent.quote && (
+        <p className="obj-quote">"{selectedContent.quote}"</p>
+      )}
       <hr />
       {parse(parseDescription(selectedContent.id))}
       <hr />
       <p className="mb-1 obj-prop">
         <span className="obj-info">Id:</span> {selectedContent.id}
       </p>
-      <p className="mb-1 obj-prop">
-        <span className="obj-info">Jakość: </span>
-        {selectedContent.quality}
-      </p>
+      {selectedContent.quality !== undefined && (
+        <p className="mb-1 obj-prop">
+          <span className="obj-info">Jakość: </span>
+          {selectedContent.quality}
+        </p>
+      )}
       <p className="mb-1 obj-prop">
         <span className="obj-info">Typ: </span>
         {selectedContent.type === "active" ? "aktywny" : "pasywny"}
