@@ -3705,7 +3705,7 @@
     "pool": { "normal": ["Angel Room"], "greedMode": ["Angel Room"] },
     "quality": 1,
     "quote": "Invincibility at a cost",
-    "rechargeTime": { "amount": 6, "unit": "s" },
+    "rechargeTime": { "amount": 4, "unit": "s" },
     "type": "active"
   },
   "327": {

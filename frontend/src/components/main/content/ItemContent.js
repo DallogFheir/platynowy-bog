@@ -5,6 +5,7 @@ import {
   itemColorData,
   dInfinitySprites,
 } from "../../../data/itemData";
+import gFuelAudio from "../../../assets/gfuel.wav";
 
 function ItemContent({
   sortOption,
@@ -342,6 +343,12 @@ function ItemContent({
                         .trim()}
                       onMouseOver={() => {
                         setSelectedContent(item);
+
+                        if (item.name === "G FUEL!") {
+                          const audio = new Audio(gFuelAudio);
+
+                          audio.cloneNode(true).play();
+                        }
                       }}
                       onMouseOut={() => {
                         //   only set selected back to null if popup is not up
