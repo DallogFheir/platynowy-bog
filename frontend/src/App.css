@@ -39,6 +39,6 @@ body {
   border: 2px solid white;
   border-radius: 20px;
   z-index: 1;
-  max-height: 85vh;
+  max-height: 80vh;
   overflow-y: scroll;
 }
