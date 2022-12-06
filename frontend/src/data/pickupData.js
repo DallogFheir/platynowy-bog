@@ -67,6 +67,12 @@ export const pickupColorData = {
     6: "black",
     7: "yellow",
   },
+  30: {
+    1: "white",
+    2: "gold",
+    3: "white",
+    4: "white"
+  },
   40: {
     1: "black",
     2: "black",
@@ -82,6 +88,12 @@ export const pickupColorData = {
   42: {
     0: "brown",
     1: "brown"
+  },
+  90: {
+    1: "yellow",
+    2: "yellow",
+    3: "yellow",
+    4: "gold"
   }
 };
 
@@ -109,6 +121,12 @@ export const pickupDescriptionData = {
     6: "+5 centów.\nPrzyklejone do ziemi, przez co Isaac (ani Bumbo ani Bum Friend) nie jest w stanie ich normalnie podnieść. Muszą zostać odklejone przy pomocy eksplozji.",
     7: "+1 cent.\nPrzy podniesieniu ma szansę na wygenerowanie kolejnego Golden Penny w losowym miejscu w obecnym pokoju, lub 10% szansy na zniknięcie.",
   },
+  30: {
+    1: "+1 klucz.",
+    2: "Pozwala Isaacowi na obecnym piętrze na otworzenie wszystkiego, co wymaga kluczy, bez faktycznego zużycia kluczy.\nNie działa na Sharp Key i Key Mastera, którzy normalnie zabierają Isaacowi klucze.",
+    3: "+2 klucze.",
+    4: "+1 klucz. Działa jak Lil' Battery przy podniesieniu.\nJeśli ten klucz zostanie podniesiony przez Key Buma, wygeneruje on Lil' Battery."
+  },
   40: {
     1: "+1 bomba.",
     2: "+2 bomby.",
@@ -123,6 +141,12 @@ export const pickupDescriptionData = {
   42: {
     0: "+1 kupa (mechanika Tainted ???).\nWypada z Tainted ???, podczas gdy zadaje on obrażenia przeciwnikom.",
     1: "+3 kupy (mechanika Tainted ???).\nPodczas gry jako Tainted ???, wszystkie bomby (oprócz Troll Bomby i jej wariantów) są zastąpione przez tą znajdźkę."
+  },
+  90: {
+    1: "Dodaje 6 ładunków do przedmiotu aktywnego Isaaca.",
+    2: "Dodaje 2 ładunki do przedmiotu aktywnego Isaaca.",
+    3: "Podwójnie ładuje wszystkie aktywne przedmioty Isaaca (efekt The Battery).",
+    4: "Dodaje 6 ładunków do przedmiotu aktywne Isaaca. Zadaje pełne serce obrażeń przy podniesieniu.\nPrzy podniesieniu następna sztuka Golden Battery wygeneruje się w losowym pokoju na piętrze (nie będzie pokazana na mapie, dopóki nie zostanie odkryta)."
   }
 };
 
