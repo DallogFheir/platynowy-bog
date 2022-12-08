@@ -5,7 +5,6 @@ import ItemContent from "./main/content/ItemContent";
 import ItemFilters from "./main/filters/ItemFilters";
 import TrinketContent from "./main/content/TrinketContent";
 import TrinketFilters from "./main/filters/TrinketFilters";
-import "./Main.css";
 import TrinketDescription from "./main/description/TrinketDescription";
 import PillContent from "./main/content/PillContent";
 import PillFilters from "./main/filters/PillFilters";
@@ -14,6 +13,10 @@ import CardsRunesFilters from "./main/filters/CardsRunesFilters";
 import CardsRunesDescription from "./main/description/CardsRunesDescription";
 import TransformationContent from "./main/content/TransformationContent";
 import TransformationDescription from "./main/description/TransformationDescription";
+import PickupContent from "./main/content/PickupContent";
+import PickupFilters from "./main/filters/PickupFilters";
+import PickupDescription from "./main/description/PickupDescription";
+import "./Main.css";
 
 function Main({
   sortOption,
@@ -40,6 +43,7 @@ function Main({
     "transformations",
     typeOption
   );
+  const [pickupsContent, pickupsStatus] = useAPI("pickups", typeOption);
 
   //   VARIABLES
   const itemTypes = ["pasywny", "aktywny"];
@@ -128,6 +132,13 @@ function Main({
   );
   const [cardRuneUnlockMethodFilter, setCardRuneUnlockMethodFilter] =
     useLocalStorage("cardRuneUnlockMethodFilter", null);
+
+  const [pickupTypeFilter, setPickupTypeFilter] = useLocalStorage(
+    "pickupTypeFilter",
+    null
+  );
+  const [pickupUnlockMethodFilter, setPickupUnlockMethodFilter] =
+    useLocalStorage("pickupUnlockMethodFilter", null);
   // #endregion
 
   //   FIX TO WORK WITH BOOTSTRAP'S COLLAPSE
@@ -187,6 +198,13 @@ function Main({
                   case "transformacje":
                     return (
                       <TransformationDescription
+                        selectedContent={selectedContent}
+                        popup={popup}
+                      />
+                    );
+                  case "znajdźki":
+                    return (
+                      <PickupDescription
                         selectedContent={selectedContent}
                         popup={popup}
                       />
@@ -293,6 +311,17 @@ function Main({
                             }
                           />
                         );
+                      case "znajdźki":
+                        return (
+                          <PickupFilters
+                            pickupTypeFilter={pickupTypeFilter}
+                            setPickupTypeFilter={setPickupTypeFilter}
+                            pickupUnlockMethodFilter={pickupUnlockMethodFilter}
+                            setPickupUnlockMethodFilter={
+                              setPickupUnlockMethodFilter
+                            }
+                          />
+                        );
                       default:
                         throw new Error(`Unknown type option: ${typeOption}`);
                     }
@@ -377,6 +406,22 @@ function Main({
                       transformationsContent={transformationsContent}
                       colors={colors}
                       setSelectedContent={setSelectedContent}
+                      popup={popup}
+                      setPopup={setPopup}
+                    />
+                  );
+                case "znajdźki":
+                  return (
+                    <PickupContent
+                      sortOption={sortOption}
+                      filterOption={filterOption}
+                      nameFilter={nameFilter}
+                      pickupTypeFilter={pickupTypeFilter}
+                      pickupUnlockMethodFilter={pickupUnlockMethodFilter}
+                      pickupsStatus={pickupsStatus}
+                      pickupsContent={pickupsContent}
+                      setSelectedContent={setSelectedContent}
+                      colors={colors}
                       popup={popup}
                       setPopup={setPopup}
                     />

@@ -45,6 +45,7 @@ function useAPI(resource, typeState) {
       pigułki: "pills",
       "karty/runy": "cards-runes",
       transformacje: "transformations",
+      znajdźki: "pickups",
     };
 
     // retry fetching if page was left, fetching failed previously (or is first one), and resource is current

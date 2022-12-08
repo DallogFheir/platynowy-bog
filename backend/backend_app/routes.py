@@ -207,3 +207,56 @@ def transformations_id(id):
     resp.headers["Access-Control-Allow-Origin"] = "*"
 
     return resp
+
+
+# PICKUPS
+@app.route("/api/pickups")
+def pickups():
+    with open_resource("pickups") as f:
+        pickups = json.load(f)
+
+    values = []
+    for subdict in pickups.values():
+        if subdict.get("groupId") in [
+            41,
+            50,
+            60,
+            360,
+            51,
+            53,
+            52,
+            54,
+            55,
+            56,
+            57,
+            58,
+            390,
+        ]:
+            values.append(subdict)
+        else:
+            values.extend(subdict.values())
+
+    sorted_pickups = sorted(
+        values, key=lambda k: (k["groupId"], k["id"] if "id" in k else 0)
+    )
+    resp = make_response(jsonify(sorted_pickups))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+
+    return resp
+
+
+@app.route("/api/pickups/<group_id>/<id>")
+def pickups_id(group_id, id):
+    with open_resource("pickups") as f:
+        pickups = json.load(f)
+
+    pickup_group = pickups.get(group_id)
+    if pickup_group is None:
+        abort(404)
+    pickup = pickup_group.get(id)
+    if pickup is None:
+        abort(404)
+
+    resp = make_response(jsonify(pickup))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    return resp

@@ -8,10 +8,10 @@ import "./Description.css";
 
 function TrinketDescription({ selectedContent, popup }) {
   // #region PARSING FUNCTIONS
-  const parseDescription = (itemId) => {
+  const parseDescription = (trinketID) => {
     const characterLimit = 800;
 
-    const desc = trinketDescriptionData[itemId];
+    const desc = trinketDescriptionData[trinketID];
     const paragraphs = desc.split("\n");
     const textArray = [];
     let firstLiYetToGet = true;

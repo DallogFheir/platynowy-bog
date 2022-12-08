@@ -38,6 +38,7 @@ function Navbar({
       options: [
         "przedmioty",
         "trinkety",
+        "znajdźki",
         "pigułki",
         "karty/runy",
         "transformacje",

@@ -9,8 +9,9 @@ import Footer from "./components/Footer";
 import ItemDescription from "./components/main/description/ItemDescription";
 import TrinketDescription from "./components/main/description/TrinketDescription";
 import TransformationDescription from "./components/main/description/TransformationDescription";
-import "./App.css";
 import CardsRunesDescription from "./components/main/description/CardsRunesDescription";
+import PickupDescription from "./components/main/description/PickupDescription";
+import "./App.css";
 
 function App() {
   // #region GLOBAL STATES
@@ -153,6 +154,13 @@ function App() {
               case "transformacje":
                 return (
                   <TransformationDescription
+                    selectedContent={selectedContent}
+                    popup={popup}
+                  />
+                );
+              case "znajdźki":
+                return (
+                  <PickupDescription
                     selectedContent={selectedContent}
                     popup={popup}
                   />
