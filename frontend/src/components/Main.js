@@ -104,6 +104,10 @@ function Main({
     false
   );
 
+  const [pickupTypeFilter, setPickupTypeFilter] = useLocalStorage(
+    "pickupTypeFilter",
+    null
+  );
   const [pickupUnlockMethodFilter, setPickupUnlockMethodFilter] =
     useLocalStorage("pickupUnlockMethodFilter", null);
   // #endregion
@@ -229,6 +233,8 @@ function Main({
                   case "znajdźki":
                     return (
                       <PickupFilters
+                        pickupTypeFilter={pickupTypeFilter}
+                        setPickupTypeFilter={setPickupTypeFilter}
                         pickupUnlockMethodFilter={pickupUnlockMethodFilter}
                         setPickupUnlockMethodFilter={
                           setPickupUnlockMethodFilter
@@ -287,6 +293,7 @@ function Main({
                       sortOption={sortOption}
                       filterOption={filterOption}
                       nameFilter={nameFilter}
+                      pickupTypeFilter={pickupTypeFilter}
                       pickupUnlockMethodFilter={pickupUnlockMethodFilter}
                       pickupsStatus={pickupsStatus}
                       pickupsContent={pickupsContent}

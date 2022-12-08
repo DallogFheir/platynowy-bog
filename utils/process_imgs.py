@@ -10,23 +10,25 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.firefox.service import Service
+from webdriver_manager.firefox import GeckoDriverManager
 
 
 def get_resized_img(browser, img_path, resize_percent):
     browser.get("https://products.aspose.app/imaging/image-resize/")
 
-    size = browser.find_element_by_class_name("settings-number-edit")
+    size = browser.find_element(By.CLASS_NAME, "settings-number-edit")
     size.send_keys(Keys.BACK_SPACE, Keys.BACK_SPACE, Keys.BACK_SPACE)
     size.send_keys(str(resize_percent))
 
-    format_button = browser.find_element_by_id("btnSaveAs")
+    format_button = browser.find_element(By.ID, "btnSaveAs")
     format_button.click()
-    format = browser.find_element_by_css_selector(
-        ".aspose-dropdown-editor:not(.hidden)"
+    format = browser.find_element(
+        By.CSS_SELECTOR, ".aspose-dropdown-editor:not(.hidden)"
     )
     format.send_keys("PNG", Keys.ARROW_DOWN, Keys.RETURN)
 
-    file_input = browser.find_element_by_css_selector(".filedrop > input[type=file]")
+    file_input = browser.find_element(By.CSS_SELECTOR, ".filedrop > input[type=file]")
     file_input.send_keys(str(img_path))
 
     resize = WebDriverWait(browser, 100).until(
@@ -81,9 +83,8 @@ def encode_to_base64(img_bytes_io):
 if __name__ == "__main__":
     inputs = Path("C:/Users/Adam/Desktop/itens")
 
-    browser = webdriver.Firefox(
-        executable_path=r"C:\geckodriver-v0.30.0-win64\geckodriver.exe"
-    )
+    service = GeckoDriverManager().install()
+    browser = webdriver.Firefox(service=Service(service))
 
     items = {}
 
@@ -92,19 +93,20 @@ if __name__ == "__main__":
             match = re.fullmatch(r"Trinket_(.*?)_icon", file.stem)
             name = match[1] if match is not None else file.stem
 
-            resized = get_resized_img(browser, file, 200)
-            cropped = remove_blank_space(resized)
+            resized = get_resized_img(browser, file, 100)
+            # cropped = remove_blank_space(resized)
 
             # with open(file, "rb") as f:
             #     bites = BytesIO(f.read())
 
-            b64 = encode_to_base64(cropped)
+            b64 = encode_to_base64(resized)
 
             print(f"Encoded {name}.")
 
             items[name] = b64
         finally:
             with open(
-                r"D:\programowanie\projekty\utrzymywane\platynowy-bog\datad.json", "w"
+                "D:/programowanie/projekty/utrzymywane/platynowy-bog/utils/datad.json",
+                "w",
             ) as f:
                 json.dump(items, f)

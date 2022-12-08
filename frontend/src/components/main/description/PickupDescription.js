@@ -11,7 +11,10 @@ function PickupDescription({ selectedContent, popup }) {
   const parseDescription = (pickupGroupId, pickupId) => {
     const characterLimit = 800;
 
-    const desc = pickupDescriptionData[pickupGroupId][pickupId];
+    const desc =
+      pickupDescriptionData[pickupGroupId][
+        pickupId === undefined ? 0 : pickupId
+      ];
     const paragraphs = desc.split("\n");
     const textArray = [];
     let firstLiYetToGet = true;
@@ -135,7 +138,9 @@ function PickupDescription({ selectedContent, popup }) {
       {popup && (
         <img
           src={`data:image/png;base64,${
-            pickupImageData[selectedContent.groupId][selectedContent.id]
+            pickupImageData[selectedContent.groupId][
+              selectedContent.id === undefined ? 0 : selectedContent.id
+            ]
           }`}
           alt=""
         />
@@ -151,7 +156,9 @@ function PickupDescription({ selectedContent, popup }) {
       <hr />
       <p className="mb-1 obj-prop">
         <span className="obj-info">Id:</span>{" "}
-        {`${selectedContent.groupId}.${selectedContent.id}`}
+        {selectedContent.id === undefined
+          ? `${selectedContent.groupId}`
+          : `${selectedContent.groupId}.${selectedContent.id}`}
       </p>
       {"unlock" in selectedContent && (
         <p className="obj-prop">
