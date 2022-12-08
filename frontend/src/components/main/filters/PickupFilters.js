@@ -19,6 +19,8 @@ function TrinketFilters({
     key: "klucze",
     bomb: "bomby",
     battery: "baterie",
+    chest: "skrzynki",
+    sack: "sakiewki",
   };
 
   return (

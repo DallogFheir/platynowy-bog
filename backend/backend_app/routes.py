@@ -100,7 +100,21 @@ def pickups():
 
     values = []
     for subdict in pickups.values():
-        if subdict.get("groupId") == 41:
+        if subdict.get("groupId") in [
+            41,
+            50,
+            60,
+            360,
+            51,
+            53,
+            52,
+            54,
+            55,
+            56,
+            57,
+            58,
+            390,
+        ]:
             values.append(subdict)
         else:
             values.extend(subdict.values())

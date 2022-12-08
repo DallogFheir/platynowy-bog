@@ -37,11 +37,14 @@ function PickupContent({
       41: "bomb",
       42: "bomb",
       90: "battery",
+      69: "sack",
     };
 
     const typeCondition =
       pickupTypeFilter === null
         ? true
+        : typeTrans[pickup.groupId] === undefined
+        ? "chest" === pickupTypeFilter
         : typeTrans[pickup.groupId] === pickupTypeFilter;
 
     // UNLOCK METHOD
@@ -114,39 +117,36 @@ function PickupContent({
                         }
                   )
                   .filter(filterOption === "usuń" ? filterPickups : () => true)
-                  .map((pickup, pickupIdx) => {
-                    console.log(pickup);
-                    return (
-                      <img
-                        key={pickupIdx}
-                        src={`data:image/png;base64,${
-                          pickupImageData[pickup.groupId][
-                            pickup.id === undefined ? 0 : pickup.id
-                          ]
-                        }`}
-                        alt=""
-                        className={[
-                          "me-1",
-                          "clickable",
-                          !filterPickups(pickup) ? "unselected" : "",
+                  .map((pickup, pickupIdx) => (
+                    <img
+                      key={pickupIdx}
+                      src={`data:image/png;base64,${
+                        pickupImageData[pickup.groupId][
+                          pickup.id === undefined ? 0 : pickup.id
                         ]
-                          .join(" ")
-                          .trim()}
-                        onMouseOver={() => {
-                          setSelectedContent(pickup);
-                        }}
-                        onMouseOut={() => {
-                          //   only set selected back to null if popup is not up
-                          // otherwise it will trigger
-                          !popup && setSelectedContent(null);
-                        }}
-                        onClick={() => {
-                          setSelectedContent(pickup);
-                          setPopup(true);
-                        }}
-                      />
-                    );
-                  })}
+                      }`}
+                      alt=""
+                      className={[
+                        "me-1",
+                        "clickable",
+                        !filterPickups(pickup) ? "unselected" : "",
+                      ]
+                        .join(" ")
+                        .trim()}
+                      onMouseOver={() => {
+                        setSelectedContent(pickup);
+                      }}
+                      onMouseOut={() => {
+                        //   only set selected back to null if popup is not up
+                        // otherwise it will trigger
+                        !popup && setSelectedContent(null);
+                      }}
+                      onClick={() => {
+                        setSelectedContent(pickup);
+                        setPopup(true);
+                      }}
+                    />
+                  ))}
               </div>
             );
           default:

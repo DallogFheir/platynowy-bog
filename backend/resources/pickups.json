@@ -242,5 +242,85 @@
         "character": "Tainted Forgotten"
       }
     }
+  },
+  "50": {
+    "groupId": 50,
+    "name": "Chest"
+  },
+  "60": {
+    "groupId": 60,
+    "name": "Locked Chest"
+  },
+  "360": {
+    "groupId": 360,
+    "name": "Red Chest"
+  },
+  "51": {
+    "groupId": 51,
+    "name": "Bomb Chest"
+  },
+  "53": {
+    "groupId": 53,
+    "name": "Eternal Chest"
+  },
+  "52": {
+    "groupId": 52,
+    "name": "Spiked Chest"
+  },
+  "54": {
+    "groupId": 54,
+    "name": "Mimic Chest"
+  },
+  "55": {
+    "groupId": 55,
+    "name": "Old Chest"
+  },
+  "56": {
+    "groupId": 56,
+    "name": "Wooden Chest",
+    "unlock": {
+      "method": "boss",
+      "boss": "Mega Satan",
+      "character": "Tainted Lazarus"
+    }
+  },
+  "57": {
+    "groupId": 57,
+    "name": "Mega Chest",
+    "unlock": {
+      "method": "boss",
+      "boss": "Mega Satan",
+      "character": "Tainted Isaac"
+    }
+  },
+  "58": {
+    "groupId": 58,
+    "name": "Haunted Chest",
+    "unlock": {
+      "method": "boss",
+      "boss": "Mega Satan",
+      "character": "Tainted Lost"
+    }
+  },
+  "390": {
+    "groupId": 390,
+    "name": "Mom's Chest"
+  },
+  "69": {
+    "1": {
+      "groupId": 69,
+      "id": 1,
+      "name": "Grab Bag"
+    },
+    "2": {
+      "groupId": 69,
+      "id": 2,
+      "name": "Black Sack",
+      "unlock": {
+        "method": "boss",
+        "boss": "Mega Satan",
+        "character": "Tainted Judas"
+      }
+    }
   }
 }
