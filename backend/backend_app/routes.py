@@ -100,9 +100,14 @@ def pickups():
 
     values = []
     for subdict in pickups.values():
-        values.extend(subdict.values())
+        if subdict.get("groupId") == 41:
+            values.append(subdict)
+        else:
+            values.extend(subdict.values())
 
-    return jsonify(sorted(values, key=lambda k: (k["groupId"], k["id"])))
+    return jsonify(
+        sorted(values, key=lambda k: (k["groupId"], k["id"] if "id" in k else 0))
+    )
 
 
 @app.route("/api/pickups/<group_id>/<id>")

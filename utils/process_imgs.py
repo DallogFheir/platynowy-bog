@@ -93,18 +93,18 @@ if __name__ == "__main__":
             name = match[1] if match is not None else file.stem
 
             resized = get_resized_img(browser, file, 200)
-            # cropped = remove_blank_space(resized)
+            cropped = remove_blank_space(resized)
 
             # with open(file, "rb") as f:
             #     bites = BytesIO(f.read())
 
-            b64 = encode_to_base64(resized)
+            b64 = encode_to_base64(cropped)
 
             print(f"Encoded {name}.")
 
             items[name] = b64
         finally:
             with open(
-                r"E:\programowanie\projekty\utrzymywane\platynowy-bog\datad.json", "w"
+                r"D:\programowanie\projekty\utrzymywane\platynowy-bog\datad.json", "w"
             ) as f:
                 json.dump(items, f)
