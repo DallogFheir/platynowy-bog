@@ -105,9 +105,17 @@ function PickupContent({
                         }
                       : (a, b) => {
                           //   sort by color first, then by ID
+                          const colorA =
+                            a.id === undefined
+                              ? pickupColorData[a.groupId][0]
+                              : pickupColorData[a.groupId][a.id];
+                          const colorB =
+                            b.id === undefined
+                              ? pickupColorData[b.groupId][0]
+                              : pickupColorData[b.groupId][b.id];
+
                           const colorSort =
-                            colors.indexOf(pickupColorData[a.groupId][a.id]) -
-                            colors.indexOf(pickupColorData[b.groupId][b.id]);
+                            colors.indexOf(colorA) - colors.indexOf(colorB);
 
                           return colorSort === 0
                             ? a.groupId === b.groupID
@@ -128,6 +136,7 @@ function PickupContent({
                       alt=""
                       className={[
                         "me-1",
+                        "mb-1",
                         "clickable",
                         !filterPickups(pickup) ? "unselected" : "",
                       ]
