@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF–8" />
-    <meta http–equiv="X–UA–Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device–width, initial–scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X–UA–Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Platynowy Bóg – API documentation</title>
     <link rel="stylesheet" href="apidocs.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x–icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -280,6 +280,86 @@
           </li>
         </ul>
       </div>
+      <div id="pickups" class="section">
+        <h2>
+          <span class="section-title">pickups</span>
+          <a class="anchor" href="#pickups">¶</a>
+        </h2>
+      </div>
+      <div class="section">
+        <h3><span class="http-method">GET</span> /api/pickups</h3>
+        <p>
+          retrieves an array of all pickups –
+          <a href="/api/pickups" target="_blank">example</a>
+        </p>
+      </div>
+      <div class="section">
+        <h3>
+          <span class="http-method">GET</span>
+          /api/pickups/&lt;groupId&gt;/[&lt;id&gt;]
+        </h3>
+        <p>
+          retrieves a pickup by its group ID and (optionally) its ID –
+          <a href="/api/pickups/30/4" target="_blank">example</a>
+        </p>
+      </div>
+      <div class="section">
+        <p>A pickup object contains the following properties:</p>
+        <ul>
+          <li><strong>groupId</strong> : <em>integer</em></li>
+          <li>optional <strong>id</strong> : <em>integer</em></li>
+          <li><strong>name</strong> : <em>string</em></li>
+          <li>
+            <strong>type</strong> : <em>string</em> – possible values:
+            <ul>
+              <li><code>"heart"</code></li>
+              <li><code>"coin"</code></li>
+              <li><code>"key"</code></li>
+              <li><code>"battery"</code></li>
+              <li><code>"chest"</code></li>
+              <li><code>"sack"</code></li>
+            </ul>
+          </li>
+          <li>
+            optional <strong>unlock</strong> : <em>object</em> – object
+            representing how to unlock the pickup; properties:
+            <ul>
+              <li>
+                <strong>method</strong> : <em>string</em> – possible values:
+                <ul>
+                  <li><code>"boss"</code></li>
+                  <li><code>"challenge"</code></li>
+                  <li><code>"other"</code></li>
+                </ul>
+              </li>
+              <li>
+                optional <strong>boss</strong> : <em>string</em> – if the method
+                of unlocking is <code>"boss"</code>; boss to defeat
+              </li>
+              <li>
+                optional <strong>character</strong> : <em>string</em> – if the
+                method of unlocking is <code>"boss"</code>; character with which
+                the boss needs to be defeated
+              </li>
+              <li>
+                optional <strong>challengeNumber</strong> : <em>integer</em> –
+                if the method of unlocking is <code>"challenge"</code>; the
+                number of the challenge
+              </li>
+              <li>
+                optional <strong>challengeName</strong> : <em>string</em> – if
+                the method of unlocking is <code>"challenge"</code>; the name of
+                the challenge
+              </li>
+              <li>
+                optional <strong>other</strong> : <em>string</em> – if the
+                method of unlocking is <code>"other"</code>; the way to unlock
+                the trinket
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <div id="pills" class="section">
         <h2>
           <span class="section-title">pills</span>
@@ -332,50 +412,6 @@
                 the pill
               </li>
             </ul>
-          </li>
-        </ul>
-      </div>
-      <div id="transformations" class="section">
-        <h2>
-          <span class="section-title">transformations</span>
-          <a class="anchor" href="#transformations">¶</a>
-        </h2>
-      </div>
-      <div class="section">
-        <h3><span class="http-method">GET</span> /api/transformations</h3>
-        <p>
-          retrieves an array of all transformations –
-          <a href="/api/transformations" target="_blank">example</a>
-        </p>
-      </div>
-      <div class="section">
-        <h3>
-          <span class="http-method">GET</span> /api/transformations/&lt;id&gt;
-        </h3>
-        <p>
-          retrieves a transformation by its ID (Super Bum has the ID of 14) –
-          <a href="/api/transformations/0" target="_blank">example</a>
-        </p>
-      </div>
-      <div class="section">
-        <p>A transformation object contains the following properties:</p>
-        <ul>
-          <li>
-            optional <strong>id</strong> : <em>integer</em> – Super Bum has no
-            ID, but can be retrieved by the ID of 14
-          </li>
-          <li><strong>name</strong> : <em>string</em></li>
-          <li>
-            optional <strong>items</strong> : <em>array[integer]</em> – array of
-            the IDs of items that contribute to the transformation
-          </li>
-          <li>
-            optional <strong>trinkets</strong> : <em>array[integer]</em> – array
-            of the IDs of trinkets that contribute to the transformation
-          </li>
-          <li>
-            optional <strong>pills</strong> : <em>array[string]</em> – array of
-            the names of pills that contribute to the transformation
           </li>
         </ul>
       </div>
@@ -465,6 +501,50 @@
                 the trinket
               </li>
             </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="transformations" class="section">
+        <h2>
+          <span class="section-title">transformations</span>
+          <a class="anchor" href="#transformations">¶</a>
+        </h2>
+      </div>
+      <div class="section">
+        <h3><span class="http-method">GET</span> /api/transformations</h3>
+        <p>
+          retrieves an array of all transformations –
+          <a href="/api/transformations" target="_blank">example</a>
+        </p>
+      </div>
+      <div class="section">
+        <h3>
+          <span class="http-method">GET</span> /api/transformations/&lt;id&gt;
+        </h3>
+        <p>
+          retrieves a transformation by its ID (Super Bum has the ID of 14) –
+          <a href="/api/transformations/0" target="_blank">example</a>
+        </p>
+      </div>
+      <div class="section">
+        <p>A transformation object contains the following properties:</p>
+        <ul>
+          <li>
+            optional <strong>id</strong> : <em>integer</em> – Super Bum has no
+            ID, but can be retrieved by the ID of 14
+          </li>
+          <li><strong>name</strong> : <em>string</em></li>
+          <li>
+            optional <strong>items</strong> : <em>array[integer]</em> – array of
+            the IDs of items that contribute to the transformation
+          </li>
+          <li>
+            optional <strong>trinkets</strong> : <em>array[integer]</em> – array
+            of the IDs of trinkets that contribute to the transformation
+          </li>
+          <li>
+            optional <strong>pills</strong> : <em>array[string]</em> – array of
+            the names of pills that contribute to the transformation
           </li>
         </ul>
       </div>

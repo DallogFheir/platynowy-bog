@@ -32,3 +32,7 @@ header {
 .nav-link:hover {
   color: rgb(153, 153, 153);
 }
+
+.select {
+  padding: 5px;
+}

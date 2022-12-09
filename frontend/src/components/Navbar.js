@@ -122,6 +122,7 @@ function Navbar({
                   {menu.name.toUpperCase() + ":"}
                 </label>
                 <select
+                  className="select"
                   id={menu.name}
                   value={menu.state}
                   onChange={(e) => {

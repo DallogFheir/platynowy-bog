@@ -245,6 +245,20 @@ def pickups():
     return resp
 
 
+@app.route("/api/pickups/<group_id>")
+def pickups_group_id(group_id):
+    with open_resource("pickups") as f:
+        pickups = json.load(f)
+
+    pickup_group = pickups.get(group_id)
+    if pickup_group is None or isinstance(list(pickup_group.values())[0], dict):
+        abort(404)
+
+    resp = make_response(jsonify(pickup_group))
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    return resp
+
+
 @app.route("/api/pickups/<group_id>/<id>")
 def pickups_id(group_id, id):
     with open_resource("pickups") as f:

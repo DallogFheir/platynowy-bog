@@ -222,7 +222,16 @@ function Main({
         >
           <div className="mt-2">
             <div className="fold-btn-container">
-              <p className="text-center fs-5 title">
+              <p
+                className={[
+                  "text-center",
+                  "fs-5",
+                  "title",
+                  typeOption === "transformacje" ? "" : "fold-title",
+                ]
+                  .join(" ")
+                  .trim()}
+              >
                 {typeOption.toUpperCase()}
               </p>
               {typeOption !== "transformacje" && (
