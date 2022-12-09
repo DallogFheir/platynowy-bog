@@ -3,37 +3,44 @@
     "1": {
       "groupId": 10,
       "id": 1,
-      "name": "Red Heart"
+      "name": "Red Heart",
+      "type": "heart"
     },
     "2": {
       "groupId": 10,
       "id": 2,
-      "name": "Half Red Heart"
+      "name": "Half Red Heart",
+      "type": "heart"
     },
     "3": {
       "groupId": 10,
       "id": 3,
-      "name": "Soul Heart"
+      "name": "Soul Heart",
+      "type": "heart"
     },
     "4": {
       "groupId": 10,
       "id": 4,
-      "name": "Eternal Heart"
+      "name": "Eternal Heart",
+      "type": "heart"
     },
     "5": {
       "groupId": 10,
       "id": 5,
-      "name": "Double Heart"
+      "name": "Double Heart",
+      "type": "heart"
     },
     "6": {
       "groupId": 10,
       "id": 6,
-      "name": "Black Heart"
+      "name": "Black Heart",
+      "type": "heart"
     },
     "7": {
       "groupId": 10,
       "id": 7,
       "name": "Gold Heart",
+      "type": "heart",
       "unlock": {
         "method": "challenge",
         "challengeNumber": 21,
@@ -44,6 +51,7 @@
       "groupId": 10,
       "id": 8,
       "name": "Half Soul Heart",
+      "type": "heart",
       "unlock": {
         "method": "boss",
         "boss": "Mom's Heart/It Lives!",
@@ -54,17 +62,20 @@
       "groupId": 10,
       "id": 9,
       "name": "Scared Heart",
+      "type": "heart",
       "unlock": { "method": "other", "other": "reset 7 times in a row" }
     },
     "10": {
       "groupId": 10,
       "id": 10,
-      "name": "Blended Heart"
+      "name": "Blended Heart",
+      "type": "heart"
     },
     "11": {
       "groupId": 10,
       "id": 11,
       "name": "Bone Heart",
+      "type": "heart",
       "unlock": {
         "method": "other",
         "other": "digging up the dirt patch in the Grave Room in Dark Room"
@@ -74,6 +85,7 @@
       "groupId": 10,
       "id": 12,
       "name": "Rotten Heart",
+      "type": "heart",
       "unlock": {
         "method": "other",
         "other": "entering Corpse for the first time"
@@ -84,27 +96,32 @@
     "1": {
       "groupId": 20,
       "id": 1,
-      "name": "Penny"
+      "name": "Penny",
+      "type": "coin"
     },
     "2": {
       "groupId": 20,
       "id": 2,
-      "name": "Nickel"
+      "name": "Nickel",
+      "type": "coin"
     },
     "3": {
       "groupId": 20,
       "id": 3,
-      "name": "Dime"
+      "name": "Dime",
+      "type": "coin"
     },
     "4": {
       "groupId": 20,
       "id": 4,
-      "name": "Double Penny"
+      "name": "Double Penny",
+      "type": "coin"
     },
     "5": {
       "groupId": 20,
       "id": 5,
       "name": "Lucky Penny",
+      "type": "coin",
       "unlock": {
         "method": "Greed Donation Machine",
         "amount": 1
@@ -114,6 +131,7 @@
       "groupId": 20,
       "id": 6,
       "name": "Sticky Nickel",
+      "type": "coin",
       "unlock": {
         "method": "boss",
         "boss": "Boss Rush",
@@ -124,6 +142,7 @@
       "groupId": 20,
       "id": 7,
       "name": "Golden Penny",
+      "type": "coin",
       "unlock": {
         "method": "boss",
         "boss": "Mega Satan",
@@ -135,22 +154,26 @@
     "1": {
       "groupId": 40,
       "id": 1,
-      "name": "Bomb"
+      "name": "Bomb",
+      "type": "bomb"
     },
     "2": {
       "groupId": 40,
       "id": 2,
-      "name": "Double Bomb"
+      "name": "Double Bomb",
+      "type": "bomb"
     },
     "3": {
       "groupId": 40,
       "id": 3,
-      "name": "Troll Bomb"
+      "name": "Troll Bomb",
+      "type": "bomb"
     },
     "4": {
       "groupId": 40,
       "id": 4,
       "name": "Golden Bomb",
+      "type": "bomb",
       "unlock": {
         "method": "challenge",
         "challengeNumber": 23,
@@ -160,55 +183,65 @@
     "5": {
       "groupId": 40,
       "id": 5,
-      "name": "Mega Troll Bomb"
+      "name": "Mega Troll Bomb",
+      "type": "bomb"
     },
     "6": {
       "groupId": 40,
       "id": 6,
-      "name": "Golden Troll Bomb"
+      "name": "Golden Troll Bomb",
+      "type": "bomb"
     },
     "7": {
       "groupId": 40,
       "id": 7,
-      "name": "Giga Bomb"
+      "name": "Giga Bomb",
+      "type": "bomb"
     }
   },
   "41": {
     "groupId": 41,
-    "name": "Throwable Bomb"
+    "name": "Throwable Bomb",
+    "type": "bomb"
   },
   "42": {
     "0": {
       "groupId": 42,
       "id": 0,
-      "name": "Poop Nugget"
+      "name": "Poop Nugget",
+      "type": "bomb"
     },
     "1": {
       "groupId": 42,
       "id": 1,
-      "name": "Big Poop Nugget"
+      "name": "Big Poop Nugget",
+      "type": "bomb"
     }
   },
   "30": {
     "1": {
       "groupId": 30,
       "id": 1,
-      "name": "Key"
+      "name": "Key",
+      "type": "key"
     },
     "2": {
       "groupId": 30,
       "id": 2,
-      "name": "Golden Key"
+      "name": "Golden Key",
+      "type": "key"
     },
     "3": {
       "groupId": 30,
       "id": 3,
-      "name": "Key Ring"
+      "name": "Key Ring",
+      "type": "key"
     },
     "4": {
       "groupId": 30,
       "id": 4,
       "name": "Charged Key",
+      "type": "key",
       "unlock": {
         "method": "challenge",
         "challengeName": "Pokey Mans",
@@ -220,22 +253,26 @@
     "1": {
       "groupId": 90,
       "id": 1,
-      "name": "Lil' Battery"
+      "name": "Lil' Battery",
+      "type": "battery"
     },
     "2": {
       "groupId": 90,
       "id": 2,
-      "name": "Micro Battery"
+      "name": "Micro Battery",
+      "type": "battery"
     },
     "3": {
       "groupId": 90,
       "id": 3,
-      "name": "Mega Battery"
+      "name": "Mega Battery",
+      "type": "battery"
     },
     "4": {
       "groupId": 90,
       "id": 4,
       "name": "Golden Battery",
+      "type": "battery",
       "unlock": {
         "method": "boss",
         "boss": "Mega Satan",
@@ -245,39 +282,48 @@
   },
   "50": {
     "groupId": 50,
-    "name": "Chest"
+    "name": "Chest",
+    "type": "chest"
   },
   "60": {
     "groupId": 60,
-    "name": "Locked Chest"
+    "name": "Locked Chest",
+    "type": "chest"
   },
   "360": {
     "groupId": 360,
-    "name": "Red Chest"
+    "name": "Red Chest",
+    "type": "chest"
   },
   "51": {
     "groupId": 51,
-    "name": "Bomb Chest"
+    "name": "Bomb Chest",
+    "type": "chest"
   },
   "53": {
     "groupId": 53,
-    "name": "Eternal Chest"
+    "name": "Eternal Chest",
+    "type": "chest"
   },
   "52": {
     "groupId": 52,
-    "name": "Spiked Chest"
+    "name": "Spiked Chest",
+    "type": "chest"
   },
   "54": {
     "groupId": 54,
-    "name": "Mimic Chest"
+    "name": "Mimic Chest",
+    "type": "chest"
   },
   "55": {
     "groupId": 55,
-    "name": "Old Chest"
+    "name": "Old Chest",
+    "type": "chest"
   },
   "56": {
     "groupId": 56,
     "name": "Wooden Chest",
+    "type": "chest",
     "unlock": {
       "method": "boss",
       "boss": "Mega Satan",
@@ -287,6 +333,7 @@
   "57": {
     "groupId": 57,
     "name": "Mega Chest",
+    "type": "chest",
     "unlock": {
       "method": "boss",
       "boss": "Mega Satan",
@@ -296,6 +343,7 @@
   "58": {
     "groupId": 58,
     "name": "Haunted Chest",
+    "type": "chest",
     "unlock": {
       "method": "boss",
       "boss": "Mega Satan",
@@ -304,18 +352,21 @@
   },
   "390": {
     "groupId": 390,
-    "name": "Mom's Chest"
+    "name": "Mom's Chest",
+    "type": "chest"
   },
   "69": {
     "1": {
       "groupId": 69,
       "id": 1,
-      "name": "Grab Bag"
+      "name": "Grab Bag",
+      "type": "sack"
     },
     "2": {
       "groupId": 69,
       "id": 2,
       "name": "Black Sack",
+      "type": "sack",
       "unlock": {
         "method": "boss",
         "boss": "Mega Satan",
