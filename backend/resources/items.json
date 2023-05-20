@@ -2810,7 +2810,7 @@
     "id": 245,
     "name": "20/20",
     "pool": { "greedMode": ["Treasure Room"], "normal": ["Treasure Room"] },
-    "quality": 3,
+    "quality": 4,
     "quote": "Double shot",
     "type": "passive"
   },
