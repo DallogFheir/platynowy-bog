@@ -6963,7 +6963,6 @@
     "pool": {
       "greedMode": ["Treasure Room"],
       "beggars": ["Bomb Bum"],
-      "machines": ["Blood Donation Machine"],
       "normal": ["Treasure Room", "Ultra Secret Room"]
     },
     "quality": 1,
