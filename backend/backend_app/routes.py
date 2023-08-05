@@ -1,8 +1,9 @@
-from flask import abort, jsonify, make_response, render_template
+from flask import abort, jsonify, make_response, render_template, send_file
 import json
 from pathlib import Path
 from . import app
 
+BUILD_PATH = Path(__file__).parent / "build"
 
 def open_resource(resource_name):
     return open(
@@ -14,13 +15,13 @@ def open_resource(resource_name):
 # main site
 @app.route("/")
 def home():
-    return app.send_static_file("index.html")
+    return send_file(BUILD_PATH / "index.html")
 
 
 # API docs
 @app.route("/apidocs")
 def apidocs():
-    return app.send_static_file("apidocs.html")
+    return send_file(BUILD_PATH / "apidocs.html")
 
 
 # error handlers
@@ -64,7 +65,7 @@ def error_405(error):
     return (resp, 405)
 
 
-@app.errorhandler(500)
+@app.errorhandler(Exception)
 def error_500(error):
     error_code = error.code
     message = "Wystąpił błąd ze strony serwera. Spróbuj ponownie później."
