@@ -5,6 +5,7 @@ from . import app
 
 BUILD_PATH = Path(__file__).parent / "build"
 
+
 def open_resource(resource_name):
     return open(
         Path(__file__).parent.parent / "resources" / (resource_name + ".json"),

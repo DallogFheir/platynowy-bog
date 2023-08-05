@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./Navbar.css";
+import PlatinumGod from "../assets/platinum-god.png"; 
 
 function Navbar({
   typeOption,
@@ -68,7 +69,7 @@ function Navbar({
             setNameFilter("");
           }}
         >
-          <img src="platinum-god.png" alt="" />
+          <img src={PlatinumGod} alt="" />
           <span className="ms-2 title">PLATYNOWY BÓG</span>
         </div>
         <button
