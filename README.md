@@ -1,3 +1,3 @@
 # platynowy-bog
 
-![Isaac](frontend/src/assets/platinum-god.png)
+![Isaac](frontend/src/assets/platinum-god.png) Platynowy Bóg
