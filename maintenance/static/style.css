@@ -1,0 +1,11 @@
+@media (max-width: 1200px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rkey-second {
+    display: none;
+  }
+}
