@@ -25,6 +25,12 @@ def apidocs():
     return send_file(BUILD_PATH / "apidocs.html")
 
 
+# favicon
+@app.route("/favicon.ico")
+def favicon():
+    return send_file(BUILD_PATH / "favicon.ico")
+
+
 # error handlers
 @app.errorhandler(404)
 def error_404(error):
