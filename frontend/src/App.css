@@ -1,7 +1,6 @@
 html {
   overflow: auto;
   height: 100%;
-  overscroll-behavior: none;
 }
 
 body {
@@ -19,6 +18,7 @@ body {
   flex-direction: column;
   overflow: auto;
   height: 100%;
+  overscroll-behavior: none;
 }
 
 /* disables and darkens the rest of the site where popup is up */
