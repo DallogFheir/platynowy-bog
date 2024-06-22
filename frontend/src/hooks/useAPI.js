@@ -16,7 +16,7 @@ function useAPI(resource, typeState) {
 
       try {
         setStatus("loading");
-        const res = await fetch(`/api/${resource}`);
+        const res = await fetch(`/platynowy-bog/api/${resource}`);
 
         if (res.ok) {
           const data = await res.json();
