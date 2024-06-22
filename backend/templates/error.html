@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Platynowy Bóg - błąd {{ error_code }}</title>
-    <link rel="stylesheet" href={{ url_for("static", filename="css/error.css")}}>
+    <link rel="stylesheet" href="/platynowy-bog/static/css/error.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,8 +30,8 @@
             </p>
             <p class="error-p">{{ message }}</p>
             <p class="error-p">Wróć do:</p>
-            <p class="error-p"><a class="error-link" href={{ url_for("home")}}>Platynowy Bóg</a></p>
-            <p class="error-p"><a class="error-link" href={{ url_for("apidocs")}}><img
+            <p class="error-p"><a class="error-link" href="/platynowy-bog">Platynowy Bóg</a></p>
+            <p class="error-p"><a class="error-link" href="/platynowy-bog/apidocs"><img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABL0lEQVQ4T2NkoBAwUqifAWzA+/fv/4cWbvywZ/89AZiB7y8UMjxUtQBz5W+fYBA06Ifb5WSv8LFvWye/wZubjIwXRNT/M/Pz/JQ5s4cdpAKmEJcBMHH5Kwd/MrCzszMyyNX9v6544fPPqzd5QTaBDdHvY3h/sQjVBfr9DFflzn75feMOD0JdP9AL8nX/wd6AOln+0oGfDJwcYNcgewHEZhbk+ylzaheKSxlB/scVkMgG4FIDDgNKYoJyAyj2AnIggrzyxMz959/3H9lBIY0RBj9+/nyoaw+Wg0U3OBrfXywEBwNIA6uq/Bftp+Y82KIRWR2bpupnrYdGvJBY+PXr50NtOxST8SUksEtNXX/+/fAZmJCAABQTJT6VRCdlZweFj2smBPILCgoyUiczUZIOAEkLrwEbahiTAAAAAElFTkSuQmCC"
             alt=""
           /> API documentation</a></p>
