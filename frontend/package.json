@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build && mv build ../backend/backend_app/",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build && mv build ../backend/backend_app/ && cp ../extra_static/*.css ../backend/backend_app/build/static/css/ && cp ../extra_static/*.html ../backend/backend_app/build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
