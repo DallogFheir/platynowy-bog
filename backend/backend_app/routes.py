@@ -1,7 +1,8 @@
-from flask import abort, jsonify, make_response, render_template, send_file
+from flask import Blueprint, abort, jsonify, make_response, render_template, send_file
 import json
 from pathlib import Path
-from . import app
+
+pb = Blueprint("pb", __name__, static_folder=Path(__file__).parent / "build" / "static", static_url_path="/static", template_folder=Path(__file__).parent.parent / "templates")
 
 BUILD_PATH = Path(__file__).parent / "build"
 
@@ -14,25 +15,25 @@ def open_resource(resource_name):
 
 
 # main site
-@app.route("/")
+@pb.route("/")
 def home():
     return send_file(BUILD_PATH / "index.html")
 
 
 # API docs
-@app.route("/apidocs")
+@pb.route("/apidocs")
 def apidocs():
     return send_file(BUILD_PATH / "apidocs.html")
 
 
 # favicon
-@app.route("/favicon.ico")
+@pb.route("/favicon.ico")
 def favicon():
     return send_file(BUILD_PATH / "favicon.ico")
 
 
 # error handlers
-@app.errorhandler(404)
+@pb.errorhandler(404)
 def error_404(error):
     error_code = error.code
     message = "Nie znaleziono strony."
@@ -52,7 +53,7 @@ def error_404(error):
     return (resp, 404)
 
 
-@app.errorhandler(405)
+@pb.errorhandler(405)
 def error_405(error):
     error_code = error.code
     message = "Próbujesz zrobić coś niedozwolonego!"
@@ -72,7 +73,7 @@ def error_405(error):
     return (resp, 405)
 
 
-@app.errorhandler(Exception)
+@pb.errorhandler(Exception)
 def error_500(error):
     error_code = error.code
     message = "Wystąpił błąd ze strony serwera. Spróbuj ponownie później."
@@ -93,7 +94,7 @@ def error_500(error):
 
 
 # ITEMS
-@app.route("/api/items")
+@pb.route("/api/items")
 def items():
     with open_resource("items") as f:
         items = json.load(f)
@@ -105,7 +106,7 @@ def items():
     return resp
 
 
-@app.route("/api/items/<id>")
+@pb.route("/api/items/<id>")
 def items_id(id):
     with open_resource("items") as f:
         items = json.load(f)
@@ -121,7 +122,7 @@ def items_id(id):
 
 
 # TRINKETS
-@app.route("/api/trinkets")
+@pb.route("/api/trinkets")
 def trinkets():
     with open_resource("trinkets") as f:
         trinkets = json.load(f)
@@ -133,7 +134,7 @@ def trinkets():
     return resp
 
 
-@app.route("/api/trinkets/<id>")
+@pb.route("/api/trinkets/<id>")
 def trinkets_id(id):
     with open_resource("trinkets") as f:
         trinkets = json.load(f)
@@ -149,7 +150,7 @@ def trinkets_id(id):
 
 
 # PILLS
-@app.route("/api/pills")
+@pb.route("/api/pills")
 def pills():
     with open_resource("pills") as f:
         pills = json.load(f)
@@ -162,7 +163,7 @@ def pills():
     return resp
 
 
-@app.route("/api/pills/<id>")
+@pb.route("/api/pills/<id>")
 def pills_id(id):
     with open_resource("pills") as f:
         pills = json.load(f)
@@ -178,7 +179,7 @@ def pills_id(id):
 
 
 # CARDS/RUNES
-@app.route("/api/cards-runes")
+@pb.route("/api/cards-runes")
 def cards_runes():
     with open_resource("cards-runes") as f:
         cards_runes = json.load(f)
@@ -191,7 +192,7 @@ def cards_runes():
     return resp
 
 
-@app.route("/api/cards-runes/<id>")
+@pb.route("/api/cards-runes/<id>")
 def cards_runes_id(id):
     with open_resource("cards-runes") as f:
         cards_runes = json.load(f)
@@ -207,7 +208,7 @@ def cards_runes_id(id):
 
 
 # TRANSFORMATIONS
-@app.route("/api/transformations")
+@pb.route("/api/transformations")
 def transformations():
     with open_resource("transformations") as f:
         transformations = json.load(f)
@@ -220,7 +221,7 @@ def transformations():
     return resp
 
 
-@app.route("/api/transformations/<id>")
+@pb.route("/api/transformations/<id>")
 def transformations_id(id):
     with open_resource("transformations") as f:
         transformations = json.load(f)
@@ -236,7 +237,7 @@ def transformations_id(id):
 
 
 # PICKUPS
-@app.route("/api/pickups")
+@pb.route("/api/pickups")
 def pickups():
     with open_resource("pickups") as f:
         pickups = json.load(f)
@@ -271,7 +272,7 @@ def pickups():
     return resp
 
 
-@app.route("/api/pickups/<group_id>")
+@pb.route("/api/pickups/<group_id>")
 def pickups_group_id(group_id):
     with open_resource("pickups") as f:
         pickups = json.load(f)
@@ -285,7 +286,7 @@ def pickups_group_id(group_id):
     return resp
 
 
-@app.route("/api/pickups/<group_id>/<id>")
+@pb.route("/api/pickups/<group_id>/<id>")
 def pickups_id(group_id, id):
     with open_resource("pickups") as f:
         pickups = json.load(f)
