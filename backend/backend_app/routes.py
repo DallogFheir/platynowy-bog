@@ -28,7 +28,7 @@ def home():
 
 
 # API docs
-@pb.route("/apidocs")
+@pb.route("/apidocs/")
 def apidocs():
     return send_file(BUILD_PATH / "apidocs.html")
 
@@ -40,7 +40,7 @@ def favicon():
 
 
 # ITEMS
-@pb.route("/api/items")
+@pb.route("/api/items/")
 def items():
     with open_resource("items") as f:
         items = json.load(f)
@@ -68,7 +68,7 @@ def items_id(id):
 
 
 # TRINKETS
-@pb.route("/api/trinkets")
+@pb.route("/api/trinkets/")
 def trinkets():
     with open_resource("trinkets") as f:
         trinkets = json.load(f)
@@ -96,7 +96,7 @@ def trinkets_id(id):
 
 
 # PILLS
-@pb.route("/api/pills")
+@pb.route("/api/pills/")
 def pills():
     with open_resource("pills") as f:
         pills = json.load(f)
@@ -125,7 +125,7 @@ def pills_id(id):
 
 
 # CARDS/RUNES
-@pb.route("/api/cards-runes")
+@pb.route("/api/cards-runes/")
 def cards_runes():
     with open_resource("cards-runes") as f:
         cards_runes = json.load(f)
@@ -154,7 +154,7 @@ def cards_runes_id(id):
 
 
 # TRANSFORMATIONS
-@pb.route("/api/transformations")
+@pb.route("/api/transformations/")
 def transformations():
     with open_resource("transformations") as f:
         transformations = json.load(f)
@@ -183,7 +183,7 @@ def transformations_id(id):
 
 
 # PICKUPS
-@pb.route("/api/pickups")
+@pb.route("/api/pickups/")
 def pickups():
     with open_resource("pickups") as f:
         pickups = json.load(f)
