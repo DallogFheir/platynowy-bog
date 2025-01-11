@@ -44,13 +44,6 @@ body {
   overflow-y: scroll;
 }
 
-.url-warning {
-  padding: 0.5em 0;
-  text-align: center;
-  color: white;
-  background-color: #4a535c;
-}
-
 .url-warning-attention {
   font-weight: bold;
 }

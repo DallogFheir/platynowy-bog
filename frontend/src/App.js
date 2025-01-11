@@ -97,10 +97,6 @@ function App() {
     <>
       <div
         className={["wrapper", popup ? "popup-active" : ""].join(" ").trim()}>
-        <div className="url-warning">
-          <span class="url-warning-attention">Uwaga!</span> Strona ma nowy
-          adres. Stary przestanie niedługo działać.
-        </div>
         <Navbar
           typeOption={typeOption}
           setTypeOption={setTypeOption}
