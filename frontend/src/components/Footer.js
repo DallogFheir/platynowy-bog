@@ -18,8 +18,7 @@ function Footer() {
           className="link"
           href="https://platinumgod.co.uk/"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           Platinum God
         </a>
         .
@@ -30,11 +29,10 @@ function Footer() {
           className="link"
           href="https://bindingofisaacrebirth.fandom.com/wiki/Binding_of_Isaac:_Rebirth_Wiki"
           target="_blank"
-          rel="noreferrer"
-        >
+          rel="noreferrer">
           The Binding of Isaac: Rebirth Wiki
-        </a>
-        .
+        </a>{" "}
+        lub z plików gry.
       </p>
       <p>
         Proszę o zgłaszanie wszelkich literówek, błędów i innych uwag, próśb i
@@ -54,8 +52,7 @@ function Footer() {
             className="link"
             href="https://github.com/DallogFheir"
             target="_blank"
-            rel="noreferrer"
-          >
+            rel="noreferrer">
             DallogFheir
           </a>
         </p>
