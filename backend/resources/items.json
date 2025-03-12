@@ -38,7 +38,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "Triple shot",
     "type": "passive"
   },
@@ -92,7 +92,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "Boomerang tears",
     "type": "passive"
   },
@@ -334,7 +334,7 @@
         "Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "99 keys",
     "type": "passive"
   },
@@ -373,7 +373,7 @@
         "Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "We all float down here...",
     "unlock": {
       "boss": "Mom's Heart",
@@ -396,7 +396,7 @@
         "Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "The end is near",
     "type": "passive"
   },
@@ -689,7 +689,7 @@
         "Devil Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Mass room damage",
     "rechargeTime": {
       "amount": 4,
@@ -771,7 +771,7 @@
         "Crane Game"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Reusable tear burst",
     "rechargeTime": {
       "amount": 1,
@@ -791,7 +791,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Mass paralysis",
     "rechargeTime": {
       "amount": 3,
@@ -975,7 +975,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Piercing shots",
     "type": "passive"
   },
@@ -1088,7 +1088,7 @@
         "Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Full visible map",
     "type": "passive"
   },
@@ -1153,7 +1153,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Attack fly",
     "transformation": [
       "Beelzebub"
@@ -1206,7 +1206,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Kills heal",
     "type": "passive"
   },
@@ -1267,7 +1267,7 @@
         "Library"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Summon bombs",
     "rechargeTime": {
       "amount": 3,
@@ -1289,7 +1289,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Temporary enemy slowdown",
     "rechargeTime": {
       "amount": 2,
@@ -1438,7 +1438,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Piercing shots",
     "type": "passive",
     "unlock": {
@@ -1737,7 +1737,7 @@
         "Bumbino"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Summon Monstro",
     "rechargeTime": {
       "amount": 3,
@@ -1785,7 +1785,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Attack buddy",
     "type": "passive",
     "unlock": {
@@ -1979,7 +1979,7 @@
         "Devil Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Reusable item generator",
     "rechargeTime": {
       "amount": 4,
@@ -2032,7 +2032,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Sticky friend",
     "type": "passive",
     "unlock": {
@@ -2081,7 +2081,7 @@
         "Angel Room"
       ]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "All stats up",
     "transformation": [
       "Seraphim"
@@ -2334,7 +2334,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Extra protection",
     "transformation": [
       "Conjoined"
@@ -2361,7 +2361,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Auto-turret friend",
     "transformation": [
       "Conjoined"
@@ -2618,7 +2618,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Homing bombs!",
     "type": "passive"
   },
@@ -2750,7 +2750,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Gives bombs",
     "unlock": {
       "boss": "Satan",
@@ -2836,7 +2836,7 @@
         "Blood Donation Machine"
       ]
     },
-    "quality": 1,
+    "quality": 2,
     "quote": "Portable blood bank",
     "rechargeTime": {
       "amount": "unlimited"
@@ -2854,7 +2854,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Friends 'till the end",
     "rechargeTime": {
       "amount": 3,
@@ -2881,7 +2881,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Remote bomb detonation",
     "rechargeTime": {
       "amount": "unlimited"
@@ -3324,7 +3324,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Holy white death",
     "rechargeTime": {
       "amount": 4,
@@ -3343,7 +3343,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Eternal life?",
     "type": "passive"
   },
@@ -3738,7 +3738,7 @@
         "Conquest"
       ]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "Flight + holy death",
     "rechargeTime": {
       "amount": 2,
@@ -4028,7 +4028,7 @@
         "Boss Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "What's all this...?",
     "transformation": [
       "Yes Mother?"
@@ -4161,7 +4161,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Golden touch",
     "type": "passive"
   },
@@ -4221,7 +4221,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 0,
     "quote": "DMG + tears up. An out-of-body experience!",
     "unlock": {
       "boss": "Isaac",
@@ -4247,7 +4247,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Gotta lick 'em all!",
     "type": "passive",
     "unlock": {
@@ -4291,7 +4291,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Toxic blast +5 bombs",
     "transformation": [
       "Oh Crap"
@@ -4518,7 +4518,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Anti-gravity tears + tears up",
     "type": "passive"
   },
@@ -4747,7 +4747,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Turdy touch",
     "transformation": [
       "Oh Crap"
@@ -4839,7 +4839,7 @@
         "Devil Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Wealth... but at what cost?",
     "type": "passive"
   },
@@ -4927,7 +4927,7 @@
         "Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Secrets",
     "type": "passive",
     "unlock": {
@@ -5088,7 +5088,7 @@
         "Boss Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Tears + shot speed up",
     "type": "passive"
   },
@@ -5258,7 +5258,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Revenge fly",
     "transformation": [
       "Beelzebub"
@@ -5448,7 +5448,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Big beautiful fly",
     "transformation": [
       "Beelzebub"
@@ -5472,7 +5472,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Explosive thoughts",
     "transformation": [
       "Bob"
@@ -5594,7 +5594,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Fat protector",
     "transformation": [
       "Beelzebub"
@@ -5673,7 +5673,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 3,
+    "quality": 1,
     "quote": "REEROLLLLL!",
     "rechargeTime": {
       "amount": 6,
@@ -5700,7 +5700,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Reroll into something else",
     "rechargeTime": {
       "amount": 6,
@@ -5769,7 +5769,7 @@
         "Secret Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Tome of knowledge",
     "rechargeTime": {
       "amount": 6,
@@ -5819,7 +5819,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Flame on",
     "rechargeTime": {
       "amount": 4,
@@ -5881,7 +5881,7 @@
         "Devil Room"
       ]
     },
-    "quality": 4,
+    "quality": 3,
     "quote": "Reusable evil... but at what cost?",
     "rechargeTime": {
       "amount": 6,
@@ -5905,7 +5905,7 @@
         "Krampus"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Krampus rage",
     "rechargeTime": {
       "amount": 3,
@@ -5928,7 +5928,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Reusable knock-back",
     "rechargeTime": {
       "amount": 3,
@@ -5949,7 +5949,7 @@
         "Shop"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Pay to win",
     "rechargeTime": {
       "amount": "unlimited"
@@ -5964,7 +5964,7 @@
         "Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Convert your soul",
     "rechargeTime": {
       "amount": 3,
@@ -6459,7 +6459,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Undefined",
     "rechargeTime": {
       "amount": 6,
@@ -6483,7 +6483,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Lose your head",
     "rechargeTime": {
       "amount": 4,
@@ -6559,7 +6559,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Controlled tears",
     "type": "passive"
   },
@@ -6704,7 +6704,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Toxic aura tears",
     "type": "passive"
   },
@@ -6915,7 +6915,7 @@
         "Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Pill mimic",
     "rechargeTime": {
       "amount": "other"
@@ -7233,7 +7233,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Protective friend",
     "transformation": [
       "Conjoined"
@@ -7325,7 +7325,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Egg sack bombs!",
     "transformation": [
       "Spider Baby"
@@ -7343,7 +7343,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Intensifying tears",
     "type": "passive"
   },
@@ -7420,7 +7420,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Bbbzzzzzt!",
     "type": "passive"
   },
@@ -7632,7 +7632,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "A gurd of your own!",
     "type": "passive"
   },
@@ -7692,7 +7692,7 @@
         "Angel Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Peace be with you",
     "unlock": {
       "boss": "Ultra Greed",
@@ -7845,7 +7845,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Directed tears",
     "type": "passive"
   },
@@ -7875,7 +7875,7 @@
         "Shop"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Short cutter",
     "rechargeTime": {
       "amount": "unlimited"
@@ -7953,7 +7953,7 @@
         "Angel Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Your destiny",
     "type": "passive"
   },
@@ -8072,7 +8072,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Reroll stats",
     "rechargeTime": {
       "amount": 4,
@@ -8207,7 +8207,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Feed them hate",
     "unlock": {
       "boss": "???",
@@ -8349,7 +8349,7 @@
         "Devil Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Spin the black circle!",
     "type": "passive"
   },
@@ -8365,7 +8365,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Love toots!",
     "type": "passive"
   },
@@ -8586,7 +8586,7 @@
         "Devil Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Me! And my shaaaadow!",
     "unlock": {
       "boss": "Ultra Greed",
@@ -8959,7 +8959,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "I'm leaking...",
     "type": "passive"
   },
@@ -9449,7 +9449,7 @@
         "Apollyon"
       ]
     },
-    "quality": 4,
+    "quality": 3,
     "quote": "Consume",
     "rechargeTime": {
       "amount": 6,
@@ -9476,7 +9476,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Stop!",
     "rechargeTime": {
       "amount": 2,
@@ -9517,7 +9517,7 @@
         "Shop"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Gain more friends!",
     "rechargeTime": {
       "amount": 2,
@@ -9643,7 +9643,7 @@
         "Shop"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "I feel numb...",
     "rechargeTime": {
       "amount": 2,
@@ -9742,7 +9742,7 @@
         "Angel Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "...",
     "rechargeTime": {
       "amount": 12,
@@ -9808,7 +9808,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Panic = power",
     "transformation": [
       "Spun"
@@ -9944,7 +9944,7 @@
         "Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Gives sacks",
     "unlock": {
       "boss": "Ultra Greedier",
@@ -10105,7 +10105,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "It's sharp!",
     "rechargeTime": {
       "amount": 4,
@@ -10276,7 +10276,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Sprinkles.",
     "rechargeTime": {
       "amount": 4,
@@ -10352,7 +10352,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Delirious friend",
     "unlock": {
       "boss": "Delirium",
@@ -10372,7 +10372,7 @@
         "Shop"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Bloody recharge",
     "type": "passive",
     "unlock": {
@@ -10476,7 +10476,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "You're tearing me apart!",
     "type": "passive",
     "unlock": {
@@ -10587,7 +10587,7 @@
         "Devil Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Just hope you're not next...",
     "type": "passive",
     "unlock": {
@@ -10626,7 +10626,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "Feed them!",
     "type": "passive",
     "unlock": {
@@ -10707,7 +10707,7 @@
         "Devil Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "He demands a sacrifice",
     "rechargeTime": {
       "amount": "one time use"
@@ -10770,7 +10770,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Sacrifical insemination",
     "type": "passive",
     "unlock": {
@@ -10831,7 +10831,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Projectile shield",
     "unlock": {
       "boss": "Isaac",
@@ -10876,7 +10876,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Stabbing time",
     "unlock": {
       "boss": "Satan",
@@ -10898,7 +10898,7 @@
         "Devil Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Rise from the grave",
     "rechargeTime": {
       "amount": 6,
@@ -10928,7 +10928,7 @@
         "Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Father's blessing",
     "unlock": {
       "boss": "Ultra Greedier",
@@ -11093,7 +11093,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Pain from gain",
     "rechargeTime": {
       "amount": "unlimited"
@@ -11116,7 +11116,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Temporary demon form",
     "rechargeTime": {
       "amount": 3,
@@ -11220,7 +11220,7 @@
         "Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 4,
     "quote": "It's only up from there",
     "unlock": {
       "boss": "Boss Rush",
@@ -11243,7 +11243,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Random blast +5 bombs",
     "type": "passive"
   },
@@ -11258,7 +11258,7 @@
         "Boss Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Tears + shot speed up",
     "type": "passive"
   },
@@ -11329,7 +11329,7 @@
         "Angel Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Double tap shield",
     "transformation": [
       "Seraphim"
@@ -11445,7 +11445,7 @@
         "Angel Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Purifying light",
     "type": "passive"
   },
@@ -11463,7 +11463,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Invasive friend",
     "transformation": [
       "Spider Baby"
@@ -11504,7 +11504,7 @@
         "Devil Room"
       ]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "King's fortune... but at what cost?",
     "rechargeTime": {
       "amount": "one time use"
@@ -11527,7 +11527,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Party time!",
     "rechargeTime": {
       "amount": 4,
@@ -11619,7 +11619,7 @@
         "Secret Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Tears up. A mind changing experience!",
     "rechargeTime": {
       "amount": "other"
@@ -11643,7 +11643,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Rocket propulsion +5 bombs",
     "type": "passive"
   },
@@ -11689,7 +11689,7 @@
         "Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "A sacred offering",
     "rechargeTime": {
       "amount": 12,
@@ -11742,7 +11742,7 @@
         "Planetarium"
       ]
     },
-    "quality": 2,
+    "quality": 3,
     "quote": "The moon's blessing shines upon you",
     "type": "passive"
   },
@@ -11754,7 +11754,7 @@
         "Planetarium"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Speed up + you feel elusive",
     "type": "passive"
   },
@@ -11790,7 +11790,7 @@
         "Planetarium"
       ]
     },
-    "quality": 2,
+    "quality": 0,
     "quote": "Double tap dash",
     "type": "passive"
   },
@@ -11972,7 +11972,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Plop!",
     "rechargeTime": {
       "amount": 3,
@@ -11992,7 +11992,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Stare into the abyss",
     "type": "passive"
   },
@@ -12088,7 +12088,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Fat buddy",
     "unlock": {
       "boss": "Mother",
@@ -12137,7 +12137,7 @@
         "Baby Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Protect him",
     "unlock": {
       "boss": "Mother",
@@ -12213,7 +12213,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Magnetizing tears",
     "type": "passive"
   },
@@ -12287,7 +12287,7 @@
         "Angel Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "In the beginning",
     "rechargeTime": {
       "amount": "one time use"
@@ -12451,7 +12451,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Slice but no dice",
     "rechargeTime": {
       "amount": 2,
@@ -12475,7 +12475,7 @@
         "Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Luck up + you feel protected",
     "type": "passive"
   },
@@ -12504,7 +12504,7 @@
         "Angel Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Help from beyond",
     "type": "passive",
     "unlock": {
@@ -12566,7 +12566,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "They pack a punch!",
     "type": "passive"
   },
@@ -12584,7 +12584,7 @@
         "Shop"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Erase thy enemy",
     "rechargeTime": {
       "amount": 1,
@@ -12653,7 +12653,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Spill your guts",
     "unlock": {
       "boss": "Mother",
@@ -12840,7 +12840,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Play time!",
     "rechargeTime": {
       "amount": 4,
@@ -12904,7 +12904,7 @@
         "Angel Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Begone!",
     "rechargeTime": {
       "amount": "unlimited"
@@ -12951,7 +12951,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Let it rip!",
     "rechargeTime": {
       "amount": 3,
@@ -13107,7 +13107,7 @@
         "Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "A helping hand",
     "unlock": {
       "boss": "The Beast",
@@ -13192,7 +13192,7 @@
         "Devil Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "Blood money",
     "unlock": {
       "boss": "The Beast",
@@ -13230,7 +13230,7 @@
         "Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Unfinished business",
     "unlock": {
       "boss": "The Beast",
@@ -13296,7 +13296,7 @@
         "Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "The true out-of-body experience!",
     "unlock": {
       "boss": "The Beast",
@@ -13386,7 +13386,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 1,
+    "quality": 0,
     "quote": "It hungers",
     "unlock": {
       "boss": "Mother",
@@ -13471,7 +13471,7 @@
         "Angel Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Your faith grows",
     "rechargeTime": {
       "amount": 12,
@@ -13518,7 +13518,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Best friends forever!",
     "rechargeTime": {
       "amount": 4,
@@ -13750,7 +13750,7 @@
         "Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "He wants revenge",
     "unlock": {
       "boss": "Hush",
@@ -13839,7 +13839,7 @@
         "Secret Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Buried memories",
     "unlock": {
       "boss": "The Beast",
@@ -13886,7 +13886,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Lost brother",
     "rechargeTime": {
       "amount": 1,
@@ -13911,7 +13911,7 @@
         "Ultra Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Rip and tear",
     "rechargeTime": {
       "amount": "other"
@@ -13938,7 +13938,7 @@
         "Tainted Judas"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "One with the shadows",
     "rechargeTime": {
       "amount": 6,
@@ -13966,7 +13966,7 @@
         "Tainted Apollyon"
       ]
     },
-    "quality": 4,
+    "quality": 3,
     "quote": "Come forth from the depths",
     "rechargeTime": {
       "amount": 4,
@@ -14029,7 +14029,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Angel breaker",
     "rechargeTime": {
       "amount": 6,
@@ -14250,7 +14250,7 @@
         "Secret Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Portable shop",
     "rechargeTime": {
       "amount": 4,
@@ -14277,7 +14277,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Anything is possible",
     "rechargeTime": {
       "amount": 12,
@@ -14327,7 +14327,7 @@
         "Tainted Jacob"
       ]
     },
-    "quality": 3,
+    "quality": 2,
     "quote": "Repent",
     "rechargeTime": {
       "amount": 15,
@@ -14446,7 +14446,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Spooky blast +5 bombs",
     "unlock": {
       "boss": "Delirium",
@@ -14493,7 +14493,7 @@
         "Treasure Room"
       ]
     },
-    "quality": 2,
+    "quality": 1,
     "quote": "Chuck away!",
     "rechargeTime": {
       "amount": 4,
