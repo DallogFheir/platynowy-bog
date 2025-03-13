@@ -32,7 +32,7 @@ function Footer() {
           rel="noreferrer">
           The Binding of Isaac: Rebirth Wiki
         </a>{" "}
-        lub z plików gry.
+        lub z plików gry i dotyczą wersji Repentance+.
       </p>
       <p>
         Proszę o zgłaszanie wszelkich literówek, błędów i innych uwag, próśb i
