@@ -9452,7 +9452,7 @@
     "quality": 3,
     "quote": "Consume",
     "rechargeTime": {
-      "amount": 6,
+      "amount": 4,
       "unit": "rooms"
     },
     "unlock": {
@@ -10145,8 +10145,7 @@
     "quality": 1,
     "quote": "Unleash the power!",
     "rechargeTime": {
-      "amount": 12,
-      "unit": "rooms"
+      "amount": "other"
     },
     "unlock": {
       "boss": "Delirium",
@@ -10354,6 +10353,9 @@
     },
     "quality": 1,
     "quote": "Delirious friend",
+    "transformation": [
+      "Conjoined"
+    ],
     "unlock": {
       "boss": "Delirium",
       "method": "boss"
@@ -13474,7 +13476,7 @@
     "quality": 1,
     "quote": "Your faith grows",
     "rechargeTime": {
-      "amount": 12,
+      "amount": 6,
       "unit": "rooms"
     },
     "unlock": {
