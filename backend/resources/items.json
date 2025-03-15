@@ -3566,9 +3566,6 @@
       "normal": [
         "Treasure Room",
         "Devil Room"
-      ],
-      "other": [
-        "Baby Shop"
       ]
     },
     "quality": 2,
@@ -10773,7 +10770,7 @@
       ]
     },
     "quality": 0,
-    "quote": "Sacrifical insemination",
+    "quote": "Sacrificial insemination",
     "type": "passive",
     "unlock": {
       "other": "spawn 3 charmed enemies in the same room",
