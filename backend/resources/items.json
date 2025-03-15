@@ -120,8 +120,7 @@
     "pool": {
       "greedMode": [
         "Treasure Room",
-        "Angel Room",
-        "Curse Room"
+        "Angel Room"
       ],
       "chests": [
         "Wooden Chest"
@@ -13752,6 +13751,9 @@
       "normal": [
         "Curse Room",
         "Secret Room"
+      ],
+      "other": [
+        "Baby Shop"
       ]
     },
     "quality": 1,
@@ -14082,6 +14084,7 @@
         "Ultra Secret Room"
       ],
       "greedMode": [
+        "Curse Room",
         "Secret Room",
         "Shop"
       ],
@@ -14349,7 +14352,6 @@
     "name": "Spindown Dice",
     "pool": {
       "greedMode": [
-        "Treasure Room",
         "Shop",
         "Secret Room"
       ],
@@ -14471,6 +14473,9 @@
         "Treasure Room",
         "Devil Room",
         "Ultra Secret Room"
+      ],
+      "other": [
+        "Baby Shop"
       ]
     },
     "quality": 3,

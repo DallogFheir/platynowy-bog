@@ -1,5 +1,18 @@
 import json
 
+TO_IGNORE = {
+    688: "Inner Child",
+    705: "Dark Arts",
+    706: "Abyss",
+    710: "Bag of Crafting",
+    711: "Flip",
+    712: "Lemegeton",
+    713: "Sumptorium",
+    714: "Recall",
+    715: "Hold",
+    722: "Anima Sola",
+}
+
 
 def main():
     with open("../backend/resources/items.json", encoding="utf-8") as f:
@@ -9,6 +22,9 @@ def main():
         item_to_pool = json.load(f)
 
     for item_id, item_info in items.items():
+        if int(item_id) in TO_IGNORE:
+            continue
+
         if item_id not in item_to_pool:
             print(f"Item {item_id} not in item_to_pool.json")
             continue
@@ -28,6 +44,13 @@ def main():
             if subpool not in subpools:
                 print(f"Item {item_id} not in pool {pool_group}/{subpool}")
                 continue
+
+        for item_pool_group_name, item_pool_group in item_info["pool"].items():
+            for item_subpool in item_pool_group:
+                if f"{item_pool_group_name}/{item_subpool}" not in pools:
+                    print(
+                        f"Item {item_id} excessive pool {item_pool_group_name}/{item_subpool}"
+                    )
 
 
 if __name__ == "__main__":
