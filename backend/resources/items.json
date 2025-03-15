@@ -203,6 +203,7 @@
     "pool": {
       "greedMode": [
         "Boss Room",
+        "Shop",
         "Secret Room"
       ],
       "normal": [
@@ -292,7 +293,8 @@
     "name": "<3",
     "pool": {
       "greedMode": [
-        "Boss Room"
+        "Boss Room",
+        "Treasure Room"
       ],
       "miniBoss": [
         "Gluttony"
@@ -332,6 +334,9 @@
       ],
       "greedMode": [
         "Secret Room"
+      ],
+      "beggars": [
+        "Key Master"
       ]
     },
     "quality": 2,

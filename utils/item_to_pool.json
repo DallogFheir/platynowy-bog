@@ -1,0 +1,3532 @@
+{
+    "1": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "2": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "3": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "4": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "5": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "6": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "7": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room",
+        "chests/Wooden Chest"
+    ],
+    "8": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "10": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "12": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "greedMode/Boss Room",
+        "normal/Ultra Secret Room"
+    ],
+    "13": [
+        "normal/Treasure Room",
+        "beggars/Devil Beggar",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "14": [
+        "normal/Treasure Room",
+        "normal/Boss Room",
+        "beggars/Devil Beggar",
+        "greedMode/Boss Room"
+    ],
+    "15": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "17": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "19": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "36": [
+        "normal/Treasure Room",
+        "machines/Shell Game",
+        "greedMode/Treasure Room"
+    ],
+    "37": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "38": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "39": [
+        "normal/Treasure Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "chests/Old Chest"
+    ],
+    "40": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "41": [
+        "normal/Treasure Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "chests/Old Chest"
+    ],
+    "42": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Rotten Beggar"
+    ],
+    "44": [
+        "normal/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "45": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "46": [
+        "normal/Treasure Room",
+        "beggars/Beggar",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "47": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "48": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "49": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game",
+        "normal/Ultra Secret Room"
+    ],
+    "52": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "53": [
+        "normal/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "55": [
+        "normal/Treasure Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "chests/Old Chest"
+    ],
+    "56": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "57": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "58": [
+        "normal/Treasure Room",
+        "normal/Library"
+    ],
+    "62": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "65": [
+        "normal/Treasure Room",
+        "normal/Library",
+        "greedMode/Treasure Room"
+    ],
+    "66": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "67": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "68": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "machines/Crane Game"
+    ],
+    "69": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "71": [
+        "normal/Treasure Room",
+        "greedMode/Boss Room"
+    ],
+    "72": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Angel Room",
+        "normal/Ultra Secret Room"
+    ],
+    "75": [
+        "normal/Treasure Room",
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "76": [
+        "normal/Treasure Room",
+        "greedMode/Shop"
+    ],
+    "77": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "78": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "normal/Library",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "85": [
+        "normal/Treasure Room",
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "86": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "87": [
+        "normal/Treasure Room",
+        "beggars/Devil Beggar",
+        "greedMode/Treasure Room"
+    ],
+    "88": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "89": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "91": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "92": [
+        "normal/Treasure Room",
+        "normal/Boss Room",
+        "greedMode/Treasure Room",
+        "greedMode/Boss Room"
+    ],
+    "93": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "94": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "95": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game",
+        "other/Baby Shop"
+    ],
+    "96": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "97": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "normal/Library",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room"
+    ],
+    "98": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "99": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "100": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "101": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Boss Room",
+        "greedMode/Angel Room"
+    ],
+    "102": [
+        "normal/Treasure Room",
+        "normal/Shop",
+        "beggars/Beggar",
+        "beggars/Devil Beggar",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "machines/Crane Game",
+        "chests/Old Chest"
+    ],
+    "103": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "104": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "105": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "normal/Ultra Secret Room"
+    ],
+    "106": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "107": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "108": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "109": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "110": [
+        "normal/Treasure Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "chests/Old Chest"
+    ],
+    "111": [
+        "normal/Treasure Room",
+        "beggars/Beggar",
+        "greedMode/Treasure Room"
+    ],
+    "113": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "114": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "chests/Old Chest"
+    ],
+    "115": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room"
+    ],
+    "117": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "120": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Boss Room",
+        "greedMode/Secret Room"
+    ],
+    "121": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Boss Room",
+        "greedMode/Secret Room"
+    ],
+    "123": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "normal/Library",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room"
+    ],
+    "124": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "125": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "126": [
+        "normal/Treasure Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Treasure Room",
+        "greedMode/Curse Room"
+    ],
+    "127": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "normal/Secret Room",
+        "beggars/Devil Beggar",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "128": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "129": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "131": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "136": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "137": [
+        "normal/Treasure Room",
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "normal/Ultra Secret Room",
+        "beggars/Bomb Bum"
+    ],
+    "138": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room",
+        "chests/Wooden Chest"
+    ],
+    "140": [
+        "normal/Treasure Room",
+        "chests/Red Chest",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum",
+        "beggars/Rotten Beggar"
+    ],
+    "142": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "143": [
+        "normal/Treasure Room",
+        "normal/Boss Room",
+        "beggars/Devil Beggar",
+        "greedMode/Boss Room"
+    ],
+    "144": [
+        "normal/Treasure Room",
+        "beggars/Beggar",
+        "other/Baby Shop"
+    ],
+    "146": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "148": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "149": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "150": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "151": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "152": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "153": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "154": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "155": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "157": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "160": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "161": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "162": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "163": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "166": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "normal/Ultra Secret Room"
+    ],
+    "167": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "168": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "169": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "170": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "171": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "172": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room"
+    ],
+    "173": [
+        "normal/Treasure Room",
+        "normal/Angel Room"
+    ],
+    "174": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "175": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "chests/Old Chest"
+    ],
+    "176": [
+        "normal/Treasure Room",
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "normal/Ultra Secret Room"
+    ],
+    "178": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "180": [
+        "normal/Treasure Room",
+        "beggars/Beggar",
+        "greedMode/Treasure Room"
+    ],
+    "186": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room"
+    ],
+    "188": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "189": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "190": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room",
+        "beggars/Bomb Bum"
+    ],
+    "191": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "192": [
+        "normal/Treasure Room",
+        "normal/Library",
+        "greedMode/Treasure Room"
+    ],
+    "200": [
+        "normal/Treasure Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "chests/Old Chest"
+    ],
+    "201": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "202": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "206": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "209": [
+        "normal/Treasure Room",
+        "machines/Shell Game",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "210": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "211": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "213": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "214": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "217": [
+        "normal/Treasure Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "chests/Old Chest"
+    ],
+    "220": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "221": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "222": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "223": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "224": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "225": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "227": [
+        "normal/Treasure Room",
+        "normal/Shop",
+        "machines/Crane Game"
+    ],
+    "228": [
+        "normal/Treasure Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "chests/Old Chest"
+    ],
+    "229": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "231": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "233": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "234": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "236": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "237": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room"
+    ],
+    "240": [
+        "normal/Treasure Room",
+        "normal/Boss Room",
+        "beggars/Devil Beggar",
+        "greedMode/Boss Room"
+    ],
+    "242": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "244": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "245": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "256": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "257": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "261": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "264": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "265": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "266": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "267": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game",
+        "other/Baby Shop"
+    ],
+    "268": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop",
+        "beggars/Rotten Beggar"
+    ],
+    "269": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "270": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "271": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "beggars/Beggar",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "272": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "273": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop",
+        "beggars/Rotten Beggar"
+    ],
+    "274": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "275": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "276": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "277": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "278": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "other/Baby Shop"
+    ],
+    "279": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "280": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "281": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "282": [
+        "normal/Treasure Room",
+        "normal/Library"
+    ],
+    "283": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "284": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "285": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "287": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "normal/Library"
+    ],
+    "288": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "291": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "292": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "normal/Library",
+        "greedMode/Devil Room"
+    ],
+    "294": [
+        "normal/Treasure Room",
+        "beggars/Beggar",
+        "greedMode/Treasure Room"
+    ],
+    "295": [
+        "normal/Treasure Room",
+        "normal/Shop",
+        "greedMode/Treasure Room"
+    ],
+    "298": [
+        "normal/Treasure Room"
+    ],
+    "299": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "300": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "301": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "302": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "303": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "304": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "305": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "306": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "307": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "308": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "309": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "310": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "312": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "313": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "314": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "315": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "316": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "chests/Red Chest",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "317": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "318": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "319": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "320": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "321": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "322": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "323": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "324": [
+        "normal/Treasure Room"
+    ],
+    "325": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "329": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "330": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "332": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "333": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "334": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room",
+        "normal/Ultra Secret Room"
+    ],
+    "335": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "336": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Rotten Beggar"
+    ],
+    "350": [
+        "normal/Treasure Room"
+    ],
+    "351": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "352": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "353": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "358": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "359": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "361": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "362": [
+        "normal/Treasure Room",
+        "beggars/Beggar",
+        "greedMode/Treasure Room",
+        "machines/Crane Game",
+        "chests/Wooden Chest"
+    ],
+    "364": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "365": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "366": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "367": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "368": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "369": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "371": [
+        "normal/Treasure Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Treasure Room",
+        "greedMode/Curse Room"
+    ],
+    "373": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "374": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "375": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "377": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "378": [
+        "normal/Treasure Room",
+        "machines/Shell Game",
+        "greedMode/Treasure Room"
+    ],
+    "379": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "381": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "382": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "384": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "385": [
+        "normal/Treasure Room",
+        "beggars/Beggar",
+        "other/Baby Shop"
+    ],
+    "386": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "388": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "beggars/Key Master",
+        "other/Baby Shop"
+    ],
+    "389": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "390": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room",
+        "other/Baby Shop"
+    ],
+    "391": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room"
+    ],
+    "392": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "393": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "394": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "395": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "397": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "398": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "401": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "404": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "405": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "406": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "407": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "410": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "411": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "418": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "419": [
+        "normal/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "421": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "422": [
+        "normal/Treasure Room",
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "426": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "427": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "430": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "431": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "432": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "435": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "436": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "437": [
+        "normal/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "440": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "443": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "444": [
+        "normal/Treasure Room",
+        "chests/Golden Chest",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "445": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "446": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "447": [
+        "normal/Treasure Room",
+        "beggars/Beggar",
+        "greedMode/Treasure Room"
+    ],
+    "448": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "449": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "452": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "453": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "454": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "457": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "458": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "459": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "460": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "461": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "463": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "465": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "466": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "467": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "469": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "470": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "471": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "473": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "476": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "478": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "481": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "normal/Ultra Secret Room"
+    ],
+    "482": [
+        "normal/Treasure Room",
+        "greedMode/Shop"
+    ],
+    "485": [
+        "normal/Treasure Room",
+        "normal/Shop",
+        "beggars/Beggar",
+        "greedMode/Shop"
+    ],
+    "488": [
+        "normal/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "chests/Wooden Chest"
+    ],
+    "491": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "492": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "493": [
+        "normal/Treasure Room",
+        "beggars/Devil Beggar",
+        "greedMode/Treasure Room"
+    ],
+    "494": [
+        "normal/Treasure Room",
+        "beggars/Battery Bum",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "495": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "496": [
+        "normal/Treasure Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Treasure Room",
+        "greedMode/Curse Room"
+    ],
+    "497": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "502": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "504": [
+        "normal/Treasure Room",
+        "machines/Shell Game",
+        "greedMode/Treasure Room"
+    ],
+    "506": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "507": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "508": [
+        "normal/Treasure Room",
+        "chests/Mom's Chest",
+        "greedMode/Treasure Room",
+        "chests/Old Chest"
+    ],
+    "509": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "511": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "512": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "greedMode/Shop"
+    ],
+    "513": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "516": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "517": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "522": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "524": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "525": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "529": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "531": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "532": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "537": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "539": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "540": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "542": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "543": [
+        "normal/Treasure Room",
+        "normal/Angel Room",
+        "greedMode/Treasure Room",
+        "greedMode/Angel Room"
+    ],
+    "544": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "545": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "normal/Library",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room"
+    ],
+    "548": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "549": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "553": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "555": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "557": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "558": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "559": [
+        "normal/Treasure Room",
+        "beggars/Battery Bum",
+        "greedMode/Treasure Room"
+    ],
+    "560": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "561": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "563": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "565": [
+        "normal/Treasure Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Treasure Room",
+        "greedMode/Curse Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "570": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "575": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "576": [
+        "normal/Treasure Room",
+        "machines/Shell Game",
+        "greedMode/Treasure Room"
+    ],
+    "578": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "581": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "583": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "605": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "607": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "608": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "609": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room",
+        "machines/Crane Game"
+    ],
+    "610": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "611": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "612": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room",
+        "other/Baby Shop"
+    ],
+    "614": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "beggars/Bomb Bum"
+    ],
+    "615": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "616": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "617": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "618": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "beggars/Rotten Beggar"
+    ],
+    "625": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "629": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "machines/Crane Game",
+        "other/Baby Shop"
+    ],
+    "631": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "635": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "637": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "639": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Rotten Beggar"
+    ],
+    "641": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "645": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "649": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room",
+        "machines/Crane Game",
+        "other/Baby Shop"
+    ],
+    "650": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "652": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "655": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "657": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "658": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "661": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "other/Baby Shop"
+    ],
+    "663": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "671": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "675": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room"
+    ],
+    "676": [
+        "normal/Treasure Room",
+        "beggars/Devil Beggar",
+        "greedMode/Treasure Room"
+    ],
+    "677": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "678": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "680": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "681": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "682": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "683": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "687": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "690": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "693": [
+        "normal/Treasure Room",
+        "beggars/Key Master",
+        "greedMode/Treasure Room"
+    ],
+    "695": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "703": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room",
+        "normal/Ultra Secret Room"
+    ],
+    "709": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "710": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "713": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "717": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "720": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "722": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "greedMode/Shop"
+    ],
+    "723": [
+        "normal/Treasure Room",
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room",
+        "machines/Crane Game"
+    ],
+    "724": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "725": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "726": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "normal/Ultra Secret Room"
+    ],
+    "727": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room",
+        "beggars/Bomb Bum"
+    ],
+    "728": [
+        "normal/Treasure Room",
+        "normal/Devil Room",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "729": [
+        "normal/Treasure Room",
+        "greedMode/Treasure Room"
+    ],
+    "21": [
+        "normal/Shop",
+        "beggars/Beggar",
+        "machines/Crane Game"
+    ],
+    "33": [
+        "normal/Shop",
+        "normal/Angel Room",
+        "normal/Library",
+        "greedMode/Angel Room"
+    ],
+    "54": [
+        "normal/Shop",
+        "beggars/Beggar"
+    ],
+    "60": [
+        "normal/Shop",
+        "chests/Wooden Chest"
+    ],
+    "63": [
+        "normal/Shop",
+        "beggars/Battery Bum",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "64": [
+        "normal/Shop",
+        "greedMode/Treasure Room"
+    ],
+    "116": [
+        "normal/Shop",
+        "beggars/Battery Bum",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "139": [
+        "normal/Shop",
+        "chests/Mom's Chest",
+        "greedMode/Shop",
+        "chests/Old Chest"
+    ],
+    "147": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "156": [
+        "normal/Shop",
+        "normal/Angel Room",
+        "greedMode/Shop"
+    ],
+    "164": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "195": [
+        "normal/Shop",
+        "normal/Boss Room",
+        "beggars/Beggar",
+        "beggars/Devil Beggar",
+        "chests/Mom's Chest",
+        "greedMode/Boss Room",
+        "chests/Old Chest"
+    ],
+    "199": [
+        "normal/Shop",
+        "beggars/Key Master",
+        "chests/Mom's Chest",
+        "greedMode/Shop",
+        "chests/Old Chest"
+    ],
+    "203": [
+        "normal/Shop",
+        "greedMode/Treasure Room"
+    ],
+    "204": [
+        "normal/Shop",
+        "beggars/Beggar",
+        "greedMode/Shop"
+    ],
+    "205": [
+        "normal/Shop",
+        "beggars/Battery Bum",
+        "greedMode/Shop"
+    ],
+    "208": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "normal/Ultra Secret Room"
+    ],
+    "232": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "246": [
+        "normal/Shop",
+        "beggars/Beggar",
+        "greedMode/Shop"
+    ],
+    "247": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "normal/Ultra Secret Room"
+    ],
+    "248": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "249": [
+        "normal/Shop"
+    ],
+    "250": [
+        "normal/Shop",
+        "greedMode/Treasure Room"
+    ],
+    "251": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "252": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "260": [
+        "normal/Shop",
+        "normal/Curse Room",
+        "greedMode/Shop",
+        "greedMode/Curse Room"
+    ],
+    "286": [
+        "normal/Shop",
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "289": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "normal/Ultra Secret Room"
+    ],
+    "290": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "296": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "297": [
+        "normal/Shop",
+        "chests/Red Chest",
+        "greedMode/Shop"
+    ],
+    "337": [
+        "normal/Shop",
+        "machines/Crane Game"
+    ],
+    "338": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "347": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "348": [
+        "normal/Shop",
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "349": [
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "chests/Wooden Chest"
+    ],
+    "356": [
+        "normal/Shop",
+        "beggars/Battery Bum",
+        "greedMode/Shop"
+    ],
+    "357": [
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "372": [
+        "normal/Shop",
+        "beggars/Battery Bum",
+        "greedMode/Shop",
+        "other/Baby Shop"
+    ],
+    "376": [
+        "normal/Shop",
+        "beggars/Beggar"
+    ],
+    "380": [
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "greedMode/Shop"
+    ],
+    "383": [
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "396": [
+        "normal/Shop"
+    ],
+    "402": [
+        "normal/Shop",
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "403": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "other/Baby Shop"
+    ],
+    "414": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "416": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "424": [
+        "normal/Shop",
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "425": [
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "machines/Crane Game"
+    ],
+    "434": [
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "greedMode/Shop"
+    ],
+    "439": [
+        "normal/Shop",
+        "chests/Mom's Chest",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "chests/Old Chest",
+        "chests/Wooden Chest"
+    ],
+    "451": [
+        "normal/Shop",
+        "normal/Curse Room",
+        "greedMode/Shop",
+        "greedMode/Curse Room",
+        "machines/Crane Game"
+    ],
+    "472": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "other/Baby Shop"
+    ],
+    "475": [
+        "normal/Shop",
+        "normal/Devil Room",
+        "chests/Red Chest",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Shop",
+        "greedMode/Curse Room",
+        "normal/Ultra Secret Room"
+    ],
+    "479": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "480": [
+        "normal/Shop",
+        "beggars/Rotten Beggar"
+    ],
+    "483": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "beggars/Bomb Bum"
+    ],
+    "486": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "487": [
+        "normal/Shop",
+        "beggars/Devil Beggar",
+        "greedMode/Shop"
+    ],
+    "505": [
+        "normal/Shop",
+        "machines/Crane Game"
+    ],
+    "514": [
+        "normal/Shop",
+        "greedMode/Treasure Room"
+    ],
+    "515": [
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "518": [
+        "normal/Shop",
+        "greedMode/Treasure Room",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "other/Baby Shop"
+    ],
+    "520": [
+        "normal/Shop",
+        "beggars/Battery Bum",
+        "greedMode/Treasure Room"
+    ],
+    "521": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "523": [
+        "normal/Shop"
+    ],
+    "527": [
+        "normal/Shop",
+        "beggars/Key Master",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "chests/Wooden Chest"
+    ],
+    "534": [
+        "normal/Shop",
+        "chests/Golden Chest",
+        "greedMode/Shop"
+    ],
+    "535": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "566": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "585": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "599": [
+        "normal/Shop",
+        "machines/Crane Game"
+    ],
+    "602": [
+        "normal/Shop",
+        "greedMode/Treasure Room"
+    ],
+    "603": [
+        "normal/Shop",
+        "beggars/Battery Bum",
+        "greedMode/Shop"
+    ],
+    "604": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "machines/Crane Game",
+        "chests/Old Chest"
+    ],
+    "619": [
+        "normal/Shop",
+        "greedMode/Shop"
+    ],
+    "621": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "normal/Ultra Secret Room"
+    ],
+    "623": [
+        "normal/Shop",
+        "beggars/Key Master",
+        "greedMode/Shop"
+    ],
+    "624": [
+        "normal/Shop",
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "638": [
+        "normal/Shop",
+        "greedMode/Shop",
+        "machines/Crane Game"
+    ],
+    "642": [
+        "normal/Shop",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Curse Room"
+    ],
+    "647": [
+        "normal/Shop",
+        "beggars/Battery Bum",
+        "greedMode/Shop"
+    ],
+    "660": [
+        "normal/Shop"
+    ],
+    "670": [
+        "normal/Shop"
+    ],
+    "716": [
+        "normal/Shop",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "719": [
+        "normal/Shop",
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room",
+        "chests/Wooden Chest"
+    ],
+    "22": [
+        "normal/Boss Room",
+        "beggars/Beggar",
+        "greedMode/Boss Room"
+    ],
+    "23": [
+        "normal/Boss Room",
+        "beggars/Beggar",
+        "greedMode/Boss Room"
+    ],
+    "24": [
+        "normal/Boss Room",
+        "beggars/Beggar",
+        "greedMode/Boss Room"
+    ],
+    "25": [
+        "normal/Boss Room",
+        "beggars/Beggar",
+        "greedMode/Boss Room"
+    ],
+    "26": [
+        "normal/Boss Room",
+        "beggars/Beggar",
+        "greedMode/Boss Room",
+        "beggars/Rotten Beggar"
+    ],
+    "27": [
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "chests/Wooden Chest"
+    ],
+    "28": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room"
+    ],
+    "29": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "chests/Mom's Chest",
+        "greedMode/Boss Room",
+        "chests/Old Chest"
+    ],
+    "30": [
+        "normal/Boss Room",
+        "chests/Mom's Chest",
+        "greedMode/Boss Room",
+        "normal/Ultra Secret Room",
+        "chests/Old Chest"
+    ],
+    "31": [
+        "normal/Boss Room",
+        "chests/Mom's Chest",
+        "greedMode/Boss Room",
+        "normal/Ultra Secret Room",
+        "chests/Old Chest"
+    ],
+    "32": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "51": [
+        "normal/Boss Room",
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Boss Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "machines/Crane Game",
+        "normal/Ultra Secret Room"
+    ],
+    "70": [
+        "normal/Boss Room",
+        "beggars/Devil Beggar",
+        "greedMode/Boss Room"
+    ],
+    "141": [
+        "normal/Boss Room"
+    ],
+    "165": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "183": [
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "chests/Wooden Chest"
+    ],
+    "193": [
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "normal/Ultra Secret Room"
+    ],
+    "194": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "196": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "197": [
+        "normal/Boss Room",
+        "normal/Angel Room",
+        "greedMode/Boss Room",
+        "greedMode/Angel Room"
+    ],
+    "198": [
+        "normal/Boss Room",
+        "beggars/Beggar",
+        "greedMode/Boss Room"
+    ],
+    "218": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "219": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "253": [
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "normal/Ultra Secret Room"
+    ],
+    "254": [
+        "normal/Boss Room",
+        "greedMode/Treasure Room",
+        "greedMode/Boss Room",
+        "normal/Ultra Secret Room"
+    ],
+    "255": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "339": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "340": [
+        "normal/Boss Room",
+        "beggars/Devil Beggar",
+        "greedMode/Boss Room"
+    ],
+    "341": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "chests/Old Chest"
+    ],
+    "342": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "343": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "beggars/Key Master",
+        "greedMode/Boss Room"
+    ],
+    "344": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room"
+    ],
+    "345": [
+        "normal/Boss Room",
+        "beggars/Devil Beggar",
+        "greedMode/Boss Room"
+    ],
+    "346": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "354": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room"
+    ],
+    "355": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "chests/Mom's Chest",
+        "greedMode/Boss Room",
+        "chests/Old Chest"
+    ],
+    "370": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "428": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room"
+    ],
+    "438": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "455": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "beggars/Beggar",
+        "greedMode/Boss Room",
+        "chests/Old Chest"
+    ],
+    "456": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "beggars/Beggar",
+        "greedMode/Boss Room"
+    ],
+    "538": [
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "541": [
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "normal/Ultra Secret Room"
+    ],
+    "547": [
+        "normal/Boss Room",
+        "greedMode/Boss Room",
+        "chests/Old Chest"
+    ],
+    "564": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "600": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "644": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "659": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "707": [
+        "normal/Boss Room",
+        "beggars/Beggar",
+        "greedMode/Boss Room"
+    ],
+    "708": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room"
+    ],
+    "730": [
+        "normal/Boss Room",
+        "chests/Golden Chest",
+        "greedMode/Boss Room",
+        "machines/Crane Game"
+    ],
+    "731": [
+        "normal/Boss Room",
+        "greedMode/Boss Room"
+    ],
+    "34": [
+        "normal/Devil Room",
+        "normal/Library",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room"
+    ],
+    "35": [
+        "normal/Devil Room",
+        "normal/Secret Room",
+        "normal/Library",
+        "greedMode/Treasure Room",
+        "greedMode/Devil Room",
+        "greedMode/Secret Room"
+    ],
+    "74": [
+        "normal/Devil Room",
+        "chests/Golden Chest",
+        "greedMode/Devil Room"
+    ],
+    "79": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "80": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "81": [
+        "normal/Devil Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "82": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "83": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room"
+    ],
+    "84": [
+        "normal/Devil Room",
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "118": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "122": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "133": [
+        "normal/Devil Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "134": [
+        "normal/Devil Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "145": [
+        "normal/Devil Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "159": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "187": [
+        "normal/Devil Room",
+        "greedMode/Devil Room"
+    ],
+    "212": [
+        "normal/Devil Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "machines/Crane Game"
+    ],
+    "215": [
+        "normal/Devil Room",
+        "normal/Curse Room"
+    ],
+    "216": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "230": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "241": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room"
+    ],
+    "259": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room"
+    ],
+    "262": [
+        "normal/Devil Room",
+        "normal/Secret Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room",
+        "greedMode/Secret Room"
+    ],
+    "311": [
+        "normal/Devil Room",
+        "greedMode/Devil Room"
+    ],
+    "360": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "399": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "408": [
+        "normal/Devil Room",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "409": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room"
+    ],
+    "412": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "417": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "420": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "greedMode/Devil Room"
+    ],
+    "433": [
+        "normal/Devil Room",
+        "greedMode/Devil Room"
+    ],
+    "441": [
+        "normal/Devil Room",
+        "greedMode/Devil Room"
+    ],
+    "442": [
+        "normal/Devil Room",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "462": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "468": [
+        "normal/Devil Room",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "477": [
+        "normal/Devil Room",
+        "normal/Angel Room",
+        "greedMode/Shop"
+    ],
+    "498": [
+        "normal/Devil Room",
+        "normal/Angel Room"
+    ],
+    "503": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar",
+        "normal/Curse Room",
+        "greedMode/Treasure Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "519": [
+        "normal/Devil Room",
+        "normal/Angel Room",
+        "greedMode/Devil Room",
+        "greedMode/Angel Room",
+        "other/Baby Shop"
+    ],
+    "526": [
+        "normal/Devil Room",
+        "normal/Angel Room",
+        "greedMode/Devil Room",
+        "greedMode/Angel Room"
+    ],
+    "530": [
+        "normal/Devil Room"
+    ],
+    "536": [
+        "normal/Devil Room",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "554": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "556": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "569": [
+        "normal/Devil Room",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "572": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "577": [
+        "normal/Devil Room",
+        "greedMode/Devil Room"
+    ],
+    "606": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "634": [
+        "normal/Devil Room",
+        "normal/Angel Room",
+        "greedMode/Devil Room",
+        "greedMode/Angel Room"
+    ],
+    "646": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "beggars/Bomb Bum"
+    ],
+    "654": [
+        "normal/Devil Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "665": [
+        "normal/Devil Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room"
+    ],
+    "672": [
+        "normal/Devil Room",
+        "beggars/Devil Beggar"
+    ],
+    "679": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "684": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "692": [
+        "normal/Devil Room",
+        "normal/Curse Room",
+        "greedMode/Shop",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "694": [
+        "normal/Devil Room",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "698": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "other/Baby Shop"
+    ],
+    "699": [
+        "normal/Devil Room",
+        "greedMode/Devil Room"
+    ],
+    "702": [
+        "normal/Devil Room",
+        "normal/Curse Room",
+        "greedMode/Curse Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "704": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "705": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "706": [
+        "normal/Devil Room",
+        "greedMode/Devil Room",
+        "normal/Ultra Secret Room"
+    ],
+    "712": [
+        "normal/Devil Room",
+        "normal/Library",
+        "greedMode/Devil Room"
+    ],
+    "112": [
+        "normal/Angel Room",
+        "greedMode/Angel Room",
+        "other/Baby Shop"
+    ],
+    "182": [
+        "normal/Angel Room",
+        "greedMode/Angel Room",
+        "normal/Ultra Secret Room"
+    ],
+    "184": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "185": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "243": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "326": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "331": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "363": [
+        "normal/Angel Room",
+        "greedMode/Angel Room",
+        "other/Baby Shop"
+    ],
+    "387": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "400": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "413": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "415": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "423": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "464": [
+        "normal/Angel Room"
+    ],
+    "490": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "499": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "510": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "528": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "533": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "567": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "568": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "573": [
+        "normal/Angel Room",
+        "greedMode/Angel Room",
+        "normal/Ultra Secret Room"
+    ],
+    "574": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "579": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "584": [
+        "normal/Angel Room",
+        "normal/Library",
+        "greedMode/Angel Room"
+    ],
+    "586": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "601": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "622": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "640": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "643": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "651": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "653": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "685": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "686": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "691": [
+        "normal/Angel Room",
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Angel Room",
+        "greedMode/Secret Room"
+    ],
+    "696": [
+        "normal/Angel Room",
+        "greedMode/Angel Room"
+    ],
+    "11": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "16": [
+        "normal/Secret Room",
+        "greedMode/Boss Room",
+        "greedMode/Secret Room"
+    ],
+    "20": [
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "226": [
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "258": [
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "263": [
+        "normal/Secret Room",
+        "greedMode/Secret Room",
+        "machines/Crane Game"
+    ],
+    "450": [
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Secret Room"
+    ],
+    "489": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "500": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "501": [
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "546": [
+        "normal/Secret Room",
+        "greedMode/Secret Room",
+        "chests/Old Chest"
+    ],
+    "562": [
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "571": [
+        "normal/Secret Room",
+        "chests/Golden Chest",
+        "greedMode/Secret Room"
+    ],
+    "580": [
+        "normal/Secret Room",
+        "chests/Red Chest",
+        "normal/Curse Room",
+        "beggars/Key Master",
+        "chests/Mom's Chest",
+        "normal/Ultra Secret Room"
+    ],
+    "582": [
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "628": [
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "632": [
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "636": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "664": [
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "667": [
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "669": [
+        "normal/Secret Room",
+        "greedMode/Secret Room"
+    ],
+    "674": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "688": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "689": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "697": [
+        "normal/Secret Room",
+        "normal/Curse Room",
+        "other/Baby Shop"
+    ],
+    "700": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room",
+        "normal/Ultra Secret Room"
+    ],
+    "701": [
+        "normal/Secret Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "711": [
+        "normal/Secret Room",
+        "normal/Curse Room",
+        "greedMode/Shop",
+        "greedMode/Curse Room",
+        "greedMode/Secret Room",
+        "normal/Ultra Secret Room"
+    ],
+    "721": [
+        "normal/Secret Room",
+        "greedMode/Treasure Room",
+        "greedMode/Shop",
+        "greedMode/Secret Room"
+    ],
+    "9": [
+        "machines/Shell Game"
+    ],
+    "179": [
+        "chests/Golden Chest"
+    ],
+    "732": [
+        "chests/Golden Chest",
+        "chests/Mom's Chest",
+        "greedMode/Shop",
+        "chests/Old Chest"
+    ],
+    "50": [
+        "greedMode/Treasure Room"
+    ],
+    "132": [
+        "greedMode/Treasure Room",
+        "greedMode/Boss Room",
+        "greedMode/Devil Room"
+    ],
+    "73": [
+        "greedMode/Boss Room",
+        "greedMode/Shop",
+        "normal/Ultra Secret Room",
+        "other/Baby Shop"
+    ],
+    "207": [
+        "greedMode/Boss Room",
+        "other/Baby Shop"
+    ],
+    "90": [
+        "machines/Crane Game"
+    ],
+    "119": [
+        "normal/Ultra Secret Room"
+    ],
+    "135": [
+        "normal/Ultra Secret Room"
+    ],
+    "177": [
+        "normal/Ultra Secret Room"
+    ],
+    "588": [
+        "normal/Planetarium"
+    ],
+    "589": [
+        "normal/Planetarium"
+    ],
+    "590": [
+        "normal/Planetarium"
+    ],
+    "591": [
+        "normal/Planetarium"
+    ],
+    "592": [
+        "normal/Planetarium"
+    ],
+    "593": [
+        "normal/Planetarium"
+    ],
+    "594": [
+        "normal/Planetarium"
+    ],
+    "595": [
+        "normal/Planetarium"
+    ],
+    "596": [
+        "normal/Planetarium"
+    ],
+    "597": [
+        "normal/Planetarium"
+    ],
+    "598": [
+        "normal/Planetarium"
+    ]
+}

@@ -1,0 +1,31 @@
+angel : normal/Angel Room
+babyShop : other/Baby Shop
+batteryBum : beggars/Battery Bum
+beggar : beggars/Beggar
+bombBum : beggars/Bomb Bum
+boss : normal/Boss Room
+craneGame : machines/Crane Game
+curse : normal/Curse Room
+demonBeggar : beggars/Devil Beggar
+devil : normal/Devil Room
+goldenChest : chests/Golden Chest
+greedAngel : greedMode/Angel Room
+greedBoss : greedMode/Boss Room
+greedCurse : greedMode/Curse Room
+greedDevil : greedMode/Devil Room
+greedSecret : greedMode/Secret Room
+greedShop : greedMode/Shop
+greedTreasure : greedMode/Treasure Room
+keyMaster : beggars/Key Master
+library : normal/Library
+momsChest : chests/Mom's Chest
+oldChest : chests/Old Chest
+planetarium : normal/Planetarium
+redChest : chests/Red Chest
+rottenBeggar : beggars/Rotten Beggar
+secret : normal/Secret Room
+shellGame : machines/Shell Game
+shop : normal/Shop
+treasure : normal/Treasure Room
+ultraSecret : normal/Ultra Secret Room
+woodenChest : chests/Wooden Chest
