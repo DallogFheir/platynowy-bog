@@ -6044,7 +6044,7 @@
     "quality": 0,
     "quote": "Reusable knock-back",
     "rechargeTime": {
-      "amount": 3,
+      "amount": 2,
       "unit": "s"
     },
     "type": "active",
