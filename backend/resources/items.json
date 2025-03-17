@@ -201,7 +201,6 @@
     "name": "1up!",
     "pool": {
       "greedMode": [
-        "Boss Room",
         "Shop",
         "Secret Room"
       ],
@@ -292,7 +291,6 @@
     "name": "<3",
     "pool": {
       "greedMode": [
-        "Boss Room",
         "Treasure Room"
       ],
       "miniBoss": [
@@ -332,6 +330,7 @@
         "Secret Room"
       ],
       "greedMode": [
+        "Treasure Room",
         "Secret Room"
       ],
       "beggars": [
@@ -359,6 +358,9 @@
     "name": "Boom!",
     "pool": {
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -637,6 +639,9 @@
         "Shop",
         "Library",
         "Angel Room"
+      ],
+      "greedMode": [
+        "Angel Room"
       ]
     },
     "quality": 1,
@@ -723,6 +728,12 @@
       ],
       "startingItem": [
         "???"
+      ],
+      "greedMode": [
+        "Treasure Room"
+      ],
+      "machines": [
+        "Shell Game"
       ]
     },
     "quality": 0,
@@ -793,6 +804,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 0,
@@ -813,6 +827,9 @@
       "normal": [
         "Treasure Room",
         "Ultra Secret Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 0,
@@ -831,6 +848,9 @@
         "Mom's Chest"
       ],
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -879,6 +899,9 @@
     "pool": {
       "normal": [
         "Treasure Room"
+      ],
+      "machines": [
+        "Crane Game"
       ]
     },
     "quality": 0,
@@ -1025,8 +1048,9 @@
     "name": "Pentagram",
     "pool": {
       "greedMode": [
-        "Treasure Room",
-        "Curse Room"
+        "Curse Room",
+        "Boss Room",
+        "Devil Room"
       ],
       "beggars": [
         "Devil Beggar"
@@ -1290,6 +1314,9 @@
         "Crane Game"
       ],
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -1566,6 +1593,7 @@
     "name": "The Mark",
     "pool": {
       "greedMode": [
+        "Curse Room",
         "Devil Room"
       ],
       "beggars": [
@@ -1862,6 +1890,10 @@
       "normal": [
         "Treasure Room",
         "Boss Room"
+      ],
+      "greedMode": [
+        "Treasure Room",
+        "Boss Room"
       ]
     },
     "quality": 2,
@@ -1954,7 +1986,6 @@
       ],
       "normal": [
         "Treasure Room",
-        "Boss Room",
         "Ultra Secret Room"
       ],
       "other": [
@@ -2003,7 +2034,8 @@
     "name": "The Relic",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -2078,7 +2110,8 @@
     "pool": {
       "greedMode": [
         "Treasure Room",
-        "Boss Room"
+        "Boss Room",
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -2247,7 +2280,8 @@
     "name": "The Wafer",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -2355,6 +2389,7 @@
     "name": "Demon Baby",
     "pool": {
       "greedMode": [
+        "Treasure Room",
         "Devil Room"
       ],
       "normal": [
@@ -2569,6 +2604,7 @@
     "name": "Monster Manual",
     "pool": {
       "greedMode": [
+        "Treasure Room",
         "Devil Room"
       ],
       "normal": [
@@ -2593,7 +2629,8 @@
     "name": "Dead Sea Scrolls",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -2670,6 +2707,7 @@
         "Devil Room"
       ],
       "greedMode": [
+        "Treasure Room",
         "Secret Room"
       ]
     },
@@ -2720,6 +2758,9 @@
         "Super Gluttony"
       ],
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -2856,6 +2897,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 0,
@@ -2871,7 +2915,8 @@
     "name": "Remote Detonator",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Shop"
       ],
       "beggars": [
         "Bomb Bum"
@@ -2979,7 +3024,8 @@
     "name": "Scapular",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -3068,7 +3114,8 @@
     "name": "Prayer Card",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -3091,6 +3138,9 @@
         "Crane Game"
       ],
       "normal": [
+        "Shop"
+      ],
+      "greedMode": [
         "Shop"
       ]
     },
@@ -3124,8 +3174,7 @@
         "Treasure Room"
       ],
       "normal": [
-        "Treasure Room",
-        "Ultra Secret Room"
+        "Treasure Room"
       ]
     },
     "quality": 4,
@@ -3326,6 +3375,9 @@
     "pool": {
       "normal": [
         "Treasure Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 1,
@@ -3357,7 +3409,7 @@
     "pool": {
       "greedMode": [
         "Treasure Room",
-        "Devil Room"
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -3407,6 +3459,9 @@
     "pool": {
       "normal": [
         "Shop"
+      ],
+      "greedMode": [
+        "Shop"
       ]
     },
     "quality": 2,
@@ -3426,6 +3481,9 @@
     "name": "Cat-O-Nine-Tails",
     "pool": {
       "normal": [
+        "Boss Room"
+      ],
+      "greedMode": [
         "Boss Room"
       ]
     },
@@ -3492,6 +3550,7 @@
         "Secret Room"
       ],
       "greedMode": [
+        "Treasure Room",
         "Secret Room"
       ]
     },
@@ -3545,6 +3604,9 @@
     "name": "Spider Butt",
     "pool": {
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -3688,6 +3750,7 @@
     "name": "Holy Water",
     "pool": {
       "greedMode": [
+        "Treasure Room",
         "Angel Room"
       ],
       "normal": [
@@ -3724,6 +3787,9 @@
         "Beggar"
       ],
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -3927,6 +3993,7 @@
         "Secret Room"
       ],
       "greedMode": [
+        "Treasure Room",
         "Secret Room"
       ]
     },
@@ -4160,6 +4227,9 @@
     "pool": {
       "normal": [
         "Treasure Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 1,
@@ -4172,6 +4242,9 @@
     "pool": {
       "normal": [
         "Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 3,
@@ -4204,6 +4277,9 @@
         "Battery Bum"
       ],
       "normal": [
+        "Shop"
+      ],
+      "greedMode": [
         "Shop"
       ]
     },
@@ -4319,6 +4395,9 @@
     "name": "Spiderbaby",
     "pool": {
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -4452,6 +4531,9 @@
       ],
       "obstacles": [
         "polyps"
+      ],
+      "greedMode": [
+        "Boss Room"
       ]
     },
     "quality": 2,
@@ -4463,6 +4545,9 @@
     "name": "Old Bandage",
     "pool": {
       "normal": [
+        "Boss Room"
+      ],
+      "greedMode": [
         "Boss Room"
       ]
     },
@@ -4693,6 +4778,9 @@
         "Crane Game"
       ],
       "normal": [
+        "Shop"
+      ],
+      "greedMode": [
         "Shop"
       ]
     },
@@ -4993,6 +5081,9 @@
     "pool": {
       "normal": [
         "Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 1,
@@ -5214,7 +5305,8 @@
         "Devil Room"
       ],
       "greedMode": [
-        "Secret Room"
+        "Secret Room",
+        "Devil Room"
       ]
     },
     "quality": 0,
@@ -5394,6 +5486,7 @@
     "name": "Leech",
     "pool": {
       "greedMode": [
+        "Treasure Room",
         "Devil Room"
       ],
       "normal": [
@@ -5447,6 +5540,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 0,
@@ -5490,6 +5586,9 @@
       "normal": [
         "Treasure Room"
       ],
+      "beggars": [
+        "Key Master"
+      ],
       "other": [
         "Baby Shop"
       ]
@@ -5511,6 +5610,10 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Treasure Room",
+        "Devil Room"
       ]
     },
     "quality": 2,
@@ -5527,6 +5630,9 @@
       "normal": [
         "Treasure Room",
         "Ultra Secret Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 0,
@@ -5838,6 +5944,9 @@
     "pool": {
       "normal": [
         "Shop"
+      ],
+      "greedMode": [
+        "Shop"
       ]
     },
     "quality": 0,
@@ -5927,6 +6036,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 0,
@@ -5948,6 +6060,9 @@
       "normal": [
         "Treasure Room",
         "Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 0,
@@ -5962,6 +6077,9 @@
     "name": "Converter",
     "pool": {
       "normal": [
+        "Shop"
+      ],
+      "greedMode": [
         "Shop"
       ]
     },
@@ -6098,6 +6216,9 @@
     "name": "Libra",
     "pool": {
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -6264,7 +6385,7 @@
     "name": "Thunder Thighs",
     "pool": {
       "greedMode": [
-        "Boss Room"
+        "Treasure Room"
       ],
       "normal": [
         "Treasure Room"
@@ -6333,6 +6454,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "other": [
+        "Baby Shop"
       ]
     },
     "quality": 1,
@@ -6436,6 +6560,9 @@
     "name": "Isaac's Tears",
     "pool": {
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -6608,7 +6735,8 @@
     "name": "Lazarus' Rags",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -6732,6 +6860,9 @@
         "Crane Game"
       ],
       "normal": [
+        "Shop"
+      ],
+      "greedMode": [
         "Shop"
       ]
     },
@@ -6893,6 +7024,9 @@
     "name": "Diplopia",
     "pool": {
       "normal": [
+        "Shop"
+      ],
+      "greedMode": [
         "Shop"
       ]
     },
@@ -7177,6 +7311,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 2,
@@ -7446,7 +7583,8 @@
     "name": "Holy Light",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Angel Room"
       ],
       "normal": [
         "Treasure Room",
@@ -7465,8 +7603,7 @@
     "name": "Host Hat",
     "pool": {
       "greedMode": [
-        "Treasure Room",
-        "Shop"
+        "Treasure Room"
       ],
       "normal": [
         "Treasure Room"
@@ -7563,6 +7700,9 @@
     "name": "Eden's Blessing",
     "pool": {
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -7687,7 +7827,7 @@
     "name": "Censer",
     "pool": {
       "greedMode": [
-        "Devil Room"
+        "Angel Room"
       ],
       "normal": [
         "Angel Room"
@@ -7756,6 +7896,7 @@
     "name": "Seraphim",
     "pool": {
       "greedMode": [
+        "Treasure Room",
         "Angel Room"
       ],
       "normal": [
@@ -7843,7 +7984,8 @@
         "Treasure Room"
       ],
       "normal": [
-        "Treasure Room"
+        "Treasure Room",
+        "Ultra Secret Room"
       ]
     },
     "quality": 0,
@@ -8023,6 +8165,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 1,
@@ -8243,6 +8388,9 @@
     "pool": {
       "normal": [
         "Shop"
+      ],
+      "greedMode": [
+        "Shop"
       ]
     },
     "quality": 3,
@@ -8269,7 +8417,6 @@
     "name": "Deep Pockets",
     "pool": {
       "greedMode": [
-        "Treasure Room",
         "Shop"
       ],
       "normal": [
@@ -8294,6 +8441,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Devil Room"
       ]
     },
     "quality": 3,
@@ -8310,6 +8460,9 @@
     "name": "Fruit Cake",
     "pool": {
       "normal": [
+        "Treasure Room"
+      ],
+      "greedMode": [
         "Treasure Room"
       ]
     },
@@ -8474,6 +8627,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 1,
@@ -8549,6 +8705,9 @@
       "normal": [
         "Treasure Room",
         "Devil Room"
+      ],
+      "other": [
+        "Baby Shop"
       ]
     },
     "quality": 2,
@@ -8628,6 +8787,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 1,
@@ -8933,7 +9095,6 @@
     "pool": {
       "greedMode": [
         "Shop",
-        "Devil Room",
         "Curse Room"
       ],
       "machines": [
@@ -9040,6 +9201,9 @@
         "Golden Chest"
       ],
       "normal": [
+        "Boss Room"
+      ],
+      "greedMode": [
         "Boss Room"
       ]
     },
@@ -9169,9 +9333,6 @@
     "id": 464,
     "name": "Glyph of Balance",
     "pool": {
-      "greedMode": [
-        "Angel Room"
-      ],
       "normal": [
         "Angel Room"
       ]
@@ -9491,6 +9652,9 @@
     "pool": {
       "normal": [
         "Shop"
+      ],
+      "greedMode": [
+        "Shop"
       ]
     },
     "quality": 2,
@@ -9590,11 +9754,8 @@
     "id": 484,
     "name": "Wait What?",
     "pool": {
-      "greedMode": [
-        "Treasure Room"
-      ],
-      "normal": [
-        "Treasure Room"
+      "other": [
+        "other"
       ]
     },
     "quality": 1,
@@ -9765,6 +9926,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 2,
@@ -9786,6 +9950,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 2,
@@ -10041,9 +10208,6 @@
     "id": 505,
     "name": "Poke Go",
     "pool": {
-      "greedMode": [
-        "Shop"
-      ],
       "machines": [
         "Crane Game"
       ],
@@ -10060,7 +10224,8 @@
     "name": "Backstabber",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Devil Room"
       ],
       "normal": [
         "Treasure Room",
@@ -10141,6 +10306,9 @@
     "pool": {
       "normal": [
         "Angel Room"
+      ],
+      "greedMode": [
+        "Angel Room"
       ]
     },
     "quality": 1,
@@ -10164,6 +10332,12 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
+      ],
+      "beggars": [
+        "Key Master"
       ]
     },
     "quality": 1,
@@ -10182,8 +10356,11 @@
     "name": "Black Hole",
     "pool": {
       "normal": [
-        "Treasure Room",
-        "Shop"
+        "Treasure Room"
+      ],
+      "greedMode": [
+        "Shop",
+        "Treasure Room"
       ]
     },
     "quality": 1,
@@ -10241,7 +10418,8 @@
     "name": "Mystery Gift",
     "pool": {
       "greedMode": [
-        "Shop"
+        "Shop",
+        "Treasure Room"
       ],
       "machines": [
         "Crane Game"
@@ -10297,6 +10475,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 1,
@@ -10313,7 +10494,8 @@
     "name": "Buddy in a Box",
     "pool": {
       "greedMode": [
-        "Shop"
+        "Shop",
+        "Treasure Room"
       ],
       "machines": [
         "Crane Game"
@@ -10371,8 +10553,10 @@
         "Battery Bum"
       ],
       "normal": [
-        "Treasure Room",
         "Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 2,
@@ -10388,6 +10572,9 @@
     "name": "Coupon",
     "pool": {
       "normal": [
+        "Shop"
+      ],
+      "greedMode": [
         "Shop"
       ]
     },
@@ -10583,9 +10770,6 @@
     "id": 530,
     "name": "Death's List",
     "pool": {
-      "greedMode": [
-        "Devil Room"
-      ],
       "normal": [
         "Devil Room"
       ]
@@ -10752,6 +10936,9 @@
       ],
       "normal": [
         "Boss Room"
+      ],
+      "greedMode": [
+        "Boss Room"
       ]
     },
     "quality": 2,
@@ -10771,6 +10958,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "other": [
+        "Baby Shop"
       ]
     },
     "quality": 0,
@@ -10811,6 +11001,9 @@
       "normal": [
         "Boss Room",
         "Ultra Secret Room"
+      ],
+      "greedMode": [
+        "Boss Room"
       ]
     },
     "quality": 1,
@@ -10893,7 +11086,8 @@
     "name": "Book of the Dead",
     "pool": {
       "greedMode": [
-        "Treasure Room"
+        "Treasure Room",
+        "Devil Room"
       ],
       "normal": [
         "Treasure Room",
@@ -10948,6 +11142,9 @@
         "Old Chest"
       ],
       "normal": [
+        "Boss Room"
+      ],
+      "greedMode": [
         "Boss Room"
       ]
     },
@@ -11280,6 +11477,9 @@
         "Treasure Room",
         "Curse Room",
         "Ultra Secret Room"
+      ],
+      "other": [
+        "Baby Shop"
       ]
     },
     "quality": 1,
@@ -11908,6 +12108,9 @@
     "pool": {
       "normal": [
         "Shop"
+      ],
+      "greedMode": [
+        "Treasure Room"
       ]
     },
     "quality": 2,
@@ -12047,7 +12250,7 @@
     "name": "Eternal D6",
     "pool": {
       "greedMode": [
-        "Treasure Room",
+        "Shop",
         "Secret Room"
       ],
       "machines": [
@@ -12311,6 +12514,9 @@
       ],
       "normal": [
         "Shop"
+      ],
+      "beggars": [
+        "Key Master"
       ]
     },
     "quality": 1,
@@ -12887,6 +13093,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "other": [
+        "Baby Shop"
       ]
     },
     "quality": 1,
@@ -13076,7 +13285,8 @@
     "name": "Guppy's Eye",
     "pool": {
       "greedMode": [
-        "Devil Room"
+        "Devil Room",
+        "Curse Room"
       ],
       "chests": [
         "Red Chest"
@@ -13104,7 +13314,8 @@
     "pool": {
       "greedMode": [
         "Shop",
-        "Secret Room"
+        "Secret Room",
+        "Treasure Room"
       ],
       "normal": [
         "Secret Room"
