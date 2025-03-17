@@ -2353,8 +2353,8 @@
     "quality": 0,
     "quote": "Toot on command",
     "rechargeTime": {
-      "amount": 1,
-      "unit": "rooms"
+      "amount": 4,
+      "unit": "s"
     },
     "type": "active"
   },
@@ -8521,7 +8521,11 @@
     },
     "quality": 0,
     "quote": "Love toots!",
-    "type": "passive"
+    "rechargeTime": {
+      "amount": 4,
+      "unit": "s"
+    },
+    "type": "active"
   },
   "422": {
     "id": 422,
