@@ -40,7 +40,7 @@ export const cardsRunesDescriptionData = {
   35: "Usuwa wszystkie klątwy z obecnego piętra (oprócz Curse of the Labyrinth) i daje Isaacowi +1 Soul Heart.",
   36: "Odkrywa całą mapę i symbole pokoi, wliczając Secret Room i Super Secret Room (ale nie wliczając Ultra Secret Roomu).",
   37: "Przelosowuje wszystkie przedmioty w pokoju.",
-  38: "Generuje 3 Niebieskie Muchy i 3 Niebieskie Pająki.",
+  38: "Generuje 3 czerwone muszki (jak Abyss) na czas trwania pokoju.",
   39: "Isaac staje się nietykalny na 20 sekund.",
   40: "Wywołuje efekt którejś z run.\nMa 25% na wygenerowanie kolejnej Blank Rune przy użyciu.",
   41: "Zadaje 40 Obrażeń wszystkim przeciwnikom w pokoju, niszczy wszystkie znajdźki i zamienia je w Niebieskie Muchy i Pająki oraz niszczy wszystkie przedmioty w pokoju i zamienia je w losowe bonusy do statystyk.",

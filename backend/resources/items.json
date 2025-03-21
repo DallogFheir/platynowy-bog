@@ -3730,12 +3730,11 @@
     "id": 177,
     "name": "Portable Slot",
     "pool": {
-      "beggars": [
-        "Beggar"
-      ],
       "normal": [
-        "Shop",
         "Ultra Secret Room"
+      ],
+      "machines": [
+        "Slot Machine"
       ]
     },
     "quality": 0,
