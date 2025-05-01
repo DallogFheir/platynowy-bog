@@ -215,7 +215,7 @@ export const pickupDescriptionData = {
   },
   30: {
     1: "+1 klucz.",
-    2: "Pozwala Isaacowi na obecnym piętrze na otworzenie wszystkiego, co wymaga kluczy, bez faktycznego zużycia kluczy.\nNie działa na Sharp Key i Key Mastera, którzy normalnie zabierają Isaacowi klucze.",
+    2: "Pozwala Isaacowi na obecnym piętrze na otworzenie wszystkiego, co wymaga kluczy, bez faktycznego zużycia kluczy.\nNie działa na Sharp Key\n.W przypadku użycia Key Mastera, Isaac straci Golden Key, a Key Master wygeneruje przedmiot ze swojej puli.",
     3: "+2 klucze.",
     4: "+1 klucz. Działa jak Lil' Battery przy podniesieniu.\nJeśli ten klucz zostanie podniesiony przez Key Buma, wygeneruje on Lil' Battery.",
   },
@@ -223,7 +223,7 @@ export const pickupDescriptionData = {
     1: "+1 bomba.",
     2: "+2 bomby.",
     3: "Nie da się jej podnieść, wybucha kilka sekund po wygenerowaniu. Zadaje całe serce obrażeń.\nKażda Troll Bomba wybucha w innym, losowym czasie.\nSafety Scissors zamienia ją w zwykłą bombę-znajdźkę.",
-    4: "Pozwala Isaacowi na stawianie nieskończonej liczby bomb na obecnym piętrze, nawet jeśli posiada on 0 bomb.",
+    4: "Pozwala Isaacowi na stawianie nieskończonej liczby bomb na obecnym piętrze, nawet jeśli posiada on 0 bomb.\nW przypadku użycia Bomb Buma, Isaac straci Golden Bomb, a Bomb Bum wygeneruje przedmiot ze swojej puli.",
     5: "Podobna do Troll Bomby, ale większa i porusza się w stronę Isaaca przed wybuchem. Zadaje całe serce obrażeń.\nKażda Mega Troll Bomba wybucha w innym, losowym czasie.\nSafety Scissors zamienia ją w Double Bomb.",
     6: "Działa jak Troll Bomba, ale przy wybuchu nie znika, tylko pojawia się ponownie.\nSafety Scissors zamienia ją w Golden Bomb.",
     7: "Wybucha po kilku sekundach po wygenerowaniu, zadając przeciwnikom 300 Obrażeń oraz tworząc dziurę w kształcie rombu (nigdy nie blokuje wyjść z pokoju).\nGenerowane już zapalone przez Bombgaggery, Ultra Wara oraz w niektórych pokojach w Ashpit.\nIsaac może ją zdobyć do postawienia przez Safety Scissors lub Everything Jar. Ikonka bomby w HUD-zie powiększy się wtedy, a wszystkie Giga Bomby zostaną zużyte przed zwykłymi bombami, wliczają Złotą Bombę (której efekt nie działa na Giga Bomby).",
