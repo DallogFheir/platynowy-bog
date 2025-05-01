@@ -10317,7 +10317,8 @@
     "quality": 1,
     "quote": "Unleash the power!",
     "rechargeTime": {
-      "amount": "other"
+      "amount": 12,
+      "unit": "rooms"
     },
     "unlock": {
       "boss": "Delirium",
