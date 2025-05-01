@@ -79,7 +79,7 @@ export const pillDescriptionData = {
     22: "Efekt trwa 4 sekundy.",
     23: "Dodatkowo ujawnia całą mapę i wszystkie symbole pokoi na niej.",
     24: "Wszyscy przeciwnicy w pokoju stają się przyjaźnymi przeciwnikami.",
-    25: "ten sam efekt, co normalna pigułka",
+    25: "Dodatkowo zapomina wszystkie wcześniej odkryte pigułki (będą ponownie oznaczone jako ???).",
     26: "Kałuża jest większa.",
     27: "Efekt trwa 1 minutę.",
     28: "ten sam efekt, co normalna pigułka",
