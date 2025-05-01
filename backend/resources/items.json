@@ -13691,7 +13691,7 @@
     "quality": 1,
     "quote": "Your faith grows",
     "rechargeTime": {
-      "amount": 6,
+      "amount": 12,
       "unit": "rooms"
     },
     "unlock": {
