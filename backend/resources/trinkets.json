@@ -562,7 +562,10 @@
   "12": {
     "id": 12,
     "name": "Flat Worm",
-    "quote": "Blub blub!"
+    "quote": "Blub blub!",
+    "setDrop": [
+      "thematic boss drop"
+    ]
   },
   "141": {
     "id": 141,
@@ -571,7 +574,10 @@
     "unlock": {
       "method": "other",
       "other": "blow up The Siren's skull     "
-    }
+    },
+    "setDrop": [
+      "thematic boss drop"
+    ]
   },
   "180": {
     "id": 180,
@@ -768,7 +774,10 @@
       "method": "boss",
       "boss": "Boss Rush",
       "character": "Apollyon"
-    }
+    },
+    "setDrop": [
+      "thematic boss drop"
+    ]
   },
   "116": {
     "id": 116,
@@ -778,7 +787,10 @@
       "method": "boss",
       "boss": "The Lamb",
       "character": "Apollyon"
-    }
+    },
+    "setDrop": [
+      "thematic boss drop"
+    ]
   },
   "115": {
     "id": 115,
@@ -788,7 +800,10 @@
       "method": "boss",
       "boss": "???",
       "character": "Apollyon"
-    }
+    },
+    "setDrop": [
+      "thematic boss drop"
+    ]
   },
   "114": {
     "id": 114,
@@ -798,7 +813,10 @@
       "method": "boss",
       "boss": "Satan",
       "character": "Apollyon"
-    }
+    },
+    "setDrop": [
+      "thematic boss drop"
+    ]
   },
   "113": {
     "id": 113,
@@ -808,7 +826,10 @@
       "method": "boss",
       "boss": "Isaac",
       "character": "Apollyon"
-    }
+    },
+    "setDrop": [
+      "thematic boss drop"
+    ]
   },
   "106": {
     "id": 106,
@@ -1360,7 +1381,10 @@
         "The Lamb"
       ],
       "character": "Tainted Lilith"
-    }
+    },
+    "setDrop": [
+      "thematic boss drop"
+    ]
   },
   "53": {
     "id": 53,

@@ -128,6 +128,7 @@ function TrinketDescription({ selectedContent, popup }) {
       urn: "dzbany",
       mushroom: "grzyby",
       "Golden Poop": "Złote Kupy",
+      "thematic boss drop": "tematyczny drop z bossa",
     };
 
     return setDropToParse
