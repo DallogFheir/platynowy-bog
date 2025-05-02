@@ -195,7 +195,12 @@
       "other": "complete a chapter (floors I and II) after Basement with only half a heart total (including The Lost)"
     }
   },
-  "31": { "id": 31, "name": "Joker", "quote": "???", "type": "playing card" },
+  "31": {
+    "id": 31,
+    "name": "Joker",
+    "quote": "???",
+    "type": "playing card"
+  },
   "46": {
     "id": 46,
     "name": "Suicide King",
@@ -454,7 +459,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Isaac"
     }
   },
@@ -465,7 +473,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Magdalene"
     }
   },
@@ -476,7 +487,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Cain"
     }
   },
@@ -487,7 +501,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Judas"
     }
   },
@@ -498,7 +515,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted ???"
     }
   },
@@ -509,7 +529,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Eve"
     }
   },
@@ -520,7 +543,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Samson"
     }
   },
@@ -531,7 +557,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Azazel"
     }
   },
@@ -542,7 +571,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Lazarus"
     }
   },
@@ -553,7 +585,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Eden"
     }
   },
@@ -564,7 +599,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Lost"
     }
   },
@@ -575,7 +613,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Lilith"
     }
   },
@@ -586,7 +627,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Keeper"
     }
   },
@@ -597,7 +641,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Apollyon"
     }
   },
@@ -608,7 +655,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Forgotten"
     }
   },
@@ -619,7 +669,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Bethany"
     }
   },
@@ -630,7 +683,10 @@
     "type": "Soul Stone",
     "unlock": {
       "method": "boss",
-      "boss": ["Hush", "Boss Rush"],
+      "boss": [
+        "Hush",
+        "Boss Rush"
+      ],
       "character": "Tainted Jacob"
     }
   },

@@ -63,7 +63,10 @@
       "id": 9,
       "name": "Scared Heart",
       "type": "heart",
-      "unlock": { "method": "other", "other": "reset 7 times in a row" }
+      "unlock": {
+        "method": "other",
+        "other": "reset 7 times in a row"
+      }
     },
     "10": {
       "groupId": 10,
