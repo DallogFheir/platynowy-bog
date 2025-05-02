@@ -54,6 +54,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Rag Mega"
       ]
     },
     "quality": 3,
@@ -724,7 +727,8 @@
         "buckets"
       ],
       "boss": [
-        "Bumbino"
+        "Bumbino",
+        "Dingle"
       ],
       "startingItem": [
         "???"
@@ -1766,7 +1770,8 @@
         "Treasure Room"
       ],
       "boss": [
-        "Bumbino"
+        "Bumbino",
+        "Monstro"
       ]
     },
     "quality": 0,
@@ -1793,6 +1798,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Loki"
       ]
     },
     "quality": 1,
@@ -1815,6 +1823,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss"[
+        "Chub"
       ]
     },
     "quality": 1,
@@ -1837,6 +1848,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Triachnid"
       ]
     },
     "quality": 2,
@@ -3160,6 +3174,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Husk"
       ]
     },
     "quality": 0,
@@ -3283,6 +3300,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Bloat"
       ]
     },
     "quality": 2,
@@ -3532,6 +3552,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Mr. Fred"
       ]
     },
     "quality": 1,
@@ -3590,6 +3613,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Daddy Long Legs"
       ]
     },
     "quality": 3,
@@ -4361,7 +4387,8 @@
         "Bomb Bum"
       ],
       "boss": [
-        "Bumbino"
+        "Bumbino",
+        "Colostomia"
       ],
       "normal": [
         "Treasure Room"
@@ -4383,6 +4410,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Great Gideon"
       ]
     },
     "quality": 1,
@@ -4398,6 +4428,9 @@
       ],
       "greedMode": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Widow"
       ]
     },
     "quality": 0,
@@ -4493,6 +4526,9 @@
       "normal": [
         "Curse Room",
         "Devil Room"
+      ],
+      "boss": [
+        "The Heretic"
       ]
     },
     "quality": 3,
@@ -4652,6 +4688,9 @@
         "Treasure Room",
         "Curse Room",
         "Devil Room"
+      ],
+      "boss": [
+        "Sisters Vis"
       ]
     },
     "quality": 2,
@@ -4721,6 +4760,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Monstro II"
       ]
     },
     "quality": 2,
@@ -4942,6 +4984,9 @@
       "normal": [
         "Treasure Room",
         "Secret Room"
+      ],
+      "boss": [
+        "Mask of Infamy"
       ]
     },
     "quality": 2,
@@ -5195,6 +5240,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Hornfel"
       ]
     },
     "quality": 1,
@@ -5249,6 +5297,9 @@
       ],
       "normal": [
         "Devil Room"
+      ],
+      "boss": [
+        "Dark One"
       ]
     },
     "quality": 3,
@@ -5348,6 +5399,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Min-Min"
       ]
     },
     "quality": 1,
@@ -5393,6 +5447,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "The Wretched"
       ]
     },
     "quality": 2,
@@ -5496,6 +5553,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Wormwood"
       ]
     },
     "quality": 2,
@@ -5655,6 +5715,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "The Haunt"
       ]
     },
     "quality": 1,
@@ -5900,6 +5963,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Rag Man"
       ]
     },
     "quality": 1,
@@ -5964,6 +6030,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Clog"
       ]
     },
     "quality": 1,
@@ -6279,6 +6348,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Beelzebub"
       ]
     },
     "quality": 2,
@@ -6388,6 +6460,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Mega Fatty"
       ]
     },
     "quality": 1,
@@ -6456,6 +6531,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Gemini"
       ]
     },
     "quality": 1,
@@ -7254,6 +7332,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Reap Creep"
       ]
     },
     "quality": 0,
@@ -7493,6 +7574,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Mega Maw"
       ]
     },
     "quality": 2,
@@ -7606,6 +7690,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "The Gate"
       ]
     },
     "quality": 3,
@@ -7654,6 +7741,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Turdlings"
       ]
     },
     "quality": 2,
@@ -7770,6 +7860,12 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Gurdy",
+        "Gurdy Jr.",
+        "Mega Gurdy",
+        "Gurglings"
       ]
     },
     "quality": 1,
@@ -8793,6 +8889,9 @@
       ],
       "greedMode": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Lokii"
       ]
     },
     "quality": 1,
@@ -9139,7 +9238,8 @@
         "Treasure Room"
       ],
       "boss": [
-        "Bumbino"
+        "Bumbino",
+        "The Pile"
       ]
     },
     "quality": 3,
@@ -9432,6 +9532,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "The Rainmaker"
       ]
     },
     "quality": 1,
@@ -9517,6 +9620,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "The Matriarch"
       ]
     },
     "quality": 1,
@@ -10174,6 +10280,10 @@
       "normal": [
         "Devil Room",
         "Curse Room"
+      ],
+      "boss": [
+        "Little Horn",
+        "Big Horn"
       ]
     },
     "quality": 3,
@@ -10189,6 +10299,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Turdlet"
       ]
     },
     "quality": 0,
@@ -10668,6 +10781,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Fistula"
       ]
     },
     "quality": 0,
@@ -10921,6 +11037,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Blastocyst"
       ]
     },
     "quality": 1,
@@ -11097,6 +11216,9 @@
         "Treasure Room",
         "Library",
         "Devil Room"
+      ],
+      "boss": [
+        "The Forsaken"
       ]
     },
     "quality": 2,
@@ -11190,6 +11312,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "The Frail"
       ]
     },
     "quality": 3,
@@ -11613,6 +11738,9 @@
       "normal": [
         "Devil Room",
         "Ultra Secret Room"
+      ],
+      "boss": [
+        "The Adversary"
       ]
     },
     "quality": 3,
@@ -11686,6 +11814,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Brownie"
       ]
     },
     "quality": 1,
@@ -11732,6 +11863,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Peep"
       ]
     },
     "quality": 0,
@@ -12296,6 +12430,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "The Cage"
       ]
     },
     "quality": 0,
@@ -12345,6 +12482,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Blighted Ovum"
       ]
     },
     "quality": 1,
@@ -12403,6 +12543,9 @@
       "normal": [
         "Treasure Room",
         "Ultra Secret Room"
+      ],
+      "boss": [
+        "Singe"
       ]
     },
     "quality": 3,
@@ -12817,6 +12960,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Rotgut"
       ]
     },
     "quality": 1,
@@ -12864,6 +13010,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "The Shell"
       ]
     },
     "quality": 1,
@@ -12888,6 +13037,9 @@
       ],
       "greedMode": [
         "Curse Room"
+      ],
+      "boss": [
+        "The Scourge"
       ]
     },
     "quality": 2,
@@ -12959,6 +13111,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "Teratoma"
       ]
     },
     "quality": 1,
@@ -12982,6 +13137,9 @@
       ],
       "normal": [
         "Devil Room"
+      ],
+      "boss": [
+        "The Fallen"
       ]
     },
     "quality": 2,
@@ -13200,6 +13358,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Polycephalus"
       ]
     },
     "quality": 1,
@@ -13490,6 +13651,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "The Visage"
       ]
     },
     "quality": 1,
@@ -13512,6 +13676,9 @@
       "normal": [
         "Treasure Room",
         "Secret Room"
+      ],
+      "boss": [
+        "Clutch"
       ]
     },
     "quality": 1,
@@ -13579,6 +13746,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Dangle"
       ]
     },
     "quality": 2,
@@ -13626,6 +13796,9 @@
       ],
       "other": [
         "Baby Shop"
+      ],
+      "boss": [
+        "The Stain"
       ]
     },
     "quality": 3,
@@ -13646,6 +13819,9 @@
       ],
       "normal": [
         "Treasure Room"
+      ],
+      "boss": [
+        "Carrion Queen"
       ]
     },
     "quality": 2,
