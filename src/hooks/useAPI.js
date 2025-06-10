@@ -1,4 +1,20 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
+import { cardsRunes } from "../apiData/cardsRunes";
+import { items } from "../apiData/items";
+import { pickups } from "../apiData/pickups";
+import { pills } from "../apiData/pills";
+import { transformations } from "../apiData/transformations";
+import { trinkets } from "../apiData/trinkets";
+
+const apiResourceToDataTrans = {
+  "cards-runes": cardsRunes,
+  items: items,
+  pickups: pickups,
+  pills: pills,
+  transformations: transformations,
+  trinkets: trinkets,
+};
 
 function useAPI(resource, typeState) {
   const [leftPage, setLeftPage] = useState(true);
@@ -14,29 +30,20 @@ function useAPI(resource, typeState) {
     const fetchResource = async () => {
       setLeftPage(false);
 
-      try {
-        setStatus("loading");
-        const res = await fetch(`/platynowy-bog/api/${resource}`);
+      setStatus("loading");
 
-        if (res.ok) {
-          const data = await res.json();
+      const data = Object.values(apiResourceToDataTrans[resource]);
 
-          if (resource === "transformations") {
-            data.forEach((transformation) => {
-              if (!("id" in transformation)) {
-                transformation.id = 14;
-              }
-            });
+      if (resource === "transformations") {
+        data.forEach((transformation) => {
+          if (!("id" in transformation)) {
+            transformation.id = 14;
           }
-
-          setContent(data);
-          setStatus("loaded");
-        } else {
-          setStatus("failed");
-        }
-      } catch (e) {
-        setStatus("failed");
+        });
       }
+
+      setContent(data);
+      setStatus("loaded");
     };
 
     const typeStateTrans = {

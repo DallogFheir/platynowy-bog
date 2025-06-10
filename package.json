@@ -2,7 +2,6 @@
   "name": "platynowy-bog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "platynowy-bog",
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.6",
     "@testing-library/react": "^14.1.2",
@@ -15,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build && rm -rf ../backend/backend_app/build && mv build ../backend/backend_app/ && cp ../extra_static/*.css ../backend/backend_app/build/static/css/ && cp ../extra_static/*.html ../backend/backend_app/build/",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -36,6 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://127.0.0.1:5000/"
+  }
 }
