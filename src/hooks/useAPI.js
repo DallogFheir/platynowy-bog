@@ -32,7 +32,23 @@ function useAPI(resource, typeState) {
 
       setStatus("loading");
 
-      const data = Object.values(apiResourceToDataTrans[resource]);
+      let data = null;
+      if (resource === "pickups") {
+        const magicGroupIds = [
+          41, 50, 60, 360, 51, 53, 52, 54, 55, 56, 57, 58, 390,
+        ];
+        data = [];
+
+        Object.values(apiResourceToDataTrans[resource]).forEach((pickups) => {
+          if (magicGroupIds.includes(pickups.groupId)) {
+            data.push(pickups);
+          } else {
+            data = [...data, ...Object.values(pickups)];
+          }
+        });
+      } else {
+        data = Object.values(apiResourceToDataTrans[resource]);
+      }
 
       if (resource === "transformations") {
         data.forEach((transformation) => {
